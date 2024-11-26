@@ -1,7 +1,7 @@
 import sys
 import os
+import pickle
 
-# Get the absolute path of the project's root directory
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
@@ -10,24 +10,33 @@ import streamlit as st
 from src.ingestion.pdf_loader import load_pdfs
 from src.ingestion.text_cleaner import clean_text
 from src.processing.chunker import chunk_text
-from src.processing.embedder import generate_embeddings
+from src.processing.embedder import get_embeddings_model
 from src.processing.vector_store import create_vector_store
 from src.retrieval.query_processor import process_query
 from src.retrieval.retriever import retrieve_chunks
-from src.models.llm_interface import get_response
+from src.models.llm_interface import get_nvidia_response
 
 
 def main():
     st.title("Learning Assistant Prototype")
 
-    pdf_dir = 'data/raw/lectures/'
-    text_output_dir = 'data/processed/texts/'
-    processed_texts_dir = 'data/processed/texts/'
+    pdf_dir = 'src/ingestion/data/raw/lectures/'
+    text_output_dir = 'src/ingestion/data/processed/texts/'
+    processed_texts_dir = 'src/ingestion/data/processed/texts/'
+    index_file = 'src/ingestion/data/index.pkl'
+    chunks_file = 'src/ingestion/data/chunks.pkl'
 
-    st.info("Loading and processing PDFs...")
+    if os.path.exists(index_file) and os.path.exists(chunks_file):
+        st.info("Loading preprocessed data...")
+        with open(index_file, 'rb') as f:
+            vector_store = pickle.load(f)
+        with open(chunks_file, 'rb') as f:
+            all_chunks = pickle.load(f)
+    else:
+        st.info("Processing data... This may take a while.")
+
     load_pdfs(pdf_dir, text_output_dir)
 
-    st.info("Cleaning text...")
     texts = []
     for text_file in os.listdir(processed_texts_dir):
         if text_file.endswith('.txt'):
@@ -36,23 +45,28 @@ def main():
                 cleaned_text = clean_text(raw_text)
                 texts.append(cleaned_text)
 
-    st.info("Splitting text into chunks...")
     all_chunks = []
     for text in texts:
         chunks = chunk_text(text)
         all_chunks.extend(chunks)
 
-    st.info("Generating embeddings...")
-    embeddings = generate_embeddings(all_chunks)
+    embeddings_model = get_embeddings_model()
 
     st.info("Creating vector store")
-    index = create_vector_store(embeddings)
+    vector_store = create_vector_store(embeddings_model, all_chunks)
+
+    with open(index_file, 'wb') as f:
+        pickle.dump(vector_store, f)
+    with open(chunks_file, 'wb') as f:
+        pickle.dump(all_chunks, f)
+
+    retriever = vector_store.as_retriever(search_kwargs={"k": 5})
 
     query = st.text_input("Ask me anything about the lectures:")
     if query:
-        query_embedding = process_query(query)
-        retrieved_chunks = retrieve_chunks(query_embedding, index, all_chunks)
-        response = get_response(retrieved_chunks, query)
+        """query_embedding = process_query(query)
+        docs = retriever.get_relevant_documents(query)"""
+        response = get_nvidia_response(retriever, query)
         st.write(response)
 
 
