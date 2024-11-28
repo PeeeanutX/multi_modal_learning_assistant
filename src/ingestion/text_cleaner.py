@@ -21,6 +21,11 @@ formatter = logging.Formatter(
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
 stop_words = set(stopwords.words('english'))
 stemmer = SnowballStemmer('english')
 lemmatizer = WordNetLemmatizer()
