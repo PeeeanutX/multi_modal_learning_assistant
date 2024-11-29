@@ -11,8 +11,6 @@ from langchain.text_splitter import (
     NLTKTextSplitter,
 )
 
-from langchain.schema import Document
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 handler = logging.StreamHandler()
