@@ -9,7 +9,7 @@ if project_root not in sys.path:
 import streamlit as st
 from src.ingestion.pdf_loader import load_pdfs
 from src.ingestion.text_cleaner import clean_text
-from src.processing.chunker import chunk_text
+from src.processing.chunker import TextChunker, ChunkerConfig
 from src.processing.embedder import get_embeddings_model
 from src.processing.vector_store import create_vector_store
 from src.retrieval.query_processor import process_query
@@ -37,6 +37,15 @@ def main():
 
     load_pdfs(pdf_dir, text_output_dir)
 
+    config = ChunkerConfig(
+        method='recursive',  # or other methods like 'sentence', 'spacy'
+        chunk_size=500,
+        chunk_overlap=50,
+        length_function=len,
+        separators=["\n\n", "\n", " ", ""]
+    )
+    chunker = TextChunker(config)
+
     texts = []
     for text_file in os.listdir(processed_texts_dir):
         if text_file.endswith('.txt'):
@@ -47,7 +56,7 @@ def main():
 
     all_chunks = []
     for text in texts:
-        chunks = chunk_text(text)
+        chunks = chunker.chunk_text(text)
         all_chunks.extend(chunks)
 
     embeddings_model = get_embeddings_model()
