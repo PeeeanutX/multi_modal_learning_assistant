@@ -55,7 +55,7 @@ class EmbeddingsFactory:
         return embeddings_model
 
 
-def get_embeddings_model():
+def oldget_embeddings_model():
     nvidia_api_key = os.getenv("NVIDIA_API_KEY")
     if not nvidia_api_key:
         raise ValueError("NVIDIA_API_KEY environment variable not set")

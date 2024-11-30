@@ -10,11 +10,12 @@ import streamlit as st
 from src.ingestion.pdf_loader import load_pdfs
 from src.ingestion.text_cleaner import clean_text
 from src.processing.chunker import TextChunker, ChunkerConfig
-from src.processing.embedder import get_embeddings_model
-from src.processing.vector_store import create_vector_store
+from src.processing.embedder import EmbeddingsFactory, EmbeddingsConfig
+from src.processing.vector_store import VectorStoreFactory, VectorStoreConfig
 from src.retrieval.query_processor import process_query
 from src.retrieval.retriever import retrieve_chunks
 from src.models.llm_interface import get_nvidia_response
+from langchain.schema import Document
 
 
 def main():
@@ -28,53 +29,79 @@ def main():
 
     if os.path.exists(index_file) and os.path.exists(chunks_file):
         st.info("Loading preprocessed data...")
-        with open(index_file, 'rb') as f:
-            vector_store = pickle.load(f)
         with open(chunks_file, 'rb') as f:
             all_chunks = pickle.load(f)
+
+        if not all_chunks:
+            raise ValueError("No chunks found. Ensure the preprocessing pipeline is correct.")
+
+        embeddings_config = EmbeddingsConfig(
+            provider='nvidia',
+            model_name='NV-Embed-QA',
+            api_key=None
+        )
+        embeddings_model = EmbeddingsFactory.get_embeddings_model(embeddings_config)
+
+        vector_store_config = VectorStoreConfig(
+            store_type='faiss',
+            embedding_model=embeddings_model,
+            faiss_index_path=index_file
+        )
+        vector_store = VectorStoreFactory.create_vector_store(vector_store_config, docs=[])
     else:
         st.info("Processing data... This may take a while.")
+        load_pdfs(pdf_dir, text_output_dir)
 
-    load_pdfs(pdf_dir, text_output_dir)
+        config = ChunkerConfig(
+            method='recursive',  # or other methods like 'sentence', 'spacy'
+            chunk_size=500,
+            chunk_overlap=50,
+            length_function=len,
+            separators=["\n\n", "\n", " ", ""]
+        )
+        chunker = TextChunker(config)
 
-    config = ChunkerConfig(
-        method='recursive',  # or other methods like 'sentence', 'spacy'
-        chunk_size=500,
-        chunk_overlap=50,
-        length_function=len,
-        separators=["\n\n", "\n", " ", ""]
-    )
-    chunker = TextChunker(config)
+        texts = []
+        for text_file in os.listdir(processed_texts_dir):
+            if text_file.endswith('.txt'):
+                with open(os.path.join(processed_texts_dir, text_file), 'r', encoding='utf-8') as f:
+                    raw_text = f.read()
+                    cleaned_text = clean_text(raw_text)
+                    texts.append(cleaned_text)
 
-    texts = []
-    for text_file in os.listdir(processed_texts_dir):
-        if text_file.endswith('.txt'):
-            with open(os.path.join(processed_texts_dir, text_file), 'r', encoding='utf-8') as f:
-                raw_text = f.read()
-                cleaned_text = clean_text(raw_text)
-                texts.append(cleaned_text)
+        all_chunks = []
+        for text in texts:
+            chunks = chunker.chunk_text(text)
+            all_chunks.extend(chunks)
 
-    all_chunks = []
-    for text in texts:
-        chunks = chunker.chunk_text(text)
-        all_chunks.extend(chunks)
+        if not all_chunks:
+            raise ValueError("No text chunks were generated.")
 
-    embeddings_model = get_embeddings_model()
+        docs = [Document(page_content=chunk) for chunk in all_chunks]
+        if not docs:
+            raise ValueError("No documents were created from the text chunks.")
 
-    st.info("Creating vector store")
-    vector_store = create_vector_store(embeddings_model, all_chunks)
+        embeddings_config = EmbeddingsConfig(
+            provider='nvidia',
+            model_name='NV-Embed-QA',
+            api_key=None
+        )
+        embeddings_model = EmbeddingsFactory.get_embeddings_model(embeddings_config)
 
-    with open(index_file, 'wb') as f:
-        pickle.dump(vector_store, f)
-    with open(chunks_file, 'wb') as f:
-        pickle.dump(all_chunks, f)
+        vector_store_config = VectorStoreConfig(
+            store_type='faiss',
+            embedding_model=embeddings_model,
+            faiss_index_path=index_file
+        )
+        vector_store = VectorStoreFactory.create_vector_store(vector_store_config, docs=docs)
+
+        with open(chunks_file, 'wb') as f:
+            pickle.dump(all_chunks, f)
 
     retriever = vector_store.as_retriever(search_kwargs={"k": 5})
 
     query = st.text_input("Ask me anything about the lectures:")
     if query:
-        """query_embedding = process_query(query)
-        docs = retriever.get_relevant_documents(query)"""
         response = get_nvidia_response(retriever, query)
         st.write(response)
 
