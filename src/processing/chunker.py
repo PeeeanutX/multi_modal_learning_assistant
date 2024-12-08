@@ -26,11 +26,11 @@ nltk.download('punkt_tab', quiet=True)
 @dataclass
 class ChunkerConfig:
     method: str = 'recursive'  # Options: 'recursive', 'character', 'sentence', 'spacy', 'nltk'
-    chunk_size: int = 500,
-    chunk_overlap: int = 50,
+    chunk_size: int = 500
+    chunk_overlap: int = 50
     length_function: Optional[callable] = len
     separators: List[str] = field(default_factory=lambda: ["\n\n", "\n", " ", ""])
-    language: str = 'end_core_web_sm'  # For SpacyTextSplitter
+    language: str = 'en_core_web_sm'  # For SpacyTextSplitter
 
 
 class TextChunker:
@@ -111,8 +111,11 @@ class SentenceTextSplitter:
         if self.chunk_overlap > 0 and len(chunks) > 1:
             overlapped_chunks = []
             for i in range(len(chunks)):
-                overlap = ' '.join(chunks[max(0, i - 1):i + 1])
-                overlapped_chunks.append(overlap)
+                if i == 0:
+                    overlapped_chunks.append(chunks[i])
+                else:
+                    overlap = ' '.join(chunks[max(0, i - 1):i + 1])
+                    overlapped_chunks.append(overlap)
             chunks = overlapped_chunks
 
         return chunks

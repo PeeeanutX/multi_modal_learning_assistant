@@ -12,10 +12,13 @@ from src.ingestion.text_cleaner import clean_text
 from src.processing.chunker import TextChunker, ChunkerConfig
 from src.processing.embedder import EmbeddingsFactory, EmbeddingsConfig
 from src.processing.vector_store import VectorStoreFactory, VectorStoreConfig
-from src.retrieval.query_processor import process_query
-from src.retrieval.retriever import retrieve_chunks
+from src.retrieval.query_processor import QueryProcessor, QueryProcessorConfig
+from src.retrieval.retriever import RetrieverFactory, RetrieverConfig
 from src.models.llm_interface import get_nvidia_response
 from langchain.schema import Document
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def main():
@@ -98,11 +101,22 @@ def main():
         with open(chunks_file, 'wb') as f:
             pickle.dump(all_chunks, f)
 
-    retriever = vector_store.as_retriever(search_kwargs={"k": 5})
+    retriever_config = RetrieverConfig(
+        retriever_type='default',
+        search_kwargs={"k": 5}
+    )
+
+    retriever = RetrieverFactory.create_retriever(vector_store, retriever_config)
+
+    query_processor_config = QueryProcessorConfig(
+        normalize=True
+    )
+    query_processor = QueryProcessor(query_processor_config)
 
     query = st.text_input("Ask me anything about the lectures:")
     if query:
         response = get_nvidia_response(retriever, query)
+        st.subheader("Assistant Response")
         st.write(response)
 
 

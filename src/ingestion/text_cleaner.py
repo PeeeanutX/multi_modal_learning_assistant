@@ -35,10 +35,10 @@ spell = SpellChecker()
 def clean_text(
         text: str,
         lowercase: bool = True,
-        remove_numbers: bool = True,
+        remove_numbers: bool = False,
         remove_punctuation: bool = True,
         remove_stopwords: bool = True,
-        perform_stemming: bool = True,
+        perform_stemming: bool = False,
         perform_lemmatization: bool = True,
         correct_spelling: bool = False,
         expand_contractions: bool = True
