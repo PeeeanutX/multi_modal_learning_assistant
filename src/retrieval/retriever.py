@@ -1,6 +1,6 @@
 import numpy as np
 import logging
-from typing import List, Optional
+from typing import List
 from dataclasses import dataclass, field
 
 from langchain.vectorstores.base import VectorStore
@@ -9,6 +9,8 @@ from langchain.retrievers import (
     TimeWeightedVectorStoreRetriever,
     ContextualCompressionRetriever
 )
+from src.retrieval.reranker import ReRanker
+from langchain_core.language_models import BaseLanguageModel
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -63,13 +65,18 @@ class RetrieverFactory:
         return retriever
 
     @staticmethod
-    def retrieve_documents(retriever, query: str) -> List[Document]:
-        """Retrieve relevant documents using the specified retriever."""
+    def retrieve_documents(retriever, query: str, llm: BaseLanguageModel) -> List[Document]:
+        """Retrieve relevant documents using the specified retriever and re-rank them."""
         logger.info(f"Retrieving documents for query: '{query}'")
         try:
-            documents = retriever.get_relevant_documents(query)
+            documents = retriever.invoke(query)
             logger.info(f"Retrieved {len(documents)} documents")
-            return documents
+
+            re_ranker = ReRanker(llm)
+            ranked_documents = re_ranker.re_rank(query, documents)
+
+            logger.info(f"Re-ranked {len(ranked_documents)} documents")
+            return ranked_documents
         except Exception as e:
             logger.error(f"Error during retrieval: {e}")
             raise

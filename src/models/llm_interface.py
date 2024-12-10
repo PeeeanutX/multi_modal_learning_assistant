@@ -98,9 +98,9 @@ class LLMInterface:
         prompt_template = """
         Use the following pieces of context to answer the question at the end.
         If you don't know the answer, just say that you don't know. Do not make up an answer.
-        
+
         {context}
-        
+
         Question: {input}
         Answer:
         """
@@ -151,23 +151,3 @@ def get_nvidia_response(retriever: BaseRetriever, query: str) -> str:
     except Exception as e:
         logger.error(f"Error in get_nvidia_response: {e}")
         raise
-
-
-"""
-def get_nvidia_response(retriever: BaseRetriever, query: str):
-    nvidia_api_key = os.getenv("NVIDIA_API_KEY")
-    if not nvidia_api_key:
-        raise ValueError("NVIDIA_API_KEY environment variable not set")
-
-    llm = ChatNVIDIA(model="nvidia/llama-3.1-nemotron-70b-instruct", api_key=nvidia_api_key)
-
-    qa_chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=retriever,
-        return_source_documents=False,
-    )
-
-    response = qa_chain.run(query)
-    return response
-"""
