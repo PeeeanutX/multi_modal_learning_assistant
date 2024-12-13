@@ -1,25 +1,22 @@
-from src.processing.chunker import TextChunker, ChunkerConfig
+from torch.utils.data import DataLoader, Dataset
+from sentence_transformers import InputExample
 
-# Initialize chunker configuration
-config = ChunkerConfig(
-    method='spacy',
-    chunk_size=500,
-    chunk_overlap=50,
-    separators=["\n\n", "\n", " ", ""]
-)
 
-# Create a TextChunker instance
-chunker = TextChunker(config)
+class CustomDataset(Dataset):
+    def __init__(self, examples):
+        self.examples = examples
 
-# Sample text
-text = "Your long text goes here..."
+    def __len__(self):
+        return len(self.examples)
 
-# Chunk the text
-chunks = chunker.chunk_text(text)
+    def __getitem__(self, idx):
+        return self.examples[idx]
 
-# Output the number of chunks
-print(f"Number of chunks: {len(chunks)}")
+# Example usage
+examples = [InputExample(texts=["query", "positive"], label=1.0), InputExample(texts=["query", "negative"], label=0.0)]
+dataset = CustomDataset(examples)
+dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
 
-# Print the first chunk as an example
-print("First chunk:")
-print(chunks[0])
+for batch in dataloader:
+    for example in batch:
+        print(example)

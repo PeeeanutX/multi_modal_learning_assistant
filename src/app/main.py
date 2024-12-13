@@ -14,7 +14,9 @@ from src.processing.embedder import EmbeddingsFactory, EmbeddingsConfig
 from src.processing.vector_store import VectorStoreFactory, VectorStoreConfig
 from src.retrieval.query_processor import QueryProcessor, QueryProcessorConfig
 from src.retrieval.retriever import RetrieverFactory, RetrieverConfig
-from src.models.llm_interface import get_nvidia_response, LLMInterface, LLMConfig
+from src.models.llm_interface import LLMInterface, LLMConfig
+from src.retrieval.reward_model import RewardModel
+from src.retrieval.reranker import ReRanker
 from langchain.schema import Document
 from dotenv import load_dotenv
 
@@ -111,13 +113,16 @@ def main():
     llm_config = LLMConfig(provider='nvidia')
     llm_interface = LLMInterface(llm_config, retriever)
 
+    reward_model = RewardModel()
+
     query = st.text_input("Ask me anything about the lectures:")
     if query:
-        documents = RetrieverFactory.retrieve_documents(retriever, query, llm_interface.llm)
+        documents = RetrieverFactory.retrieve_documents(dense_retriever, query, llm_interface.llm)
 
         st.subheader("Re-ranked Documents")
         for i, doc in enumerate(documents, start=1):
             st.write(f"**Document {i}**: {doc.page_content}")
+
         response = llm_interface.generate_response(query)
         st.subheader("Assistant Response")
         st.write(response)

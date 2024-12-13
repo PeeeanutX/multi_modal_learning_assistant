@@ -10,7 +10,14 @@ from langchain.retrievers import (
     ContextualCompressionRetriever
 )
 from src.retrieval.reranker import ReRanker
+from src.retrieval.reward_model import RewardModel
 from langchain_core.language_models import BaseLanguageModel
+from rank_bm25 import BM25Okapi
+from sentence_transformers import SentenceTransformer, InputExample, losses
+from torch.utils.data import DataLoader
+from datasets import load_dataset
+from transformers import Trainer, TrainingArguments
+from torch.utils.data import Dataset
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -20,6 +27,17 @@ formatter = logging.Formatter(
 )
 handler.setFormatter(formatter)
 logger.addHandler(handler)
+
+
+class CustomDataset(Dataset):
+    def __init__(self, examples):
+        self.examples = examples
+
+    def __len__(self):
+        return len(self.examples)
+
+    def __getitem__(self, idx):
+        return self.examples[idx]
 
 
 @dataclass
@@ -40,12 +58,6 @@ class RetrieverFactory:
         if config.retriever_type == 'default':
             retriever = vector_store.as_retriever(search_kwargs=config.search_kwargs)
             logger.info("Default VectorStoreRetriever initialized")
-        # elif config.retriever_type == 'mmr':
-        #   retriever = MMRetriever(
-        #       vectorstore=vector_store,
-        #        **config.mmr_kwargs
-        #   )
-        #     logger.info("MMRetriever initialized with Maximum Marginal Relevance")
         elif config.retriever_type == 'time_weighted':
             retriever = TimeWeightedVectorStoreRetriever(
                 vectorstore=vector_store,
@@ -79,6 +91,91 @@ class RetrieverFactory:
             return ranked_documents
         except Exception as e:
             logger.error(f"Error during retrieval: {e}")
+            raise
+
+    @staticmethod
+    def initial_candidate_retrieval(query: str, documents: List[Document], top_n: int = 5) -> List[Document]:
+        """Retrieval initial candidates using BM25"""
+        logger.info(f"Performing initial candidate retrieval for query: '{query}'")
+        try:
+            document_contents = []
+            for doc in documents:
+                if isinstance(doc, Document):
+                    document_contents.append(doc.page_content)
+                elif isinstance(doc, str):
+                    document_contents.append(doc)
+                else:
+                    raise ValueError(f"Unsupported document type: {type(doc)}")
+
+            tokenized_documents = [content.lower().split() for content in document_contents]
+            bm25 = BM25Okapi(tokenized_documents)
+            tokenized_query = query.lower().split()
+            scores = bm25.get_scores(tokenized_query)
+            top_indices = np.argsort(scores)[-top_n:][::-1]
+            top_documents = [documents[i] for i in top_indices]
+            logger.info(f"Retrieved {len(top_documents)} initial candidates")
+            return top_documents
+        except Exception as e:
+            logger.error(f"Error during initial candidate retrieval: {e}")
+            raise
+
+    @staticmethod
+    def train_dense_retriever(documents: List[Document], reward_model: RewardModel,
+                              model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
+        """Train a dense retriever using knowledge distillation from the reward model."""
+        logger.info("Training dense retriever")
+        try:
+            query = documents[0].page_content.split(" ")[0]
+
+            model = SentenceTransformer(model_name)
+            train_examples = []
+            for doc in documents:
+                positive = doc.page_content
+                negatives = [d.page_content for d in documents if d.page_content != positive]
+                train_examples.append(InputExample(texts=[query, positive], label=1.0))
+                logger.info(f"Training examples: {train_examples}")
+                for negative in negatives:
+                    train_examples.append(InputExample(texts=[query, negative], label=0.0))
+
+            reward_scores = reward_model.score(query, documents)
+            if len(reward_scores) != len(train_examples):
+                raise ValueError("The length of reward_scores does not match the length of train_examples")
+
+            for i, example in enumerate(train_examples):
+                example.label = reward_scores[i]
+
+            train_dataset = CustomDataset(train_examples)
+            train_dataloader = DataLoader(train_dataset, shuffle=True, batch_size=16)
+            train_loss = losses.CosineSimilarityLoss(model)
+
+            training_args = TrainingArguments(
+                output_dir='./results',
+                eval_strategy="steps",
+                learning_rate=2e-5,
+                per_device_train_batch_size=16,
+                per_device_eval_batch_size=16,
+                num_train_epochs=1,
+                weight_decay=0.01,
+                save_strategy="steps",
+                save_total_limit=1,
+                load_best_model_at_end=True,
+                logging_dir='./logs',
+                logging_steps=10,
+            )
+
+            trainer = Trainer(
+                model=model,
+                args=training_args,
+                train_dataset=train_dataloader.dataset,
+                eval_dataset=train_dataloader.dataset,
+            )
+
+            trainer.train()
+
+            logger.info("Dense retriever trained successfully")
+            return model
+        except Exception as e:
+            logger.error(f"Error during dense retriever training: {e}")
             raise
 
 
