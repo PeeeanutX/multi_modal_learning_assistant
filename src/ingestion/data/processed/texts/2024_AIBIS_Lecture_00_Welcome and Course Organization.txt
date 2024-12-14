@@ -1,0 +1,295 @@
+AI-Based Business Information Systems
+Welcome & Course Organization
+Prof. Dr. Ulrich Gnewuch
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 2Welcome to:
+AI-Based Business Information 
+Systems (AIBIS)
+Offered by:
+Chair of Explainable AI -based Business 
+Information Systems
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 3Introduction
+Professor of Information Systems and Holder 
+of the Chair of Explainable AI -based 
+Business Information Systems
+–Department of Information Systems at the 
+School of Business, Economics, and 
+Information Systems
+Postdoc at Karlsruhe Institute of Technology (KIT)
+Ph.D. Information Systems, Karlsruhe Institute of 
+Technology
+B.Sc. & M.Sc. Information Systems 
+(“Wirtschaftsinformatik”), University of Mannheim 
+and Michigan State University
+Prof. Dr. Ulrich Gnewuch
+Introduction –Your Turn: 
+•What do you study? In which semester are 
+you?
+•How much experience do you have with AI?
+•How would you rate your skills in data analysis 
+and/or programming (e.g., Python, R)?
+•What are your expectations for this course?
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 6Introduction:
+Chair of Explainable AI -based 
+Business Information SystemsProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 7We investigate the design, use, 
+and impact of Artificial Intelligence 
+(AI)-based information systems in 
+business and society.Chair of Explainable AI -based Business Information Systems
+https://www.wiwi.uni -passau.de/artificial -intelligence
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 8Chair of Explainable AI -based Business Information Systems
+Business
+SocietyArtificial Intelligence (AI)
+HumansMachine 
+Learning
+RoboticsNatural 
+Language 
+Processing
+…Large 
+Language 
+Models
+Customer –AI Interaction
+Interactive Business Intelligence 
+& Analytics Systems
+Selected Topics & Partners
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 9Customer –AI Interaction
+Selected Publications
+Gnewuch, U., Morana, S., Hinz, O., Kellner, R., Maedche, A. 
+(2023). “More than a Bot? The Impact of Disclosing Human 
+Involvement on Customer Interactions with Hybrid Service 
+Agents,” Information Systems Research . 
+Gnewuch, U., Morana, S., Adam, M. T. P., Maedche, A. 
+(2022). “Opposing Effects of Response Time in Human -
+Chatbot Interaction: The Moderating Role of Prior Experience,” 
+Business & Information Systems Engineering , 64, 773 –791.
+Gnewuch, U., Hanschmann, L., Kaiser, C., Schallner, R., 
+Maedche, A. (2024). “Robot Shopping Assistants: How 
+Emotional versus Rational Robot Designs Affect Consumer 
+Trust and Purchase Decisions,” in Proceedings of the 32nd 
+European Conference on Information Systems (ECIS 2024).
+•Large Language Models in E -Commerce
+•Consumer Interactions with Robot 
+Shopping Assistants•(Hybrid) Customer Service Agents
+•Social Cues in Human –Chatbot 
+Interaction
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 10Interactive Business Intelligence & Analytics Systems
+Selected Topics & Partners Selected Publications
+Ruoff, M., Gnewuch, U., Maedche, A., Scheibehenne, B. (2023). 
+“Designing Conversational Dashboards for Effective Use in Crisis 
+Response,” Journal of the Association for Information Systems , 
+24(6), 1500 -1526.
+Schelhorn, T.C., Gnewuch, U., Maedche, A. (2024). “Designing a 
+Large Language Model Based Open Data Assistant for Effective 
+Use,” in Proceedings of the 19th International Conference on 
+Design Science Research in Information Systems and Technology 
+(DESRIST 2024).
+Schloß, D., Gutierrez Espitia, J. D., Gnewuch, U. (2023). 
+“Designing a Conversation Mining System for Customer Service 
+Chatbots,” in Proceedings of the 31st European Conference on 
+Information Systems (ECIS 2023).•LLM-based Data Assistants
+•Chatbot Analytics Systems
+•Data -driven Decision -Making
+•Dashboards & Data Storytelling
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 11Teaching Overview
+Winter Semester Summer Semester
+Business Intelligence & 
+Analytics SystemsArtificial Intelligence (AI) -
+Based Business 
+Information Systems*
+Foundations of Human -
+Computer Interaction
+Bachelor & Master Seminar
+Thesis Projects
+Bachelor Master•Integration of research 
+findings and insights 
+from practice
+•Opportunities to get 
+“hands -on” experience 
+with state -of-the-art 
+technology
+•Focus on developing 
+subject -specific and 
+transferable skillsTeam Project “Human -
+Centered Design”Betriebliche 
+Anwendungssysteme 
+*Students who attended “Design and Management of AI-Based Business Information Systems” (35000) cannot participate in this course.•Lectures are supplemented with hands -on 
+group projects where students work on 
+real-world challenges
+•Team projects focus on the application of 
+human -centered design methods, 
+techniques, and tools to deliver innovative 
+prototypes
+•Industry guest lecturers give practical 
+insights into topics of our lectures
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 12Practical Relevance & Real -World Problems 
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 13Teaching Overview
+Subject -specific Skills
+-Information Systems
+-Artificial Intelligence
+-Data Analytics / Data Science
+-Human -Computer InteractionTransferable Skills
+-Cognitive skills (e.g., logical reasoning, 
+self-reflection, identifying patterns)
+-Metacognitive skills (e.g., abstract/critical 
+thinking, decision -making, problem -
+solving)
+-Socio -emotional skills (e.g., commu -
+nication, collaboration, emotion 
+regulation)+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 14Thesis, Seminar, and Job Opportunities
+•Work together with us and our partners 
+on a topic that has practical relevance
+•Build up AI & data science expertise
+•Engage with innovative technologies 
+and learn design methods & techniques
+•Apply established research methods 
+and deliver scientific knowledge
+Hi!
+https://www.wiwi.uni -passau.de/en/artificial -intelligenceProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 15Course Overview & 
+Organization Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 16Course Overview
+What opportunities and challenges does AI –from 
+rule-based AI to predictive and generative AI –
+present for companies?
+How can managers address 
+the unique challenges of AI -based 
+business information systems?How and where can AI 
+create business value?
+How can companies design and 
+use AI -based business information 
+systems in a responsible way? What makes designing AI -
+based business information 
+systems difficult?How are AI -based business information 
+systems different from more traditional 
+business information systems?Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 17Learning Goals
+•Explain what AI -based business information 
+systems are and how they enable important 
+business capabilities
+•Describe the theoretical and conceptual 
+foundations that guide the design and management 
+of different AI -based business information systems
+•Identify key challenges in designing and managing 
+different types of AI -based business information 
+systems and develop strategies for addressing 
+these challenges
+•Gain some hands -on experience with explainable 
+AI techniques and human -centered design 
+approachesLecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 18Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case StudyExercise 2: 
+Human -Centered 
+Chatbot DesignExercise 3: 
+Explainable AI 
+Techniques
+Foundations Introduction to AI in Business 
+& Information SystemsDesign & Management of AI -
+Based Information Systems AI-Enabled EngagementAI-Enabled Insights & DecisionsAI-Enabled Innovation
+Industry Talk 
+ZF GroupExercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation AI Technologies & Trends
+Conversational AIExplainable AIGenerative AIAI Ethics & Responsible AIProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 19Guest Lecture
+Dr. Alexander Keller
+Team Lead Data Analytics @ ZF Group
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 20Course Details
+ECTS 5
+Hours per week (SWS) 4 (Lecture 2 + Exercise 2)
+Verwendbarkeit / 
+AnrechenbarkeitWirtschaftsinformatik / Information Systems
+(Master Wirtschaftsinformatik & Master Business Administration: Wirtschaftsinformatik -
+Vertiefung)
+Type of examination 
+(“Prüfungsform ”)Portfolio: 
+1.Group work and presentations during the course exercise (40%)
+2.Final exam (60%)
+RequirementsBasic skills in data analysis and/or programming (e.g., Python, R) are 
+highly recommended.
+Teaching language EnglishProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 21Examination & Grading
+Element Description Grade
+Exam
+(individual effort)There will be a 60 minutes closed -book / closed -notes exam 
+consisting of short -answer and analytical questions covering course 
+material.
+→Planned date: Tuesday, February 11th2025, 12:00 -14:0060 %
+Group Exercises
+(team effort, with 
+individual 
+accountability)You will work in teams on hands -on exercises (e.g., case studies, 
+design projects) and present your results to the class. Team 
+deliverables and individual participation in discussions and 
+presentations will be graded.40 %
+4 SWS / 5 ECTS | approx. 150 hours work overallProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 22Teaching Elements
+Group 
+ExercisesOpportunity to apply theoretical 
+knowledge in practical scenarios and 
+get hands -on experience Interactive 
+LecturesIn-person sessions that provide 
+opportunities to discuss and engage 
+with the learning material
+•Four exercises with the following structure and timeline:
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 23Group Exercises
+Kickoff & 
+Introduction
+•Introduction to case 
+and/or AI technology
+•Introduction to 
+exercise tasksGroup Work & 
+Question -Answering 
+SessionPresentations & 
+Discussion
+•Opportunity to meet 
+with own team 
+members, lecturers, 
+and other teams
+•Opportunity to 
+discuss problems 
+and ask questions•Presentation of 
+results to the class
+•Feedback from 
+other teams and 
+lecturers1 week 1 week Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 24Group Exercises –Team Formation
+(will be added later)Goal: Fostering creativity and innovativeness through 
+diverse teams​
+•Diversity (gender, age, study subject, semester, …)​
+•Complementary skill sets and expertise​
+•…
+Please use this MS Forms survey to provide 
+information about yourself and your skills by 
+Wednesday, October 23rd, 2024
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 26Essentials
+•Essentials slides ...
+–Contain particularly important terms and 
+concepts
+–Have been highlighted with a frame and a 
+symbol in the top right -hand corner
+–Exam questions might ask you to reproduce 
+the content as shown on the slide (e.g., a 
+definition)
+•All other slides...
+–Are still important and relevant for the exam 
+and you should have understood their content
+–But: You do not have to “memorize” them
+Interactive Elements
+Lecture Recap
+(via Mentimeter)Discussion 
+with PartnerQuestions & Ideas
+(via Mentimeter)
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 28Recommended Readings
+Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS Quarterly , 45(3), 
+1433 -1450.
+Benbya , H., Pachidi , S., & Jarvenpaa , S. (2021). Artificial intelligence in organizations: Implications for information 
+systems research. Journal of the Association for Information Systems , 22(2), 281 -303.
+Shneiderman , B. (2022). Human -centered AI. Oxford University Press. →Part 2: Human -Centered AI Framework
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 29Stud.IP
+https://studip.uni -passau.de/studip/dispatch.php/course/details?sem_id=504e44d52f54a2cb8781212c1825870d&again=yes
+https://studip.uni -passau.de/studip/dispatch.php/course/details?sem_id=82eba2476a1d01b332a0dbc10264142d&again=yes
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 30Contact
+Prof. Dr. Ulrich Gnewuch
+University of Passau
+School of Business, Economics, and Information Systems
+Chair of Explainable AI -based Business Information Systems
+Dr.-Hans -Kapfinger -Str. 12 
+94032 Passau, Germany
+ulrich.gnewuch@uni -passau.de
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 31Questions?

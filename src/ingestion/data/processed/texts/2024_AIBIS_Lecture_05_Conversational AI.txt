@@ -1,0 +1,457 @@
+AI-Based Business Information Systems
+Conversational AI
+Prof. Dr. Ulrich Gnewuch
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 2Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case StudyExercise 2: 
+Human -Centered 
+Chatbot DesignExercise 3: 
+Explainable AI 
+Techniques
+Foundations Introduction to AI in Business 
+& Information SystemsDesign & Management of AI-
+Based Information SystemsAI-Enabled EngagementAI-Enabled Insights & DecisionsAI-Enabled Innovation
+Industry Talk 
+ZF GroupExercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation AI Technologies & Trends
+Conversational AIExplainable AIGenerative AIAI Ethics & Responsible AIRECAP FROM LAST LECTURE:
+•What are dimensions of the user 
+engagement?
+•Please name examples of social 
+cues from (AI) technology.
+•Please name examples of social 
+responses to (AI) technology.
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 4Learning Goals
+•Describe the history of 
+conversational AI
+•Explain how conversational AI 
+technology has evolved over time
+•Distinguish between different 
+classes of conversational agentsProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 5Conversational AI as a Major Application Area of AI
+Eliza (1966)
+ Siri (2011)
+ ChatGPT (2022)Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 6Why? →Benefits
+•Interaction via natural language is 
+more intuitive compared to 
+graphical user interfaces (GUIs)
+•Reduction of cognitive load 
+•Multi -tasking is possible:
+–Hands -free situations (e.g., cooking)
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 7Drawbacks
+•Ambiguity and complexity of human 
+language ( e.g., context, sarcasm, …) 
+makes natural language understanding 
+quite difficult
+•Natural language interaction can be more 
+effortful (e.g., typing messages vs. clicking 
+buttons)
+•Not everything can be communicated 
+effectively through words alone (e.g., data 
+analysis results)
+History & Technology of 
+Conversational AI
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 8Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 9History of Conversational AI
+1950Alan Turing 
+proposes the 
+Turing Test
+1966
+Development 
+of ELIZADevelopment 
+of Parry
+1990s
+Interactive Voice 
+Response (IVR) 
+systems 1991First Loebner 
+Prize Contest
+1995IBM 
+Watson
+2006
+Development 
+of A.L.I.C.E2010
+Apple 
+SiriGoogle 
+Now
+2012
+2015
+Amazon Alexa;
+Microsoft CortanaFacebook opens its 
+platform for chatbots, 
+Microsoft Bot 
+Framework
+2016
+2022
+ChatGPT1972Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 10Conversational AI: Definition
+Conversational AI refers to the general capability of computers to 
+understand and respond with natural human language as it is 
+written or spoken.
+Benbya et al. 2021
+Human ComputerProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 11What does “Conversational” mean?
+This is AT&T. Please say collect, 
+calling card, third number, person -
+to-person, or operator.
+Sorry, please repeat.I want to talk to an operator.
+Operator.AT&T’s voice recognition call 
+processing system (1990)
+Not really a natural conversation 
+Perdue 1997Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 12Conversational AI Technology 
+Rule-
+basedNatural language 
+processing 
+(NLP) -basedLarge language 
+model (LLM) -
+based
+TimeNatural 
+language 
+capabilities
+1960s 2000s 2020sProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 13Rule -Based Conversational AI 
+Prof. Dr.Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 14Rule -Based Conversational AI: Example
+Eliza
+Weizenbaum 1966User: I had a strange dream
+Eliza: What does that dream suggest to you?
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 15NLP-Based Conversational AI
+Speech 
+Recognition Natural 
+Language 
+Understanding
+Dialog 
+Management
+Text-to-
+Speech 
+SynthesisNatural 
+Language 
+Generation
+Main components:
+–Speech recognition : converts the speech 
+input into a string of words 
+–Natural language understanding : interpret 
+the user’s input and to extract a representation 
+of its meaning ( →“intent”)
+–Dialog management : tracks the state and flow 
+of the conversation and controls how the 
+system responds to the user’s input
+–Natural language generation : Formulate a 
+response in natural language
+–Text-to-speech synthesis : converts the 
+response string into speech output
+McTear et al. 2016Prof. Dr.Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 16NLP-Based Conversational AI: Example
+Speech 
+Recognition Natural 
+Language 
+Understanding
+Dialog 
+Management
+Text-to-
+Speech 
+SynthesisNatural 
+Language 
+Generation
+Hey Alexa, play 
+my weekend 
+playlist. 
+user input: ‘hey alexa, play my 
+weekend playlist’
+user intent: ‘ play_music ’
+entities: [‘weekend playlist’]
+Open Spotify and start 
+playlist titled “weekend” 
+response: ‘sure, now playing 
+your weekend playlist on spotify’Sure! Now playing 
+your weekend 
+playlist on Spotify.Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 17LLM-Based Conversational AI
+Large language models (LLMs) are trained on extensive textual data, learning to 
+predict the next word in a sentence and generate coherent text.
+Vector of probabilities→Generative AI 
+Lecture Prof. Dr.Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 18LLM-Based AI: Example
+Vector of 
+probabilities from 
+own tokens
+1 token out ntokens in? The best thing about AI is its ability to learn
+https://writings.stephenwolfram.com/2023/02/what -is-chatgpt -doing -and-why-does -it-work/GPT2 Predictions
+→Generative AI 
+Lecture Conversational Agents
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 19Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 20Conversational Agents (1)
+•They can rely on different conversational AI technologies 
+•Many different terms used:
+–Dialogue systems
+–(Embodied) conversational agents
+–Chatbots/chatterbots
+–Digital/virtual assistants
+–…Conversational agents are software -based systems designed to 
+interact with humans using natural language.
+Dale 2016; Feine et al. 2019•Comprise two main parts:
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 21Conversational Agents (2)
+Conversational (Interface) (AI) Agent
+Conversational interfaces are 
+interfaces that enable humans to 
+interact with technology using 
+written or spoken language in a 
+natural way.Agents are autonomous, active 
+computer processes that possess 
+some ability to communicate with 
+people and/or other agents and to 
+adapt their behavior.22Classes of Conversational Agents
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems•Conversational agents differ largely based on their mode of communication, context, level of 
+embodiment, etc.
+•One classification of conversational agents based on two dimensions 
+–1) Mode of communication: text vs. voice
+–2) Context: open -domain vs. task -oriented
+Context
+Open -Domain Task -Oriented
+Primary Mode of 
+CommunicationText-
+basedChatGPT, Bard, Claude,
+Replika, ELIZA , CleverbotCustomer service chatbots, Mental 
+health chatbots
+Voice -
+basedApple’s Siri, Amazon’s Alexa, 
+Google AssistantService robots, in -car assistants 
+(e.g., “Hey Mercedes”)
+Gnewuch et al. 2017Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 23Open -Domain, Text -Based Conversational Agents 
+•Interaction via text messages (“chatting”)
+•Can basically converse about any topic 
+(“open -domain”)
+•Historically, often developed to win the 
+Loebner prize / to pass the Turing test
+http://www.cleverbot.com  Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 24Task -Oriented, Text -Based Conversational Agents 
+•Interaction via text messages (“chatting”)
+•Designed to converse about specific 
+topics and help with specific tasks in a 
+specific domain
+•Examples: Customer service, healthcare, 
+banking, …
+•Can be found on websites and on 
+messenger platforms such as MS Teams, 
+Slack, …
+IKEA‘s Anna
+ O2‘s AuraProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 25Open -Domain, Voice -Based Conversational Agents 
+•Interaction via spoken voice
+•Can basically answer any question and 
+support users in finding information or 
+accomplishing basic tasks (“open -domain”)
+•Found on many mobile devices (e.g., smart 
+phones)
+•Often called personal or digital assistants
+Apple‘s Siri
+•Interaction via spoken 
+voice
+•Designed and trained to 
+assist in a specific 
+situation or domain
+•Examples can be found 
+in modern cars (“hands -
+free situations”)
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 26Task -Oriented, Voice -Based Conversational Agents 
+In-Car Assistants, such as Mercedes Me / “Hey Mercedes”
+https://www.youtube.com/watch?v=G2A -R5lfSt8In which category would you put the 
+following conversational agents?
+•Replika (a chatbot AI companion)
+•Microsoft’s Bing Chat
+•A Pepper robot
+•Linda (chatbot of Sparkasse)
+→Discuss these questions with a partner for 
+~5 minutes and be ready to share your 
+opinions•ECAs are life ‐like animated characters 
+(e.g., 3D avatars) which can engage in a 
+face‐to‐face conversation with humans
+•The interaction is often multimodal:
+–Facial expressions
+–Body postures
+–Gestures
+–Tone of voice
+–etc.
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 28Embodied Conversational Agents (ECAs)
+http://articulab.hcii.cs.cmu.edu/projects/sara
+Cassell 2001Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 29Physically Embodied Conversational Agents
+Furhat Robot
+ Pepper Robot•ECAs with a physical 
+embodiment (= robots)
+•The interaction is not only 
+multimodal but also includes 
+physical aspects (e.g., touch)Research Example:
+Consumer Interactions with Robot 
+Shopping Assistants
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 31
+•Automated self -checkout 
+cashiers and self -order kiosks 
+have become omnipresent in our 
+everyday lives
+–Very convenient, especially for 
+low involvement products (e.g., 
+groceries)
+•However, in case of high 
+involvement products (e.g., smart 
+phones), consumers typically 
+prefer to speak with and get 
+advice from a human employee
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 32Motivation 
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 33Motivation 
+Human Machine
+Self-service 
+Machine
+Human
+Employee
+conveniencerational 
+thinking
+… scalability empathyno fear of being 
+judgedefficiency 
+trustemotional
+capabilitieshuman 
+warmth
+personal 
+attention …Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 34Motivation 
+Human MachineSelf-service 
+MachineHuman
+Employee
+Social Robots 
+Can social robots 
+combine the best of 
+both worlds?
+conveniencerational 
+thinking
+… scalability empathyno fear of being 
+judgedefficiency 
+trustemotional
+capabilitieshuman 
+warmth
+personal 
+attention …
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 35Research Questions
+1.How do consumers interact with robot shopping assistants 
+designed to assist them in the process of purchasing 
+products?
+2.How does the design of a robot shopping assistant (emotional 
+vs. rational) affect consumers’ trust and purchase likelihood?
+Hanschmann et al. 2023; Gnewuch et al. 2024Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 36Research Design 
+https://furhatrobotics.com/Hey, I’m looking for a 
+new Bluetooth speaker. 
+Which one can you 
+recommend?
+…
+…
+Hanschmann et al. 2023; Gnewuch et al. 2024Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 37Robot Shopping Assistant
+Interaction Manager
+Voice & Facial 
+Expression
+User
+Speech -to-Text API
+Knowledge Base
+Preprocessing
+Request
+Long -term Memory 
+Response Database
+Current Status
+Instruction & 
+Response
+Hanschmann et al. 2023; Gnewuch et al. 2024
+GPT-4Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 38Robot Shopping Assistant: Demo
+Hanschmann et al. 2023; Gnewuch et al. 2024Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 39GPT-4 Prompt Design
+Setting
+Product Data
+Example Dialogs
+Setting Zero -Shot
+Zero -Shot
+Few-Shot
+Zero -Shot•Combination of Zero Shot 
+and Few Shot Prompting
+•To prevent breaking out, the 
+setting explicitly addresses 
+the desired behavior of the 
+robot in the beginning and 
+the endPrompt Structure
+Hanschmann et al. 2023; Gnewuch et al. 2024
++ Emotional/Rational Instruction 
++ Emotional/Rational Instruction Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 40GPT-4 Prompt Design
+Setting“Emotional” Instruction
+“Rational” Instruction
++
+Hanschmann et al. 2023; Gnewuch et al. 2024Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 41GPT-4 Prompt Design: Example Output
+What colors are 
+available?
+There is a wide range 
+of colors to choose 
+from …In the dazzling array of 
+colors, you will find 
+your favorite that 
+resonates with your 
+feelings …Emotional Rational
+Hanschmann et al. 2023; Gnewuch et al. 2024•Lab experiment with a two -condition, 
+between -subjects design:
+–(1) rational robot design
+–(2) emotional robot design
+•Participants and recruitment:
+–~100 participants
+–Recruitment via university panel (mostly 
+students)
+–3 robots
+•Duration of the experiment:
+–Approximately 25 -30 minutes per 
+participant
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 42Lab Experiment
+Hanschmann et al. 2023; Gnewuch et al. 2024What do you think? Which version 
+of the robot was more successful in 
+selling products? And why?
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 44Main Findings
+Robot 
+DesignPurchase 
+LikelihoodRecommen -
+dation 
+Adherence 
+Emotional 3.95 46.5%
+Rational 4.26 61.8%
+An emotional robot design significantly 
+reduces purchase likelihood 
+Hanschmann et al. 2023; Gnewuch et al. 2024
+•Large language models such as GPT -4 can be used to operate a Furhat robot and hold highly 
+human -like sales conversations with consumers about Bluetooth speakers
+–Some challenges remain (e.g., delays, speech recognition failures) but overall, very stable
+•Our LLM -based Furhat robot was able to create perceptions of an “emotional” or “rational” robot 
+design through different natural language interaction
+•The results of our experiment with ~100 student participants show that an emotional robot design 
+has negative impacts on consumers:
+–Reduces purchase likelihood (consumers are less likely to purchase the Bluetooth speaker 
+recommended by Furhat)
+–Reduces recommendation adherence (consumers are less likely to follow the recommendation 
+suggested by Furhat)
+•Future research: What drives the negative impact of emotional robot design?
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 45Summary & Implications
+Hanschmann et al. 2023; Gnewuch et al. 202446Our Research on Chatbots & Conversational AI 
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems
+https://chatbotresearch.orgProf. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 47Key Takeaways From This Lecture
+•Conversational AI is a major application area of AI -enabled 
+engagement 
+•The first chatbot (Eliza) was already developed in 1966
+•Since then, the technology has evolved significantly: from 
+rule-based to NLP -based to LLM -based conversational AI
+•Many different types of conversational (AI) agents exist
+•They can be classified based on the mode of 
+communication (text vs. voice) and the context (open -
+domain vs. task -oriented)
+•Conversational agents can be equipped with virtual 
+embodiments (avatars) or physical embodiments (robots)
+Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 48Thank you for 
+your attention!
+Any questions?Prof. Dr. Ulrich Gnewuch Chair of Explainable AI -based Business Information Systems 49References
+Benbya, H., Pachidi , S., & Jarvenpaa , S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for 
+Information Systems Research. Journal of the Association for Information Systems, 22, 281 –303. 
+Cassell, J. (2001). Embodied conversational agents: representation and intelligence in user interfaces. AI magazine, 22(4), 6 7-67.
+Dale, R. (2016). The return of the chatbots. Natural Language Engineering, 22(5), 811 –817. 
+Feine , J., Gnewuch, U., Morana, S., & Maedche, A. (2019). A Taxonomy of Social Cues for Conversational Agents. International Journ al of 
+Human -Computer Studies, 132, 138 –161. 
+Gnewuch, U., Morana, S., & Maedche, A. (2017). Towards Designing Cooperative and Social Conversational Agents for Customer 
+Service. Proceedings of the 38th International Conference on Information Systems (ICIS2017).
+Gnewuch, U., Hanschmann , L., Kaiser, C., Schallner , R., Maedche , A. (2024). “Robot Shopping Assistants: How Emotional versus 
+Rational Robot Designs Affect Consumer Trust and Purchase Decisions,” in Proceedings of the 32nd European Conference on 
+Information Systems (ECIS 2024).
+Hanschmann , L., Gnewuch, U., & Maedche , A. (2023). Saleshat : A LLM -Based Social Robot for Human -Like Sales Conversations. In 
+International Workshop on Chatbot Research and Design (pp. 61 -76). Cham: Springer Nature Switzerland.
+McTear , M. F., Callejas , Z., & Griol , D. (2016). The Conversational Interface: Talking to Smart Devices. Springer International Publishing.
+Perdue, R. J. (1997). The way we were: Speech technology, platforms and applications in th'Old' AT&T. Speech communication, 23(1 -2), 
+31-39.
+Weizenbaum, J. (1966). ELIZA —a computer program for the study of natural language communication between man and machine. 
+Communications of the ACM, 9(1), 36-45.
