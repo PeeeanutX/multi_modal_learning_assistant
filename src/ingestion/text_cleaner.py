@@ -29,14 +29,14 @@ spell = SpellChecker()
 
 def clean_text(
         text: str,
-        lowercase: bool = True,
+        lowercase: bool = False,
         remove_numbers: bool = False,
-        remove_punctuation: bool = True,
-        remove_stopwords: bool = True,
+        remove_punctuation: bool = False,
+        remove_stopwords: bool = False,
         perform_stemming: bool = False,
-        perform_lemmatization: bool = True,
+        perform_lemmatization: bool = False,
         correct_spelling: bool = False,
-        expand_contractions: bool = True
+        expand_contractions: bool = False
 ) -> str:
     logger.info("Starting text cleaning")
 

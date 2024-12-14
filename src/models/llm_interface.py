@@ -108,13 +108,20 @@ class LLMInterface:
         This is only needed if provider='huggingface'.
         """
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        model_name = self.config.model_name or 'mistralai/Pixtral-Large-Instruct-2411'
+        model_name = self.config.model_name or 'tiiuae/falcon-7b'
         logger.info(f"Loading Hugging Face model and tokenizer for scoring: {model_name}")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(model_name)
         self.model.to(device)
         self.model.eval()
         self.device = device
+
+        if self.tokenizer.pad_token is None:
+            if self.tokenizer.eos_token is None:
+                self.tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+                self.model.resize_token_embeddings(len(self.tokenizer))
+            else:
+                self.tokenizer.pad_token = self.tokenizer.eos_token
 
     def _initialize_chain(self):
         """

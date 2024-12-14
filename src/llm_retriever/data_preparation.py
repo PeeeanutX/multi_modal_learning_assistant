@@ -73,7 +73,7 @@ def prepare_data(
             pdf_dir=pdf_dir,
             output_dir=text_output_dir,
             recursive=True,
-            num_workers=4
+            num_workers=6
         )
     else:
         logger.info("Text files already extracted, skipping PDF loading step.")

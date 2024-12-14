@@ -78,7 +78,7 @@ def batch_score_with_llm(llm: LLMInterface,
         input_texts.append(f"{cand.strip()}{delimiter}{query.strip()}")
         output_texts.append(ans.strip())
 
-    scores = llm.llm.batch_score(input_texts, output_texts)
+    scores = llm.batch_score(input_texts, output_texts)
     return scores
 
 
@@ -89,7 +89,7 @@ def main():
     parser.add_argument('--output-path', default='src/ingestion/data/llm_scored_candidates.jsonl',
                         help='Path to save scored candidates file')
     parser.add_argument('--llm-provider', default='huggingface', help='LLM provider (e.g., nvidia, openai, huggingface)')
-    parser.add_argument('--llm-model-name', default='Llama-3.3-70B-Instruct', help='LLM model name')
+    parser.add_argument('--llm-model-name', default='tiiuae/falcon-7b', help='LLM model name')
     parser.add_argument('--llm-temperature', type=float, default=0.7, help='LLM generation temperature')
     parser.add_argument('--llm-max-tokens', type=int, default=512, help='Max tokens for LLM responses')
     parser.add_argument('--batch-size', type=int, default=8, help='Batch size for scoring')
