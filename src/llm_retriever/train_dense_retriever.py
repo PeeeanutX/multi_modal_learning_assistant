@@ -129,11 +129,17 @@ class DenseRetrieverModel(torch.nn.Module):
         self.doc_encoder = AutoModel.from_pretrained(doc_model_name)
 
     def forward(self, query_input_ids, query_attention_mask, doc_input_ids, doc_attention_mask):
+        B, M, L = doc_input_ids.shape
+
+        doc_input_ids = doc_input_ids.view(B*M, L)
+        doc_attention_mask = doc_attention_mask(B*M, L)
+
         query_outputs = self.query_encoder(query_input_ids, attention_mask=query_attention_mask)
         doc_outputs = self.doc_encoder(doc_input_ids, attention_mask=doc_attention_mask)
 
         query_emb = self.mean_pool(query_outputs.last_hidden_state, query_attention_mask)
         doc_emb = self.mean_pool(doc_outputs.last_hidden_state, doc_attention_mask)
+        doc_emb = doc_emb.view(B, M, -1)
 
         return query_emb, doc_emb
 
@@ -223,7 +229,7 @@ def main():
 
     # We'll implement a custom compute_loss function via a subclass of Trainer:
     class DenseRetrieverTrainer(Trainer):
-        def compute_loss(self, model, inputs, return_outputs=False):
+        def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
             query_input_ids = inputs["query_input_ids"]
             query_attention_mask = inputs["query_attention_mask"]
             doc_input_ids = inputs["doc_input_ids"]
