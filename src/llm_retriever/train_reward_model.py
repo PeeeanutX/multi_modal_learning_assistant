@@ -127,7 +127,7 @@ def prepare_training_data(
 
 def main():
     parser = argparse.ArgumentParser(description="Train a reward model from LLM scored candidates")
-    parser.add_argument('--input-path', default='llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
+    parser.add_argument('--input-path', default='src/ingestion/data/llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
     parser.add_argument('--output-dir', default='./reward_model_checkpoint', help='Where to save the trained model')
     parser.add_argument('--model-name', default='bert-base-uncased', help='Base model name for reward model')
     parser.add_argument('--max-length', type=int, default=256, help='Max sequence length')

@@ -224,7 +224,7 @@ class LLMInterface:
 
             seq_len = shift_labels.size(1)
             for bi in range(shift_labels.size(0)):
-                start_idx = inp_delim_length - 1  # output starts after input+delimiter
+                start_idx = inp_delim_length - 1
                 end_idx = start_idx + out_length
                 end_idx = min(end_idx, seq_len)
                 labels_for_loss[bi, start_idx:end_idx] = shift_labels[bi, start_idx:end_idx]
