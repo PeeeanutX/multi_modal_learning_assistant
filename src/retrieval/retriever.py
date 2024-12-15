@@ -1,23 +1,13 @@
-import numpy as np
+import os
 import logging
-from typing import List
-from dataclasses import dataclass, field
+import numpy as np
+from typing import List, Optional
+import torch
+from dataclasses import dataclass
 
-from langchain.vectorstores.base import VectorStore
+from langchain.vectorstores import FAISS
 from langchain.schema import Document
-from langchain.retrievers import (
-    TimeWeightedVectorStoreRetriever,
-    ContextualCompressionRetriever
-)
-from src.retrieval.reranker import ReRanker
-from src.retrieval.reward_model import RewardModel
-from langchain_core.language_models import BaseLanguageModel
-from rank_bm25 import BM25Okapi
-from sentence_transformers import SentenceTransformer, InputExample, losses
-from torch.utils.data import DataLoader
-from datasets import load_dataset
-from transformers import Trainer, TrainingArguments
-from torch.utils.data import Dataset
+from transformers import AutoTokenizer, AutoModel
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -29,157 +19,57 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 
-class CustomDataset(Dataset):
-    def __init__(self, examples):
-        self.examples = examples
-
-    def __len__(self):
-        return len(self.examples)
-
-    def __getitem__(self, idx):
-        return self.examples[idx]
-
-
 @dataclass
 class RetrieverConfig:
-    retriever_type: str = 'default'  # Options: 'default', 'mmr', 'time_weighted', 'contextual'
-    search_kwargs: dict = field(default_factory=lambda: {"k": 5})
-    mmr_kwargs: dict = field(default_factory=lambda: {"k": 5, "fetch_k": 20, "lambda_mult": 0.5})
-    time_weighted_kwargs: dict = field(default_factory=lambda: {"k": 5, "decay_rate": 0.1})
-    contextual_kwargs: dict = field(default_factory=lambda: {"k": 5})
+    dense_retriever_path: str
+    query_model_name: str = "intfloat/e5-base-v2"
+    doc_model_name: str = "intfloat/e5-base-v2"
+    vectorstore_path: str = "src/ingestion/data/index.pkl"
+    top_k: int = 5
+    use_gpu: bool = True
 
 
-class RetrieverFactory:
-    @staticmethod
-    def create_retriever(vector_store: VectorStore, config: RetrieverConfig):
-        """Factory method to create a retriever based on the configuration"""
-        logger.info(f"Initializing retriever of type '{config.retriever_type}'")
+class DenseRetriever:
+    """
+    A dense retriever that uses a dual-encoder (query and doc encoder) to retrieve documents.
+    Assumes a FAISS vector store with precomputed doc embeddings, or you can dynamically embed docs.
+    """
+    def __init__(self, config: RetrieverConfig):
+        self.config = config
+        self.device = 'cuda' if torch.cuda.is_available() and self.config.use_gpu else 'cpu'
 
-        if config.retriever_type == 'default':
-            retriever = vector_store.as_retriever(search_kwargs=config.search_kwargs)
-            logger.info("Default VectorStoreRetriever initialized")
-        elif config.retriever_type == 'time_weighted':
-            retriever = TimeWeightedVectorStoreRetriever(
-                vectorstore=vector_store,
-                **config.time_weighted_kwargs
-            )
-            logger.info("TimeWeightedVectorStoreRetriever initialized")
-        elif config.retriever_type == 'contextual':
-            retriever = ContextualCompressionRetriever(
-                base_compressor=None,  # TODO: Define compressor
-                base_retriever=vector_store.as_retriever(search_kwargs=config.search_kwargs),
-                **config.contextual_kwargs
-            )
-            logger.info("ContextualCompressionRetriever initialized")
-        else:
-            raise ValueError(f"Unsupported retriever type: {config.retriever_type}")
+        logger.info("Loading dense retriever models...")
+        self.query_tokenizer = AutoTokenizer.from_pretrained(self.config.query_model_name, use_fast=True)
+        self.doc_tokenizer = AutoTokenizer.from_pretrained(self.config.doc_model_name, use_fast=True)
 
-        return retriever
+        self.query_encoder = AutoModel.from_pretrained(self.config.dense_retriever_path).to(self.device)
+        self.doc_encoder = AutoModel.from_pretrained(self.config.dense_retriever_path).to(self.device)
 
-    @staticmethod
-    def retrieve_documents(retriever, query: str, llm: BaseLanguageModel) -> List[Document]:
-        """Retrieve relevant documents using the specified retriever and re-rank them."""
-        logger.info(f"Retrieving documents for query: '{query}'")
-        try:
-            documents = retriever.invoke(query)
-            logger.info(f"Retrieved {len(documents)} documents")
+        logger.info(f"Loading FAISS vector store from {self.config.vectorstore_path}")
+        if not os.path.exists(self.config.vectorstore_path):
+            raise FileNotFoundError(f"FAISS index not found at {self.config.vectorstore_path}")
+        self.vectorstore = FAISS.load_local(self.config.vectorstore_path, embedding_function=None)
+        logger.info("Dense retriever initialized successfully.")
 
-            re_ranker = ReRanker(llm)
-            ranked_documents = re_ranker.re_rank(query, documents)
+    def mean_pool(self, last_hidden_state, attention_mask):
+        input_mask_expanded = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
+        sum_embeddings = torch.sum(last_hidden_state * input_mask_expanded, dim=1)
+        sum_mask = torch.clamp(input_mask_expanded.sum(dim=1), min=1e-9)
+        return sum_embeddings / sum_mask
 
-            logger.info(f"Re-ranked {len(ranked_documents)} documents")
-            return ranked_documents
-        except Exception as e:
-            logger.error(f"Error during retrieval: {e}")
-            raise
+    def embed_query(self, query: str) -> torch.Tensor:
+        enc = self.query_tokenizer(query, truncation=True, max_length=self.config.top_k*32, return_tensors='pt')
+        input_ids = enc["input_ids"].to(self.device)
+        attention_mask = enc["attention_mask"].to(self.device)
+        with torch.no_grad():
+            outputs = self.query_encoder(input_ids, attention_mask=attention_mask)
+            query_emb = self.mean_pool(outputs.last_hidden_state, attention_mask)
+        return query_emb.squeeze(0)
 
-    @staticmethod
-    def initial_candidate_retrieval(query: str, documents: List[Document], top_n: int = 5) -> List[Document]:
-        """Retrieval initial candidates using BM25"""
-        logger.info(f"Performing initial candidate retrieval for query: '{query}'")
-        try:
-            document_contents = []
-            for doc in documents:
-                if isinstance(doc, Document):
-                    document_contents.append(doc.page_content)
-                elif isinstance(doc, str):
-                    document_contents.append(doc)
-                else:
-                    raise ValueError(f"Unsupported document type: {type(doc)}")
+    def retrieve(self, query: str, top_k: Optional[int] = None) -> List[Document]:
+        if top_k is None:
+            top_k = self.config.top_k
+        query_emb = self.embed_query(query).cpu().numpy()
+        docs = self.vectorstore.similarity_search_by_vector(query_emb, k=top_k)
 
-            tokenized_documents = [content.lower().split() for content in document_contents]
-            bm25 = BM25Okapi(tokenized_documents)
-            tokenized_query = query.lower().split()
-            scores = bm25.get_scores(tokenized_query)
-            top_indices = np.argsort(scores)[-top_n:][::-1]
-            top_documents = [documents[i] for i in top_indices]
-            logger.info(f"Retrieved {len(top_documents)} initial candidates")
-            return top_documents
-        except Exception as e:
-            logger.error(f"Error during initial candidate retrieval: {e}")
-            raise
-
-    @staticmethod
-    def train_dense_retriever(documents: List[Document], reward_model: RewardModel,
-                              model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
-        """Train a dense retriever using knowledge distillation from the reward model."""
-        logger.info("Training dense retriever")
-        try:
-            query = documents[0].page_content.split(" ")[0]
-
-            model = SentenceTransformer(model_name)
-            train_examples = []
-            for doc in documents:
-                positive = doc.page_content
-                negatives = [d.page_content for d in documents if d.page_content != positive]
-                train_examples.append(InputExample(texts=[query, positive], label=1.0))
-                logger.info(f"Training examples: {train_examples}")
-                for negative in negatives:
-                    train_examples.append(InputExample(texts=[query, negative], label=0.0))
-
-            reward_scores = reward_model.score(query, documents)
-            if len(reward_scores) != len(train_examples):
-                raise ValueError("The length of reward_scores does not match the length of train_examples")
-
-            for i, example in enumerate(train_examples):
-                example.label = reward_scores[i]
-
-            train_dataset = CustomDataset(train_examples)
-            train_dataloader = DataLoader(train_dataset, shuffle=True, batch_size=16)
-            train_loss = losses.CosineSimilarityLoss(model)
-
-            training_args = TrainingArguments(
-                output_dir='./results',
-                eval_strategy="steps",
-                learning_rate=2e-5,
-                per_device_train_batch_size=16,
-                per_device_eval_batch_size=16,
-                num_train_epochs=1,
-                weight_decay=0.01,
-                save_strategy="steps",
-                save_total_limit=1,
-                load_best_model_at_end=True,
-                logging_dir='./logs',
-                logging_steps=10,
-            )
-
-            trainer = Trainer(
-                model=model,
-                args=training_args,
-                train_dataset=train_dataloader.dataset,
-                eval_dataset=train_dataloader.dataset,
-            )
-
-            trainer.train()
-
-            logger.info("Dense retriever trained successfully")
-            return model
-        except Exception as e:
-            logger.error(f"Error during dense retriever training: {e}")
-            raise
-
-
-def retrieve_chunks(query_embeddings, index, chunks, top_k=5):
-    distances, indices = index.search(np.array([query_embeddings]).astype('float32'), top_k)
-    retrieved_chunks = [chunks[i] for i in indices[0]]
-    return retrieved_chunks
+        return docs

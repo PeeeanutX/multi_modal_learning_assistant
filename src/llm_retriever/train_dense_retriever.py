@@ -295,7 +295,7 @@ def main():
 
     logger.info("Starting training dense retriever...")
     trainer.train()
-    trainer.save_model()
+    trainer.save_model(args.output_dir)
     logger.info(f"Dense retriever trained and saved at {args.output_dir}")
 
 
