@@ -21,11 +21,6 @@ formatter = logging.Formatter(
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-nltk.download('punkt_tab')
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-
 stop_words = set(stopwords.words('english'))
 stemmer = SnowballStemmer('english')
 lemmatizer = WordNetLemmatizer()
@@ -34,14 +29,14 @@ spell = SpellChecker()
 
 def clean_text(
         text: str,
-        lowercase: bool = True,
+        lowercase: bool = False,
         remove_numbers: bool = False,
-        remove_punctuation: bool = True,
-        remove_stopwords: bool = True,
+        remove_punctuation: bool = False,
+        remove_stopwords: bool = False,
         perform_stemming: bool = False,
-        perform_lemmatization: bool = True,
+        perform_lemmatization: bool = False,
         correct_spelling: bool = False,
-        expand_contractions: bool = True
+        expand_contractions: bool = False
 ) -> str:
     logger.info("Starting text cleaning")
 

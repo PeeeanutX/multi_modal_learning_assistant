@@ -1,2 +1,2 @@
-import langchain.chains
-help(langchain.chains.create_retrieval_chain)
+import langchain.chains.combine_documents.map_rerank
+help(langchain.chains.combine_documents.map_rerank.MapRerankDocumentsChain)

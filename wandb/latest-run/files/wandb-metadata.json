@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "startedAt": "2024-12-14T19:10:22.779233Z",
+  "program": "/content/multi_modal_learning_assistant/src/llm_retriever/train_reward_model.py",
+  "codePath": "src/llm_retriever/train_reward_model.py",
+  "git": {
+    "remote": "https://github.com/PeeeanutX/multi_modal_learning_assistant.git",
+    "commit": "6489fe432fbbac1329c29b9d064117f8875f2d68"
+  },
+  "root": "/content/multi_modal_learning_assistant",
+  "host": "9b7721e561d3",
+  "username": "root",
+  "executable": "/usr/bin/python3",
+  "codePathLocal": "src/llm_retriever/train_reward_model.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "253055008768",
+      "used": "50050420736"
+    }
+  },
+  "memory": {
+    "total": "89632796672"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

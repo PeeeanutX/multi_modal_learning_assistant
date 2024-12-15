@@ -1,14 +1,13 @@
-import numpy as np
+import os
 import logging
+import numpy as np
 from typing import List, Optional
-from dataclasses import dataclass, field
+import torch
+from dataclasses import dataclass
 
-from langchain.vectorstores.base import VectorStore
+from langchain.vectorstores import FAISS
 from langchain.schema import Document
-from langchain.retrievers import (
-    TimeWeightedVectorStoreRetriever,
-    ContextualCompressionRetriever
-)
+from transformers import AutoTokenizer, AutoModel
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -22,60 +21,55 @@ logger.addHandler(handler)
 
 @dataclass
 class RetrieverConfig:
-    retriever_type: str = 'default'  # Options: 'default', 'mmr', 'time_weighted', 'contextual'
-    search_kwargs: dict = field(default_factory=lambda: {"k": 5})
-    mmr_kwargs: dict = field(default_factory=lambda: {"k": 5, "fetch_k": 20, "lambda_mult": 0.5})
-    time_weighted_kwargs: dict = field(default_factory=lambda: {"k": 5, "decay_rate": 0.1})
-    contextual_kwargs: dict = field(default_factory=lambda: {"k": 5})
+    dense_retriever_path: str
+    query_model_name: str = "intfloat/e5-base-v2"
+    doc_model_name: str = "intfloat/e5-base-v2"
+    vectorstore_path: str = "src/ingestion/data/index.pkl"
+    top_k: int = 5
+    use_gpu: bool = True
 
 
-class RetrieverFactory:
-    @staticmethod
-    def create_retriever(vector_store: VectorStore, config: RetrieverConfig):
-        """Factory method to create a retriever based on the configuration"""
-        logger.info(f"Initializing retriever of type '{config.retriever_type}'")
+class DenseRetriever:
+    """
+    A dense retriever that uses a dual-encoder (query and doc encoder) to retrieve documents.
+    Assumes a FAISS vector store with precomputed doc embeddings, or you can dynamically embed docs.
+    """
+    def __init__(self, config: RetrieverConfig):
+        self.config = config
+        self.device = 'cuda' if torch.cuda.is_available() and self.config.use_gpu else 'cpu'
 
-        if config.retriever_type == 'default':
-            retriever = vector_store.as_retriever(search_kwargs=config.search_kwargs)
-            logger.info("Default VectorStoreRetriever initialized")
-        # elif config.retriever_type == 'mmr':
-        #   retriever = MMRetriever(
-        #       vectorstore=vector_store,
-        #        **config.mmr_kwargs
-        #   )
-        #     logger.info("MMRetriever initialized with Maximum Marginal Relevance")
-        elif config.retriever_type == 'time_weighted':
-            retriever = TimeWeightedVectorStoreRetriever(
-                vectorstore=vector_store,
-                **config.time_weighted_kwargs
-            )
-            logger.info("TimeWeightedVectorStoreRetriever initialized")
-        elif config.retriever_type == 'contextual':
-            retriever = ContextualCompressionRetriever(
-                base_compressor=None,  # TODO: Define compressor
-                base_retriever=vector_store.as_retriever(search_kwargs=config.search_kwargs),
-                **config.contextual_kwargs
-            )
-            logger.info("ContextualCompressionRetriever initialized")
-        else:
-            raise ValueError(f"Unsupported retriever type: {config.retriever_type}")
+        logger.info("Loading dense retriever models...")
+        self.query_tokenizer = AutoTokenizer.from_pretrained(self.config.query_model_name, use_fast=True)
+        self.doc_tokenizer = AutoTokenizer.from_pretrained(self.config.doc_model_name, use_fast=True)
 
-        return retriever
+        self.query_encoder = AutoModel.from_pretrained(self.config.dense_retriever_path).to(self.device)
+        self.doc_encoder = AutoModel.from_pretrained(self.config.dense_retriever_path).to(self.device)
 
-    @staticmethod
-    def retrieve_documents(retriever, query: str) -> List[Document]:
-        """Retrieve relevant documents using the specified retriever."""
-        logger.info(f"Retrieving documents for query: '{query}'")
-        try:
-            documents = retriever.get_relevant_documents(query)
-            logger.info(f"Retrieved {len(documents)} documents")
-            return documents
-        except Exception as e:
-            logger.error(f"Error during retrieval: {e}")
-            raise
+        logger.info(f"Loading FAISS vector store from {self.config.vectorstore_path}")
+        if not os.path.exists(self.config.vectorstore_path):
+            raise FileNotFoundError(f"FAISS index not found at {self.config.vectorstore_path}")
+        self.vectorstore = FAISS.load_local(self.config.vectorstore_path, embedding_function=None)
+        logger.info("Dense retriever initialized successfully.")
 
+    def mean_pool(self, last_hidden_state, attention_mask):
+        input_mask_expanded = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
+        sum_embeddings = torch.sum(last_hidden_state * input_mask_expanded, dim=1)
+        sum_mask = torch.clamp(input_mask_expanded.sum(dim=1), min=1e-9)
+        return sum_embeddings / sum_mask
 
-def retrieve_chunks(query_embeddings, index, chunks, top_k=5):
-    distances, indices = index.search(np.array([query_embeddings]).astype('float32'), top_k)
-    retrieved_chunks = [chunks[i] for i in indices[0]]
-    return retrieved_chunks
+    def embed_query(self, query: str) -> torch.Tensor:
+        enc = self.query_tokenizer(query, truncation=True, max_length=self.config.top_k*32, return_tensors='pt')
+        input_ids = enc["input_ids"].to(self.device)
+        attention_mask = enc["attention_mask"].to(self.device)
+        with torch.no_grad():
+            outputs = self.query_encoder(input_ids, attention_mask=attention_mask)
+            query_emb = self.mean_pool(outputs.last_hidden_state, attention_mask)
+        return query_emb.squeeze(0)
+
+    def retrieve(self, query: str, top_k: Optional[int] = None) -> List[Document]:
+        if top_k is None:
+            top_k = self.config.top_k
+        query_emb = self.embed_query(query).cpu().numpy()
+        docs = self.vectorstore.similarity_search_by_vector(query_emb, k=top_k)
+
+        return docs
