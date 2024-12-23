@@ -1,6 +1,5 @@
 venv/
 __pycache__/
-data/processed/
 configs/secrets.yaml
 /src/checkpoints/dense_retriever_checkpoint/checkpoint-6/model.safetensors
 /src/checkpoints/dense_retriever_checkpoint/checkpoint-6/rng_state.pth
