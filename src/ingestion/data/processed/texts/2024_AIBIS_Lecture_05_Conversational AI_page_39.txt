@@ -1,0 +1,17 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+GPT-4 Prompt Design: Example Output
+What colors are 
+available?
+There is a wide range 
+of colors to choose 
+from …
+In the dazzling array of 
+colors, you will find 
+your favorite that 
+resonates with your 
+feelings …
+Emotional
+Rational
+Hanschmann et al. 2023; Gnewuch et al. 2024

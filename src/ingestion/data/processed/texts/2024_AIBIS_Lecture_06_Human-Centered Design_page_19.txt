@@ -1,0 +1,15 @@
+Example:
+“John Doe is an IT consultant who frequently shops for groceries 
+online due to his busy schedule. He prefers to use the same grocery 
+delivery service because it allows him to quickly reorder items from 
+his past purchases. However, every so often, he forgets to check the 
+delivery time slots. This often results in frustration when he realizes 
+his preferred delivery window is already fully booked, causing him to 
+wait much longer for groceries to arrive than expected.”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+As-Is Scenario
+An as-is scenario is a narrative text description of the procedure 
+a specific user currently follows to complete one or more tasks.
+UXQB 2022

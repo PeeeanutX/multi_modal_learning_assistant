@@ -1,0 +1,11 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Gender Stereotypes Today
+UNESCO (https://unesdoc.unesco.org/ark:/48223/pf0000367416.locale=en), 
+https://www.technologyreview.com/2019/05/22/65758/female-voice-assistants-fuel-damaging-gender-stereotypes-says-un-study
+“Most AI voice assistants are gendered as young women, and are mostly 
+used to answer questions or carry out tasks like checking the weather, 
+playing music, or setting reminders. This sends a signal that women are 
+docile, eager-to-please helpers without any agency, always on hand to help 
+their masters, helping to reinforce harmful stereotypes.”

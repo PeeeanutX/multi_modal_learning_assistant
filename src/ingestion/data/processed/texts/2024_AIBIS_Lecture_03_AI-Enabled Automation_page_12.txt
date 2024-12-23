@@ -1,0 +1,14 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Types of Physical Robots 
+Industrial Robots
+Service Robots
+Social Robots
+Example: assembly robots 
+Example: Humanoid robots
+Example: Food-serving robots 
+LG CLOi 
+ServeBot
+Kuka
+Nao

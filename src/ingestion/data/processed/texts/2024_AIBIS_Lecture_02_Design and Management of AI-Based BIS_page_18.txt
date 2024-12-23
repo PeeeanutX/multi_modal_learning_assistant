@@ -1,0 +1,18 @@
+•
+Standards are usually set by national or 
+international bodies to ensure compliance with 
+a set of design rules by a large community
+•
+Various standards exist for hardware and 
+software (see ISO 13.180 Ergonomics 
+https://www.iso.org/ics/13.180/x/)
+•
+Examples:
+– ISO 9241: Ergonomics of human-system 
+interaction
+– ISO 6385:2016: Ergonomics principles in the 
+design of work systems
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Standards

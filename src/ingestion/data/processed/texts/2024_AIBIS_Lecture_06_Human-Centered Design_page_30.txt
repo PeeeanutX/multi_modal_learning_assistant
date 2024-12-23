@@ -1,0 +1,14 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+Use Scenario
+UXQB 2022
+Example:
+“Before starting his busy workday, John Doe logs into the grocery 
+delivery website. After selecting his usual items from his previous 
+orders with a single click, he is prompted to reserve a delivery slot. 
+He sees that his preferred delivery slot is still available and books it 
+right away. John can now focus on his work, knowing that his 
+groceries will arrive when it’s most convenient for him.”
+A narrative text description of how a user will carry out one or 
+more tasks with the planned system.

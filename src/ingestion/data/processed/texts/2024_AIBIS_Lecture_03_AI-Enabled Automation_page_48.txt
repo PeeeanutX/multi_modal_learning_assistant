@@ -1,0 +1,30 @@
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for Information Systems Research. Journal of the 
+Association for Information Systems, 22, 281–303. 
+Castelo, N., Bos, M. W., & Lehmann, D. R. (2019). Task-Dependent Algorithm Aversion. Journal of Marketing Research, 56(5), 809–825. 
+Coombs, C., Hislop, D., Taneva, S. K., & Barnard, S. (2020). The strategic impacts of Intelligent Automation for knowledge and service work: An interdisciplinary review. The 
+Journal of Strategic Information Systems, 29(4), 101600.
+Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard business review, 96(1), 108-116.
+Dellermann, D., Ebel, P., Söllner, M., & Leimeister, J. M. (2019). Hybrid Intelligence. Business & Information Systems Engineering, 61(5), 637–643. 
+Engel, C., Ebel, P., & Leimeister, J. M. (2022). Cognitive automation. Electronic Markets, 32(1), 339-350.
+Grace, K., Salvatier, J., Dafoe, A., Zhang, B., & Evans, O. (2018). When will AI exceed human performance? Evidence from AI experts. Journal of Artificial Intelligence 
+Research, 62, 729-754.
+Grønsund, T., & Aanestad, M. (2020). Augmenting the algorithm: Emerging human-in-the-loop work configurations. The Journal of Strategic Information Systems, 29(2), 
+101614.
+Huang, M.-H., & Rust, R. T. (2018). Artificial Intelligence in Service. Journal of Service Research, 21(2), 155–172.
+Rai, A., Constantinides, P., & Sarker, S. (2019). Editor’s Comments: Next-Generation Digital Platforms: Toward Human–AI Hybrids. MIS Quarterly, 43(1), iii–ix.
+Raisch, S., & Krakowski, S. (2021). Artificial Intelligence and Management: The Automation–Augmentation Paradox. Academy of Management Review, 46(1), 192–210. 
+Rinta-Kahila, T., Penttinen, E., Salovaara, A., Soliman, W., & Ruissalo, J. (2023). The vicious circles of skill erosion: a case study of cognitive automation. Journal of the 
+Association for Information Systems, 24(5), 1378-1412.
+Schulte-Derne, D., Gnewuch, U. (2024). “Translating AI Ethics Principles into Practice to Support Robotic Process Automation Implementation”. MIS Quarterly Executive, 23(2). 
+Seiffer, A., Gnewuch, U., & Maedche, A. (2021). Understanding Employee Responses to Software Robots: A Systematic Literature Review. Proceedings of the 42nd 
+International Conference on Information Systems (ICIS 2021).
+Techatassanasoontorn, A. A., Waizenegger, L., & Doolin, B. (2023). When Harry, the human, met Sally, the software robot: Metaphorical sensemaking and sensegiving around 
+an emergent digital technology. Journal of Information Technology, 38(4), 416-441.
+Van der Aalst, W. M., Bichler, M., & Heinzl, A. (2018). Robotic process automation. Business & information systems engineering, 60, 269-272.
+Waizenegger, L., & Techatassanasoontorn, A. A. (2022). When robots join our team: A configuration theory of employees’ perceptions of and reactions to Robotic Process 
+Automation. Australasian journal of information systems, 26.
+Willcocks, L., Lacity, M., & Craig, A. (2016). Robotic process automation at Telefónica O2. MIS Quarterly Executive, 15(1), 21-35.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+50
+References

@@ -1,0 +1,8 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Rule-Based Conversational AI: Example
+Eliza
+Weizenbaum 1966
+User: I had a strange dream
+Eliza: What does that dream suggest to you?

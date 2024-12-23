@@ -1,0 +1,19 @@
+•
+Case study at a German-based energy service provider
+•
+In 2019, the CEO decided to implement robotic process 
+automation (RPA) to automate back-office processes 
+(e.g., in customer service, billing)
+•
+Over a period of two and a half years, 45 RPA bots 
+were implemented to enable the automated processing 
+of more than 200,000 back-office transactions per year 
+→equivalent to 5 full-time employees
+•
+Employees were concerned about RPA’s impact on 
+their jobs
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+Research Example: Large-Scale RPA Implementation
+Schulte-Derne & Gnewuch 2024

@@ -1,0 +1,15 @@
+•
+User requirements are precise criteria from the users’ point of view that must be met by the 
+system before its release
+•
+User requirements are derived from user needs
+–
+For simple systems, user requirements can be derived directly from the context of use description 
+without first identifying and documenting user needs
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+User Requirement
+A requirement for use that provides the basis for design and 
+evaluation of a system to meet user needs.
+UXQB 2022

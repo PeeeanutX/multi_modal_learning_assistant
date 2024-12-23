@@ -1,0 +1,15 @@
+Specify:
+Deriving and defining user
+requirements that must be met 
+by the system
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Human-Centered Design Approach: Specify
+ISO 9241-210
+Plan
+Analyze
+Specify
+Design
+Evaluate 
+Done

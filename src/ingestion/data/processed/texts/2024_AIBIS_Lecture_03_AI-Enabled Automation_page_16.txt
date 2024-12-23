@@ -1,0 +1,19 @@
+•
+RPA bots essentially mimic human behavior by logging in with an account and password, 
+entering data, clicking buttons, etc.
+•
+Typically, RPA bots are designed to interact with existing IT systems (e.g., Microsoft Outlook, 
+SAP ERP) and perform routine tasks in a rule-based manner, such as copying and pasting data 
+from one system to another
+•
+Though RPA is less “intelligent” than other AI technologies, it is usually considered part of AI, 
+especially as RPA vendors are adding more intelligence to their software (e.g., integrating 
+computer vision and machine learning capabilities)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Robotic Process Automation
+Robotic process automation (RPA) enables digital processes to 
+be automated through software robots (“bots”) that operate on 
+the user interface in the same way as humans do.
+Willcocks et al. 2016; Schulte-Derne & Gnewuch 2024

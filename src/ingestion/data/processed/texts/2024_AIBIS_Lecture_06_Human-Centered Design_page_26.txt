@@ -1,0 +1,32 @@
+Qualitative User Requirements
+Syntax rule:
+With the system, the user must be able to 
+recognize / select / input / … <information or 
+resource> under <optional condition>.
+Example “Shopping Website”:
+With the system, the user must be able to 
+recognize which products are in his/her 
+shopping basket (information), before starting 
+the payment process (condition).
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Formulating User Requirements
+Quantitative User Requirements
+Quantitative user requirements can be formulated by 
+taking the following components into consideration: 
+•
+The user group(s) who must fulfil the requirement 
+during use 
+•
+The number or percentage of users who must 
+fulfil the requirement during use 
+•
+The units of measurement (e.g., task time, error 
+rate, precision)
+Example “Shopping Website”:
+After completing their shopping process, 80% of users 
+must answer ‘Agree’ or ‘Strongly agree’ to the 
+statement ‘The shopping website is easy to use’. 
+(satisfaction)
+UXQB 2023

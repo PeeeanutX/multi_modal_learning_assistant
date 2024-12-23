@@ -1,0 +1,20 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+How to Derive User Requirements?
+Context of Use
+User Needs
+User Requirements
+Personas, as-is scenarios, 
+user journey maps, etc. from 
+the context-of-use analysis
+User needs are identified 
+based on the results of the 
+analysis phase
+User requirements are derived 
+from the identified user needs
+…
+…
+Analysis
+Specification
+ISO 9241-210

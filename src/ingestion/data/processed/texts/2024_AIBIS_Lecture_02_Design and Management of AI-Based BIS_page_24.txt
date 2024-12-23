@@ -1,0 +1,15 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+Research Example: Transparency in AI-Based Customer Service
+Gnewuch et al. (2023): https://pubsonline.informs.org/doi/10.1287/isre.2022.0152
+vs.
+Human involvement not disclosed
+Human involvement disclosed
+Should companies that use hybrid service agents (chatbot + human employees working behind the scenes) be 
+transparent about human involvement? 
+•
+The disclosure of human involvement changed customer communication behavior 
+•
+This ultimately increased employee workload because fewer customer requests could be handled 
+automatically by the chatbot and had to delegated to a human

@@ -1,0 +1,24 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+48
+Key Takeaways From This Lecture
+•
+Humans have long been at risk of unemployment 
+brought by new technologies (not just AI)
+•
+There are two main types of AI-enabled automation: 
+physical and cognitive automation
+•
+AI-enabled automation advances from mechanical to 
+analytical, intuitive, and empathetic tasks
+•
+There is a wide range of affective, cognitive, and 
+behavioral responses (both positive and negative) from 
+humans toward AI-enabled automation
+•
+AI-enabled automation creates benefits but also poses 
+risks (e.g., skill erosion)
+•
+Augmentation (e.g., human-in-the-loop) is often 
+described as an alternative to automation, but the two 
+approaches are not independent from each other

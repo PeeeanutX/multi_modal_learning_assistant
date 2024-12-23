@@ -1,0 +1,49 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Dimensions of User Engagement
+Cognitive
+Engagement
+Emotional
+Engagement
+Behavioral
+Engagement
+Users’ positively or negatively 
+valenced thoughts, concentration, 
+and reflections during an 
+interaction with a technology 
+feature, such as:
+•
+Attention
+•
+Absorption
+•
+…
+Users’ affective reactions during 
+an interaction with a technology 
+feature, includes positive and 
+negative feelings such as:
+•
+Enjoyment
+•
+Love
+•
+Frustration
+•
+Anxiety
+•
+…
+Users’ behavioral interactions 
+with a technology feature, 
+such as:
+-
+Content creation
+-
+Content consumption
+-
+Responses 
+-
+Interactions (e.g., clicks)
+-
+…
+Lehrer et al. 2023

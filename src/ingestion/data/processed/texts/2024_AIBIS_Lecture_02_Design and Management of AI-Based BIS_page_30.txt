@@ -1,0 +1,46 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Challenges When Managing AI
+Hopf et al. 2023
+Challenge
+Expectations / Assumptions / Demands
+Reality
+Inflated
+expectations
+• Expectation that AI technology can revolutionize 
+everything overnight
+• Tendency to throw AI at every problem
+• Unrealistic expectations can easily lead to 
+disappointments about the return-on-investment of AI 
+initiatives
+• AI comes with errors and limitations, like any other IT
+Managing AI 
+projects
+like IT projects
+• Assumption that ML models are just computer 
+programs that are easy to create and modify
+• Expectation that a continuous delivery of results 
+is possible
+• AI applications are learning agents, not 
+deterministically programmed systems
+• Even established software development approaches 
+cannot fully account for the exploratory and 
+collaborative nature of AI projects
+The question of 
+why
+• Decision makers demand explanations and 
+prescriptions in high-stakes and uncertain 
+situations
+• Legal and ethical requirements demand 
+interpretability
+• ML models are black boxes and based on 
+correlations only, but they are typically more accurate 
+than traditional methods of prediction
+Dynamic 
+environments
+• Traditional software, once put into production, 
+runs over years
+• Predictive accuracy of ML models degrades over time
+• Frequent updates and retraining of models is 
+necessary

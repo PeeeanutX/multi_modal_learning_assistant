@@ -1,0 +1,19 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+User Survey
+A usability evaluation where users are asked to complete a 
+questionnaire about their experience of using a system.
+UXQB 2022; Brooke 1996
+•
+Questionnaire: a set of questions that is used to 
+collect data from users
+–
+Open questions: Where did you encounter problems?
+–
+Closed questions: On a scale from 1 to 5, please rate 
+how satisfied you are with the system
+•
+A significant number of responses (100+) is required 
+for them to be statistically reliable
+Example “System Usability Scale” (SUS)

@@ -1,0 +1,16 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+Types of Software Robots 
+Automated accounts
+Chatbots
+Robotic Process 
+Automation (RPA)
+Examples: Social bots, GitHub 
+bots, moderation bots, …
+Example vendors:
+Example: Customer service 
+chatbots
+AutoModerator on Reddit
+Allie (Allianz Germany)
+Seiffer et al. 2021

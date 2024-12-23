@@ -1,0 +1,17 @@
+•
+Can refer to single tasks or larger groups of tasks (e.g., business processes)
+•
+Includes many different types of tasks:
+–
+Work tasks (e.g., production, procurement, administration, logistics)
+–
+Design and development tasks (e.g., modelling of business processes, creation of software 
+prototypes)
+–
+Private life tasks (e.g., online shopping, entertainment)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+(2) Task
+A set of activities undertaken in order to achieve a specific goal.
+Heinzl et al. 2024

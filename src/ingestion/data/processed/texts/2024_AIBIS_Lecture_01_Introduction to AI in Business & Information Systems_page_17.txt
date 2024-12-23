@@ -1,0 +1,16 @@
+•
+A goal is typically expressed in the form of a condition or state
+•
+In contrast, a task is typically expressed in the form of an activity
+•
+Example: 
+–
+Goal: Visit a friend in a small city, 100 km away
+–
+Task: Rent a car using a car rental website
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+(5) Goal
+Goals are the targets or accomplishments that a human wants to 
+achieve in the near or long term.

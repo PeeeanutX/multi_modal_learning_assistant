@@ -1,0 +1,15 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Key Deliverables
+Personas
+As-Is Scenarios
+Who are the users? What 
+are their goals?
+User Journey Maps
+How do users interact with 
+the (new) system and the 
+organization providing it?
+How do users currently do 
+tasks? In which contexts? What 
+resources are available?

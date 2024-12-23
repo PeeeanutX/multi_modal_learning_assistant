@@ -1,0 +1,28 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Design Principles for Ethical AI
+Principle
+Example Definition
+Transparency
+AI actors “should provide meaningful information, appropriate to the context [...] to foster a general understanding of AI 
+systems, to make stakeholders aware of their interactions with AI systems [...] to enable those affected by an AI system 
+to understand the outcome, and, to enable those adversely affected by an AI system to challenge its outcome [...]” 
+(OECD)
+Justice and 
+fairness
+The development, deployment and use of AI systems must be fair. […] fairness has both a substantive and a procedural 
+dimension. The substantive dimension implies a commitment to: ensuring equal and just distribution of both benefits and 
+costs, and ensuring that individuals and groups are free from unfair bias, discrimination and stigmatization. […] The 
+procedural dimension of fairness entails the ability to contest and seek effective redress against decisions made by AI 
+systems and by the humans operating them. […] (EU)
+Non-maleficence
+AI systems should not be used in ways that cause or exacerbate harm, whether individual or collective, and including 
+harm to social, cultural, economic, natural, and political environments. (United Nations)
+Responsibility
+Designers and builders of advanced AI systems are stakeholders in the moral implications of their use, misuse, and 
+actions, with a responsibility and opportunity to shape those implications. (Future of Life Institute) 
+Privacy
+Artificial intelligence should not be used to diminish the data rights or privacy of individuals, families, or communities. 
+(UK Parliament)
+Jobin et al. 2019

@@ -1,0 +1,23 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Key Takeaways From This Lecture
+•
+Engagement describes the depth of interaction and 
+connection users have with a technology
+•
+Technologies with a human-like interface are more 
+engaging than other interfaces that perform the same 
+functions
+•
+AI can be used to provide highly human-like experiences 
+through social cues: physical appearance, natural 
+language, social roles, …
+•
+Social cues automatically trigger social responses from 
+humans and thereby influence human behavior
+•
+“Almost-human” AI can easily fall into the uncanny valley
+•
+There is an ongoing debate about whether or not AI 
+should be designed to resemble and behave like humans

@@ -1,0 +1,15 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+49
+References
+Brooke, J. (1996). SUS: A quick and dirty usability scale. Usability Evaluation in Industry. 
+https://digital.ahrq.gov/sites/default/files/docs/survey/systemusabilityscale%2528sus%2529_comp%255B1%255D.pdf
+ISO. (2019). ISO 9241-210:2019: Ergonomics of human-system interaction – Part 210: Human-centred design for 
+interactive systems. International Organization for Standardization. https://www.iso.org/standard/77520.html
+Shneiderman, B. (2020). Human-centered artificial intelligence: Three fresh ideas. AIS Transactions on Human-Computer 
+Interaction, 12(3), 109-124.
+Shneiderman, B. (2022). Human-centered AI. Oxford University Press.
+UXQB e.V. (2022). CPUX-F Curriculum. Certified Professional for Usability and User Experience Foundation Level. 
+Version 4.01 EN, 7 November 2022. https://uxqb.org/public/documents/CPUX-F_EN_Curriculum.pdf
+UXQB e.V. (2023). CPUX-UR Curriculum. Certified Professional for Usability and User Experience – User Requirements 
+Engineering. Version 3.2.2 EN: 14 March 2023. https://uxqb.org/public/documents/CPUX-F_EN_Curriculum.pdf

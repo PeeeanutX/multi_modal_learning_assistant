@@ -1,0 +1,21 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Design as a Product
+Design, used as a noun, refers to the outcome of the design 
+process (“product”).
+•
+There is a large body of knowledge about a “good” or “ideal” design of (business) information 
+systems
+•
+This design knowledge is captured in different forms:
+–
+Standards
+–
+Guidelines
+–
+Design principles
+•
+AI-specific design knowledge exists, but it is important to not forget about general design 
+knowledge that applies to all (business) information systems
+Baskerville et al. 2015

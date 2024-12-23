@@ -1,0 +1,29 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Key Takeaways From This Lecture
+•
+Designing and managing AI is different from designing and 
+managing more traditional business information systems
+•
+Many process models exist that offer guidance on how to 
+design AI-based business information systems (e.g., OECD’s AI 
+system lifecycle, CRISP-DM)
+•
+There are many design principles and guidelines for (AI-based) 
+information systems, some of which specifically address AI-
+related design challenges (e.g., ethical concerns)
+•
+The management of AI presents challenges to organizations at 
+every level:
+–
+Strategic level (e.g., impact of AI on business strategy and 
+workforce)
+–
+Tactical level (e.g., introduction of new AI-based systems)
+–
+Operational level (e.g., employees’ perception of and interaction 
+with a newly introduced AI-based system)
+•
+There are common strategies and tactics for addressing these 
+challenges (e.g., upskilling and reskilling programs)

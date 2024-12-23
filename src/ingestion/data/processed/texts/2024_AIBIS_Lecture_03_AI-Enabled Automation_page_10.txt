@@ -1,0 +1,9 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+AI-Enabled Automation
+AI-enabled automation refers to the use of AI to perform tasks 
+and processes that traditionally required human involvement. 
+Physical automation
+Cognitive automation
+Benbya et al. 2021; Raisch & Krakowski 2021

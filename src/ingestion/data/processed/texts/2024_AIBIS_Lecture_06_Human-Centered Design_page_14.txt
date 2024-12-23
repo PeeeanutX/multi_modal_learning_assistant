@@ -1,0 +1,21 @@
+Teenagers waiting for a bus use their smartphones 
+to send funny videos to their friends, hoping to 
+make them laugh.
+–
+Users: Teenagers
+–
+Goal: Make friends laugh
+–
+Task: Send videos
+–
+Context:
+•
+Social context: Friends
+•
+Physical setting: Bus station
+–
+Resource: Smartphone
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Context of Use: Example

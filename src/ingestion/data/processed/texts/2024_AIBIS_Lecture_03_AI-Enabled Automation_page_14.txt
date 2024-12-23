@@ -1,0 +1,14 @@
+•
+Cognitive automation typically targets knowledge and service work tasks, for which 
+automation seemed unimaginable a decade ago
+•
+Software robots (“bots”) are computer programs and have no physical form at all
+•
+The activity of software robots may not be visible to humans
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Cognitive Automation
+Cognitive automation focuses on the use of software (e.g., 
+software robots) that execute tasks in the digital world.
+Coombs et al. 2020; Engel et al. 2022

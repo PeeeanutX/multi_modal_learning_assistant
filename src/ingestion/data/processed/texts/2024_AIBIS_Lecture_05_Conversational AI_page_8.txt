@@ -1,0 +1,43 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+History of Conversational AI
+1950
+Alan Turing 
+proposes the 
+Turing Test
+1966
+Development 
+of ELIZA
+Development 
+of Parry
+1990s
+Interactive Voice 
+Response (IVR) 
+systems 
+1991
+First Loebner 
+Prize Contest
+1995
+IBM 
+Watson
+2006
+Development 
+of A.L.I.C.E
+2010
+Apple 
+Siri
+Google 
+Now
+2012
+2015
+Amazon Alexa;
+Microsoft Cortana
+Facebook opens its 
+platform for chatbots, 
+Microsoft Bot 
+Framework
+2016
+2022
+ChatGPT
+1972

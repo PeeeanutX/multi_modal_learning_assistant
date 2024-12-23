@@ -1,0 +1,48 @@
+1.
+RPA implementation at ESP started with a small agile team consisting of a process manager, a 
+“key user” with a customer service background and external consultants
+2.
+Collaborative approach in the initial exploration of possible RPA use cases by involving all 
+stakeholders, including back-office employees, leaders, and members of the IT department
+3.
+After analyzing the potential time savings of each use case, a first proof of concept was 
+developed. Insights from the proof of concept formed the basis for the design, development, 
+introduction and evaluation of each RPA bot
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Research Example: Large-Scale RPA Implementation
+2020
+ESP starts 
+RPA proof of 
+concept 
+phase
+RPA team of 
+six experts 
+established
+45 RPA bots 
+in two 
+departments
+RPA handles 
+200,000 
+transactions, 
+70% fully 
+automated
+RPA bot for 
+undelivered 
+letters 
+imple-
+mented
+RPA 
+showcase 
+with teddy 
+bear 
+“Robbie”
+Positive 
+assessment 
+of RPA 
+proof of 
+concept
+2021
+2022
+Schulte-Derne & Gnewuch 2024

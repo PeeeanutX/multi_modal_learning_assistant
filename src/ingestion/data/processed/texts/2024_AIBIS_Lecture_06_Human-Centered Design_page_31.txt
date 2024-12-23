@@ -1,0 +1,16 @@
+•
+A low-fidelity prototype is often created using paper, pens, 
+sticky notes, etc.
+•
+Digital prototypes are often created with a prototyping tool
+•
+Low fidelity prototypes should be quick and cost-effective 
+to create and update
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Low-Fidelity Prototype
+UXQB 2022
+A low-cost illustration of a design or concept used to gather 
+feedback from users and other stakeholders during the early 
+stages of design.

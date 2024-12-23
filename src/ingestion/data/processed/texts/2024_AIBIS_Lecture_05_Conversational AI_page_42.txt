@@ -1,0 +1,20 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Main Findings
+Robot 
+Design
+Purchase 
+Likelihood
+Recommen-
+dation 
+Adherence 
+Emotional
+3.95
+46.5%
+Rational
+4.26
+61.8%
+An emotional robot design significantly 
+reduces purchase likelihood 
+Hanschmann et al. 2023; Gnewuch et al. 2024

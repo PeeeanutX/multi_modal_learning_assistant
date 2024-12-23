@@ -1,0 +1,36 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+NLP-Based Conversational AI
+Speech 
+Recognition
+Natural 
+Language 
+Understanding
+Dialog 
+Management
+Text-to-
+Speech 
+Synthesis
+Natural 
+Language 
+Generation
+Main components:
+–
+Speech recognition: converts the speech 
+input into a string of words 
+–
+Natural language understanding: interpret 
+the user’s input and to extract a representation 
+of its meaning (→“intent”)
+–
+Dialog management: tracks the state and flow 
+of the conversation and controls how the 
+system responds to the user’s input
+–
+Natural language generation: Formulate a 
+response in natural language
+–
+Text-to-speech synthesis: converts the 
+response string into speech output
+McTear et al. 2016

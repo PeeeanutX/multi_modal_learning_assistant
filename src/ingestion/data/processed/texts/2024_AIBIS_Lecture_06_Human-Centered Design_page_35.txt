@@ -1,0 +1,17 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+High-Fidelity Prototype
+•
+High-fidelity prototypes are computer-based, and usually allow realistic (mouse/keyboard) user 
+interactions
+–
+Created using tools like Figma
+•
+High-fidelity prototypes take you as close as possible to a true representation of the user interface
+•
+After a successful evaluation, the high-fidelity prototype informs the development of the system
+UXQB 2022
+A prototype that mirrors the user interface of a system as closely 
+as possible, often displaying pixel-perfect user interface 
+elements and visual design.

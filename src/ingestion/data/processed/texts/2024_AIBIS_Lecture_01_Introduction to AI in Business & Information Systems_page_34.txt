@@ -1,0 +1,21 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+References
+Baird, A., & Maruping, L. M. (2021). The Next Generation of Research on IS Use: A Theoretical Framework of 
+Delegation to and from Agentic IS Artifacts. MIS Quarterly, 45(1), 315–341. 
+https://doi.org/10.25300/MISQ/2021/15882
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : 
+Implications for Information Systems Research. Journal of the Association for Information Systems, 22, 281–303.
+Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS quarterly, 45(3). 
+https://misq.umn.edu/misq/downloads/download/editorial/738/
+Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard business review, 96(1), 108-116.
+Giattino Charlie, Edouard Mathieu, Veronika Samborska and Max Roser (2023) - “Artificial Intelligence” Published online 
+at OurWorldInData.org. Retrieved from: https://ourworldindata.org/artificial-intelligence
+Heinzl, A., Mädche, A., & Riedl, R. (2024). Wirtschaftsinformatik: Einführung und Grundlegung. Springer Berlin 
+Heidelberg. https://link.springer.com/book/10.1007/978-3-642-15426-3
+OECD (2019), Artificial Intelligence in Society, OECD Publishing, Paris, https://doi.org/10.1787/eedfee77-en
+Russell, S. J., & Norvig, P. (2012). Artificial Intelligence: A Modern Approach. London.
+Sarker, S., Chatterjee, S., Xiao, X., & Elbanna, A. (2019). The Sociotechnical Axis of Cohesion for the IS Discipline: Its 
+Historical Legacy and its Continued Relevance. MIS Quarterly, 43(3), 695–719. 
+https://dl.acm.org/doi/abs/10.25300/MISQ/2019/13747

@@ -1,0 +1,21 @@
+•
+There are three levels of management:
+–
+Strategic / Executive
+–
+Tactical
+–
+Operational / front-line
+•
+Each level of management has its own responsibility and 
+specific functions
+•
+Managing AI presents challenges to organizations at every level
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Definition: Management
+Management involves communicating, leading, coordinating and 
+controlling the tasks of others in an organization, and decision 
+making is a key activity of managers.
+Drucker 2008

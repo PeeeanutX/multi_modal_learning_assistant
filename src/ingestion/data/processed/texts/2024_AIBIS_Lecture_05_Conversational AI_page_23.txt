@@ -1,0 +1,19 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Task-Oriented, Text-Based Conversational Agents 
+•
+Interaction via text messages (“chatting”)
+•
+Designed to converse about specific 
+topics and help with specific tasks in a 
+specific domain
+•
+Examples: Customer service, healthcare, 
+banking, …
+•
+Can be found on websites and on 
+messenger platforms such as MS Teams, 
+Slack, …
+IKEA‘s Anna
+O2‘s Aura

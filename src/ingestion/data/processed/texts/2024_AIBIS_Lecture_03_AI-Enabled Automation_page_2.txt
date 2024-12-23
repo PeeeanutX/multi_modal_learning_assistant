@@ -1,0 +1,9 @@
+RECAP FROM LAST LECTURE:
+• Please arrange the steps of the basic 
+design process of AI-based systems in 
+the correct order.
+• What are key differences between AI-
+specific vs. traditional design 
+processes?
+• What are potential questions related to 
+managing AI at the strategic level?

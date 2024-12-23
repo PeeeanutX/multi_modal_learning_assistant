@@ -1,0 +1,17 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Drawbacks
+•
+Ambiguity and complexity of human 
+language (e.g., context, sarcasm, …) 
+makes natural language understanding 
+quite difficult
+•
+Natural language interaction can be more 
+effortful (e.g., typing messages vs. clicking 
+buttons)
+•
+Not everything can be communicated 
+effectively through words alone (e.g., data 
+analysis results)

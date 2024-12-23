@@ -1,0 +1,12 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Different Types of Augmentation 
+Dellermann et al. 2019; Grønsund & Aanestad 2020
+Human-in-the-Loop 
+(HITL)
+AI-in-the-Loop
+AI
+Human
+Human
+AI

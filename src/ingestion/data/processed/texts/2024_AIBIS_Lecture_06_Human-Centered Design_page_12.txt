@@ -1,0 +1,14 @@
+Analyze:
+Understanding and documenting 
+the context of use
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Human-Centered Design Approach: Analyze
+ISO 9241-210
+Plan
+Analyze
+Specify
+Design
+Evaluate 
+Done

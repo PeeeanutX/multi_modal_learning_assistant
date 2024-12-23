@@ -1,0 +1,13 @@
+•
+Personas are not real people; they are realistic representations of users, constructed for 
+example from observations or interviews
+•
+Personas are usually captured in a document or presentation, providing an easily digestible 
+visualization of the target user(s)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+Personas
+A description of a fictitious but realistic user and what they intend 
+to do when using a system.
+UXQB 2022

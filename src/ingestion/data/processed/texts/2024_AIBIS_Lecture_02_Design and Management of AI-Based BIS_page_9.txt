@@ -1,0 +1,7 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Basic Design Process of AI-Based BIS (1)
+OECD’s AI Systems Lifecycle (2019)
+Note: Steps with a technical focus (e.g., data collection, model 
+building and verification) are not covered in this course.

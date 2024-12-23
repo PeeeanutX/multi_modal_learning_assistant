@@ -1,0 +1,25 @@
+Selected Topics & Partners
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+Customer–AI Interaction
+Selected Publications
+Gnewuch, U., Morana, S., Hinz, O., Kellner, R., Maedche, A. 
+(2023). “More than a Bot? The Impact of Disclosing Human 
+Involvement on Customer Interactions with Hybrid Service 
+Agents,” Information Systems Research. 
+Gnewuch, U., Morana, S., Adam, M. T. P., Maedche, A. 
+(2022). “Opposing Effects of Response Time in Human-
+Chatbot Interaction: The Moderating Role of Prior Experience,” 
+Business & Information Systems Engineering, 64, 773–791.
+Gnewuch, U., Hanschmann, L., Kaiser, C., Schallner, R., 
+Maedche, A. (2024). “Robot Shopping Assistants: How 
+Emotional versus Rational Robot Designs Affect Consumer 
+Trust and Purchase Decisions,” in Proceedings of the 32nd 
+European Conference on Information Systems (ECIS 2024).
+• Large Language Models in E-Commerce
+• Consumer Interactions with Robot 
+Shopping Assistants
+• (Hybrid) Customer Service Agents
+• Social Cues in Human–Chatbot 
+Interaction

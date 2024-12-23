@@ -1,0 +1,9 @@
+RECAP FROM LAST LECTURE:
+• What are examples of software
+robots?
+• Please organize the task types in the 
+Theory of AI Job Replacement 
+based on the order in which AI is 
+expected to perform them.
+• What are key challenges and risks of 
+AI-enabled automation?

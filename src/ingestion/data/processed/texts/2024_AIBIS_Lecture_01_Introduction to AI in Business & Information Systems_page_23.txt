@@ -1,0 +1,30 @@
+•
+Previous generations of business information systems had 
+limited ability to automatically improve through data and 
+experience
+•
+AI advances have enabled the learning capacity of AI-based 
+business information systems to evolve from basic approaches 
+for inductive learning to large-scale approaches (e.g., deep 
+learning)
+•
+Examples:
+–
+Product recommendation systems that learn from customers’ 
+shopping behavior in real time
+–
+Predictive maintenance software in manufacturing plants that 
+learns from previous errors and breakdowns
+–
+AI-driven recruitment systems that learn from previous successful 
+hires
+–
+… 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Learning
+Berente et al. 2021 
+Learning
+“Improving through 
+data and experience”

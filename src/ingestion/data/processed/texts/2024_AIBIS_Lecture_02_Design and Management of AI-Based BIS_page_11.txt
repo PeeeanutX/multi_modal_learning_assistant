@@ -1,0 +1,17 @@
+•
+Similar high-level sequence of process steps:
+– Planning/analysis
+– Design
+– Implementation
+– Operation
+•
+Key differences:
+– Centrality of data and models that rely on data
+– Focus on experimentation →many iterations at every step
+– Focus on continuous improvement, even after the deployment, due to AI’s capacity to 
+optimize and evolve over time
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+AI-Specific vs. Traditional Design Process
+OECD (2019), Dolata & Crowston (2019), Vial et al. (2023)

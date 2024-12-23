@@ -1,0 +1,14 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+How are AI-based business information systems different?
+Berente et al. 2021; Baird & Maruping 2021
+Autonomy
+“Acting without 
+human intervention” 
+Learning
+“Improving through 
+data and experience” 
+Inscrutability
+“Being unintelligible to 
+specific audiences”

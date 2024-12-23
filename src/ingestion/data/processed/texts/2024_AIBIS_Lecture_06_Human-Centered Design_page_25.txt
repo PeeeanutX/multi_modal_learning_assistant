@@ -1,0 +1,16 @@
+•
+Qualitative user requirements address the way in which the system is 
+used to arrive at a user goal
+•
+Quantitative user requirements set measurable quality objectives
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Qualitative vs. Quantitative User Requirements
+Quantitative: A required level of usability to meet identified user needs expressed in 
+terms of measures of effectiveness, efficiency, satisfaction, accessibility, user 
+experience and avoidance of harm from use in a specified context of use.
+Qualitative: A statement of what users must be able to locate, recognize, understand, 
+select or input as part of conducting a task with the system to meet identified user needs 
+in a specified context of use.
+UXQB 2022

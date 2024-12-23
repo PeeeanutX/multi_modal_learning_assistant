@@ -1,0 +1,14 @@
+•
+“Design” can be understood as both a process and a product:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+What Do We Mean by “Design”?
+Design, used as a verb, refers to the 
+act of planning or creating something 
+for a specific purpose 
+→“design process”
+Design, used as a noun, refers to the 
+outcome of the design process
+→“design product”
+Baskerville et al. 2015

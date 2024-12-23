@@ -1,0 +1,23 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Interactive Business Intelligence & Analytics Systems
+Selected Topics & Partners
+Selected Publications
+Ruoff, M., Gnewuch, U., Maedche, A., Scheibehenne, B. (2023). 
+“Designing Conversational Dashboards for Effective Use in Crisis 
+Response,” Journal of the Association for Information Systems, 
+24(6), 1500-1526.
+Schelhorn, T.C., Gnewuch, U., Maedche, A. (2024). “Designing a 
+Large Language Model Based Open Data Assistant for Effective 
+Use,” in Proceedings of the 19th International Conference on 
+Design Science Research in Information Systems and Technology 
+(DESRIST 2024).
+Schloß, D., Gutierrez Espitia, J. D., Gnewuch, U. (2023). 
+“Designing a Conversation Mining System for Customer Service 
+Chatbots,” in Proceedings of the 31st European Conference on 
+Information Systems (ECIS 2023).
+• LLM-based Data Assistants
+• Chatbot Analytics Systems
+• Data-driven Decision-Making
+• Dashboards & Data Storytelling

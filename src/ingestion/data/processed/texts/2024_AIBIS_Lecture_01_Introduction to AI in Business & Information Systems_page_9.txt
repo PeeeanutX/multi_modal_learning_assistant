@@ -1,0 +1,19 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Technical Perspective on AI Systems
+An AI system is a machine-based system that […] infers, from 
+the input it receives, how to generate outputs such as 
+predictions, content, recommendations, or decisions that can 
+influence physical or virtual environments. (based on OECD 2019)
+AI System
+AI Model
+(“Thinking”)
+Data / 
+Input
+Outcome / 
+Output
+Environment 
+“Perceiving”
+“Acting”
+OECD 2019

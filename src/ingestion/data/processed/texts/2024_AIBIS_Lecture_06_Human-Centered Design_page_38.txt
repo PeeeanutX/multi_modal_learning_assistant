@@ -1,0 +1,18 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Evaluation Goals
+Collect new information 
+about user needs
+Provide feedback on 
+strengths and 
+weaknesses of the 
+design solution from 
+the user’s perspective 
+Assess whether 
+user requirements 
+have been met 
+Establish baselines or 
+make comparisons 
+between designs
+ISO 9241-210

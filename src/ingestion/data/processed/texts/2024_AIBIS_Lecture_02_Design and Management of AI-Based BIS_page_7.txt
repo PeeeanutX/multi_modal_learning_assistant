@@ -1,0 +1,24 @@
+•
+There are many process models or frameworks that offer step-by-step guidance on how to 
+design a (business) information system
+•
+These models typically involve a set of activities:
+–
+Analyzing the status quo and collecting requirements
+–
+Evaluating (design) alternatives
+–
+Developing the system (or procuring it) 
+–
+Implementation, operation, and maintenance
+–
+…
+•
+The design process is not linear but iterative!
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Design as a Process
+Design, used as a verb, refers to the act of planning or creating 
+something for a specific purpose (“process”). 
+Baskerville et al. 2015

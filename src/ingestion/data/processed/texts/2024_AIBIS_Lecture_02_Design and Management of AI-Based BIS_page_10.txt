@@ -1,0 +1,30 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Basic Design Process of AI-Based BIS (2)
+OECD (2019)
+Step
+Description
+1. Design, data 
+and modelling
+•
+Planning and design involves articulating the system’s concept and objectives, 
+underlying assumptions, context and requirements, and potentially building a 
+prototype.
+•
+Data collection and processing includes gathering and cleaning data, performing 
+checks for completeness and quality, and documenting the dataset. 
+•
+Model building and interpretation involves the creation or selection of models or 
+algorithms, their calibration and/or training and interpretation.
+2. Verification 
+and validation
+… involves executing and tuning models, with tests to assess performance across various 
+dimensions and considerations. 
+3. Deployment
+… involves piloting, checking compatibility with legacy systems, ensuring regulatory 
+compliance, managing organizational change and evaluating user experience. 
+4. Operation 
+and monitoring
+… involves operating the AI system and continuously assessing its recommendations and 
+impacts (both intended and unintended) in light of objectives and ethical considerations.

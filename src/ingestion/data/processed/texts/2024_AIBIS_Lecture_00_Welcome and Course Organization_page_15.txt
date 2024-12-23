@@ -1,0 +1,21 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Learning Goals
+•
+Explain what AI-based business information 
+systems are and how they enable important 
+business capabilities
+•
+Describe the theoretical and conceptual 
+foundations that guide the design and management 
+of different AI-based business information systems
+•
+Identify key challenges in designing and managing 
+different types of AI-based business information 
+systems and develop strategies for addressing 
+these challenges
+•
+Gain some hands-on experience with explainable 
+AI techniques and human-centered design 
+approaches

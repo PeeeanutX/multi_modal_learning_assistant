@@ -1,0 +1,23 @@
+•
+Case study of a German bank (“Main 
+Finance”)
+•
+Main Finance implemented an AI-
+based system (“CleverLoan”) to 
+substitute for human decision making 
+in the loan consultation process
+•
+Before the introduction of CleverLoan, 
+the bank’s loan consultants were 
+responsible for advising customers 
+and deciding whether to grant a loans
+•
+Afterwards, CleverLoan autonomously 
+decided whether to approve a loan 
+and provided the consultant with a 
+final and irreversible decision
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+Research Example: Use of AI in Loan Decision-Making
+Mayer et al. 2020; Strich et al. 2021

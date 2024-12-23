@@ -1,0 +1,23 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+Course Details
+ECTS
+5
+Hours per week (SWS)
+4 (Lecture 2 + Exercise 2)
+Verwendbarkeit / 
+Anrechenbarkeit
+Wirtschaftsinformatik / Information Systems
+(Master Wirtschaftsinformatik & Master Business Administration: Wirtschaftsinformatik-
+Vertiefung)
+Type of examination 
+(“Prüfungsform”)
+Portfolio: 
+1.Group work and presentations during the course exercise (40%)
+2.Final exam (60%)
+Requirements
+Basic skills in data analysis and/or programming (e.g., Python, R) are 
+highly recommended.
+Teaching language 
+English

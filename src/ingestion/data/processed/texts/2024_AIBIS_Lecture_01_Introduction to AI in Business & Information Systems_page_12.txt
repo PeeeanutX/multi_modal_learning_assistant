@@ -1,0 +1,15 @@
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Definition: AI-Based (Business) Information System
+AI-based information systems are socio-technical systems in 
+which humans perform tasks by using an AI system in a specific 
+context to achieve specific goals and outcomes. 
+CONTEXT (E.G., BUSINESS)
+HUMAN
+AI
+SYSTEM
+TASK
+GOAL
+OUTCOME
+Based on: Heinzl et al. 2024
