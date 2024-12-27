@@ -21,7 +21,7 @@ logger.addHandler(handler)
 class RetrieverConfig:
     dense_retriever_path: str
     faiss_index_path: str
-    top_k: int = 5
+    top_k: int = 20
     use_gpu: bool = True
 
 

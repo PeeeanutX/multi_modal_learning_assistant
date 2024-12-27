@@ -1,6 +1,0 @@
-AI or human: which would you prefer to 
-perform these tasks for you?
-• Recommending a marketing strategy
-• Hiring and firing employees
-• Buying stocks
-• Diagnosing a disease

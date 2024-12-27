@@ -1,9 +1,0 @@
-Prof. Dr. Ulrich Gnewuch
-Chair of Explainable AI-based Business Information Systems
-17
-LLM-Based Conversational AI
-Large language models (LLMs) are trained on extensive textual data, learning to 
-predict the next word in a sentence and generate coherent text.
-Vector of probabilities
-→Generative AI 
-Lecture

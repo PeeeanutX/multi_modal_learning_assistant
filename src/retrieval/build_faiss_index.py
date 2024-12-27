@@ -24,81 +24,75 @@ tokenizer = AutoTokenizer.from_pretrained(DENSE_RETRIEVER_PATH, use_fast=True)
 def extract_filename_metadata(fname: str):
     """
     Example:
-      2024_AIBIS_Lecture_06_Human-Centered Design_page_17.txt
+      2024_AIBIS_Lecture_06_Human-Centered Design.txt
       2024_AIBIS_Lecture_06_Human-Centered Design_page_17_img_3.txt
-
-    This function will parse out:
-      - lecture_number  => e.g. "06"
-      - lecture_name    => e.g. "Human-Centered Design"
-      - page            => e.g. "17"
-      - img             => e.g. "3" (if present)
-
-    Adjust the pattern as needed to match your actual file naming.
+    This function will parse out e.g. "06" for lecture_number, etc.
     """
     meta = {}
-
     # Regex to capture lecture number, name, page, optional image number
     pattern = re.compile(
-        r"2024_AIBIS_Lecture_(\d+)_(.+?)_page_(\d+)(?:_img_(\d+))?"
+        r"2024_AIBIS_Lecture_(\d+)_(.+)\.txt$"
     )
     match = pattern.search(fname)
     if match:
         meta["lecture_number"] = match.group(1)  # e.g. "06"
         meta["lecture_name"] = match.group(2)  # e.g. "Human-Centered Design"
-        meta["page"] = match.group(3)  # e.g. "17"
-        # If _img_ is present, group(4) won't be None
-        if match.group(4) is not None:
-            meta["img"] = match.group(4)  # e.g. "3"
 
     return meta
 
 
-def split_into_token_chunks(text, chunk_token_limit=256) -> List[str]:
+def chunk_text(text, chunk_token_limit=512) -> List[str]:
     tokens = tokenizer.encode(text, add_special_tokens=False)
     chunks = []
     for i in range(0, len(tokens), chunk_token_limit):
-        token_chunk = tokens[i:i + chunk_token_limit]
+        token_chunk = tokens[i : i + chunk_token_limit]
         chunk_text = tokenizer.decode(token_chunk, skip_special_tokens=True)
         chunks.append(chunk_text.strip())
     return chunks
 
 
-def load_text_chunks() -> List[Document]:
+def load_text_and_images() -> List[Document]:
     docs = []
+    tokenizer = AutoTokenizer.from_pretrained(DENSE_RETRIEVER_PATH, use_fast=True)
 
     if os.path.exists(TEXTS_DIR):
         for fname in os.listdir(TEXTS_DIR):
-            if fname.endswith(".txt"):
-                full_path = os.path.join(TEXTS_DIR, fname)
-                with open(full_path, "r", encoding='utf-8') as f:
-                    content = f.read().strip()
+            if not fname.endswith(".txt"):
+                continue
+            full_path = os.path.join(TEXTS_DIR, fname)
+            with open(full_path, "r", encoding='utf-8') as f:
+                entire_text = f.read().strip()
 
-                chunks = split_into_token_chunks(content, chunk_token_limit=256)
-                meta = extract_filename_metadata(fname)
-                meta["source"] = fname
-                meta["type"] = "text"
+            meta = extract_filename_metadata(fname)
+            meta["source"] = fname
+            meta["type"] = "pdf_text"
 
-                for chunk in chunks:
-                    doc = Document(page_content=chunk, metadata=dict(meta))
-                    docs.append(doc)
-    else:
-        logger.warning(f"No directory found at {TEXTS_DIR}")
+            docs.append(Document(page_content=entire_text, metadata=meta))
 
     if os.path.exists(IMAGE_TEXTS_DIR):
         for fname in os.listdir(IMAGE_TEXTS_DIR):
-            if fname.endswith(".txt"):
-                full_path = os.path.join(IMAGE_TEXTS_DIR, fname)
-                with open(full_path, "r", encoding='utf-8') as f:
-                    caption = f.read().strip()
+            if not fname.endswith(".txt"):
+                continue
+            full_path = os.path.join(IMAGE_TEXTS_DIR, fname)
+            with open(full_path, "r", encoding='utf-8') as f:
+                caption = f.read().strip()
 
-                chunks = split_into_token_chunks(caption, chunk_token_limit=256)
-                meta = extract_filename_metadata(fname)
-                meta["source"] = fname
-                meta["type"] = "image_description"
+            pattern = re.compile(r"page_(\d+)_img_(\d+)")
+            match = pattern.search(fname)
+            if match:
+                page = match.group(1)
+                img_idx = match.group(2)
+            else:
+                page = "??"
+                img_idx = "??"
+            meta = {
+                "source": fname,
+                "type": "image_description",
+                "page": page,
+                "img_idx": img_idx
+            }
 
-                for chunk in split_into_token_chunks(caption, chunk_token_limit=500):
-                    doc = Document(page_content=chunk, metadata=dict(meta))
-                    docs.append(doc)
+            docs.append(Document(page_content=caption, metadata=meta))
     else:
         logger.warning(f"No directory found at {TEXTS_DIR}")
 
@@ -111,7 +105,6 @@ class DenseRetrieverEmbedder:
     A wrapper class to produce document embeddings using the trained dense retriever model.
     It uses the doc encoder of the model to get embeddings.
     """
-
     def __init__(self, model_path: str, use_gpu: bool = True):
         self.device = "cuda" if torch.cuda.is_available() and use_gpu else "cpu"
         logger.info("Loading dense retriever model for embeddings...")
@@ -146,7 +139,7 @@ class DenseRetrieverEmbedder:
 
 def main():
     logger.info("Loading documents...")
-    docs = load_text_chunks()
+    docs = load_text_and_images()
     logger.info(f"Loaded {len(docs)} chunked documents.")
 
     embedder = DenseRetrieverEmbedder(DENSE_RETRIEVER_PATH, use_gpu=True)

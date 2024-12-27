@@ -1,9 +1,0 @@
-Prof. Dr. Ulrich Gnewuch
-Chair of Explainable AI-based Business Information Systems
-28
-Recommended Readings
-Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS Quarterly, 45(3), 
-1433-1450.
-Benbya, H., Pachidi, S., & Jarvenpaa, S. (2021). Artificial intelligence in organizations: Implications for information 
-systems research. Journal of the Association for Information Systems, 22(2), 281-303.
-Shneiderman, B. (2022). Human-centered AI. Oxford University Press. Part 2: Human-Centered AI Framework
