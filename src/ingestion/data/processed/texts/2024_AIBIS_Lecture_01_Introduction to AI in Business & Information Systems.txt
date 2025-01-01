@@ -1,7 +1,9 @@
+[PAGE 1]
 AI-Based Business Information Systems
 Introduction to AI in Business & Information Systems
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 2]
 Lecture
 AI-Enabled Business Capabilities
 Prof. Dr. Ulrich Gnewuch
@@ -38,6 +40,7 @@ Explainable AI
 Generative AI
 AI Ethics & Responsible AI
 
+[PAGE 3]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 3
@@ -59,22 +62,26 @@ Explain why it is useful to look at AI through the
 lens of business capabilities rather than 
 technologies
 
+[PAGE 4]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 4
 AI Offers New (Business) Opportunities …
 
+[PAGE 5]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 5
 … But Also Creates New (Business) Challenges
 
+[PAGE 6]
 What is AI? What is an AI-based 
 business information system?
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 6
 
+[PAGE 7]
 •
 No singular, agreed-upon definition for AI
 •
@@ -95,6 +102,7 @@ Chair of Explainable AI-based Business Information Systems
 What is AI? 
 Berente et al. 2021
 
+[PAGE 8]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 8
@@ -144,6 +152,7 @@ OpenAI releases
 ChatGPT
 OECD 2019
 
+[PAGE 9]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 9
@@ -171,6 +180,7 @@ Machine learning / Deep
 learning (can process vast 
 quantities of data)
 
+[PAGE 10]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 10
@@ -191,6 +201,7 @@ Environment
 “Acting”
 OECD 2019
 
+[PAGE 11]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 11
@@ -213,6 +224,7 @@ Social
 • …
 e.g., AI system
 
+[PAGE 12]
 •
 Broad and generic definition applicable to any context 
 (e.g., business, private life)
@@ -233,6 +245,7 @@ Human
 Technology
 Heinzl et al. 2024
 
+[PAGE 13]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 13
@@ -249,6 +262,7 @@ GOAL
 OUTCOME
 Based on: Heinzl et al. 2024
 
+[PAGE 14]
 •
 The terms “human” and “user” are often used interchangeably
 •
@@ -265,6 +279,7 @@ People who interact with or are affected by an AI system when
 performing a task. 
 Based on: Heinzl et al. 2024
 
+[PAGE 15]
 •
 Can refer to single tasks or larger groups of tasks (e.g., business processes)
 •
@@ -283,6 +298,7 @@ Chair of Explainable AI-based Business Information Systems
 A set of activities undertaken in order to achieve a specific goal.
 Heinzl et al. 2024
 
+[PAGE 16]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 16
@@ -303,6 +319,7 @@ Environment
 “Perceiving”
 “Acting”
 
+[PAGE 17]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 17
@@ -310,6 +327,7 @@ Chair of Explainable AI-based Business Information Systems
 The physical, social, and technical conditions in which a human interacts 
 with or is affected by the AI system.
 
+[PAGE 18]
 •
 A goal is typically expressed in the form of a condition or state
 •
@@ -327,6 +345,7 @@ Chair of Explainable AI-based Business Information Systems
 Goals are the targets or accomplishments that a human wants to 
 achieve in the near or long term.
 
+[PAGE 19]
 •
 Large variety of possible outcomes:
 –
@@ -347,6 +366,7 @@ Outcomes are the consequences or results of the interplay between the
 three elements of human, task, and AI system.
 Sarker et al. 2019
 
+[PAGE 20]
 Your Examples of AI-Based Business 
 Information Systems
 Please look at the conceptualization of AI-
@@ -359,6 +379,7 @@ examples?
 ~5 minutes and be ready to share one 
 example
 
+[PAGE 21]
 How are AI-based business information 
 systems different from more traditional 
 business information systems?
@@ -366,6 +387,7 @@ Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 21
 
+[PAGE 22]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 22
@@ -381,6 +403,7 @@ Inscrutability
 “Being unintelligible to 
 specific audiences”
 
+[PAGE 23]
 •
 AI-based business information systems have an increasing 
 capacity to act on their own, without human intervention (and 
@@ -406,6 +429,7 @@ Autonomy
 “Acting without 
 human intervention”
 
+[PAGE 24]
 •
 Previous generations of business information systems had 
 limited ability to automatically improve through data and 
@@ -437,6 +461,7 @@ Learning
 “Improving through 
 data and experience”
 
+[PAGE 25]
 •
 AI-based business information systems and their outputs often are 
 intelligible only to a select audience (e.g., developers, data 
@@ -466,6 +491,7 @@ Inscrutability
 “Being unintelligible to 
 specific audiences”
 
+[PAGE 26]
 •
 Autonomy, learning, and inscrutability are 
 interdependent facets that feed into each 
@@ -488,17 +514,20 @@ Inscrutability
 Learning
 Berente et al. 2021
 
+[PAGE 27]
 How can AI create 
 business value?
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 27
 
+[PAGE 28]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 28
 How (Some) Organizations View AI …
 
+[PAGE 29]
 •
 AI capabilities have 
 developed rapidly, and AI 
@@ -520,6 +549,7 @@ Chair of Explainable AI-based Business Information Systems
 Rapid Pace of AI Development
 Giattino et al. 2023
 
+[PAGE 30]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 30
@@ -535,6 +565,7 @@ that enable an organization to achieve its business objectives and
 deliver value to its stakeholders. (based on Margherita 2014)
 Davenport & Ronaki 2018; Benbya et al. 2021
 
+[PAGE 31]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 31
@@ -546,6 +577,7 @@ Insights &
 Decisions
 Innovation
 
+[PAGE 32]
 Innovation
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
@@ -567,6 +599,7 @@ Insights &
 Decisions
 Benbya et al. 2021
 
+[PAGE 33]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 33
@@ -589,6 +622,7 @@ multiple) business capabilities:
 –
 Automation, engagement, insights & decisions, innovation
 
+[PAGE 34]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 34
@@ -596,6 +630,7 @@ Thank you for
 your attention!
 Any questions?
 
+[PAGE 35]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 35

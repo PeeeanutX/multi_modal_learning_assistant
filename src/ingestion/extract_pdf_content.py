@@ -10,12 +10,13 @@ logger.setLevel(logging.INFO)
 def extract_pdf_content(pdf_path: str, texts_output_dir: str, images_output_dir: str):
     doc = fitz.open(pdf_path)
     base_pdf_name = os.path.splitext(os.path.basename(pdf_path))[0]
-    full_text = []
+    page_texts = []
 
     for page_idx, page in enumerate(doc):
         page_text = page.get_text("text").strip()
         if page_text:
-            full_text.append(page_text.strip())
+            marker = f"[PAGE {page_idx+1}]\n"
+            page_texts.append(f"{marker}{page_text}")
 
         image_list = page.get_images(full=True)
         for img_idx, img_info in enumerate(image_list, start=1):
@@ -23,13 +24,13 @@ def extract_pdf_content(pdf_path: str, texts_output_dir: str, images_output_dir:
             base_image = doc.extract_image(xref)
             img_bytes = base_image["image"]
             ext = base_image["ext"]
-            image_name = f"{base_pdf_name}_page_{page_idx}_img_{img_idx}.{ext}"
+            image_name = f"{base_pdf_name}_page_{page_idx+1}_img_{img_idx}.{ext}"
             image_path = os.path.join(images_output_dir, image_name)
             with open(image_path, "wb") as img_file:
                 img_file.write(img_bytes)
 
-    if full_text:
-        entire_pdf_text = "\n\n".join(full_text)
+    if page_texts:
+        entire_pdf_text = "\n\n".join(page_texts)
         text_file_path = os.path.join(texts_output_dir, f"{base_pdf_name}.txt")
         with open(text_file_path, "w", encoding='utf-8') as f:
             f.write(entire_pdf_text)
@@ -46,7 +47,6 @@ def main():
     os.makedirs(images_output_dir, exist_ok=True)
 
     pdf_files = [f for f in os.listdir(pdfs_dir) if f.lower().endswith('.pdf')]
-
     if not pdf_files:
         logger.warning("No PDF files found in the provided directory.")
         return

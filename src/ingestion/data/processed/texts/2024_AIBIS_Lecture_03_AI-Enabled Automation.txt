@@ -1,7 +1,9 @@
+[PAGE 1]
 AI-Based Business Information Systems
 AI-Enabled Automation
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 2]
 Lecture
 AI-Enabled Business Capabilities
 Prof. Dr. Ulrich Gnewuch
@@ -38,6 +40,7 @@ Explainable AI
 Generative AI
 AI Ethics & Responsible AI
 
+[PAGE 3]
 RECAP FROM LAST LECTURE:
 • Please arrange the steps of the basic 
 design process of AI-based systems in 
@@ -48,6 +51,7 @@ processes?
 • What are potential questions related to 
 managing AI at the strategic level?
 
+[PAGE 4]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 4
@@ -66,22 +70,26 @@ Contrast automation with
 augmentation and describe different 
 types of augmentation
 
+[PAGE 5]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 5
 Automation = Job Loss?
 
+[PAGE 6]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 6
 Myth vs. Reality?
 
+[PAGE 7]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 7
 Technological Unemployment Is Not a New Phenomenon
 https://www.npr.org/sections/money/2015/05/18/404991483/how-machines-destroy-and-create-jobs-in-4-graphs
 
+[PAGE 8]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 8
@@ -94,11 +102,13 @@ Relief from
 mundane tasks
 Raisch & Krakowski 2021
 
+[PAGE 9]
 AI-Enabled Automation
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 9
 
+[PAGE 10]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 10
@@ -114,6 +124,7 @@ that enable an organization to achieve its business objectives and
 deliver value to its stakeholders. (based on Margherita 2014)
 Davenport & Ronaki 2018; Benbya et al. 2021
 
+[PAGE 11]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 11
@@ -124,6 +135,7 @@ Physical automation
 Cognitive automation
 Benbya et al. 2021; Raisch & Krakowski 2021
 
+[PAGE 12]
 •
 Physical automation is as old as the first industrial 
 revolution
@@ -144,6 +156,7 @@ Physical automation focuses on the use of machines (e.g.,
 robots) that execute tasks in the physical world.
 Spinning Jenny
 
+[PAGE 13]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 13
@@ -159,6 +172,7 @@ ServeBot
 Kuka
 Nao
 
+[PAGE 14]
 •
 More than 20,000 items make up the average 
 assortment of a drugstore in Germany
@@ -182,6 +196,7 @@ Chair of Explainable AI-based Business Information Systems
 Example: Shelf Scanning Robots
 https://www.businessinsider.de/wirtschaft/nachts-faehrt-ein-roboter-durch-die-dm-filialen-und-arbeitet-wie-die-drogeriekette-mit-maschinen-angestellte-entlasten-will-a/
 
+[PAGE 15]
 •
 Cognitive automation typically targets knowledge and service work tasks, for which 
 automation seemed unimaginable a decade ago
@@ -197,6 +212,7 @@ Cognitive automation focuses on the use of software (e.g.,
 software robots) that execute tasks in the digital world.
 Coombs et al. 2020; Engel et al. 2022
 
+[PAGE 16]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 16
@@ -214,6 +230,7 @@ AutoModerator on Reddit
 Allie (Allianz Germany)
 Seiffer et al. 2021
 
+[PAGE 17]
 •
 RPA bots essentially mimic human behavior by logging in with an account and password, 
 entering data, clicking buttons, etc.
@@ -234,6 +251,7 @@ be automated through software robots (“bots”) that operate on
 the user interface in the same way as humans do.
 Willcocks et al. 2016; Schulte-Derne & Gnewuch 2024
 
+[PAGE 18]
 •
 RPA bots are ideally suited to replace 
 humans for so called “swivel chair” 
@@ -251,29 +269,34 @@ Chair of Explainable AI-based Business Information Systems
 Willcocks et al. 2016
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 19]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 19
 Example: UiPath Robotic Process Automation (RPA)
 https://www.youtube.com/watch?v=3wV271YNyfY
 
+[PAGE 20]
 Chair of Explainable AI-based Business Information Systems
 20
 Example: UiPath Robotic Process Automation (RPA)
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 21]
 Chair of Explainable AI-based Business Information Systems
 21
 How To Choose Which Processes To Automate With RPA?
 van der Aalst et al. 2018
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 22]
 Evolution of 
 AI-Enabled Automation
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 22
 
+[PAGE 23]
 In how many years do you expect AI to be 
 able to perform the following jobs at or 
 above the level of a typical human?
@@ -283,6 +306,7 @@ above the level of a typical human?
 • Truck driver
 • All human jobs
 
+[PAGE 24]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 24
@@ -292,6 +316,7 @@ Survey of 352
 AI Experts 
 (in 2017):
 
+[PAGE 25]
 •
 Four intelligences: mechanical, analytical, intuitive, empathetic 
 Prof. Dr. Ulrich Gnewuch
@@ -323,29 +348,34 @@ Social, emotional, communicative, and
 highly interactive tasks
 Politicians, negotiators, psychiatrists, …
 
+[PAGE 26]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 26
 Theory of AI Job Replacement 
 Huang & Rust 2018
 
+[PAGE 27]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 27
 Theory of AI Job Replacement 
 Huang & Rust 2018
 
+[PAGE 28]
 Human Responses to               
 AI-Enabled Automation
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 29
 
+[PAGE 29]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 30
 Employee Perspective
 
+[PAGE 30]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 31
@@ -354,6 +384,7 @@ Seiffer et al. 2021
 Employee 
 Perspective:
 
+[PAGE 31]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 32
@@ -376,6 +407,7 @@ then they can get on and do much more
 human add value work”
 Excitement
 
+[PAGE 32]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 33
@@ -395,6 +427,7 @@ superuser as an individual bot can
 do random stuff to the database, 
 which is quite risky”
 
+[PAGE 33]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 34
@@ -415,6 +448,7 @@ understand this. I don’t like this. I’m
 going to go back to doing it myself.”
 Waizenegger & Techatassanasoontorn 2022
 
+[PAGE 34]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 35
@@ -423,6 +457,7 @@ Humans
 AI
 Humans vs. AI: Who should do the job?
 
+[PAGE 35]
 AI or human: which would you prefer to 
 perform these tasks for you?
 • Recommending a marketing strategy
@@ -430,6 +465,7 @@ perform these tasks for you?
 • Buying stocks
 • Diagnosing a disease
 
+[PAGE 36]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 37
@@ -438,6 +474,7 @@ User
 Perspective:
 Castelo et al. 2019
 
+[PAGE 37]
 •
 Skill erosion refers to the process of losing 
 skills and knowledge needed to perform a 
@@ -462,6 +499,7 @@ Chair of Explainable AI-based Business Information Systems
 Skill Erosion
 Rinta-Kahila et al. 2023
 
+[PAGE 38]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 39
@@ -473,6 +511,7 @@ spelling and grammar in
 the age of AI and AI-based 
 writing assistance?
 
+[PAGE 39]
 Erosion of Language Skills in the Age of AI
 Today, AI-based writing tools can not only 
 provide language feedback but also generate 
@@ -484,17 +523,20 @@ why not?
 ~5 minutes and be ready to share your 
 opinions
 
+[PAGE 40]
 Automation vs. Augmentation
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 41
 
+[PAGE 41]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 42
 Augmentation to the Rescue?
 https://www.telekom.com/en/company/digital-responsibility/details/artificial-intelligence-ai-guideline-524366
 
+[PAGE 42]
 •
 IT has always been used to automate work, but the growing capabilities of AI may allow 
 automation on a much larger scale
@@ -516,6 +558,7 @@ for more value-added work
 Leverage complementary strengths 
 and enable mutual learning
 
+[PAGE 43]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 44
@@ -529,17 +572,20 @@ Human
 Human
 AI
 
+[PAGE 44]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 45
 Human-in-the-Loop: Example
 
+[PAGE 45]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 46
 AI-in-the-Loop: Example
 https://www.youtube.com/watch?v=oe35a-JwRqA
 
+[PAGE 46]
 Automation and augmentation are interdependent!
 1. Across time: Augmentation of a task can allow 
 subsequent automation (see example from self-study 
@@ -565,6 +611,7 @@ Automation
 Augmentation 
 (Task D)
 
+[PAGE 47]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 48
@@ -590,6 +637,7 @@ Augmentation (e.g., human-in-the-loop) is often
 described as an alternative to automation, but the two 
 approaches are not independent from each other
 
+[PAGE 48]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 49
@@ -597,6 +645,7 @@ Thank you for
 your attention!
 Any questions?
 
+[PAGE 49]
 Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for Information Systems Research. Journal of the 
 Association for Information Systems, 22, 281–303. 
 Castelo, N., Bos, M. W., & Lehmann, D. R. (2019). Task-Dependent Algorithm Aversion. Journal of Marketing Research, 56(5), 809–825. 

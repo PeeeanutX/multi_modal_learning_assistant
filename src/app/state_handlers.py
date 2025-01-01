@@ -3,6 +3,8 @@ import random
 from typing import Any, Dict, List
 import streamlit as st
 from langchain.schema import HumanMessage, AIMessage
+from src.app.analytics_manager import init_analytics_in_state
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -33,3 +35,10 @@ def init_session_state():
     if 'quiz_history' not in st.session_state:
         st.session_state.quiz_history = []
 
+    if 'learning_goal' not in st.session_state:
+        st.session_state.learning_goal = "No specific goal yet"
+
+    if 'skill_level' not in st.session_state:
+        st.session_state.skill_level = "Intermediate"
+
+    init_analytics_in_state()

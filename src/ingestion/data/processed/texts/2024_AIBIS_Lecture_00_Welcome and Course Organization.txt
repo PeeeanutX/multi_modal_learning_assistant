@@ -1,7 +1,9 @@
+[PAGE 1]
 AI-Based Business Information Systems
 Welcome & Course Organization
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 2]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 2
@@ -12,6 +14,7 @@ Offered by:
 Chair of Explainable AI-based Business 
 Information Systems
 
+[PAGE 3]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 3
@@ -30,6 +33,7 @@ B.Sc. & M.Sc. Information Systems
 and Michigan State University
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 4]
 Introduction – Your Turn: 
 • What do you study? In which semester are 
 you?
@@ -38,6 +42,7 @@ you?
 and/or programming (e.g., Python, R)?
 • What are your expectations for this course?
 
+[PAGE 5]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 6
@@ -45,6 +50,7 @@ Introduction:
 Chair of Explainable AI-based 
 Business Information Systems
 
+[PAGE 6]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 7
@@ -55,6 +61,7 @@ business and society.
 Chair of Explainable AI-based Business Information Systems
 https://www.wiwi.uni-passau.de/artificial-intelligence
 
+[PAGE 7]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 8
@@ -77,6 +84,7 @@ Customer–AI Interaction
 Interactive Business Intelligence 
 & Analytics Systems
 
+[PAGE 8]
 Selected Topics & Partners
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
@@ -103,6 +111,7 @@ Shopping Assistants
 • Social Cues in Human–Chatbot 
 Interaction
 
+[PAGE 9]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 10
@@ -127,6 +136,7 @@ Information Systems (ECIS 2023).
 • Data-driven Decision-Making
 • Dashboards & Data Storytelling
 
+[PAGE 10]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 11
@@ -160,6 +170,7 @@ Betriebliche
 Anwendungssysteme 
 *Students who attended “Design and Management of AI-Based Business Information Systems” (35000) cannot participate in this course.
 
+[PAGE 11]
 •
 Lectures are supplemented with hands-on 
 group projects where students work on 
@@ -177,6 +188,7 @@ Chair of Explainable AI-based Business Information Systems
 12
 Practical Relevance & Real-World Problems
 
+[PAGE 12]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 13
@@ -204,6 +216,7 @@ nication, collaboration, emotion
 regulation)
 +
 
+[PAGE 13]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 14
@@ -222,12 +235,14 @@ and deliver scientific knowledge
 Hi!
 https://www.wiwi.uni-passau.de/en/artificial-intelligence
 
+[PAGE 14]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 15
 Course Overview & 
 Organization
 
+[PAGE 15]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 16
@@ -250,6 +265,7 @@ How are AI-based business information
 systems different from more traditional 
 business information systems?
 
+[PAGE 16]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 17
@@ -272,6 +288,7 @@ Gain some hands-on experience with explainable
 AI techniques and human-centered design 
 approaches
 
+[PAGE 17]
 Lecture
 AI-Enabled Business Capabilities
 Prof. Dr. Ulrich Gnewuch
@@ -308,6 +325,7 @@ Explainable AI
 Generative AI
 AI Ethics & Responsible AI
 
+[PAGE 18]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 19
@@ -315,6 +333,7 @@ Guest Lecture
 Dr. Alexander Keller
 Team Lead Data Analytics @ ZF Group
 
+[PAGE 19]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 20
@@ -339,6 +358,7 @@ highly recommended.
 Teaching language 
 English
 
+[PAGE 20]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 21
@@ -364,6 +384,7 @@ presentations will be graded.
 40 %
 4 SWS / 5 ECTS | approx. 150 hours work overall
 
+[PAGE 21]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 22
@@ -379,6 +400,7 @@ In-person sessions that provide
 opportunities to discuss and engage 
 with the learning material
 
+[PAGE 22]
 •
 Four exercises with the following structure and timeline:
 Prof. Dr. Ulrich Gnewuch
@@ -417,6 +439,7 @@ lecturers
 1 week 
 1 week
 
+[PAGE 23]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 24
@@ -431,6 +454,7 @@ Please use this MS Forms survey to provide
 information about yourself and your skills by 
 Wednesday, October 23rd, 2024
 
+[PAGE 24]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 26
@@ -455,6 +479,7 @@ and you should have understood their content
 –
 But: You do not have to “memorize” them
 
+[PAGE 25]
 Interactive Elements
 Lecture Recap
 (via Mentimeter)
@@ -463,6 +488,7 @@ with Partner
 Questions & Ideas
 (via Mentimeter)
 
+[PAGE 26]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 28
@@ -473,6 +499,7 @@ Benbya, H., Pachidi, S., & Jarvenpaa, S. (2021). Artificial intelligence in orga
 systems research. Journal of the Association for Information Systems, 22(2), 281-303.
 Shneiderman, B. (2022). Human-centered AI. Oxford University Press. Part 2: Human-Centered AI Framework
 
+[PAGE 27]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 29
@@ -480,6 +507,7 @@ Stud.IP
 https://studip.uni-passau.de/studip/dispatch.php/course/details?sem_id=504e44d52f54a2cb8781212c1825870d&again=yes
 https://studip.uni-passau.de/studip/dispatch.php/course/details?sem_id=82eba2476a1d01b332a0dbc10264142d&again=yes
 
+[PAGE 28]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 30
@@ -492,6 +520,7 @@ Dr.-Hans-Kapfinger-Str. 12
 94032 Passau, Germany
 ulrich.gnewuch@uni-passau.de
 
+[PAGE 29]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 31

@@ -1,0 +1,30 @@
+{
+  "peer_questions": [
+    {
+      "id": "98319fee-2315-46df-a498-57431d83fe88",
+      "question_text": "Can someone give an example for Cognitive Engagement?",
+      "skill_tag": "Beginner",
+      "upvotes": 7,
+      "answers": [
+        {
+          "answer_text": "I don't know",
+          "upvotes": 4,
+          "voters": [
+            "7519c3c3"
+          ]
+        }
+      ],
+      "voters": [
+        "7519c3c3"
+      ]
+    },
+    {
+      "id": "583340b8-17af-463a-8921-ad18be3097a6",
+      "question_text": "hello",
+      "skill_tag": "Beginner",
+      "upvotes": 0,
+      "answers": [],
+      "voters": []
+    }
+  ]
+}

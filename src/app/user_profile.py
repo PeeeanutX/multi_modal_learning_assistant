@@ -46,4 +46,16 @@ def handle_access_key():
                 else:
                     messages.append(AIMessage(content=m["content"]))
             st.session_state['messages'] = messages
-        return
+
+        if "skill-level" in user_profile:
+            st.session_state['skill_level'] = user_profile["skill_level"]
+
+        if "learning_goal" in user_profile:
+            st.session_state['learning_goal'] = user_profile["learning_goal"]
+
+        if "analytics" in user_profile:
+            from src.app.analytics_manager import init_analytics_in_state
+            init_analytics_in_state()
+            saved_analytics = user_profile["analytics"]
+            for key, val in saved_analytics.items():
+                st.session_state["analytics"][key] = val

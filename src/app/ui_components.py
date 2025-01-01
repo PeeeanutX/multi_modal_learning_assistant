@@ -41,11 +41,17 @@ def build_header_section():
 
 
 def show_conversation():
+    """
+    Example: Display conversation in a container.
+    """
     st.subheader("Conversation History", help="All messages exchanged so far")
     with st.container():
         for msg in st.session_state['messages']:
             role = "User" if isinstance(msg, HumanMessage) else "Assistant"
-            st.write(f"**{role}** {msg.content}")
+            st.markdown(
+                f"<div class='chat-message'><strong>{role}:</strong> {msg.content}</div>",
+                unsafe_allow_html=True
+            )
 
         st.write('<div id="chat-end"></div>', unsafe_allow_html=True)
 
@@ -106,3 +112,52 @@ def show_refine_simplify_ui(llm_interface):
             st.session_state['messages'].append(AIMessage(content=f"(Simplified) {simplified}"))
             st.session_state['last_answer'] = simplified
             st.rerun()
+
+
+def show_goal_ui():
+    """
+    Let the user specify or update their learning goal.
+    This can be a text input or a selectbox, depending on the needs
+    """
+    st.markdown("#### Learning Goal")
+    existing_goal = st.session_state.get('learning_goal', "")
+    new_goal = st.text_input(
+        "What is your current learning goal?",
+        value=existing_goal,
+        help="For example: pass an exam, master advanced terminology, or general understanding."
+    )
+    if new_goal != existing_goal:
+        st.session_state.learning_goal = new_goal
+
+
+def show_short_term_goal_ui():
+    """
+    UI letting the user specify a short-term objective,
+    like '10 minutes to study' or 'Need a quick refresher'.
+    """
+    st.subheader("Short-Term Study Goal")
+    predefined_goals = [
+        "Quick 5-minute refresher",
+        "15-minute targeted practice",
+        "Deep dive if time allows"
+    ]
+    goal_mode = st.radio(
+        "Choose a quick objective:",
+        ["Choose a preset", "Custom goal"]
+    )
+
+    if goal_mode =="Choose a preset":
+        selected = st.selectbox("Preset Options", predefined_goals)
+        st.session_state["short_term_goal"] = selected
+    else:
+        custom_goal = st.text_input(
+            "Enter your short-term goal (e.g., 'I have 10 minutes')",
+            key="custom_short_term_goal"
+        )
+        if custom_goal.strip():
+            st.session_state["short_term_goal"] = custom_goal.strip()
+
+        if "short_term_goal" in st.session_state and st.session_state["short_term_goal"]:
+            st.info(f"Your current short-term goal: {st.session_state['short_term_goal']}")
+        else:
+            st.warning("No short-term goal set yet.")

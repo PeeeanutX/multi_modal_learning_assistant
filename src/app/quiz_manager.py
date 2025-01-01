@@ -113,11 +113,8 @@ def show_micro_assessment_dialog(llm_interface, skill_level: str):
     choices = quiz_data.get("choices", [])
     correct_idx = quiz_data.get("correct_idx", 0)
 
-    # Display the question
     st.write(question)
 
-    # Show the user’s possible choices
-    # default index = 0 so that user must intentionally pick an answer
     user_choice = st.radio("Your Answer:", choices, index=0)
 
     quiz_submitted = st.button("Submit Answer")

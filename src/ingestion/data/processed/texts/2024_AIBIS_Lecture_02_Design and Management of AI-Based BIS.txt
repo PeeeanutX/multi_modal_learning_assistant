@@ -1,7 +1,9 @@
+[PAGE 1]
 AI-Based Business Information Systems
 Design & Management of AI-Based Business Information Systems
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 2]
 Lecture
 AI-Enabled Business Capabilities
 Prof. Dr. Ulrich Gnewuch
@@ -38,6 +40,7 @@ Explainable AI
 Generative AI
 AI Ethics & Responsible AI
 
+[PAGE 3]
 RECAP FROM LAST LECTURE:
 • What are typical elements of an AI-
 based business information system?
@@ -48,6 +51,7 @@ information systems?
 based information systems that enables 
 at least two business capabilities.
 
+[PAGE 4]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 4
@@ -68,11 +72,13 @@ Identify challenges at the level of strategic,
 tactical, and operational AI management and 
 develop strategies for addressing them
 
+[PAGE 5]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 5
 AI & Design
 
+[PAGE 6]
 •
 “Design” can be understood as both a process and a product:
 Prof. Dr. Ulrich Gnewuch
@@ -88,11 +94,13 @@ outcome of the design process
 →“design product”
 Baskerville et al. 2015
 
+[PAGE 7]
 Design as a Process
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 7
 
+[PAGE 8]
 •
 There are many process models or frameworks that offer step-by-step guidance on how to 
 design a (business) information system
@@ -118,6 +126,7 @@ Design, used as a verb, refers to the act of planning or creating
 something for a specific purpose (“process”). 
 Baskerville et al. 2015
 
+[PAGE 9]
 •
 The systems development life 
 cycle (SDLC) is one of the most 
@@ -136,6 +145,7 @@ Chair of Explainable AI-based Business Information Systems
 Traditional Approaches to System Design
 Valacich et al. 2015
 
+[PAGE 10]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 10
@@ -144,6 +154,7 @@ OECD’s AI Systems Lifecycle (2019)
 Note: Steps with a technical focus (e.g., data collection, model 
 building and verification) are not covered in this course.
 
+[PAGE 11]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 11
@@ -175,6 +186,7 @@ and monitoring
 … involves operating the AI system and continuously assessing its recommendations and 
 impacts (both intended and unintended) in light of objectives and ethical considerations.
 
+[PAGE 12]
 •
 Similar high-level sequence of process steps:
 – Planning/analysis
@@ -193,6 +205,7 @@ Chair of Explainable AI-based Business Information Systems
 AI-Specific vs. Traditional Design Process
 OECD (2019), Dolata & Crowston (2019), Vial et al. (2023)
 
+[PAGE 13]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 13
@@ -201,6 +214,7 @@ OECD (2019)
 CRISP-DM (Shearer, 2000)
 Microsoft’s Team Data Science Process (Microsoft, 2022)
 
+[PAGE 14]
 Planning and design involves articulating the system’s concept and objectives, underlying 
 assumptions, context and requirements, and potentially building a prototype →How?
 Prof. Dr. Ulrich Gnewuch
@@ -208,6 +222,7 @@ Chair of Explainable AI-based Business Information Systems
 14
 Human-Centered Design Process (1)
 
+[PAGE 15]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 15
@@ -220,11 +235,13 @@ Evaluate
 Done
 DIN EN ISO 9241-210
 
+[PAGE 16]
 Design as a Product
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 16
 
+[PAGE 17]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 17
@@ -247,6 +264,7 @@ AI-specific design knowledge exists, but it is important to not forget about gen
 knowledge that applies to all (business) information systems
 Baskerville et al. 2015
 
+[PAGE 18]
 •
 Standards: specific design rules 
 with lower generality, but high 
@@ -274,6 +292,7 @@ Principles
 Standards 
 Guidelines
 
+[PAGE 19]
 •
 Standards are usually set by national or 
 international bodies to ensure compliance with 
@@ -293,12 +312,14 @@ Chair of Explainable AI-based Business Information Systems
 19
 Standards
 
+[PAGE 20]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 20
 AI Standardization is Still in Progress
 www.din.de/go/roadmap-ai
 
+[PAGE 21]
 •
 Often created by (software) companies
 •
@@ -335,6 +356,7 @@ of AI and automation
 https://www.br.de/extra/ai-automation-lab-
 english/ai-ethics100.html
 
+[PAGE 22]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 22
@@ -381,6 +403,7 @@ Reduce short-term memory load
 • Usability Judgment
 Norman 2013; Shneiderman et al. 2016; UsabilityBoK.org
 
+[PAGE 23]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 23
@@ -394,6 +417,7 @@ https://digital-
 strategy.ec.europa.eu/en/library
 /ethics-guidelines-trustworthy-ai
 
+[PAGE 24]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 24
@@ -423,6 +447,7 @@ Artificial intelligence should not be used to diminish the data rights or privac
 (UK Parliament)
 Jobin et al. 2019
 
+[PAGE 25]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 25
@@ -439,6 +464,7 @@ The disclosure of human involvement changed customer communication behavior
 This ultimately increased employee workload because fewer customer requests could be handled 
 automatically by the chatbot and had to delegated to a human
 
+[PAGE 26]
 Transparency in AI-Based Customer Service
 Please imagine that you are responsible for 
 designing a hybrid service agent (chatbot + human 
@@ -450,17 +476,20 @@ with your customers? Why?
 →Discuss these questions with a partner for ~5 
 minutes and be ready to share your opinions
 
+[PAGE 27]
 Management of AI-Based Business 
 Information Systems
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 28
 
+[PAGE 28]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 29
 AI & Management
 
+[PAGE 29]
 •
 There are three levels of management:
 –
@@ -483,11 +512,13 @@ controlling the tasks of others in an organization, and decision
 making is a key activity of managers.
 Drucker 2008
 
+[PAGE 30]
 Managing AI
 What do you think are common 
 challenges associated with the 
 management of AI?
 
+[PAGE 31]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 32
@@ -535,6 +566,7 @@ runs over years
 • Frequent updates and retraining of models is 
 necessary
 
+[PAGE 32]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 33
@@ -556,6 +588,7 @@ How can we prepare our workforce for
 AI? How and where can we find and 
 hire top AI talent?
 
+[PAGE 33]
 •
 IT has always been used to automate work, but the growing capabilities of AI may allow 
 automation on a much larger scale
@@ -577,6 +610,7 @@ for more value-added work
 Leverage complementary strengths 
 and enable mutual learning
 
+[PAGE 34]
 •
 The relationship between automation and 
 augmentation is not a trade-off decision
@@ -602,6 +636,7 @@ Chair of Explainable AI-based Business Information Systems
 But: Augmentation Can Lead to Automation
 Riley 2018; Raisch & Krakowski 2021
 
+[PAGE 35]
 •
 While some organizations immediately release 
 human employees, many try to avoid layoffs
@@ -625,6 +660,7 @@ Chair of Explainable AI-based Business Information Systems
 Upskilling and Reskilling
 Tamayo et al. 2023
 
+[PAGE 36]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 37
@@ -648,6 +684,7 @@ How will my department or my
 teams react when they hear about 
 the new AI system?
 
+[PAGE 37]
 •
 Case study at a German-based energy service provider
 •
@@ -668,6 +705,7 @@ Chair of Explainable AI-based Business Information Systems
 Research Example: Large-Scale RPA Implementation
 Schulte-Derne & Gnewuch 2024
 
+[PAGE 38]
 1.
 RPA implementation at ESP started with a small agile team consisting of a process manager, a 
 “key user” with a customer service background and external consultants
@@ -717,6 +755,7 @@ concept
 2022
 Schulte-Derne & Gnewuch 2024
 
+[PAGE 39]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 40
@@ -739,6 +778,7 @@ Which of my tasks can I delegate
 to AI? Which tasks does AI 
 delegate to me?
 
+[PAGE 40]
 •
 Case study of a German bank (“Main 
 Finance”)
@@ -763,6 +803,7 @@ Chair of Explainable AI-based Business Information Systems
 Research Example: Use of AI in Loan Decision-Making
 Mayer et al. 2020; Strich et al. 2021
 
+[PAGE 41]
 •
 The introduction of CleverLoan resulting in positive and negative changes to employees’ role 
 identity:
@@ -777,6 +818,7 @@ more valuable and interesting task
 Other employees felt their 
 professional identity threatened
 
+[PAGE 42]
 •
 Rather than perceiving AI as a 
 threat, employees may shift their 
@@ -797,6 +839,7 @@ Chair of Explainable AI-based Business Information Systems
 Change of Perspective: From Threat to Opportunity
 Afiouni & Pinsonneault 2022
 
+[PAGE 43]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 44
@@ -827,6 +870,7 @@ with a newly introduced AI-based system)
 There are common strategies and tactics for addressing these 
 challenges (e.g., upskilling and reskilling programs)
 
+[PAGE 44]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 45
@@ -834,6 +878,7 @@ Thank you for
 your attention!
 Any questions?
 
+[PAGE 45]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 46

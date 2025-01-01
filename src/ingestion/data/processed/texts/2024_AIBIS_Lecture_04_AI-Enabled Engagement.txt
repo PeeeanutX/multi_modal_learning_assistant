@@ -1,7 +1,9 @@
+[PAGE 1]
 AI-Based Business Information Systems
 AI-Enabled Engagement
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 2]
 Lecture
 AI-Enabled Business Capabilities
 Prof. Dr. Ulrich Gnewuch
@@ -38,6 +40,7 @@ Explainable AI
 Generative AI
 AI Ethics & Responsible AI
 
+[PAGE 3]
 RECAP FROM LAST LECTURE:
 • What are examples of software
 robots?
@@ -48,6 +51,7 @@ expected to perform them.
 • What are key challenges and risks of 
 AI-enabled automation?
 
+[PAGE 4]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 4
@@ -66,12 +70,14 @@ cues and social responses
 Discuss the benefits and risks of AI-
 enabled engagement and human-like AI
 
+[PAGE 5]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 5
 What does “Engagement” mean?
 https://www.dictionary.com/browse/engage
 
+[PAGE 6]
 •
 Engagement with …
 – a company and           
@@ -90,6 +96,7 @@ Engagement
 User
 Engagement
 
+[PAGE 7]
 •
 Higher levels of customer engagement increase customer 
 loyalty and purchase frequency, resulting in better overall 
@@ -109,6 +116,7 @@ Customer engagement is the intensity of an individual’s participation
 in and connection with a company’s offerings and/or activities.
 Vivek et al. 2012
 
+[PAGE 8]
 •
 The outcomes of high employee engagement are 
 improved productivity, loyalty, job satisfaction, and 
@@ -125,6 +133,7 @@ invest themselves physically, cognitively, and emotionally into
 their work roles.
 Kahn 1990
 
+[PAGE 9]
 9
 User Engagement
 User engagement is defined as a user’s technology-related state 
@@ -143,6 +152,7 @@ User engagement has three subdimensions: cognitive, emotional, and behavioral en
 Our focus is on user engagement
 Lehrer et al. 2023
 
+[PAGE 10]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 10
@@ -193,12 +203,14 @@ Interactions (e.g., clicks)
 …
 Lehrer et al. 2023
 
+[PAGE 11]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 11
 Behavioral Engagement: Example
 Social Media
 
+[PAGE 12]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 12
@@ -208,6 +220,7 @@ all-into-dopamine-addicts-and-what-we-can-do-to-break-the-cycle
 https://www.fastcompany.com/40491939/netflix-ceo-reed-
 hastings-sleep-is-our-competition
 
+[PAGE 13]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 13
@@ -215,12 +228,14 @@ Affective Engagement: Example
 https://replika.com/
 https://www.youtube.com/watch?v=DTq0MaOwTjE
 
+[PAGE 14]
 How can AI enable user 
 engagement?
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 14
 
+[PAGE 15]
 15
 AI-Enabled Engagement
 AI-enabled engagement refers to the use of AI to create 
@@ -237,10 +252,12 @@ that perform the same functions
 AI can be used to provide highly 
 human-like experiences
 
+[PAGE 16]
 What characterizes interactions 
 between humans? What makes 
 an experience “human-like”?
 
+[PAGE 17]
 •
 In human-human interaction, a person 
 perceives, interprets, and responds to a 
@@ -272,6 +289,7 @@ Head position
 Burgoon et al. 2010
 Prof. Dr. Ulrich Gnewuch
 
+[PAGE 18]
 •
 Users respond in a similar way to social cues from technology:
 18
@@ -298,12 +316,14 @@ Doctor, teammate, opponent, teacher,
 pet, guide
 Fogg 2002
 
+[PAGE 19]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 19
 Example: Physical Cues
 Realistic 3D avatars with human faces and body movements
 
+[PAGE 20]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 20
@@ -313,6 +333,7 @@ AI Lecture
 Chatbots and voice assistants that 
 converse with us via natural language
 
+[PAGE 21]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 21
@@ -324,12 +345,14 @@ adults-this-robot-companion-is-proving-its-possible/
 AI designed to take on specific roles such 
 as teammates, companions, doctors, etc.
 
+[PAGE 22]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 22
 Digital Humans – The Future of AI-Enabled Engagement?
 https://www.youtube.com/watch?v=S3F1vZYpH8c
 
+[PAGE 23]
 Social Responses:
 How do social cues lead to human-
 like interactions with AI?
@@ -337,6 +360,7 @@ Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 24
 
+[PAGE 24]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 25
@@ -345,6 +369,7 @@ Clifford Nass
 Nass et al. 1994; Nass & Moon 2000
 Youngme Moon
 
+[PAGE 25]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 26
@@ -365,6 +390,7 @@ Mindless Behavior
 Social Responses
 Nass et al. 1994, Nass & Moon 2000
 
+[PAGE 26]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 27
@@ -384,6 +410,7 @@ likeable, sociable, and
 friendly than “ChatBotX”
 Araujo 2018
 
+[PAGE 27]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 28
@@ -404,6 +431,7 @@ Gender attribution
 to computer
 Nass et al. 1997
 
+[PAGE 28]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 29
@@ -411,6 +439,7 @@ Chair of Explainable AI-based Business Information Systems
 Nass, C., Moon, Y., & Green, N. (1997). Are machines gender neutral? Gender-stereotypic responses to 
 computers with voices. Journal of Applied Social Psychology, 27(10), 864–876.
 
+[PAGE 29]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 30
@@ -423,12 +452,14 @@ playing music, or setting reminders. This sends a signal that women are
 docile, eager-to-please helpers without any agency, always on hand to help 
 their masters, helping to reinforce harmful stereotypes.”
 
+[PAGE 30]
 Challenges of AI-Enabled 
 Engagement and Human-Like AI
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 31
 
+[PAGE 31]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 32
@@ -442,6 +473,7 @@ Mori 1970
 Example: A robot that looks almost human 
 but certain features are not quite right
 
+[PAGE 32]
 •
 Mori (1970) proposed a nonlinear 
 relation between a character’s 
@@ -459,6 +491,7 @@ Uncanny Valley Theory
 Mori 1970; Mone 2016
 Comfort level / emotional response
 
+[PAGE 33]
 •
 Small deviations from humanness can 
 make a big difference
@@ -477,6 +510,7 @@ Chair of Explainable AI-based Business Information Systems
 34
 Uncanny Valley: Scoping for the Right Goal
 
+[PAGE 34]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 35
@@ -498,6 +532,7 @@ likeness endanger our
 “real” humanness long 
 term?
 
+[PAGE 35]
 “In 1950, Alan Turing proposed an “imitation game” as the ultimate test of 
 whether a machine was intelligent: could a machine imitate a human so well 
 that its answers to questions are indistinguishable from those of a human. 
@@ -512,6 +547,7 @@ Chair of Explainable AI-based Business Information Systems
 Benefits of Human-Like AI
 https://digitaleconomy.stanford.edu/news/the-turing-trap-the-promise-peril-of-human-like-artificial-intelligence/
 
+[PAGE 36]
 “Fundamentally, whatever human-likeness we create 
 on machines is not genuine humanness because it 
 lacks the physical characteristics of our body and the 
@@ -522,6 +558,7 @@ Chair of Explainable AI-based Business Information Systems
 Risks of Human-Like AI
 Porra et al. 2020
 
+[PAGE 37]
 Your View on Human-Like AI
 Should AI be designed to resemble and 
 behave like humans? Why or why not? Should 
@@ -533,6 +570,7 @@ for humanity?
 ~5 minutes and be ready to share your 
 opinions
 
+[PAGE 38]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 39
@@ -557,6 +595,7 @@ humans and thereby influence human behavior
 There is an ongoing debate about whether or not AI 
 should be designed to resemble and behave like humans
 
+[PAGE 39]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 40
@@ -564,6 +603,7 @@ Thank you for
 your attention!
 Any questions?
 
+[PAGE 40]
 Prof. Dr. Ulrich Gnewuch
 Chair of Explainable AI-based Business Information Systems
 41
