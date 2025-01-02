@@ -24,7 +24,7 @@ def run_app():
     )
     retriever_cfg = RetrieverConfig(
         dense_retriever_path="src/checkpoints/dense_retriever_checkpoint",
-        faiss_index_path="src/ingestion/data/processed/safety_net/new_index.pkl",
+        faiss_index_path="src/ingestion/data/new_index.pkl",
         top_k=10,
         use_gpu=True
     )
