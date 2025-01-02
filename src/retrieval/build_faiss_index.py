@@ -43,14 +43,40 @@ def extract_filename_metadata(fname: str):
     return meta
 
 
-def chunk_text(text, chunk_token_limit=512) -> List[str]:
+def chunk_text(doc: Document, tokenizer, chunk_token_limit=512) -> List[Document]:
+    text = doc.page_content
     tokens = tokenizer.encode(text, add_special_tokens=False)
-    chunks = []
+    chunks: List[Document] = []
+
+    start_idx = 0
     for i in range(0, len(tokens), chunk_token_limit):
         token_chunk = tokens[i : i + chunk_token_limit]
-        chunk_text = tokenizer.decode(token_chunk, skip_special_tokens=True)
-        chunks.append(chunk_text.strip())
+        chunk_text = tokenizer.decode(token_chunk, skip_special_tokens=True).strip()
+
+        new_meta = dict(doc.metadata)
+        new_meta["chunk_start"] = i
+        chunk_doc = Document(page_content=chunk_text, metadata=new_meta)
+        chunks.append(chunk_doc)
+
+    start_idx += len(token_chunk)
+
     return chunks
+
+
+def load_texts_as_docs() -> List[Document]:
+    docs: List[Document] = []
+    for fname in os.listdir(TEXTS_DIR):
+        if not fname.endswith(".txt"):
+            continue
+        full_path = os.path.join(TEXTS_DIR, fname)
+        with open(full_path, "r", encoding='utf-8') as f:
+            entire_text = f.read()
+
+        # Example metadata handling
+        meta = {"source": fname}
+        doc = Document(page_content=entire_text, metadata=meta)
+        docs.append(doc)
+    return docs
 
 
 def load_entire_text_as_single_doc(full_path: str, base_meta: dict) -> Document:
@@ -62,6 +88,7 @@ def load_entire_text_as_single_doc(full_path: str, base_meta: dict) -> Document:
         entire_text = f.read()
     doc = Document(page_content=entire_text, metadata=base_meta)
     return doc
+
 
 def find_page_boundaries(text: str) -> List[Tuple[int, str]]:
     """
@@ -76,6 +103,7 @@ def find_page_boundaries(text: str) -> List[Tuple[int, str]]:
         pagenum = match.group(1)
         boundaries.append((offset, pagenum))
     return sorted(boundaries, key=lambda x: x[0])
+
 
 def map_offset_to_page(offset: int, boundaries: List[Tuple[int, str]]) -> str:
     """
@@ -143,6 +171,7 @@ class SemanticDenseEmbeddings(Embeddings):
     """
     A wrapper class to produce embeddings for the SemanticChunker stage.
     """
+
     def __init__(self, model_path: str, use_gpu: bool = True):
         self.device = "cuda" if torch.cuda.is_available() and use_gpu else "cpu"
         logger.info("Loading dense retriever model for embeddings...")
@@ -176,50 +205,7 @@ class SemanticDenseEmbeddings(Embeddings):
             doc_emb = self.mean_pool(outputs.last_hidden_state, attention_mask)
         return doc_emb.squeeze(0).cpu().tolist()
 
-
-def main():
-    logger.info("Loading documents...")
-    raw_docs = load_text_and_images()
-
-    logger.info("Initializing semantic embeddings for chunker...")
-    semantic_embedder = SemanticDenseEmbeddings(DENSE_RETRIEVER_PATH, use_gpu=True)
-
-    logger.info("Creating SematicChunker with thresholds ...")
-    chunker = SemanticChunker(
-        embeddings=semantic_embedder,
-        buffer_size=1,
-        breakpoint_threshold_type="percentile",
-        breakpoint_threshold_amount=0.75,
-        number_of_chunks=None,
-        sentence_split_regex=r"(?<=[.?!])\s+",
-        add_start_index=True,
-        min_chunk_size=1,
-    )
-
-    splitted_docs: List[Document] = []
-    logger.info("Splitting documents semantically ...")
-
-    for big_doc in raw_docs:
-        entire_text = big_doc.page_content
-        page_boundaries = find_page_boundaries(entire_text)
-
-        splitted = chunker.transform_documents([big_doc])
-
-        for subdoc in splitted:
-            chunk_offset = subdoc.metadata.get("start", 0)
-            page_str = map_offset_to_page(chunk_offset, page_boundaries)
-
-            combined_meta = dict(big_doc.metadata)
-            combined_meta["page"] = page_str
-            combined_meta["chunk_start"] = chunk_offset
-
-            splitted_docs.append(
-                Document(page_content=subdoc.page_content, metadata=combined_meta)
-            )
-
-    logger.info(f"Total splitted docs after semantic chunking: {len(splitted_docs)}")
-
-    class DenseRetrieverEmbedder:
+class DenseRetrieverEmbedder:
         def __init__(self, model_path: str, use_gpu: bool = True):
             self.device = "cuda" if torch.cuda.is_available() and use_gpu else "cpu"
             logger.info("Loading LLM-R doc encoder for final doc embeddings...")
@@ -245,12 +231,27 @@ def main():
                 embeddings.append(doc_emb.squeeze(0).cpu().tolist())
             return embeddings
 
-    final_embedder = DenseRetrieverEmbedder(DENSE_RETRIEVER_PATH, use_gpu=True)
-    logger.info("Embedding splitted docs with the final doc encoder...")
 
-    doc_embeddings = final_embedder.embed_documents(splitted_docs)
+def main():
+    logger.info("Loading documents...")
+    raw_docs = load_text_and_images()
+
+    tokenizer = AutoTokenizer.from_pretrained(DENSE_RETRIEVER_PATH, use_gpu=True)
+
+    chunk_size = 512
+
+    all_chunked_docs: List[Document] = []
+    for doc in raw_docs:
+        chunked = chunk_text(doc, tokenizer, chunk_size)
+        all_chunked_docs.extend(chunked)
+
+    logger.info(f"Total docs after naive chunking: {len(all_chunked_docs)}")
+
+    embedder = DenseRetrieverEmbedder(DENSE_RETRIEVER_PATH, use_gpu=True)
+    doc_embeddings = embedder.embed_documents(all_chunked_docs)
 
     logger.info("Building FAISS index with these final embeddings ...")
+
     class PrecomputedEmbeddings:
         def embed_documents(self, texts: List[str]) -> List[List[float]]:
             return doc_embeddings
@@ -260,7 +261,7 @@ def main():
 
     precomputed_embedder = PrecomputedEmbeddings()
 
-    vectorstore = FAISS.from_documents(splitted_docs, precomputed_embedder)
+    vectorstore = FAISS.from_documents(all_chunked_docs, precomputed_embedder)
 
     logger.info(f"Saving FAISS index to {FAISS_INDEX_OUTPUT_PATH}...")
     vectorstore.save_local(FAISS_INDEX_OUTPUT_PATH)
