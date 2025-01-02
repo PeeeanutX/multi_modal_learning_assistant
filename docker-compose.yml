@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  chatbot:
+    build: .
+    container_name: chatbot-container
+    ports:
+      - "8501:8501"
+    restart: always
+    environment:
+      "API_KEY": "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"
+    volumes:
+      - ./data:/app/data
+
