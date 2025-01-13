@@ -1,0 +1,899 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+AI-Enabled Insights & Decisions
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Responsible AI
+
+[PAGE 3]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+3
+Summer Semester: Lecture “Business Intelligence & Analytics Systems”
+Data 
+Provisioning
+Information 
+Generation
+Information 
+Presentation & 
+Distribution
+Data
+What data do we have? Where 
+does it come from?
+How can we make our data 
+available for analysis?
+How can we generate useful 
+insights from our data?
+How can we present our data (and 
+insights generated from it) to support 
+business decisions?
+https://www.wiwi.uni-passau.de/en/artificial-intelligence/teaching/courses/business-intelligence-analytics-systems
+
+[PAGE 4]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• Please organize the following 
+milestones based on the order in which 
+they happened in the history of 
+conversational AI.
+• What are the components of NLP-based 
+conversational AI systems?
+• Please provide examples of task-
+oriented, text-based conversational 
+agents.
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Learning Goals
+•
+Describe the concept of AI-enabled insights 
+& decisions and distinguish between its two 
+major paradigms
+•
+Explain the top-down, knowledge-driven 
+paradigm and describe key technologies 
+within this paradigm
+•
+Explain the bottom-up, data-driven paradigm 
+and describe key technologies within this 
+paradigm
+•
+Discuss the last mile of AI-enabled insights 
+& decisions along with its common causes 
+and potential solutions
+
+[PAGE 6]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Costs of Bad Business Decisions 
+https://www.agencycentral.co.uk/articles/w
+hat-is-the-cost-of-making-a-bad-hire/
+https://www.theguardian.com/business/2007/may/14/motoring.lifeandhealth
+
+[PAGE 7]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Business Value of “Good” Decisions
+Laudon & Laudon 2022
+
+[PAGE 8]
+Logo of the University of Passau
+•
+Reducing uncertainty by gathering information about all 
+alternatives is crucial 
+•
+Uncertainty can only be reduced, not eliminated
+•
+Very few decisions are made with absolute certainty 
+because complete knowledge about all the alternatives 
+is seldom possible!
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Decision-Making
+Decision-making is the process of sufficiently reducing 
+uncertainty and doubt about alternatives to allow a reasonable 
+choice to be made from among them.
+Harris 1998
+
+[PAGE 9]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+Decision-Making at Different Levels
+Laudon & Laudon 2022
+Tactical 
+Decisions
+Strategic 
+Decisions 
+Operational
+Decisions
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+“Gut Decisions”
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+How to Make More Informed Decisions? 
+Ask an expert
+Discuss alternatives 
+with peers
+Use data and technology 
+(e.g., AI)
+
+[PAGE 12]
+Logo of the University of Passau
+•
+A wide range of different AI 
+technologies has been used 
+for this purpose, including:
+–
+Expert / Knowledge-based 
+systems 
+–
+Machine learning 
+applications
+–
+…
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+AI-Enabled Insights & Decisions
+AI-enabled insights and decisions refers to the use of AI to provide 
+meaningful insights and inform decision-making processes.
+Which groups of 
+customers does our 
+business currently serve?
+Which product 
+should I buy?
+Benbya et al. 2021
+When will this 
+machine probably fail?
+What is the patient’s 
+medical problem?
+
+[PAGE 13]
+Logo of the University of Passau
+•
+Good decisions require knowledge and information (“insights”), both of which can be derived 
+from data (manually through experience or automatically using technology)
+•
+Ideally, these decisions lead to effective actions
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Information Value Chain: From Insights to Decisions
+Knowledge
+Decision
+Action
+Information 
+Data
+Deriving Knowledge
+Making Decisions
+Abbasi et al. 2016
+
+[PAGE 14]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Two Paradigms of AI-Enabled Insights & Decisions 
+Top-Down 
+Knowledge-
+Driven Paradigm
+Bottom-Up 
+Data-Driven 
+Paradigm
+Providing insights and informing decisions 
+Expert 
+Systems 
+…
+Case-Based 
+Reasoning
+Recommender 
+Systems 
+Machine 
+Learning 
+…
+…
+Russel & Norvig 2016
+
+[PAGE 15]
+Logo of the University of Passau
+Top-Down 
+Knowledge-Driven Paradigm
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+
+[PAGE 16]
+Logo of the University of Passau
+Human Expert
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+Top-Down, Knowledge-Driven Paradigm
+•
+Human experts have used their intelligence to develop a high level of expertise in a particular domain by 
+training, education, and learning from experience
+•
+The top-down, knowledge-driven paradigm seeks to “transfer” as much of this expert knowledge as possible 
+to machines
+•
+Consequently, these systems are often called “expert systems” 
+Knowledge
+Decision
+Action
+Information 
+Data
+Deriving Knowledge
+Making Decisions
+Abbasi et al. 2016; Russel & Norvig 2016
+Expert Systems
+
+[PAGE 17]
+Logo of the University of Passau
+•
+Their main goal is to simulate the decision-making skills of human experts in very specific 
+domains by using hard-coded rules (e.g., “if-then” statements) and logical inference techniques
+•
+Expert systems emerged in the 1970s as a breakthrough in AI research
+•
+They were the dominant AI technology in the 1980s but disappeared in the 1990s →Today, they 
+are often not considered AI anymore
+•
+The term “expert system” was used interchangeably with “knowledge-based system”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Expert Systems
+Expert systems are computer programs designed to assist in 
+decision-making by reasoning through knowledge captured 
+from human experts within a specific domain.
+El-Najdawi & Stylianou 1993
+
+[PAGE 18]
+Logo of the University of Passau
+•
+Expert systems have three main components:
+1. A knowledge base consisting of knowledge captured from an expert in the domain, encoded into 
+facts, rules, and relationships
+2. An inference engine that processes information from the knowledge base, applies logical 
+reasoning techniques, and generates recommendations
+3. A user interface that allows non-experts to interact with and receive advice or recommendations 
+from the system
+•
+Sometimes, an “explanation facility” component was included to help users understand the reasoning 
+process of the system
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+Expert System Architecture
+El-Najdawi & Stylianou 1993
+
+[PAGE 19]
+Logo of the University of Passau
+•
+Developing an expert system is known as knowledge 
+engineering, and its practitioners are called knowledge 
+engineers
+•
+Knowledge engineers typically follow this process:
+1. Interviewing and observing human experts
+2. Learning what the experts know and how they reason 
+with their knowledge
+3. Translating this knowledge into a set of rules
+4. Loading these rules into an inference engine and 
+running them against test cases
+5. Consulting with human experts to determine what 
+changes need to be made
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Expert System Development
+Haigh 2024
+
+[PAGE 20]
+Logo of the University of Passau
+•
+One of the best-known expert systems 
+is MYCIN (developed in the 1970s)
+•
+It was designed to provide advice for 
+physicians regarding diagnosis and 
+therapy for infectious diseases
+•
+MYCIN’s medical knowledge was 
+encoded in a set of rules that 
+represent a single, independent 
+“chunk” of domain-specific knowledge
+•
+A consultation was run by backward 
+chaining through applicable rules
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+Example #1: MYCIN
+Davis et al. 1977; Moore & Swartout 1988
+Example MYCIN Rule
+
+[PAGE 21]
+Logo of the University of Passau
+•
+The first successful commercial expert system 
+was R1
+•
+Developed by John McDermott of Carnegie 
+Mellon University and used by Digital 
+Equipment Corporation (DEC; later bought by 
+HP)
+•
+R1 helped configure orders for new computer 
+systems based on 2500 rules
+•
+By 1986, it had processed 80,000 orders and 
+was saving DEC an estimated $40 million a 
+year
+•
+By 1988, DEC had 40 expert systems deployed 
+•
+McDermott’s 1982 paper on R1 won the AAAI 
+Classic Paper Award in 1999
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Example #2: R1
+Example R1 Rule
+McDermott 1982; Russel & Norvig 2016
+
+[PAGE 22]
+Logo of the University of Passau
+•
+The development of expert systems marked a 
+turning point in the history of AI
+•
+They served as proof that AI systems could be 
+used in real-life systems and had the potential to 
+provide significant benefits to businesses
+•
+Expert systems generated a lot of hype, and the AI 
+industry boomed from a few million dollars in 1980 
+to billions of dollars in 1988:
+–
+“Expert system startups were mushrooming, large 
+corporations were rushing to establish AI groups, 
+government money was flooding in, and a frenzied 
+job market ensured lucrative employment for 
+anyone who could claim a few months of AI 
+experience”
+•
+However, expert systems failed to deliver on their 
+overhyped promises, resulting in a significant 
+slowdown of business interest and investments 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+Rise and Fall of Expert Systems
+Google’s Ngram chart showing the explosion of 
+discourse around expert systems in the 1980s
+Haigh 2024
+“AI 
+Winter”
+
+[PAGE 23]
+Logo of the University of Passau
+The Rise and Fall of Expert Systems
+What caused the fall of expert systems? Why 
+did they fail and what challenges couldn’t they 
+overcome? What do you think?
+
+[PAGE 24]
+Logo of the University of Passau
+•
+While expert systems did well in narrow problem domains, 
+they struggled when faced with a situation outside their 
+knowledge base:
+–
+They could not learn new knowledge on their own (e.g., 
+generate new rules) and were reliant on human experts and 
+programmers to make adjustments
+–
+Keeping them up to date was time-consuming (→costs) and 
+difficult (→skilled knowledge engineers)
+•
+Complex tasks often require tacit knowledge that experts 
+find hard to codify
+•
+Decision-makers (e.g., doctors) were reluctant to trust 
+computer-generated advice (e.g., a diagnosis) over their 
+gut instinct
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Limitations and Challenges of Expert Systems
+Gill 1995, Haigh 2024
+
+[PAGE 25]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+Expert Systems are Not Dead
+https://www.ki-strategie-deutschland.de
+
+[PAGE 26]
+Logo of the University of Passau
+Bottom-Up 
+Data-Driven Paradigm
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+
+[PAGE 27]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Bottom-Up, Data-Driven Paradigm
+•
+In the 1990s, there is a shift from a knowledge-driven paradigm to a data-driven paradigm
+•
+In the bottom-up data-driven paradigm, algorithms discover patterns and learn their own rules from data 
+(“training data”)
+•
+Their “machine knowledge” is acquired without relying on input or instruction from human domain experts
+Knowledge
+Decision
+Action
+Information 
+Data
+Deriving Knowledge
+Making Decisions
+Machine Learning
+Abbasi et al. 2016; Russel & Norvig 2016
+
+[PAGE 28]
+Logo of the University of Passau
+•
+The field of machine learning has been inspired by the idea that humans learn 
+through experience (e.g., by examples or by interacting with the environment)
+•
+Machine learning algorithms iteratively learn from problem-specific training data, 
+which allows them to find hidden insights and recognize complex patterns 
+–
+Range from very simple (e.g., linear regression) to highly complex (e.g., neural 
+networks)
+•
+In the 2010s, deep learning became feasible, which led to machine learning 
+becoming the mainstream AI technology
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Machine Learning
+Machine learning is a subfield of artificial intelligence that uses 
+algorithms trained on data sets to create models that enable 
+machines to perform tasks without explicit instructions.
+Janiesch et al. 2021
+Note: Technical 
+details are not 
+covered in this 
+lecture.
+
+[PAGE 29]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Overview of Machine Learning (ML) Algorithms
+Algorithms learn from labeled
+data
+Examples: Predictive 
+maintenance, fraud detection
+Algorithms learn from 
+unlabeled data
+Examples: Customer 
+segmentation; anomaly 
+detection
+Algorithms (“agents”) learn to 
+make decisions by 
+interacting with an 
+environment and receiving 
+feedback through rewards or 
+penalties
+Examples: Automated stock 
+trading, autonomous cars
+Janiesch et al. 2021
+Machine Learning
+Supervised Learning
+Unsupervised Learning
+Reinforcement Learning
+
+[PAGE 30]
+Logo of the University of Passau
+•
+The goal of predictive maintenance is to 
+catch breakdowns before they happen by 
+monitoring equipment conditions
+–
+Typically relies on sensor data enabled 
+by Internet-of-Things (IoT) technology
+•
+When historical data from machine 
+operations is available, supervised 
+learning techniques can be employed to 
+predict when a failure will occur and to 
+estimate the machine’s remaining useful 
+life
+•
+Predictive maintenance allows 
+maintenance measures to be organized 
+more efficiently and downtimes to be 
+almost completely avoided
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+Example #1: Predictive Maintenance
+Example: Predictive Maintenance System using MATLAB
+https://www.mathworks.com/company/technical-articles/deploying-
+predictive-maintenance-algorithms-to-the-cloud-and-edge.html
+
+[PAGE 31]
+Logo of the University of Passau
+•
+Customer segmentation is the process 
+of dividing a customer base into distinct 
+groups of individuals that have similar 
+characteristics, needs, or behaviors
+•
+It is one of unsupervised learning’s 
+most important applications
+•
+Enables companies to tailor 
+communications and offerings for each 
+customer segment
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Example #2: Customer Segmentation
+Sharda et al. 2014
+Customer 
+Segment
+Description
+First-Time 
+Homebuyers
+Individuals or couples looking to 
+purchase their first home.
+Retirees
+Older adults looking to downsize or find 
+homes that fit their lifestyle, with a focus 
+on comfort and accessibility.
+Investors
+Individuals or entities looking to purchase 
+properties for rental income or long-term 
+capital appreciation.
+…
+…
+Example: Real Estate Customers
+
+[PAGE 32]
+Logo of the University of Passau
+•
+Stock trading strategies play a critical 
+role in investment, but it is challenging 
+to design a profitable strategy in a 
+complex and dynamic stock market
+•
+Deep reinforcement learning (RL) 
+algorithms can be used to find the 
+optimal trading strategy
+•
+Unlike traditional machine learning 
+approaches, RL algorithms learn from 
+trial and error, adapting and 
+optimizing strategies based on past 
+experiences and market feedback
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Example #3: Automated Stock Trading
+Yang et al. 2020
+
+[PAGE 33]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Automated Decision-Making
+•
+Instead of presenting recommendations and insights to a human decision-maker, an AI system 
+may also autonomously make decisions
+•
+This approach can streamline decision-making processes but is not always feasible or ethically 
+appropriate in all situations
+Knowledge
+Decision
+Action
+Information 
+Data
+Deriving Knowledge
+Making Decisions
+Machine Learning
+
+[PAGE 34]
+Logo of the University of Passau
+•
+Dynamic pricing is a pricing strategy 
+that uses variable prices instead of 
+fixed prices
+–
+Norm for airline tickets, hotel rooms, 
+and ride-sharing services
+•
+Prices are determined without human 
+involvement based on various factors, 
+such as real-time customer demand, 
+season, supply changes, etc.
+•
+Dynamic pricing allows companies to 
+offer prices that are attractive to 
+customers while maximizing profit
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Example: Dynamic Pricing
+Example: https://happyhotel.uk/dynamic-pricing/
+
+[PAGE 35]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+Challenges of the Data-Driven Paradigm
+OECD’s AI Systems Lifecycle (2019)
+
+[PAGE 36]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+Data Collection and Processing: Bias
+https://developers.google.com/machine-learning/crash-course/fairness/types-of-bias
+https://www.reuters.com/article/world/insight-amazon-scraps-secret-ai-
+recruiting-tool-that-showed-bias-against-women-idUSKCN1MK0AG/
+
+[PAGE 37]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+Challenges of the Data-Driven Paradigm
+OECD’s AI Systems Lifecycle (2019)
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Verification and Validation: Black-Box Problems
+https://www.youtube.com/watch?v=Tsvxx-GGlTg
+Neural network 
+for recognizing 
+handwritten digits
+(MNIST dataset)
+→Explainable AI 
+Lecture
+
+[PAGE 39]
+Logo of the University of Passau
+The Last Mile of 
+AI-Enabled Insights & Decisions
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+The Last Mile
+https://www.youtube.com/watch?v=8WKfCuhdXo4
+
+[PAGE 41]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+42
+The Last Mile = Gap Between Knowledge and Decision
+•
+Decision-makers often still rely on their instincts or “gut feelings” instead of leveraging AI-enabled 
+insights and recommendations
+•
+This tendency persists regardless of the AI technology in use (e.g., expert systems, ML 
+applications)
+Knowledge
+Decision
+Action
+Information 
+Data
+Deriving Knowledge
+Making Decisions
+Abbasi et al. 2016
+
+[PAGE 42]
+Logo of the University of Passau
+The Last Mile of AI-Enabled Insights & Decisions
+Decision-makers often still rely on their instincts or 
+“gut feelings” instead of leveraging AI-enabled 
+insights and recommendations. This tendency 
+persists regardless of the AI technology in use.
+Why would employees not consider AI-enabled 
+insights and recommendations in their decision-
+making? How would you address this problem?
+→Discuss this question with a partner for ~5  
+minutes and be ready to share your thoughts
+
+[PAGE 43]
+Logo of the University of Passau
+•
+Data-driven culture refers to the extent to 
+which it is the norm to use data and analysis 
+to inform decision-making
+•
+To benefit from AI, decisions must be based 
+on “the facts,” and there should be constant 
+experimentation to see what works best
+•
+Changing the organizational culture 
+associated with how decisions are made 
+can be more challenging than solving 
+technical issues!
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Organizational Decision-Making Culture
+https://hbr.org/2018/02/big-companies-are-embracing-analytics-
+but-most-still-dont-have-a-data-driven-culture
+Trieu et al. 2022
+
+[PAGE 44]
+Logo of the University of Passau
+•
+Dashboards can be used to democratize access to 
+AI-enabled insights and support decision-making at 
+all levels of an organization
+•
+With intuitive, real-time data visualizations and self-
+service analytics capabilities, decision-makers can 
+better understand how insights and 
+recommendations were derived
+•
+This transparency not only enhances trust and 
+confidence in AI but also promotes a culture of data-
+driven decision-making
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+One Way to Bridge the Last Mile: Dashboards
+
+[PAGE 45]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+Key Takeaways From This Lecture
+•
+Decision-making is vital to the success of any business but can 
+often be challenging →AI can be used to provide insights and 
+support decision-making
+•
+There are two paradigms of AI-enabled insights & decisions: 
+knowledge-driven (top-down) and data-driven (bottom-up)
+•
+The knowledge-driven paradigm focuses on encoded human 
+knowledge and rule-based logic (e.g., handcrafted rules) 
+–
+Expert systems based on this paradigm gained popularity in the 
+1980s but eventually disappeared due to significant challenges 
+(e.g., high maintenance costs, inability to capture tacit knowledge)
+•
+In contrast, the data-driven paradigm allows algorithms to 
+discover and learn knowledge directly from large datasets
+–
+Machine learning, the dominant technology in this paradigm, has 
+become the cornerstone of modern AI
+•
+Despite advancements in AI, decision-makers often still rely on 
+their instincts rather than on AI-enabled insights and 
+recommendations →Changes to an organization’s decision-
+making culture are needed
+
+[PAGE 46]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+47
+Thank you for 
+your attention!
+Any questions?
+
+[PAGE 47]
+Logo of the University of Passau
+Abbasi, A., Sarker, S., & Chiang, R. (2016). Big Data Research in Information Systems: Toward an Inclusive Research Agenda. Journal of the Association for 
+Information Systems, 17(2), I–XXXII. 
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for Information Systems Research. 
+Journal of the Association for Information Systems, 22, 281–303.
+Davis, R., Buchanan, B., & Shortliffe, E. (1977). Production rules as a representation for a knowledge-based consultation program. Artificial intelligence, 8(1), 15-45.
+El-Najdawi, M. K., & Stylianou, A. C. (1993). Expert support systems: integrating AI technologies. Communications of the ACM, 36(12), 55-ff.
+Gill, T. G. (1995). Early expert systems: Where are they now? MIS Quarterly, 19(1), 51-51.
+Haigh, T. (2024). How the AI Boom Went Bust. Communications of the ACM, 67(2), 22-26.
+Harris, R. (1998) Introduction to Decision Making. Virtual Salt. http://www.virtualsalt.com/crebook5.htm
+Janiesch, C., Zschech, P., & Heinrich, K. (2021). Machine learning and deep learning. Electronic Markets, 31(3), 685–695.
+Laudon, K. C., & Laudon, J. P. (2022). Management information systems: Managing the digital firm. 17th Edition. Pearson. 
+McDermott, J. (1982). R1: A rule-based configurer of computer systems. Artificial intelligence, 19(1), 39-88.
+Moore, J. D., & Swartout, W. R. (1988). Explanation in expert systems: A survey (No. 228). Marina del Rey, CA, USA: University of Southern California, Information 
+Sciences Institute.
+OECD (2019), Artificial Intelligence in Society, OECD Publishing, Paris, https://doi.org/10.1787/eedfee77-en
+Russell, S. J., & Norvig, P. (2012). Artificial Intelligence: A Modern Approach. London.
+Sharda, R., Delen, D., & Turban, E. (2014). Business intelligence and analytics: systems for decision support. 10th edition. Pearson. 
+Trieu, V. H., Burton-Jones, A., Green, P., & Cockcroft, S. (2022). Applying and extending the theory of effective use in a business intelligence context. MIS Quarterly, 
+46(1), 645-678.
+Yang, H., Liu, X. Y., Zhong, S., & Walid, A. (2020). Deep reinforcement learning for automated stock trading: An ensemble strategy. In Proceedings of the first ACM 
+international conference on AI in finance (pp. 1-8).
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+48
+References

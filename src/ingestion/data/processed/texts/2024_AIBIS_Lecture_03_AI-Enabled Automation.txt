@@ -1,0 +1,737 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+AI-Enabled Automation
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Responsible AI
+
+[PAGE 3]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• Please arrange the steps of the basic 
+design process of AI-based systems in 
+the correct order.
+• What are key differences between AI-
+specific vs. traditional design 
+processes?
+• What are potential questions related to 
+managing AI at the strategic level?
+
+[PAGE 4]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+Learning Goals
+•
+Describe important types of AI-
+enabled automation of (work) tasks
+•
+Explain how AI-enabled automation 
+evolves over time
+•
+Describe how humans respond to AI-
+enabled automation
+•
+Contrast automation with 
+augmentation and describe different 
+types of augmentation
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Automation = Job Loss?
+
+[PAGE 6]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Myth vs. Reality?
+
+[PAGE 7]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Technological Unemployment Is Not a New Phenomenon
+https://www.npr.org/sections/money/2015/05/18/404991483/how-machines-destroy-and-create-jobs-in-4-graphs
+
+[PAGE 8]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Benefits of Automation
+Cost 
+reduction
+Increased 
+efficiency
+Relief from 
+mundane tasks
+Raisch & Krakowski 2021
+
+[PAGE 9]
+Logo of the University of Passau
+AI-Enabled Automation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+RECAP: Business Capabilities
+•
+AI-enabled business capabilities include:
+– Automation
+– Engagement 
+– Insights & decisions
+– Innovation
+Business capabilities refer to the core activities and competencies 
+that enable an organization to achieve its business objectives and 
+deliver value to its stakeholders. (based on Margherita 2014)
+Davenport & Ronaki 2018; Benbya et al. 2021
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+AI-Enabled Automation
+AI-enabled automation refers to the use of AI to perform tasks 
+and processes that traditionally required human involvement. 
+Physical automation
+Cognitive automation
+Benbya et al. 2021; Raisch & Krakowski 2021
+
+[PAGE 12]
+Logo of the University of Passau
+•
+Physical automation is as old as the first industrial 
+revolution (see spinning machine)
+•
+Today, industrial robots can be found in many factories 
+and warehouses (“blue collar work”)
+•
+While still emerging in Western countries, service robots 
+are common in Asia
+•
+Robots’ physical activity causes visible changes in their 
+physical environment
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+Physical Automation
+Physical automation focuses on the use of machines (e.g., 
+robots) that execute tasks in the physical world.
+Spinning Jenny
+
+[PAGE 13]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Types of Physical Robots 
+Industrial Robots
+Service Robots
+Social Robots
+Example: assembly robots 
+Example: Humanoid robots
+Example: Food-serving robots 
+LG CLOi 
+ServeBot
+Kuka
+Nao
+
+[PAGE 14]
+Logo of the University of Passau
+•
+More than 20,000 items make up the average 
+assortment of a drugstore in Germany
+•
+Keeping track of how much of which product is 
+still in stock and whether everything is in the 
+right place is a huge task
+•
+DM uses innovative scanning robots from the 
+German start-up Ubica Robotics to check 
+inventory levels at night
+•
+On the next morning, employees evaluate the 
+data and recognize which shelves need to be 
+restocked, which items need to be reordered 
+and which products need to be returned to 
+their destination
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Example: Shelf Scanning Robots
+https://www.businessinsider.de/wirtschaft/nachts-faehrt-ein-roboter-durch-die-dm-filialen-und-arbeitet-wie-die-drogeriekette-mit-maschinen-angestellte-entlasten-will-a/
+
+[PAGE 15]
+Logo of the University of Passau
+•
+Cognitive automation typically targets knowledge and service work tasks (“white collar 
+work”), for which automation seemed unimaginable a decade ago
+•
+Software robots (“bots”) are computer programs and have no physical form at all
+•
+The activity of software robots may not be visible to humans
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Cognitive Automation
+Cognitive automation focuses on the use of software (e.g., 
+software robots) that execute tasks in the digital world.
+Coombs et al. 2020; Engel et al. 2022
+
+[PAGE 16]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+Types of Software Robots 
+Automated Accounts
+Chatbots
+Robotic Process 
+Automation (RPA)
+Examples: Social bots, GitHub 
+bots, moderation bots, …
+Example vendors:
+Example: Customer service 
+chatbots
+AutoModerator on Reddit
+Allie (Allianz Germany)
+Seiffer et al. 2021
+
+[PAGE 17]
+Logo of the University of Passau
+•
+RPA bots essentially mimic human behavior by logging in with an account and password, 
+entering data, clicking buttons, etc.
+•
+Typically, RPA bots are designed to interact with existing IT systems (e.g., Microsoft Outlook, 
+SAP ERP) and perform routine tasks in a rule-based manner, such as copying and pasting data 
+from one system to another
+•
+Though RPA is less “intelligent” than other AI technologies, it is usually considered part of AI, 
+especially as RPA vendors are adding more intelligence to their software (e.g., integrating 
+computer vision and machine learning capabilities)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Robotic Process Automation
+Robotic process automation (RPA) enables digital processes to 
+be automated through software robots (“bots”) that operate on 
+the user interface in the same way as humans do.
+Willcocks et al. 2016; Schulte-Derne & Gnewuch 2024
+
+[PAGE 18]
+Logo of the University of Passau
+•
+RPA bots are ideally suited to replace 
+humans for so-called “swivel chair” 
+processes
+•
+Processes where humans take inputs 
+from one set of systems (for example 
+email), process those inputs using rules, 
+and then enter the outputs into systems 
+of record (e.g., ERP systems)
+Chair of Explainable AI-based Business Information Systems
+18
+“Swivel Chair” Processes
+Willcocks et al. 2016
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 19]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Example: UiPath Robotic Process Automation (RPA)
+https://www.youtube.com/watch?v=3wV271YNyfY
+
+[PAGE 20]
+Logo of the University of Passau
+Chair of Explainable AI-based Business Information Systems
+20
+Example: UiPath Robotic Process Automation (RPA)
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 21]
+Logo of the University of Passau
+Chair of Explainable AI-based Business Information Systems
+21
+How To Choose Which Processes To Automate With RPA?
+van der Aalst et al. 2018
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 22]
+Logo of the University of Passau
+Chair of Explainable AI-based Business Information Systems
+22
+“RPA on Steroids”
+https://www.cio.com/article/3583260/how-anthropics-new-computer-use-ability-could-further-ai-automation.html
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 23]
+Logo of the University of Passau
+Chair of Explainable AI-based Business Information Systems
+23
+Anthropic’s Claude ‘computer use’ Feature
+https://www.youtube.com/watch?v=ODaHJzOyVCQ
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 24]
+Logo of the University of Passau
+Evolution of 
+AI-Enabled Automation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+
+[PAGE 25]
+Logo of the University of Passau
+In how many years do you expect AI to be 
+able to perform the following jobs at or 
+above the level of a typical human?
+• News writer
+• Surgeon
+• Retail salesperson
+• Truck driver
+• All human jobs
+
+[PAGE 26]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+When Will AI Automate All Jobs?
+Grace et al. 2018
+Survey of 352 
+AI Experts 
+(in 2017):
+
+[PAGE 27]
+Logo of the University of Passau
+•
+Four intelligences: mechanical, analytical, intuitive, empathetic 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Theory of AI Job Replacement 
+Huang & Rust 2018
+Intelligences
+Tasks
+Example Jobs
+Mechanical
+Simple, standardized, repetitive, routine, 
+and transactional tasks
+Call center agents, retail salespersons, 
+waiters/waitress, taxi drivers, …
+Analytical
+Tasks that require logical thinking and 
+decision-making
+Data scientists, accountants, financial analyst, 
+auto service technicians, engineers, …
+Intuitive
+Tasks that require intuitive, holistic, 
+experiential and contextual interaction
+Marketing managers, management consultants, 
+lawyers, doctors, sales managers, senior travel 
+agents, …
+Empathetic
+Social, emotional, communicative, and 
+highly interactive tasks
+Politicians, negotiators, psychiatrists, …
+
+[PAGE 28]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Theory of AI Job Replacement 
+Huang & Rust 2018
+
+[PAGE 29]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Theory of AI Job Replacement 
+Huang & Rust 2018
+
+[PAGE 30]
+Logo of the University of Passau
+Human Responses to               
+AI-Enabled Automation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+
+[PAGE 31]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Employee Perspective
+
+[PAGE 32]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+How Do Humans Respond to Automation?
+Seiffer et al. 2021
+Employee 
+Perspective:
+
+[PAGE 33]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Affective Responses to Software Robots 
+Waizenegger & Techatassanasoontorn 2022
+“Especially the fear of the robots, all 
+of those movies that we've seen 
+where the robots take over... so 
+they're like I'm going to lose my job 
+over this, you know? It's always that 
+fear.”
+Fear
+“The team were delighted with this 
+process right, because they don't want 
+to sit around doing these transactions 
+anyways... [...] So having such a 
+repetitive manual task taken away from 
+you they thought was really cool, 'cause 
+then they can get on and do much more 
+human add value work”
+Excitement
+
+[PAGE 34]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Cognitive Responses to Software Robots 
+Waizenegger & Techatassanasoontorn 2022; Techatassanasoontorn et al. 2023;
+Security Concerns
+“They do not fully trust the robots 
+because robots do not get it right 
+every time. It’s assisting us to some 
+degree… But what I’m saying is we 
+can’t rely on the robot for any 
+overdraft account that he’s giving us 
+the full picture.”
+(Mis)trust
+“We don’t want the robot to be a 
+superuser as an individual bot can 
+do random stuff to the database, 
+which is quite risky”
+
+[PAGE 35]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+Behavioral Responses to Software Robots 
+Resistance
+"People talk about the robot as if it’s 
+like a person. They go, ‘The robot –
+it’s kicking out a lot of exceptions 
+today’. And I know one of the other 
+teams calls it [the bot] Robby … 
+Their nickname for it is Robby and 
+they’re like, ‘Robby’s having a few 
+troubles this morning'"
+Anthropomorphism
+(“Humanizing”)
+“Once you bring in automation, that’s 
+when they are like, I don’t 
+understand this. I don’t like this. I’m 
+going to go back to doing it myself.”
+Waizenegger & Techatassanasoontorn 2022
+
+[PAGE 36]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+User Perspective
+Humans
+AI
+Humans vs. AI: Who should do the job?
+
+[PAGE 37]
+Logo of the University of Passau
+AI or human: which would you prefer to 
+perform these tasks for you?
+• Recommending a marketing strategy
+• Hiring and firing employees
+• Buying stocks
+• Diagnosing a disease
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+How Do Humans Respond to Automation?
+User 
+Perspective:
+Castelo et al. 2019
+Survey of 250 
+people (in 2019):
+
+[PAGE 39]
+Logo of the University of Passau
+•
+Skill erosion refers to the process of losing 
+skills and knowledge needed to perform a 
+job/task when automation takes over
+•
+Examples:
+–
+Financial advisors are no longer able to analyze 
+loan applications and make loan decisions 
+independently
+–
+AI writing assistance leads to a decline in writing 
+skills
+–
+Generative AI leads to an erosion of human 
+creativity (e.g., ChatGPT writes poems or essays)
+–
+…
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+Risks of Automation: Skill Erosion
+Rinta-Kahila et al. 2023
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+Risks of Automation: Skill Erosion
+https://www.news4teachers.de/2024/04/philologen-beherrschung-von-
+rechtschreibung-nicht-verhandelbar-trotz-korrekturprogrammen/
+Is it still necessary to learn 
+spelling and grammar in 
+the age of AI and AI-based 
+writing assistance?
+
+[PAGE 41]
+Logo of the University of Passau
+Erosion of Language Skills in the Age of AI
+Today, AI-based writing tools can not only 
+provide language feedback but also generate 
+entire texts on their own. With this in mind, do 
+you believe it is still necessary to learn 
+spelling and grammar in high school? Why or 
+why not?
+→Discuss these questions with a partner for 
+~5 minutes and be ready to share your 
+opinions
+
+[PAGE 42]
+Logo of the University of Passau
+Automation vs. Augmentation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+43
+
+[PAGE 43]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Augmentation to the Rescue?
+https://www.telekom.com/en/company/digital-responsibility/details/artificial-intelligence-ai-guideline-524366
+
+[PAGE 44]
+Logo of the University of Passau
+•
+IT has always been used to automate work, but the growing capabilities of AI may allow 
+automation on a much larger scale
+•
+Still, not all tasks can be (fully) automated
+•
+Key strategic decision between automation and augmentation:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+RECAP: Automation vs. Augmentation
+Raisch & Krakowski 2021; Rai et al. 2019
+Automation: Humans hand over a task 
+to AI with little or no further involvement.
+Augmentation: Humans collaborate 
+closely with AI to perform a task.
+Reduce costs and free up staff 
+for more value-added work
+Leverage complementary strengths 
+and enable mutual learning
+
+[PAGE 45]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+Different Types of Augmentation 
+Dellermann et al. 2019; Grønsund & Aanestad 2020
+Human-in-the-Loop 
+(HITL)
+AI-in-the-Loop
+AI
+Human
+Human
+AI
+
+[PAGE 46]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+47
+Human-in-the-Loop: Example
+
+[PAGE 47]
+Logo of the University of Passau
+Automation and augmentation are interdependent!
+1. Across time: Augmentation of a task can allow 
+subsequent automation (see example from self-study 
+material)
+2. Across space: Automation in one task can “spill over,” 
+enabling adjacent tasks’ automation or augmentation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+49
+Augmentation <-> Automation
+Augmentation
+(Task A)
+Automation
+(Task A)
+Raisch & Krakowski 2021
+Time
+Automation
+(Task A)
+Automation
+(Task B)
+Automation
+(Task C)
+Augmentation 
+(Task D)
+
+[PAGE 48]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+50
+Key Takeaways From This Lecture
+•
+Humans have long been at risk of unemployment 
+brought by new technologies (not just AI)
+•
+There are two main types of AI-enabled automation: 
+physical and cognitive automation
+•
+AI-enabled automation advances from mechanical to 
+analytical, intuitive, and empathetic tasks
+•
+There is a wide range of affective, cognitive, and 
+behavioral responses (both positive and negative) from 
+humans toward AI-enabled automation
+•
+AI-enabled automation creates benefits but also poses 
+risks (e.g., skill erosion)
+•
+Augmentation (e.g., human-in-the-loop) is often 
+described as an alternative to automation, but the two 
+approaches are not independent from each other
+
+[PAGE 49]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+51
+Thank you for 
+your attention!
+Any questions?
+
+[PAGE 50]
+Logo of the University of Passau
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for Information Systems Research. Journal of the 
+Association for Information Systems, 22, 281–303. 
+Castelo, N., Bos, M. W., & Lehmann, D. R. (2019). Task-Dependent Algorithm Aversion. Journal of Marketing Research, 56(5), 809–825. 
+Coombs, C., Hislop, D., Taneva, S. K., & Barnard, S. (2020). The strategic impacts of Intelligent Automation for knowledge and service work: An interdisciplinary review. The 
+Journal of Strategic Information Systems, 29(4), 101600.
+Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard business review, 96(1), 108-116.
+Dellermann, D., Ebel, P., Söllner, M., & Leimeister, J. M. (2019). Hybrid Intelligence. Business & Information Systems Engineering, 61(5), 637–643. 
+Engel, C., Ebel, P., & Leimeister, J. M. (2022). Cognitive automation. Electronic Markets, 32(1), 339-350.
+Grace, K., Salvatier, J., Dafoe, A., Zhang, B., & Evans, O. (2018). When will AI exceed human performance? Evidence from AI experts. Journal of Artificial Intelligence 
+Research, 62, 729-754.
+Grønsund, T., & Aanestad, M. (2020). Augmenting the algorithm: Emerging human-in-the-loop work configurations. The Journal of Strategic Information Systems, 29(2), 
+101614.
+Huang, M.-H., & Rust, R. T. (2018). Artificial Intelligence in Service. Journal of Service Research, 21(2), 155–172.
+Rai, A., Constantinides, P., & Sarker, S. (2019). Editor’s Comments: Next-Generation Digital Platforms: Toward Human–AI Hybrids. MIS Quarterly, 43(1), iii–ix.
+Raisch, S., & Krakowski, S. (2021). Artificial Intelligence and Management: The Automation–Augmentation Paradox. Academy of Management Review, 46(1), 192–210. 
+Rinta-Kahila, T., Penttinen, E., Salovaara, A., Soliman, W., & Ruissalo, J. (2023). The vicious circles of skill erosion: a case study of cognitive automation. Journal of the 
+Association for Information Systems, 24(5), 1378-1412.
+Schulte-Derne, D., Gnewuch, U. (2024). “Translating AI Ethics Principles into Practice to Support Robotic Process Automation Implementation”. MIS Quarterly Executive, 23(2). 
+Seiffer, A., Gnewuch, U., & Maedche, A. (2021). Understanding Employee Responses to Software Robots: A Systematic Literature Review. Proceedings of the 42nd 
+International Conference on Information Systems (ICIS 2021).
+Techatassanasoontorn, A. A., Waizenegger, L., & Doolin, B. (2023). When Harry, the human, met Sally, the software robot: Metaphorical sensemaking and sensegiving around 
+an emergent digital technology. Journal of Information Technology, 38(4), 416-441.
+Van der Aalst, W. M., Bichler, M., & Heinzl, A. (2018). Robotic process automation. Business & information systems engineering, 60, 269-272.
+Waizenegger, L., & Techatassanasoontorn, A. A. (2022). When robots join our team: A configuration theory of employees’ perceptions of and reactions to Robotic Process 
+Automation. Australasian journal of information systems, 26.
+Willcocks, L., Lacity, M., & Craig, A. (2016). Robotic process automation at Telefónica O2. MIS Quarterly Executive, 15(1), 21-35.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+52
+References

@@ -1,0 +1,941 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+AI Ethics & Ethical AI
+Prof. Dr. Ulrich Gnewuch
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Ethical AI
+
+[PAGE 3]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• What are some of the challenges 
+and risks of generative AI?
+• How does generative AI differ from 
+traditional AI?
+• Which simple techniques can you 
+use to obtain better LLM responses?
+
+[PAGE 4]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+Learning Goals
+•
+Identify common ethical concerns with AI
+•
+Explain the legislative and principled 
+approach to AI ethics
+– Describe the basic idea of the EU AI act
+– Name and describe key principles for 
+ethical AI
+•
+Discuss the benefits and challenges of 
+the two approaches to AI ethics
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Ethical Concerns with AI – Examples
+https://www.technologyreview.com/2019/05/22/65758/female-voice-
+assistants-fuel-damaging-gender-stereotypes-says-un-study
+https://www.theguardian.com/technology/2024/mar/27/ai-
+apocalypse-could-take-away-almost-8m-jobs-in-uk-says-report
+AI-Enabled Automation
+AI-Enabled Engagement
+
+[PAGE 6]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Ethical Concerns with AI – Examples
+https://www.reuters.com/article/idUSKCN1MK0AG/
+AI-Enabled Insights & Decisions
+https://www.csis.org/analysis/when-ai-helps-generate-inventions-who-inventor
+AI-Enabled Innovation
+
+[PAGE 7]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+AI Incident Database
+https://incidentdatabase.ai/
+
+[PAGE 8]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Ethical Concerns with AI
+Privacy
+Bias
+Lack of Transparency
+Job Displacement
+Safety
+Loss of Human Autonomy
+Unfairness
+Robustness
+Harm
+…
+Errors
+Lack of Control
+Deskilling
+Inexplicability
+Unwarranted Trust
+
+[PAGE 9]
+Logo of the University of Passau
+Ethical Concerns with AI
+What, in your opinion, are the top three 
+ethical concerns, challenges, or issues 
+with AI today and in the future?
+
+[PAGE 10]
+Logo of the University of Passau
+•
+Ethics has been a key concern in philosophy since antiquity and in many philosophical systems it 
+has been the key question
+•
+Ethics theories come in three groups:
+–
+Virtue ethics →what would a person of good character do?
+–
+Deontological (or duty) ethics →rules, principles, and duties
+–
+Consequentialist (or results-based) ethics→what will the outcomes of the action be?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Ethics
+Ethics is the philosophical discipline interested in questions of
+right and wrong, good and bad, do’s or don’ts.
+Hassan et al. 2018; Nussbaum 2009
+
+[PAGE 11]
+Logo of the University of Passau
+•
+The Three Laws of Robotics were formulated by science-
+fiction writer Isaac Asimov and first appeared in his short 
+story “Runaround” in 1942
+1. A robot may not injure a human being or, through inaction, 
+allow a human being to come to harm.
+2. A robot must obey orders given it by human beings except 
+where such orders would conflict with the First Law.
+3. A robot must protect its own existence as long as such 
+protection does not conflict with the First or Second Law. 
+•
+The laws have pervaded science fiction and have also 
+influenced thought on the ethics of AI
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Isaac Asimov’s “Three Laws of Robotics”
+Asimov 1942
+
+[PAGE 12]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+AI Ethics
+EU’s AI HLEG (2019) 
+Ethics
+Tech Ethics
+AI 
+Ethics 
+•
+The central concern of AI ethics is to identify how AI can 
+advance or raise concerns to the good life of 
+individuals, whether in terms of quality of life, or human 
+autonomy and freedom necessary for a democratic society
+•
+AI ethics has been mostly conceptual, with a significant 
+emphasis on defining the principles for ethical AI
+AI ethics is a multidisciplinary field that addresses the ethical 
+issues raised by the development, deployment, and use of AI.
+
+[PAGE 13]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Two Approaches to AI Ethics
+The EU asserts its regulatory 
+power to protect fundamental 
+rights, democracy, the rule of 
+law, and environmental 
+sustainability from high-risk AI
+→Top-down legislative 
+regulation (“hard laws”): 
+e.g., EU AI Act
+China’s AI regulation has 
+authoritarian characteristics: 
+Supporting AI development 
+without undermining 
+censorship and jeopardizing 
+the Communist Party’s 
+monopoly on political power
+The United States relies on 
+voluntary guidance and self-
+regulation by tech companies
+→Bottom-up “soft laws” 
+without legally binding 
+force: e.g., principles for 
+ethical AI
+Bradford 2023
+Approaches to         
+AI Ethics
+European Rights-Driven 
+Regulatory Model
+Chinese State-Driven 
+Regulatory Model
+American Market-Driven 
+Regulatory Model
+
+[PAGE 14]
+Logo of the University of Passau
+Legislative Approach 
+to AI Ethics
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+
+[PAGE 15]
+Logo of the University of Passau
+On 9 December 2023, following three-day “marathon” talks, negotiators in the Council and the European 
+Parliament reached a provisional agreement on the AI act. The act was formally adopted by the Council on 
+21 May 2024 and entered into force on 1 August 2024.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+EU AI Act
+https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence
+
+[PAGE 16]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+Milestones in the History of the AI Act
+https://artificialintelligenceact.eu/developments/
+April 
+2021
+European 
+Commission 
+presents its 
+proposal for 
+the EU AI Act
+Nov. 
+2021
+EU Council shares a 
+first compromise text 
+on the AI Act draft
+European 
+Parliament 
+committees publish 
+draft opinions on 
+the AI Act
+Dec. 
+2022
+EU Council 
+adopts its 
+common position 
+on the AI Act
+June 
+2023
+European 
+Parliament adopts 
+its negotiating 
+position on the AI 
+Act
+Dec. 
+2023
+EU Council of 
+Ministers and 
+Parliament approve 
+the draft of the AI Act
+Feb. -
+Mar. 
+2024
+European Parliament and EU 
+Council Presidency reach a 
+provisional agreement on the 
+AI Act
+May 
+2024
+European Council formally 
+adopts the AI Act
+AI Act enters 
+into force
+Aug. 
+2024
+Mar. -
+Sep. 
+2022
+
+[PAGE 17]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Difficult Negotiations on Foundation Models
+https://www.euractiv.com/section/artificial-intelligence/news/eus-ai-act-negotiations-hit-the-brakes-over-foundation-models/
+“France, Germany, and Italy pushed against any type of regulation for foundation models. Leading the charge 
+against any regulation for foundation models in the AI rulebook is Mistral, a French AI start-up that has thrown the gauntlet 
+to Big Tech. Cedric O, France’s former state secretary for digital, is pushing Mistral's lobbying efforts, arguing that the AI 
+Act could kill the company. Meanwhile, Germany is being pressured by its own leading AI company Aleph Alpha [..]. All 
+these companies fear the EU regulation might put them on a back foot compared to US and Chinese competitors.”
+
+[PAGE 18]
+Logo of the University of Passau
+•
+The EU AI Act pursues a risk-based approach to the regulation of AI and classifies 
+AI into four different categories according to its risk:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+Summary of the AI Act
+https://www.ceps.eu/wp-content/uploads/2021/04/AI-Presentation-CEPS-Webinar-L.-Sioli-23.4.21.pdf
+
+[PAGE 19]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Example: Transparency Obligations 
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R168 →Article 50
+Chatbots must not 
+pretend to be humans!
+
+[PAGE 20]
+Logo of the University of Passau
+•
+The penalties for non-compliance with the AI Act depend on the degree and type of non-
+compliance:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+Penalties for Non-Compliance with the AI Act
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R168 →Article 99
+
+[PAGE 21]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Implementation of the AI Act
+https://artificialintelligenceact.eu/implementation-timeline/
+Aug. 
+2024
+AI Act enters 
+into force
+Feb. 
+2025
+Prohibitions on 
+unacceptable risk AI 
+start to apply
+Governance rules and 
+obligations for General 
+Purpose AI start to apply
+Aug. 
+2026
+Most parts of the AI Act become applicable; 
+Obligations go into effect for high-risk AI; 
+Transparency obligations for AI interacting 
+directly with individuals take effect
+Aug. 
+2027
+Application of the 
+entire AI Act for all 
+risk categories
+Aug. 
+2025
+
+[PAGE 22]
+Logo of the University of Passau
+•
+The EU AI Act will likely shape AI legislation in other countries by setting a high-risk-based 
+regulation standard for AI governance
+•
+Many countries are already considering the EU AI Act as they formulate their AI policies:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+Global Impact of the AI Act?
+François-Philippe Champagne, Canada’s
+Minister of Innovation, Science, and 
+Industry, has stated that the country is 
+closely following the development of the EU 
+AI Act as it works on its own AI legislation
+The Japanese government has expressed 
+an interest in aligning its AI governance 
+framework with the EU’s approach as 
+Japan’s ruling party is expected to push for 
+AI legislation within 2024
+https://www.atlanticcouncil.org/blogs/geotech-cues/eu-ai-act-sets-the-stage-for-global-ai-governance-implications-for-us-companies-and-policymakers/
+
+[PAGE 23]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+23
+Criticism of EU AI Act
+
+[PAGE 24]
+Logo of the University of Passau
+Principled Approach 
+to AI Ethics
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+
+[PAGE 25]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Google’s AI Principles
+https://ai.google/responsibility/principles/
+
+[PAGE 26]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Deutsche Telekom’s AI Principles
+https://www.telekom.com/en/company/digital-responsibility/details/artificial-intelligence-ai-guideline-524366
+
+[PAGE 27]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Bayerischer Rundfunk’s AI Principles
+https://www.br.de/extra/ai-automation-lab-english/ai-ethics100.html
+
+[PAGE 28]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Timeline of Ethical AI Principles 
+…
+Fjeld et al. 2020
+
+[PAGE 29]
+Logo of the University of Passau
+•
+Jobin et al. (2019) conducted a systematic meta-
+analysis of 84 AI ethics documents published by 
+government agencies (e.g., the European Union, 
+OECD), private companies (e.g., Microsoft, SAP), and 
+research institutions (e.g., ACM, IEEE) from different 
+geographic regions
+•
+The principles of responsibility, justice and fairness, 
+transparency, non-maleficence, and privacy were 
+referenced in more than half of all documents, 
+indicating an emerging global convergence across 
+stakeholders on the importance of these five principles
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Analysis of the AI Ethics Landscape 
+Jobin et al. 2019
+
+[PAGE 30]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+Five Key Principles for Ethical AI
+•
+Explainability
+•
+Interpretability
+•
+Disclosure
+•
+Right to 
+information
+•
+…
+Jobin et al. 2019
+Principles for 
+Ethical AI
+Transparency
+Justice & 
+Fairness
+Non-
+maleficence
+Responsibility
+Privacy
+•
+Inclusion
+•
+Prevention of 
+bias
+•
+Non-
+discrimination
+•
+Equality
+•
+…
+•
+Harm
+•
+Security
+•
+Safety
+•
+Protection
+•
+…
+•
+Accountability
+•
+Liability
+•
+Integrity
+•
+…
+•
+Data usage 
+control
+•
+Consent
+•
+Personal 
+information
+•
+…
+
+[PAGE 31]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Transparency
+•
+Possible scenarios:
+–
+Explaining the features of a machine learning model that led to a specific prediction (→see XAI lecture)
+–
+Telling customers that they are interacting with a chatbot and not with a human service employee
+–
+Disclosing how content was generated/improved using ChatGPT (e.g., parts of your master thesis)
+–
+…
+AI actors “should provide meaningful information, appropriate to the context [...] 
+to foster a general understanding of AI systems, to make stakeholders aware of 
+their interactions with AI systems [...] to enable those affected by an AI system 
+to understand the outcome, and, to enable those adversely affected by an AI 
+system to challenge its outcome [...]”
+https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449
+
+[PAGE 32]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Justice & Fairness
+•
+“Fair AI”
+•
+Possible scenarios:
+–
+Making sure that there are no gender or racial biases in job application decisions made by AI
+–
+Allowing customers to challenge (unfair) loan or credit decisions made by AI
+–
+…
+The development, deployment and use of AI systems must be fair. […] fairness has 
+both a substantive and a procedural dimension. The substantive dimension implies a 
+commitment to: ensuring equal and just distribution of both benefits and costs, and 
+ensuring that individuals and groups are free from unfair bias, discrimination and 
+stigmatization. […] The procedural dimension of fairness entails the ability to contest 
+and seek effective redress against decisions made by AI systems and by the humans 
+operating them. […]
+https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+[PAGE 33]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Non-Maleficence
+•
+Possible scenarios:
+–
+Protecting democracy from AI-generated deepfakes and misinformation
+–
+Reducing the significant energy consumption of generative AI training processes
+–
+…
+“AI systems should not be used in ways that cause or exacerbate harm, whether 
+individual or collective, and including harm to social, cultural, economic, natural, 
+and political environments.”
+https://unsceb.org/sites/default/files/2023-03/CEB_2022_2_Add.1%20%28AI%20ethics%20principles%29.pdf
+
+[PAGE 34]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Responsibility
+•
+“Responsible AI”
+•
+Possible scenarios:
+–
+Putting the responsibility on doctors to verify the suggestions of an AI-based diagnosis tool before applying them to a patient
+–
+Holding car manufacturers, software developers, and operators accountable when an autonomous vehicle is involved in an 
+accident
+–
+…
+“[…] The ethical responsibility and liability for the decisions and actions based 
+in any way on an AI system should always ultimately be attributable to AI actors 
+corresponding to their role in the life cycle of the AI system. Appropriate 
+oversight, impact assessment, audit, and due diligence mechanisms […] should 
+be developed to ensure accountability for AI systems and their impact 
+throughout their life cycle.”
+https://unesdoc.unesco.org/ark:/48223/pf0000380455.locale=en
+
+[PAGE 35]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+Privacy 
+•
+Possible scenarios:
+–
+Refrain from using personal data 
+scraped from the web to train AI 
+models
+–
+Making sure that AI systems do not 
+leak sensitive user or company data
+–
+…
+“People should have the right to access, manage and control the data they 
+generate, given AI systems’ power to analyze and utilize that data.”
+https://futureoflife.org/open-letter/ai-principles/
+
+[PAGE 36]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+Criticism of Ethical AI Principles 
+https://www.nature.com/articles/s42256-019-0114-4
+https://link.springer.com/article/10.1007/s43681-022-00209-w
+
+[PAGE 37]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+Key Challenges of Ethical AI Principles 
+Abstract and high-level:
+Large gap between 
+principles and their practical 
+implementation
+Conflicting:
+Tensions between 
+different principles 
+“Toothless”:
+Lack of consequences 
+and mechanisms to 
+enforce compliance 
+Mittelstadt 2019; Munn 2023
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Principle–Practice Gap in AI Ethics
+•
+Explainability
+•
+Interpretability
+•
+Disclosure
+•
+Right to 
+information
+•
+…
+Jobin et al. 2019
+Ethical AI Principles 
+Transparency
+Justice & 
+Fairness
+Non-
+maleficence
+Responsibility
+Privacy
+•
+Inclusion
+•
+Prevention of 
+bias
+•
+Non-
+discrimination
+•
+Equality
+•
+…
+•
+Harm
+•
+Security
+•
+Safety
+•
+Protection
+•
+…
+•
+Accountability
+•
+Liability
+•
+Integrity
+•
+…
+•
+Data usage 
+control
+•
+Consent
+•
+Personal 
+information
+•
+…
+How can organizations translate these abstract,              
+high-level principles into actionable strategies?
+
+[PAGE 39]
+Logo of the University of Passau
+•
+Case study at a German-based energy service provider
+•
+Over a period of two and a half years, 45 robotic process 
+automation (RPA) bots were implemented to automate 
+many back-office processes (e.g., customer service, 
+billing)
+•
+These RPA bots enabled the automated processing of 
+more than 200,000 back-office transactions per year →
+equivalent to 5 full-time employees
+•
+Many ethical concerns and challenges: job displacement, 
+lack of control, loss of human autonomy, errors, ...
+→
+How to address these challenges based on ethical AI 
+principles?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+Research Example: RPA Implementation Case Study
+Schulte-Derne & Gnewuch 2024
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+Recommendations for Translating Ethical AI Principles into Practice
+Schulte-Derne & Gnewuch 2024
+1)
+Define and assign roles for selecting, implementing, 
+supervising, and optimizing AI-automated processes
+2)
+Avoid delegating the overall responsibility for (negative) 
+consequences to those developing or implementing AI
+Responsibility
+Justice & 
+Fairness
+Privacy
+Non-
+Maleficence
+Transparency
+AI Ethics Principles
+3)
+Strive for a fair distribution of AI’s 
+benefits and costs among all employees
+4)
+Understand and address personal 
+tensions in a diverse workforce with 
+different socio-demographic 
+backgrounds and levels of technical 
+expertise
+5)
+Enable open and honest communication from 
+trusted peers to allow employees to discuss their 
+concerns and ask questions without feeling judged
+6)
+Make the invisible visible by providing employees 
+the opportunity to observe the AI at work
+7)
+Keep employee representation bodies in the loop
+8)
+Help employees find strategies to cope with their 
+fears
+9)
+Avoid overwhelming employees by taking away 
+all their routine tasks before they have the 
+opportunity to develop confidence in their new 
+responsibilities
+10) Examine who else besides the organization’s 
+employees is impacted by the AI implementation
+11) Involve data protection officers 
+before investing time and effort in 
+a new AI initiative
+
+[PAGE 41]
+Logo of the University of Passau
+Strategy #6: Make the invisible visible 
+by providing employees the opportunity 
+to observe the AI at work
+•
+The RPA team set up the RPA software 
+on a normal desktop PC placed in one 
+of the offices and invited employees and 
+works council members to observe its 
+functioning at any time
+•
+This not only reduced employees’ 
+uncertainty and works council members’ 
+concerns, but also turned fear into 
+curiosity
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+42
+Example: Transparency 
+Teddy Bear “Robbie” Sitting in Front of the RPA Workstation 
+Schulte-Derne & Gnewuch 2024
+
+[PAGE 42]
+Logo of the University of Passau
+Legislative vs. Principled Approach 
+to AI Ethics
+In your opinion, which approach to AI ethics 
+is better? Should governments formally 
+regulate AI? Should we trust companies to 
+follow their ethics principles?
+→Discuss these questions with a partner for 
+~5 minutes and be ready to share your 
+opinions
+
+[PAGE 43]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Key Takeaways From This Lecture
+•
+The development, deployment, and use of AI raise many 
+ethical concerns, such as job displacement, bias, lack of 
+control, and privacy issues
+•
+The field of AI ethics aims to address these concerns by 
+exploring and guiding what is morally right or wrong
+•
+There are two main approaches to AI ethics
+•
+1) The legislative approach focusing on top-down regulation
+–
+Example: EU AI Act
+•
+2) The principled approach focusing on bottom-up “soft laws” 
+–
+Example: Ethical AI principles such as transparency, justice and 
+fairness, and responsibility 
+•
+Both approaches have their benefits and challenges:
+–
+Regulation may impose inflexible requirements and hinder 
+innovation
+–
+Principles are non-binding and difficult to put into practice
+
+[PAGE 44]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+Thank you for 
+your attention!
+Any questions?
+
+[PAGE 45]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+References
+Asimov, I. (1942). Runaround. In: I. Asimov (Ed.), I, Robot Collection (pp. 40–54). New York, NY: Doubleday.
+Bradford, A. (2023). Digital empires: The global battle to regulate technology. Oxford University Press.
+EU’s AI HLEG. (2019). Ethics Guidelines for Trustworthy AI. High-Level Expert Group on Artificial Intelligence (AI HLEG). 
+https://ec.europa.eu/futurium/en/ai-alliance-consultation/guidelines
+Fjeld, J., Achten, N., Hilligoss, H., Nagy, A., and Srikumar, M. (2020). Principled Artificial Intelligence: Mapping 
+Consensus in Ethical and Rights-based Approaches to Principles for AI. The Berkman Klein Center for Internet and 
+Society. https://cyber.harvard.edu/publication/2020/principled-ai
+Hassan, N. R., Mingers, J., & Stahl, B. (2018). Philosophy and information systems: where are we and where should we 
+go?. European Journal of Information Systems, 27(3), 263-277.
+Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature machine intelligence, 
+1(9), 389-399.
+Mittelstadt, B. (2019). Principles alone cannot guarantee ethical AI. Nature machine intelligence, 1(11), 501-507.
+Munn, L. (2023). The uselessness of AI ethics. AI and Ethics, 3(3), 869-877.
+Nussbaum, M. C. (2009). The therapy of desire theory and practice in Hellenistic ethics. Princeton, NJ: Princeton 
+University Press.
+Schulte-Derne, D., & Gnewuch, U. (2024). Translating AI ethics principles into practice to support robotic process 
+automation implementation. MIS Quarterly Executive, 23(2), 187-203.
