@@ -11,8 +11,7 @@ from typing import List, Dict, Any
 from dataclasses import dataclass, field
 from transformers import (
     AutoTokenizer,
-    AutoModelForSequenceClassification,
-    AutoModel,
+    T5EncoderModel,
     Trainer,
     TrainingArguments,
     DataCollatorWithPadding,
@@ -32,8 +31,8 @@ class DenseRetrieverTrainingConfig:
     input_path: str = "src/ingestion/data/llm_scored_candidates.jsonl"
     reward_model_path: str = "src/checkpoints2/reward_model_checkpoint"
     output_dir: str = "src/checkpoints2/dense_retriever_checkpoint"
-    query_model_name:  str = "intfloat/e5-base-v2"
-    doc_model_name: str = "intfloat/e5-base-v2"
+    query_model_name:  str = "google/flan-t5-base"
+    doc_model_name: str = "google/flan-t5-base"
     max_length: int = 128
     per_device_train_batch_size: int = 16
     per_device_eval_batch_size: int = 16
@@ -43,9 +42,6 @@ class DenseRetrieverTrainingConfig:
     weight_decay: float = 0.01
     eval_ratio: float = 0.1
     seed: int = 42
-    temperature: float = 1.0
-    kd_cont_loss_weight: float = 0.2
-    kd_loss_weight: float = 1.0
 
 
 class DenseRetrieverDataset(Dataset):
@@ -125,8 +121,8 @@ class DenseRetrieverModel(torch.nn.Module):
     """
     def __init__(self, query_model_name: str, doc_model_name: str):
         super().__init__()
-        self.query_encoder = AutoModel.from_pretrained(query_model_name)
-        self.doc_encoder = AutoModel.from_pretrained(doc_model_name)
+        self.query_encoder = T5EncoderModel.from_pretrained(query_model_name)
+        self.doc_encoder = T5EncoderModel.from_pretrained(doc_model_name)
 
     def forward(self, query_input_ids, query_attention_mask, doc_input_ids, doc_attention_mask):
         B, M, L = doc_input_ids.shape
