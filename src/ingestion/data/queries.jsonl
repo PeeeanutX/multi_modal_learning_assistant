@@ -1,20 +1,270 @@
-{"query_id": "q1", "query": "What are the key differences between AI-based and traditional business information systems?", "answers": ["AI-based business information systems exhibit autonomy, learning, and inscrutability, unlike traditional systems which typically require more human intervention and lack learning capabilities."]}
-{"query_id": "q2", "query": "What are the principles of human-centered design?", "answers": ["The principles include explicit understanding of users, involvement of users throughout design, iterative design, user-centered evaluation, addressing the whole user experience, and multidisciplinary perspectives."]}
-{"query_id": "q3", "query": "Name the four key AI-enabled business capabilities discussed in the lectures.", "answers": ["Automation, Engagement, Insights & Decisions, Innovation."]}
-{"query_id": "q4", "query": "What are the two main types of AI-enabled automation?", "answers": ["Physical automation and cognitive automation."]}
-{"query_id": "q5", "query": "What is the definition of conversational AI?", "answers": ["Conversational AI refers to the capability of computers to understand and respond with natural human language as it is written or spoken."]}
-{"query_id": "q6", "query": "What are the three dimensions of user engagement?", "answers": ["Cognitive engagement, emotional engagement, behavioral engagement."]}
-{"query_id": "q7", "query": "What are the main steps of the human-centered design process according to ISO 9241-210?", "answers": ["Analyze, Specify, Design, Evaluate."]}
-{"query_id": "q8", "query": "What are examples of social cues in human-AI interaction?", "answers": ["Physical cues like face and body movement, language cues like empathy and humor, and social role cues such as being a teacher or teammate."]}
-{"query_id": "q9", "query": "How do autonomy and learning contribute to AI inscrutability?", "answers": ["Autonomy allows AI to act without human intervention, and learning enables adaptation and improvement, making their processes less transparent and more inscrutable."]}
-{"query_id": "q10", "query": "What are some principles of ethical AI design?", "answers": ["Transparency, justice and fairness, non-maleficence, responsibility, and privacy."]}
-{"query_id": "q11", "query": "Why are social cues important in human-AI interaction?", "answers": ["They clarify intentions, improve communication, and influence user engagement by making interactions more natural and relatable."]}
-{"query_id": "q12", "query": "Provide an example of a physical automation system in retail.", "answers": ["Shelf-scanning robots used to track inventory and identify restocking needs in stores like DM."]}
-{"query_id": "q13", "query": "What are the dimensions of customer engagement?", "answers": ["Intensity of participation and connection with a company's offerings or activities, measured through emotional, cognitive, and behavioral engagement."]}
-{"query_id": "q14", "query": "What are some common challenges in managing AI projects?", "answers": ["Inflated expectations, treating AI projects like traditional IT projects, ensuring interpretability, and managing dynamic environments requiring frequent updates."]}
-{"query_id": "q15", "query": "What are the two main types of conversational agents?", "answers": ["Task-oriented and open-domain conversational agents."]}
-{"query_id": "q16", "query": "What is robotic process automation (RPA)?", "answers": ["RPA refers to software robots that mimic human actions to automate repetitive digital tasks, often involving systems like ERP or email."]}
-{"query_id": "q17", "query": "What is augmentation in AI-enabled systems?", "answers": ["Augmentation involves humans and AI working together, leveraging complementary strengths to achieve better outcomes."]}
-{"query_id": "q18", "query": "What are some key deliverables of the design phase in human-centered design?", "answers": ["Wireframes, prototypes, use scenarios, and storyboards."]}
-{"query_id": "q19", "query": "Which early system marked the beginning of conversational AI?", "answers": ["Eliza, developed in 1966 by Joseph Weizenbaum."]}
-{"query_id": "q20", "query": "What was the outcome of using an emotional design for the Furhat robot?", "answers": ["The emotional design reduced purchase likelihood and recommendation adherence, suggesting challenges with emotional robot designs."]}
+{"query_id": "q1", "query": "What are the two dimensions of capability and performance used to define AI?", "answers": ["The two dimensions are capability (thinking vs. acting) and performance (human vs. rational)."]}
+{"query_id": "q2", "query": "What is the primary focus of AI-based business information systems?", "answers": ["They are socio-technical systems where humans perform tasks using AI systems to achieve specific goals and outcomes."]}
+{"query_id": "q3", "query": "What are the milestones in the history of AI as mentioned in the document?", "answers": ["Examples include the Turing Test (1950), ELIZA chatbot (1966), Deep Blue defeating Kasparov (1997), and OpenAI's ChatGPT release (2022)."]}
+{"query_id": "q4", "query": "What defines an AI system from a technical perspective?", "answers": ["An AI system infers from inputs to generate outputs like predictions, content, or decisions that influence environments."]}
+{"query_id": "q5", "query": "What is the socio-technical perspective of AI systems?", "answers": ["It examines reciprocal interactions between the social subsystem (people, organizations) and the technical subsystem (software, hardware)."]}
+{"query_id": "q6", "query": "How are AI-based business information systems different from traditional ones?", "answers": ["They differ in three facets: autonomy, learning, and inscrutability."]}
+{"query_id": "q7", "query": "What is autonomy in AI-based business information systems?", "answers": ["The capacity to act without human intervention, such as AI-driven credit underwriting or RPA bots."]}
+{"query_id": "q8", "query": "What is learning in AI-based business information systems?", "answers": ["The ability to improve through data and experience, exemplified by predictive maintenance and recommendation systems."]}
+{"query_id": "q9", "query": "What is inscrutability in AI-based business information systems?", "answers": ["The unintelligibility of AI systems to specific audiences, e.g., financial advisors or medical professionals."]}
+{"query_id": "q10", "query": "What are AI-enabled business capabilities?", "answers": ["They include automation, engagement, insights & decisions, and innovation."]}
+{"query_id": "q11", "query": "What is the definition of an information system (IS)?", "answers": ["A socio-technical system composed of human, task, and technology elements."]}
+{"query_id": "q12", "query": "What are some examples of tasks in AI-based systems?", "answers": ["Work tasks like logistics, design tasks like process modeling, and private tasks like online shopping."]}
+{"query_id": "q13", "query": "What are goals in the context of AI-based systems?", "answers": ["Goals are targets or accomplishments, such as visiting a friend or increasing task efficiency."]}
+{"query_id": "q14", "query": "What are the outcomes in AI-based systems?", "answers": ["Consequences of human, task, and AI interaction, such as efficiency, satisfaction, or system performance."]}
+{"query_id": "q15", "query": "What are examples of AI-enabled automation?", "answers": ["Automated loan decision-making, robotic process automation, and autonomous cars."]}
+{"query_id": "q16", "query": "What is the importance of the business capability perspective on AI?", "answers": ["It emphasizes aligning AI to support business needs and objectives rather than just focusing on technology."]}
+{"query_id": "q17", "query": "What is the conceptual framework for defining AI by Russell & Norvig?", "answers": ["AI can be understood through thinking humanly, thinking rationally, acting humanly, and acting rationally."]}
+{"query_id": "q18", "query": "What are examples of AI-driven innovations?", "answers": ["Chatbots, generative AI systems, and adaptive recommendation engines."]}
+{"query_id": "q19", "query": "What are the challenges posed by AI in businesses?", "answers": ["Challenges include inscrutability, the need for ethical AI, and alignment with human-centered design."]}
+{"query_id": "q20", "query": "What are some historical AI applications that changed industries?", "answers": ["Examples include expert systems in the 1980s, machine learning in the 2000s, and generative AI in the 2020s."]}
+{"query_id": "q21", "query": "What are the key learning goals for designing AI-based business information systems?", "answers": ["To describe the design process, understand design principles, and explain the challenges of managing AI-based systems."]}
+{"query_id": "q22", "query": "How is 'design' defined in the context of AI systems?", "answers": ["Design as a verb refers to planning for a specific purpose, while as a noun it refers to the outcome of the design process."]}
+{"query_id": "q23", "query": "What are the key steps in the design process of AI-based business information systems?", "answers": ["Planning and design, verification and validation, deployment, and operation and monitoring."]}
+{"query_id": "q24", "query": "What makes the AI-specific design process iterative?", "answers": ["The centrality of data, focus on experimentation, and the capacity for continuous improvement post-deployment."]}
+{"query_id": "q25", "query": "What are the differences between AI-specific and traditional design processes?", "answers": ["AI design focuses on data reliance, experimentation, and continuous improvement, unlike the more linear traditional processes."]}
+{"query_id": "q26", "query": "What are examples of design process models for AI systems?", "answers": ["Examples include CRISP-DM and Microsoft’s Team Data Science Process."]}
+{"query_id": "q27", "query": "What are the forms of design knowledge in AI systems?", "answers": ["Standards, guidelines, and design principles."]}
+{"query_id": "q28", "query": "What are some examples of AI-related design standards?", "answers": ["ISO 9241 for ergonomics and ISO 6385 for design principles in work systems."]}
+{"query_id": "q29", "query": "What are examples of general design principles?", "answers": ["Norman’s principles like affordance and feedback, and Shneiderman’s rules like preventing errors and ensuring usability."]}
+{"query_id": "q30", "query": "What is meant by 'ethical AI design'?", "answers": ["It refers to principles like transparency, fairness, non-maleficence, responsibility, and privacy in AI systems."]}
+{"query_id": "q31", "query": "What is an example of transparency in AI-based customer service?", "answers": ["Disclosing human involvement in hybrid service agents, which affects customer behavior and workload."]}
+{"query_id": "q32", "query": "What are the three levels of AI management?", "answers": ["Strategic, tactical, and operational levels."]}
+{"query_id": "q33", "query": "What are the common challenges in managing AI systems?", "answers": ["Inflated expectations, managing AI like traditional IT projects, ensuring interpretability, and adapting to dynamic environments."]}
+{"query_id": "q34", "query": "What are key questions at the strategic level for managing AI?", "answers": ["How AI impacts business models, strategies for cost reduction, and decisions about automation versus augmentation."]}
+{"query_id": "q35", "query": "What is the difference between automation and augmentation in AI?", "answers": ["Automation transfers tasks to AI, while augmentation involves collaboration between humans and AI."]}
+{"query_id": "q36", "query": "What are examples of augmentation leading to automation?", "answers": ["JP Morgan Chase initially augmented candidate assessment with AI and later automated the process."]}
+{"query_id": "q37", "query": "What are upskilling and reskilling in the context of AI?", "answers": ["Upskilling improves skills for current roles, while reskilling equips employees for new roles."]}
+{"query_id": "q38", "query": "What are key questions at the tactical level for managing AI?", "answers": ["How to manage change, implement AI responsibly, and communicate AI initiatives effectively."]}
+{"query_id": "q39", "query": "What are examples of large-scale RPA implementations?", "answers": ["A German energy service provider used 45 RPA bots to automate 200,000 transactions annually, equivalent to five full-time employees."]}
+{"query_id": "q40", "query": "What are key questions at the operational level for managing AI?", "answers": ["How jobs will change, additional training needs, and effective collaboration with AI."]}
+{"query_id": "q41", "query": "What is an example of AI in loan decision-making?", "answers": ["A German bank implemented 'CleverLoan,' allowing AI to autonomously approve loans."]}
+{"query_id": "q42", "query": "What are the effects of AI on employee roles?", "answers": ["Some employees viewed AI as an opportunity for valuable tasks, while others felt threatened in their roles."]}
+{"query_id": "q43", "query": "How can employees view AI as an opportunity instead of a threat?", "answers": ["By adding or removing tasks, mastering skills, and learning new skills AI cannot yet perform."]}
+{"query_id": "q44", "query": "What are examples of design principles for ethical AI?", "answers": ["Transparency, justice and fairness, non-maleficence, responsibility, and privacy."]}
+{"query_id": "q45", "query": "What are the implications of AI-related design challenges for organizations?", "answers": ["They require ethical considerations, stakeholder involvement, and aligning design with organizational goals."]}
+{"query_id": "q46", "query": "What are common strategies for addressing AI-related challenges?", "answers": ["Upskilling and reskilling programs, ethical design practices, and fostering transparency."]}
+{"query_id": "q47", "query": "What are some challenges when managing dynamic AI environments?", "answers": ["Model accuracy degrades over time, requiring frequent updates and retraining."]}
+{"query_id": "q48", "query": "What are examples of AI impacting operational roles?", "answers": ["AI systems like chatbots taking over routine customer interactions or autonomous loan approvals in banking."]}
+{"query_id": "q49", "query": "What is the importance of the OECD AI Systems Lifecycle?", "answers": ["It provides a structured approach to designing and managing AI systems, focusing on planning, validation, and monitoring."]}
+{"query_id": "q50", "query": "What are the key takeaways about designing and managing AI systems?", "answers": ["AI design is iterative, requires ethical considerations, and differs significantly from traditional systems due to continuous improvement needs."]}
+{"query_id": "q51", "query": "What are the main learning goals of AI-enabled automation?", "answers": ["To describe AI-enabled task automation, its evolution, human responses, and differences between automation and augmentation."]}
+{"query_id": "q52", "query": "What is the common myth about automation?", "answers": ["The myth is that automation inevitably leads to job loss."]}
+{"query_id": "q53", "query": "What are the benefits of automation?", "answers": ["Cost reduction, increased efficiency, and relief from mundane tasks."]}
+{"query_id": "q54", "query": "How is AI-enabled automation defined?", "answers": ["The use of AI to perform tasks and processes traditionally requiring human involvement."]}
+{"query_id": "q55", "query": "What is physical automation?", "answers": ["The use of machines, such as robots, to execute tasks in the physical world."]}
+{"query_id": "q56", "query": "What is cognitive automation?", "answers": ["The use of software robots to execute tasks in the digital world, often targeting knowledge work."]}
+{"query_id": "q57", "query": "What are examples of physical robots?", "answers": ["Industrial robots, service robots, and social robots, such as Kuka and LG CLOi ServeBot."]}
+{"query_id": "q58", "query": "What is an example of a physical automation application?", "answers": ["Shelf-scanning robots used in German drugstores to monitor inventory levels."]}
+{"query_id": "q59", "query": "What is robotic process automation (RPA)?", "answers": ["RPA uses software robots to mimic human actions on user interfaces, automating rule-based processes."]}
+{"query_id": "q60", "query": "What are 'swivel chair' processes?", "answers": ["Processes where inputs from one system are processed using rules and outputs are entered into another system."]}
+{"query_id": "q61", "query": "How is RPA evolving with intelligence?", "answers": ["RPA is integrating computer vision and machine learning capabilities to enhance its functionality."]}
+{"query_id": "q62", "query": "What criteria determine processes suitable for RPA?", "answers": ["Processes that are repetitive, rule-based, and involve high transaction volumes."]}
+{"query_id": "q63", "query": "What is the theory of AI job replacement?", "answers": ["It classifies tasks based on intelligences: mechanical, analytical, intuitive, and empathetic."]}
+{"query_id": "q64", "query": "What are examples of jobs in the 'mechanical intelligence' category?", "answers": ["Call center agents, retail salespersons, and taxi drivers."]}
+{"query_id": "q65", "query": "What human intelligences are harder for AI to replace?", "answers": ["Intuitive and empathetic tasks, like those performed by lawyers and psychiatrists."]}
+{"query_id": "q66", "query": "What are common human responses to AI-enabled automation?", "answers": ["Responses include affective (fear, excitement), cognitive (mistrust, security concerns), and behavioral (resistance, anthropomorphism)."]}
+{"query_id": "q67", "query": "What is the risk of skill erosion in automation?", "answers": ["Automation can lead to a decline in essential skills, such as writing or decision-making, as tasks are taken over by AI."]}
+{"query_id": "q68", "query": "What are examples of skill erosion due to automation?", "answers": ["Financial advisors losing decision-making skills and generative AI reducing human creativity."]}
+{"query_id": "q69", "query": "What is the difference between automation and augmentation?", "answers": ["Automation replaces humans in tasks, while augmentation involves collaboration between humans and AI."]}
+{"query_id": "q70", "query": "What is 'human-in-the-loop' augmentation?", "answers": ["A configuration where humans are involved in decision-making or process execution alongside AI systems."]}
+{"query_id": "q71", "query": "How can augmentation lead to automation?", "answers": ["Augmentation improves processes, enabling future automation, and vice versa, across tasks and time."]}
+{"query_id": "q72", "query": "What are the benefits of combining automation and augmentation?", "answers": ["Cost reduction, mutual learning, leveraging complementary strengths, and enabling innovation."]}
+{"query_id": "q73", "query": "What are examples of software robots used in cognitive automation?", "answers": ["Social bots, GitHub bots, and customer service chatbots."]}
+{"query_id": "q74", "query": "What factors influence trust in automation?", "answers": ["Perceptions of reliability, security concerns, and understanding of the technology’s capabilities."]}
+{"query_id": "q75", "query": "What are the key takeaways about AI-enabled automation?", "answers": ["It provides benefits like efficiency and cost reduction but also poses challenges such as skill erosion and the need for human involvement."]}
+{"query_id": "q76", "query": "What are the three types of engagement discussed in AI-enabled engagement?", "answers": ["Customer engagement, employee engagement, and user engagement."]}
+{"query_id": "q77", "query": "What are the benefits of high customer engagement?", "answers": ["Increased customer loyalty, purchase frequency, and positive word-of-mouth recommendations."]}
+{"query_id": "q78", "query": "What fosters employee engagement?", "answers": ["A positive workplace culture, recognition, and opportunities for autonomy and growth."]}
+{"query_id": "q79", "query": "How is user engagement defined?", "answers": ["A technology-related state of mind characterized by cognitive, emotional, and behavioral manifestations during interactions with technology."]}
+{"query_id": "q80", "query": "What are the dimensions of user engagement?", "answers": ["Cognitive engagement, emotional engagement, and behavioral engagement."]}
+{"query_id": "q81", "query": "What are examples of cognitive engagement?", "answers": ["Attention and absorption during interactions with technology."]}
+{"query_id": "q82", "query": "What are examples of emotional engagement?", "answers": ["Feelings like enjoyment, love, frustration, and anxiety during interactions with technology."]}
+{"query_id": "q83", "query": "What are examples of behavioral engagement?", "answers": ["Content creation, consumption, interactions (e.g., clicks), and responses."]}
+{"query_id": "q84", "query": "How does AI enable user engagement?", "answers": ["AI creates interactions that resemble those with a human, using human-like interfaces."]}
+{"query_id": "q85", "query": "What are examples of social cues in human-AI interaction?", "answers": ["Physical cues like faces, language cues like empathy, and social roles like doctors or teammates."]}
+{"query_id": "q86", "query": "What is an example of physical cues in AI?", "answers": ["Realistic 3D avatars with human faces and body movements."]}
+{"query_id": "q87", "query": "What is social response theory?", "answers": ["The idea that humans react to technologies with human-like characteristics as if they were human."]}
+{"query_id": "q88", "query": "What are examples of social response triggers?", "answers": ["A chatbot with a human-like name or gendered voice output."]}
+{"query_id": "q89", "query": "What are examples of gender stereotypes in AI?", "answers": ["Male-voiced computers perceived as better with technical knowledge, female-voiced computers as better with emotional topics."]}
+{"query_id": "q90", "query": "What is the uncanny valley theory?", "answers": ["A nonlinear relation where increasing human-likeness in robots causes discomfort if they look almost human but not quite right."]}
+{"query_id": "q91", "query": "How can businesses avoid the uncanny valley?", "answers": ["By carefully balancing human-like characteristics in AI while avoiding features that seem 'almost human.'"]}
+{"query_id": "q92", "query": "What are ethical concerns with human-like AI?", "answers": ["Should AI look and act like humans, transparency about interactions, and potential impacts on real human interactions."]}
+{"query_id": "q93", "query": "What are the benefits of human-like AI?", "answers": ["Increased productivity, leisure time, and a better understanding of human minds."]}
+{"query_id": "q94", "query": "What are risks of human-like AI?", "answers": ["It may endanger genuine humanness due to lack of physical and self-awareness characteristics."]}
+{"query_id": "q95", "query": "What are key takeaways about AI-enabled engagement?", "answers": ["AI can enhance engagement through human-like interactions, but it must navigate challenges like the uncanny valley and ethical boundaries."]}
+{"query_id": "q96", "query": "What are the main learning goals of the lecture on conversational AI?", "answers": ["To describe the history, evolution, and different classes of conversational AI."]}
+{"query_id": "q97", "query": "What is the definition of conversational AI?", "answers": ["Conversational AI refers to the general capability of computers to understand and respond with natural human language as it is written or spoken."]}
+{"query_id": "q98", "query": "What are the benefits of conversational AI?", "answers": ["Interaction via natural language is intuitive, reduces cognitive load, and enables multitasking."]}
+{"query_id": "q99", "query": "What are the drawbacks of conversational AI?", "answers": ["Ambiguity in human language, difficulty understanding context, and limitations in conveying complex information."]}
+{"query_id": "q100", "query": "What are the key milestones in the history of conversational AI?", "answers": ["Milestones include the Turing Test (1950), ELIZA (1966), Siri (2010), and ChatGPT (2022)."]}
+{"query_id": "q101", "query": "What are the three main types of conversational AI technology?", "answers": ["Rule-based, NLP-based, and LLM-based conversational AI."]}
+{"query_id": "q102", "query": "What is an example of rule-based conversational AI?", "answers": ["ELIZA, a program that mimicked a therapist's conversation, is an example."]}
+{"query_id": "q103", "query": "What are the components of NLP-based conversational AI?", "answers": ["Speech recognition, natural language understanding, dialog management, natural language generation, and text-to-speech synthesis."]}
+{"query_id": "q104", "query": "What is an example of NLP-based conversational AI?", "answers": ["Amazon Alexa uses NLP to interpret user intent and generate appropriate responses."]}
+{"query_id": "q105", "query": "What defines LLM-based conversational AI?", "answers": ["LLMs use extensive textual data and generative AI to predict and generate coherent text."]}
+{"query_id": "q106", "query": "What is an example of LLM-based conversational AI?", "answers": ["ChatGPT, which generates responses based on user input, is an example."]}
+{"query_id": "q107", "query": "How are conversational agents classified?", "answers": ["They are classified by mode of communication (text vs. voice) and context (open-domain vs. task-oriented)."]}
+{"query_id": "q108", "query": "What is an example of an open-domain, text-based conversational agent?", "answers": ["ChatGPT and Cleverbot are examples."]}
+{"query_id": "q109", "query": "What is an example of a task-oriented, text-based conversational agent?", "answers": ["Customer service chatbots like IKEA's Anna are examples."]}
+{"query_id": "q110", "query": "What is an example of an open-domain, voice-based conversational agent?", "answers": ["Apple's Siri is an example."]}
+{"query_id": "q111", "query": "What is an example of a task-oriented, voice-based conversational agent?", "answers": ["In-car assistants like 'Hey Mercedes' are examples."]}
+{"query_id": "q112", "query": "What are embodied conversational agents (ECAs)?", "answers": ["Life-like animated characters, often multimodal, that engage in face-to-face conversations using expressions, gestures, and tone of voice."]}
+{"query_id": "q113", "query": "What are physically embodied conversational agents?", "answers": ["Robots like Furhat and Pepper that interact using physical and multimodal aspects."]}
+{"query_id": "q114", "query": "What are the motivations for using robot shopping assistants?", "answers": ["They combine convenience, efficiency, and empathy to offer personalized shopping experiences."]}
+{"query_id": "q115", "query": "What research questions were explored about robot shopping assistants?", "answers": ["How design affects consumer trust and purchase likelihood, and how consumers interact with them during purchases."]}
+{"query_id": "q116", "query": "What were the key findings about emotional vs. rational robot designs?", "answers": ["Emotional designs reduced purchase likelihood and recommendation adherence compared to rational designs."]}
+{"query_id": "q117", "query": "What challenges remain in LLM-based conversational robots?", "answers": ["Challenges include delays, speech recognition failures, and maintaining conversation stability."]}
+{"query_id": "q118", "query": "What are examples of applications for conversational AI?", "answers": ["Applications include customer service, healthcare, banking, and virtual assistants."]}
+{"query_id": "q119", "query": "What are the implications of conversational AI for user interactions?", "answers": ["It enhances natural and intuitive communication but requires careful design to manage user trust and effectiveness."]}
+{"query_id": "q120", "query": "What are the key takeaways about conversational AI?", "answers": ["It has evolved significantly, offers diverse applications, and requires thoughtful classification and design to achieve its full potential."]}
+{"query_id": "q121", "query": "What are the main learning goals of human-centered design?", "answers": ["To understand its importance, principles, approach, and associated methods, tools, and techniques."]}
+{"query_id": "q122", "query": "Why is human-centered design important?", "answers": ["It ensures systems are designed around the needs and contexts of users, improving usability and user satisfaction."]}
+{"query_id": "q123", "query": "What are the principles of human-centered design according to ISO 9241-210?", "answers": ["Design should involve users, be iterative, address the whole user experience, and be informed by multidisciplinary teams."]}
+{"query_id": "q124", "query": "What are the four key activities in the human-centered design approach?", "answers": ["Analyze, specify, design, and evaluate."]}
+{"query_id": "q125", "query": "What is the 'context of use' in human-centered design?", "answers": ["It includes users, goals, tasks, context, and resources associated with an interaction."]}
+{"query_id": "q126", "query": "What methods are used to analyze the context of use?", "answers": ["Observation, interviews, focus groups, and analysis of existing designs."]}
+{"query_id": "q127", "query": "What are personas in human-centered design?", "answers": ["Realistic representations of users based on research, highlighting their needs, goals, and challenges."]}
+{"query_id": "q128", "query": "What are the components of a persona?", "answers": ["Name, image, demographic details, goals, challenges, and quotes from users."]}
+{"query_id": "q129", "query": "What is an as-is scenario in human-centered design?", "answers": ["A narrative describing how a user currently completes a task."]}
+{"query_id": "q130", "query": "What are user needs in the context of human-centered design?", "answers": ["Prerequisites necessary for users to achieve goals within a specific context of use."]}
+{"query_id": "q131", "query": "How are user requirements derived from user needs?", "answers": ["By translating user needs into precise criteria that must be met by the system."]}
+{"query_id": "q132", "query": "What is the difference between qualitative and quantitative user requirements?", "answers": ["Qualitative requirements define how a system should work, while quantitative requirements set measurable objectives."]}
+{"query_id": "q133", "query": "What are examples of qualitative user requirements?", "answers": ["Users must be able to recognize which products are in their shopping basket before starting the payment process."]}
+{"query_id": "q134", "query": "What are examples of quantitative user requirements?", "answers": ["80% of users must rate a system as easy to use after completing a task."]}
+{"query_id": "q135", "query": "What are the outputs of the design phase in human-centered design?", "answers": ["Use scenarios, storyboards, user journey maps, wireframes, and prototypes."]}
+{"query_id": "q136", "query": "What is a low-fidelity prototype?", "answers": ["A simple and cost-effective representation of a design, often created with paper or basic tools."]}
+{"query_id": "q137", "query": "What is a high-fidelity prototype?", "answers": ["A detailed and interactive representation of a system, often created using tools like Figma."]}
+{"query_id": "q138", "query": "What is the purpose of wireframes in design?", "answers": ["To define a skeletal layout of a user interface, focusing on structure rather than detailed design."]}
+{"query_id": "q139", "query": "What are the goals of the evaluation phase in human-centered design?", "answers": ["To assess if user requirements are met, gather feedback, and compare designs."]}
+{"query_id": "q140", "query": "What methods are used in usability evaluation?", "answers": ["Usability tests, user surveys, and usability inspections."]}
+{"query_id": "q141", "query": "What is a usability test?", "answers": ["An evaluation where users perform tasks to identify usability issues and measure effectiveness, efficiency, and satisfaction."]}
+{"query_id": "q142", "query": "What is included in a usability test guide?", "answers": ["Goals, participant characteristics, test tasks, session procedure, and pre/post-test questions."]}
+{"query_id": "q143", "query": "What are the components of a usability test report?", "answers": ["An executive summary, usability findings, user characteristics, and the usability test guide."]}
+{"query_id": "q144", "query": "What is a usability inspection?", "answers": ["An expert evaluation of a system to identify usability problems without involving users."]}
+{"query_id": "q145", "query": "What are the key takeaways about human-centered design?", "answers": ["It is iterative, involves users throughout, and employs methods to ensure systems meet user needs effectively."]}
+{"query_id": "q146", "query": "What are the main learning goals for AI-enabled insights and decisions?", "answers": ["To understand its concepts, paradigms, key technologies, and solutions to challenges in decision-making."]}
+{"query_id": "q147", "query": "What is the definition of decision-making?", "answers": ["It is the process of reducing uncertainty and doubt about alternatives to make a reasonable choice."]}
+{"query_id": "q148", "query": "What are the levels of decision-making in organizations?", "answers": ["Strategic, tactical, and operational decisions."]}
+{"query_id": "q149", "query": "What are the two paradigms of AI-enabled insights and decisions?", "answers": ["Top-down (knowledge-driven) and bottom-up (data-driven) paradigms."]}
+{"query_id": "q150", "query": "What is the knowledge-driven paradigm?", "answers": ["It uses encoded human knowledge, such as rules, to inform decisions, often through expert systems."]}
+{"query_id": "q151", "query": "What are expert systems?", "answers": ["Computer programs designed to simulate human expertise and assist in decision-making within specific domains."]}
+{"query_id": "q152", "query": "What are the main components of an expert system?", "answers": ["A knowledge base, an inference engine, and a user interface."]}
+{"query_id": "q153", "query": "What is an example of an expert system?", "answers": ["MYCIN, which provided medical advice for diagnosing infectious diseases."]}
+{"query_id": "q154", "query": "What are the limitations of expert systems?", "answers": ["They cannot learn independently, are expensive to maintain, and struggle with tasks requiring tacit knowledge."]}
+{"query_id": "q155", "query": "What is the data-driven paradigm?", "answers": ["It allows algorithms to learn rules and patterns directly from data without relying on domain experts."]}
+{"query_id": "q156", "query": "What is machine learning?", "answers": ["A subfield of AI that uses algorithms trained on data to create models capable of performing tasks without explicit instructions."]}
+{"query_id": "q157", "query": "What are the types of machine learning?", "answers": ["Supervised learning, unsupervised learning, and reinforcement learning."]}
+{"query_id": "q158", "query": "What is an example of supervised learning?", "answers": ["Predictive maintenance systems that predict equipment failure based on historical data."]}
+{"query_id": "q159", "query": "What is an example of unsupervised learning?", "answers": ["Customer segmentation, where customers are grouped based on shared characteristics."]}
+{"query_id": "q160", "query": "What is an example of reinforcement learning?", "answers": ["Automated stock trading systems that optimize strategies through trial and error."]}
+{"query_id": "q161", "query": "What is automated decision-making?", "answers": ["When AI systems autonomously make decisions without human involvement."]}
+{"query_id": "q162", "query": "What is an example of automated decision-making?", "answers": ["Dynamic pricing systems used in airline tickets and ride-sharing services."]}
+{"query_id": "q163", "query": "What are the challenges of the data-driven paradigm?", "answers": ["Issues include data bias, black-box models, and difficulties in verification and validation."]}
+{"query_id": "q164", "query": "What is the 'last mile' of AI-enabled insights and decisions?", "answers": ["The gap between AI-generated insights and the decision-making process where humans often rely on instincts."]}
+{"query_id": "q165", "query": "Why do decision-makers often not use AI insights?", "answers": ["Lack of trust, over-reliance on gut feelings, and cultural resistance to data-driven decision-making."]}
+{"query_id": "q166", "query": "What is a data-driven culture?", "answers": ["A culture where decisions are informed by data and analysis rather than intuition or tradition."]}
+{"query_id": "q167", "query": "How can dashboards bridge the last mile of AI-enabled decision-making?", "answers": ["By providing real-time, intuitive visualizations and self-service analytics to enhance understanding and trust."]}
+{"query_id": "q168", "query": "What are the key takeaways about AI-enabled insights and decisions?", "answers": ["AI can enhance decision-making, but organizational culture must support data-driven approaches."]}
+{"query_id": "q169", "query": "What role does explainability play in AI-enabled insights?", "answers": ["It helps address trust issues by making AI systems' decision processes transparent to users."]}
+{"query_id": "q170", "query": "What is an example of AI addressing bias in data collection?", "answers": ["Amazon scrapping its AI recruiting tool due to gender bias, highlighting the need for fairness in data."]}
+{"query_id": "q171", "query": "What are the main learning goals for explainable AI (XAI)?", "answers": ["To understand its concept, stakeholders’ needs, approaches, techniques, and limitations."]}
+{"query_id": "q172", "query": "Why is explainability important in AI systems?", "answers": ["To ensure trust, comply with regulations, and provide transparency in consequential decisions."]}
+{"query_id": "q173", "query": "What is the definition of explainable AI (XAI)?", "answers": ["The ability of AI-based systems to explain their behaviors in understandable terms to humans."]}
+{"query_id": "q174", "query": "What are the historical roots of explainable AI?", "answers": ["Explainability began with expert systems in the 1970s and continues with modern machine learning."]}
+{"query_id": "q175", "query": "What is an example of an expert system with explainability features?", "answers": ["MYCIN, which provided 'HOW' and 'WHY' explanations for medical advice."]}
+{"query_id": "q176", "query": "What are the primary stakeholders of XAI?", "answers": ["AI developers, decision-makers, regulatory bodies, business owners, impacted groups, and customers."]}
+{"query_id": "q177", "query": "What are the key explainability needs of AI developers?", "answers": ["To debug and improve AI models, understand errors, and evaluate performance."]}
+{"query_id": "q178", "query": "What are examples of question-driven XAI?", "answers": ["'Why was this predicted?', 'What if the input changes?', and 'How does the AI work?'."]}
+{"query_id": "q179", "query": "What are the presentation formats for AI explanations?", "answers": ["Text-based formats (rules, plain text) and multimedia formats (graphs, images)."]}
+{"query_id": "q180", "query": "What are the provision mechanisms for explanations in XAI?", "answers": ["User-invoked explanations, automatic explanations, and intelligent mechanisms."]}
+{"query_id": "q181", "query": "What are examples of global XAI techniques?", "answers": ["Partial Dependence Plot (PDP) and Permutation Feature Importance (PFI)."]}
+{"query_id": "q182", "query": "What are examples of local XAI techniques?", "answers": ["SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-Agnostic Explanations)."]}
+{"query_id": "q183", "query": "What is the difference between intrinsic and post-hoc explainability?", "answers": ["Intrinsic explainability is built into the model, while post-hoc explainability generates explanations after predictions."]}
+{"query_id": "q184", "query": "What are white-box models?", "answers": ["AI models with built-in explainability, such as decision trees and linear regression."]}
+{"query_id": "q185", "query": "What is the performance-explainability tradeoff?", "answers": ["Black-box models often outperform white-box models but lack inherent explainability."]}
+{"query_id": "q186", "query": "What is an example of a black-box model?", "answers": ["Neural networks, which require post-hoc explainability techniques."]}
+{"query_id": "q187", "query": "How does LIME work as a post-hoc XAI technique?", "answers": ["LIME trains a surrogate white-box model on perturbed data to explain predictions of black-box models."]}
+{"query_id": "q188", "query": "What is an example of a counterfactual explanation?", "answers": ["'If the applicant’s income were $10,000 higher, the loan would be approved.'"]}
+{"query_id": "q189", "query": "What challenges do explanations face regarding trust?", "answers": ["Explanations can lead to miscalibrated trust, causing over-reliance or under-reliance on AI."]}
+{"query_id": "q190", "query": "What is the risk of information overload in XAI?", "answers": ["Overly complex explanations can confuse users and reduce trust in the AI system."]}
+{"query_id": "q191", "query": "How can XAI lead to 'gaming the system'?", "answers": ["Users might manipulate inputs to exploit the AI based on explanation insights."]}
+{"query_id": "q192", "query": "What are the privacy concerns in XAI?", "answers": ["Explanations might reveal sensitive training data or proprietary model details."]}
+{"query_id": "q193", "query": "What are the two main XAI approaches?", "answers": ["Intrinsic explainability (white-box models) and post-hoc explainability (e.g., LIME, SHAP)."]}
+{"query_id": "q194", "query": "What are the benefits of explainable AI?", "answers": ["Improved trust, regulatory compliance, better debugging, and informed decision-making."]}
+{"query_id": "q195", "query": "What are the key takeaways about explainable AI?", "answers": ["XAI must balance explainability with performance, address diverse needs, and mitigate risks like trust issues and information overload."]}
+{"query_id": "q196", "query": "What are the main learning goals for AI-enabled innovation?", "answers": ["To define innovation, explain its process, and discuss how AI supports and challenges innovation."]}
+{"query_id": "q197", "query": "How is innovation defined?", "answers": ["An idea, practice, or object perceived as new by an individual or other unit of adoption."]}
+{"query_id": "q198", "query": "What are the types of innovation?", "answers": ["Disruptive innovation and sustaining innovation."]}
+{"query_id": "q199", "query": "What is the difference between disruptive and sustaining innovation?", "answers": ["Disruptive innovation significantly alters products or services unexpectedly, while sustaining innovation improves existing offerings."]}
+{"query_id": "q200", "query": "What is digital innovation?", "answers": ["A product, process, or business model that is perceived as new, requires significant changes by adopters, and is enabled by IT."]}
+{"query_id": "q201", "query": "What are the types of digital innovation?", "answers": ["Digital product innovation, digital process innovation, and digital business model innovation."]}
+{"query_id": "q202", "query": "What is an example of digital product innovation?", "answers": ["The introduction of connected car services."]}
+{"query_id": "q203", "query": "What is an example of digital process innovation?", "answers": ["Using process mining software like Celonis to improve inefficiencies."]}
+{"query_id": "q204", "query": "What is an example of digital business model innovation?", "answers": ["Online platform models like Airbnb or Uber."]}
+{"query_id": "q205", "query": "What are the key steps in the innovation process?", "answers": ["Ideation, development, and implementation."]}
+{"query_id": "q206", "query": "What role does creativity play in innovation?", "answers": ["Creativity is essential for deriving ideas that are implemented during the innovation process."]}
+{"query_id": "q207", "query": "What is the Four-C model of creativity?", "answers": ["A model distinguishing four levels of creativity: mini-c, little-c, Pro-c, and Big-C."]}
+{"query_id": "q208", "query": "What is AI-enabled innovation?", "answers": ["The use of AI to generate, evaluate, refine, and implement ideas for new or altered products, processes, or business models."]}
+{"query_id": "q209", "query": "How does generative AI impact innovation?", "answers": ["It enables businesses to generate unlimited new ideas and concepts, often indistinguishable from human creativity."]}
+{"query_id": "q210", "query": "What is an example of AI-enabled product innovation?", "answers": ["Microsoft 365 Copilot, which integrates AI to enhance productivity tools."]}
+{"query_id": "q211", "query": "What is an example of AI-enabled process innovation?", "answers": ["Walmart automating supplier negotiations."]}
+{"query_id": "q212", "query": "What is an example of AI-enabled business model innovation?", "answers": ["Waymo’s driverless taxi services."]}
+{"query_id": "q213", "query": "How does AI support the ideation phase in innovation?", "answers": ["By analyzing customer feedback and using natural language processing to extract unmet needs or preferences."]}
+{"query_id": "q214", "query": "What is an example of AI in market research?", "answers": ["AI-generated personas replacing human participants in surveys and interviews."]}
+{"query_id": "q215", "query": "What are the challenges of using AI in innovation?", "answers": ["AI’s reliance on data, authorship disputes, and its tendency to imitate rather than innovate."]}
+{"query_id": "q216", "query": "What is an example of AI assisting in prototype testing?", "answers": ["AI-moderated prototype testing for faster feedback and usability insights."]}
+{"query_id": "q217", "query": "How does AI contribute to the implementation phase of innovation?", "answers": ["By generating marketing visuals and videos, often outperforming human-created content in quality and effectiveness."]}
+{"query_id": "q218", "query": "What is the role of AI in drug development?", "answers": ["AI assists in generating novel proteins and identifying potential new drugs."]}
+{"query_id": "q219", "query": "What are the limitations of AI in innovation?", "answers": ["Limited by data availability, inability to address domains with sparse data, and challenges in ethical authorship."]}
+{"query_id": "q220", "query": "What are the key takeaways about AI-enabled innovation?", "answers": ["AI enhances various innovation activities but raises questions about creativity, data dependency, and authorship."]}
+{"query_id": "q221", "query": "What are the main learning goals for generative AI?", "answers": ["To explain generative AI, describe foundation model adaptation, apply prompting strategies, and discuss its challenges and risks."]}
+{"query_id": "q222", "query": "What is generative AI?", "answers": ["A type of AI that generates new, meaningful content such as text, images, audio, or video from training data."]}
+{"query_id": "q223", "query": "How does generative AI differ from traditional AI?", "answers": ["Generative AI generates new data instances, while traditional AI focuses on making predictions or classifying data."]}
+{"query_id": "q224", "query": "What are examples of generative AI outputs?", "answers": ["Text, images, audio, and video."]}
+{"query_id": "q225", "query": "What is a foundation model?", "answers": ["An AI model trained on vast datasets using self-supervision, capable of performing a wide range of tasks."]}
+{"query_id": "q226", "query": "What are examples of foundation models?", "answers": ["Language models like GPT-4, image models like DALL-E, and multimodal models like PaLM-E."]}
+{"query_id": "q227", "query": "What are the key steps in the generative AI process?", "answers": ["Training on vast amounts of data, receiving a prompt, and generating new content."]}
+{"query_id": "q228", "query": "What is token sampling in generative AI?", "answers": ["The process where the model predicts the next token based on probabilities and generates content iteratively."]}
+{"query_id": "q229", "query": "What is fine-tuning in generative AI?", "answers": ["Refining a foundation model's capabilities by training it on a smaller, specific dataset for a particular domain or task."]}
+{"query_id": "q230", "query": "What is prompt engineering?", "answers": ["Designing effective prompts to guide a pre-trained model to perform specific tasks."]}
+{"query_id": "q231", "query": "What are common prompting techniques?", "answers": ["Zero-shot prompting, few-shot prompting, and chain-of-thought prompting."]}
+{"query_id": "q232", "query": "What is an example of zero-shot prompting?", "answers": ["'Generate ideas for a birthday present.'"]}
+{"query_id": "q233", "query": "What is an example of few-shot prompting?", "answers": ["'Country: Germany, Capital: Berlin. Country: Argentina, Capital: [Answer]'"]}
+{"query_id": "q234", "query": "What is an example of chain-of-thought prompting?", "answers": ["'Let’s think step by step: What is the result of 2+2?'"]}
+{"query_id": "q235", "query": "What are the challenges in prompt engineering?", "answers": ["Managing expectations, avoiding overgeneralization, and balancing examples versus instructions."]}
+{"query_id": "q236", "query": "What are examples of bad and good prompts?", "answers": ["Bad: 'Create three ideas for social media content.' Good: 'Compose a LinkedIn post on remote work for young tech managers.'"]}
+{"query_id": "q237", "query": "What is an example of generative AI's incorrect outputs?", "answers": ["Hallucinations, where AI generates untrue or nonsensical responses."]}
+{"query_id": "q238", "query": "What is 'botshit' in generative AI?", "answers": ["AI-generated content that is untrue and used uncritically for decisions or communication."]}
+{"query_id": "q239", "query": "What are the biases in generative AI?", "answers": ["Cultural, gender, racial, and socioeconomic biases reflected in training data."]}
+{"query_id": "q240", "query": "What are the risks of generative AI related to copyright?", "answers": ["Generative AI may use copyrighted materials in training without proper consent, leading to violations."]}
+{"query_id": "q241", "query": "What are the environmental impacts of generative AI?", "answers": ["High energy consumption during training and inference."]}
+{"query_id": "q242", "query": "What are scenarios where generative AI should not be used?", "answers": ["When accuracy and reliability are critical, such as in legal or medical decisions."]}
+{"query_id": "q243", "query": "What is the role of transformers in generative AI?", "answers": ["Transformers enable models to focus on specific input parts, guiding token generation."]}
+{"query_id": "q244", "query": "What are the key takeaways about generative AI?", "answers": ["Generative AI generates new data, uses foundation models, benefits from effective prompting, and poses challenges like biases and hallucinations."]}
+{"query_id": "q245", "query": "What are examples of multimodal foundation models?", "answers": ["Models trained on image-text pairs, such as GPT-4 and PaLM-E."]}
+{"query_id": "q246", "query": "What are the main learning goals of the lecture on AI ethics?", "answers": ["To identify ethical concerns with AI, understand legislative and principled approaches, and discuss their benefits and challenges."]}
+{"query_id": "q247", "query": "What are common ethical concerns with AI?", "answers": ["Privacy issues, bias, lack of transparency, job displacement, safety risks, and loss of human autonomy."]}
+{"query_id": "q248", "query": "What are examples of ethical concerns in AI-enabled automation?", "answers": ["Job displacement and deskilling due to robotic process automation."]}
+{"query_id": "q249", "query": "What are the three groups of ethical theories?", "answers": ["Virtue ethics, deontological ethics, and consequentialist ethics."]}
+{"query_id": "q250", "query": "What are Isaac Asimov's Three Laws of Robotics?", "answers": ["1. Robots must not harm humans. 2. Robots must obey human orders unless they conflict with the First Law. 3. Robots must protect themselves unless it conflicts with the first two laws."]}
+{"query_id": "q251", "query": "What is AI ethics?", "answers": ["A multidisciplinary field addressing ethical issues in the development, deployment, and use of AI."]}
+{"query_id": "q252", "query": "What are the two main approaches to AI ethics?", "answers": ["The legislative approach (top-down regulation) and the principled approach (bottom-up ethical guidelines)."]}
+{"query_id": "q253", "query": "What is the EU AI Act?", "answers": ["A risk-based regulatory framework for AI, adopted in August 2024, focusing on transparency, safety, and fundamental rights."]}
+{"query_id": "q254", "query": "What are the four risk categories in the EU AI Act?", "answers": ["Prohibited AI, high-risk AI, limited-risk AI, and minimal-risk AI."]}
+{"query_id": "q255", "query": "What are transparency obligations in the EU AI Act?", "answers": ["AI systems like chatbots must disclose that they are not human."]}
+{"query_id": "q256", "query": "What are penalties for non-compliance with the EU AI Act?", "answers": ["Penalties depend on the type and severity of non-compliance and may include significant fines."]}
+{"query_id": "q257", "query": "What is the global impact of the EU AI Act?", "answers": ["Countries like Canada and Japan are aligning their AI governance frameworks with the EU's regulations."]}
+{"query_id": "q258", "query": "What is the principled approach to AI ethics?", "answers": ["A focus on voluntary ethical guidelines developed by companies, organizations, or governments."]}
+{"query_id": "q259", "query": "What are Google's AI principles?", "answers": ["Guidelines emphasizing AI's social benefit, avoiding harm, and ensuring accountability."]}
+{"query_id": "q260", "query": "What are the five key principles for ethical AI?", "answers": ["Transparency, justice and fairness, non-maleficence, responsibility, and privacy."]}
+{"query_id": "q261", "query": "What are examples of transparency in AI?", "answers": ["Disclosing that users are interacting with a chatbot, and explaining how content was AI-generated."]}
+{"query_id": "q262", "query": "What is justice and fairness in AI ethics?", "answers": ["Ensuring AI decisions are free from bias, promoting equality, and allowing users to contest decisions."]}
+{"query_id": "q263", "query": "What does non-maleficence mean in AI ethics?", "answers": ["AI should not cause harm to individuals, societies, or the environment, such as through deepfakes or misinformation."]}
+{"query_id": "q264", "query": "What is the principle of responsibility in AI ethics?", "answers": ["Ensuring accountability for AI decisions, such as holding car manufacturers liable for autonomous vehicle accidents."]}
+{"query_id": "q265", "query": "What are privacy concerns in AI?", "answers": ["Protecting user data, avoiding data leaks, and ensuring personal data is not misused."]}
+{"query_id": "q266", "query": "What are criticisms of ethical AI principles?", "answers": ["They are often abstract, conflicting, and lack mechanisms for enforcement."]}
+{"query_id": "q267", "query": "What is the principle-practice gap in AI ethics?", "answers": ["The challenge of translating high-level ethical principles into actionable strategies."]}
+{"query_id": "q268", "query": "What are recommendations for implementing ethical AI principles?", "answers": ["Assign roles for AI oversight, ensure fair distribution of AI benefits, and address employee concerns transparently."]}
+{"query_id": "q269", "query": "What is an example of transparency in AI deployment?", "answers": ["Allowing employees to observe the operation of RPA bots to reduce uncertainty and build trust."]}
+{"query_id": "q270", "query": "What are the key takeaways about AI ethics?", "answers": ["AI ethics addresses concerns like bias and privacy, with legislative and principled approaches offering complementary benefits and challenges."]}

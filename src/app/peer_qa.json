@@ -23,7 +23,15 @@
       "question_text": "hello",
       "skill_tag": "Beginner",
       "upvotes": 0,
-      "answers": [],
+      "answers": [
+        {
+          "answer_text": "tschüss",
+          "upvotes": 1,
+          "voters": [
+            "e319be3d"
+          ]
+        }
+      ],
       "voters": []
     }
   ]

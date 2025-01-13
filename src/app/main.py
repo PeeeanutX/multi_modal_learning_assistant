@@ -51,7 +51,7 @@ def assistant_page():
     build_header_section()
     handle_access_key()
 
-    dense_retriever_path = "src/checkpoints/dense_retriever_checkpoint"
+    dense_retriever_path = "src/checkpoints2/dense_retriever_checkpoint"
     faiss_index_path = "src/ingestion/data/new_index.pkl"
 
     dr_config = RetrieverConfig(

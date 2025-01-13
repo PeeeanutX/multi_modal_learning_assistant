@@ -30,8 +30,8 @@ logger = logging.getLogger(__name__)
 @dataclass
 class DenseRetrieverTrainingConfig:
     input_path: str = "src/ingestion/data/llm_scored_candidates.jsonl"
-    reward_model_path: str = "src/checkpoints/reward_model_checkpoint"
-    output_dir: str = "src/checkpoints/dense_retriever_checkpoint"
+    reward_model_path: str = "src/checkpoints2/reward_model_checkpoint"
+    output_dir: str = "src/checkpoints2/dense_retriever_checkpoint"
     query_model_name:  str = "intfloat/e5-base-v2"
     doc_model_name: str = "intfloat/e5-base-v2"
     max_length: int = 128
@@ -192,8 +192,8 @@ class DenseRetrieverTrainerCallback(TrainerCallback):
 def main():
     parser = argparse.ArgumentParser(description="Train a dense retriever via knowledge distillation from reward model")
     parser.add_argument('--input-path', default='src/ingestion/data/llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
-    parser.add_argument('--reward-model-path', default='src/checkpoints/reward_model_checkpoint', help='Path to reward model')
-    parser.add_argument('--output-dir', default='src/checkpoints/dense_retriever_checkpoint', help='Output directory')
+    parser.add_argument('--reward-model-path', default='src/checkpoints2/reward_model_checkpoint', help='Path to reward model')
+    parser.add_argument('--output-dir', default='src/checkpoints2/dense_retriever_checkpoint', help='Output directory')
     parser.add_argument('--query-model-name', default='intfloat/e5-base', help='Query encoder model name')
     parser.add_argument('--doc-model-name', default='intfloat/e5-base', help='Document encoder model name')
     parser.add_argument('--max-length', type=int, default=128)

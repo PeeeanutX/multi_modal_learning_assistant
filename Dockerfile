@@ -21,7 +21,3 @@ USER ${USER}
 CMD ["streamlit", "run", "run_app.py", \
      "--server.port=8501", \
      "--server.address=0.0.0.0"]
-
-LABEL authors="johnto"
-
-ENTRYPOINT ["top", "-b"]

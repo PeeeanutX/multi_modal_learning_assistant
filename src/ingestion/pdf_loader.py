@@ -107,14 +107,3 @@ if __name__ == "__main__":
         max_files=None,
         include_encrypted=False
     )
-
-"""
-    for pdf_file in os.listdir(pdf_dir):
-        if pdf_file.endswith('.pdf'):
-            reader = PdfReader(os.path.join(pdf_dir, pdf_file))
-            text = ''
-            for page in reader.pages:
-                text += page.extract_text()
-            with open(os.path.join(output_dir, pdf_file.replace('.pdf', '.txt')), 'w', encoding='utf-8') as f:
-                f.write(text)
-"""

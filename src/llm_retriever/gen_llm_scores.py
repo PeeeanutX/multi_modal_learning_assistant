@@ -107,10 +107,6 @@ def main():
         temperature=args.llm_temperature,
         max_tokens=args.llm_max_tokens
     )
-    # You should have a retriever, but for scoring we might not need a retriever here.
-    # If LLMInterface requires a retriever, pass a mock or None if allowed.
-    # Or refactor LLMInterface initialization so it can run without a retriever just for scoring.
-    # For demonstration, let's pass None (Adjust this according to your code).
     llm_interface = LLMInterface(config=llm_config, retriever=None)
 
     # Prepare output
