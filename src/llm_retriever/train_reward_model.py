@@ -178,6 +178,7 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=args.output_dir,
+        report_to="none",
         overwrite_output_dir=True,
         do_train=True,
         do_eval=True,

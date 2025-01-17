@@ -11,7 +11,8 @@ from typing import List, Dict, Any
 from dataclasses import dataclass, field
 from transformers import (
     AutoTokenizer,
-    T5EncoderModel,
+    AutoModelForSequenceClassification,
+    AutoModel,
     Trainer,
     TrainingArguments,
     DataCollatorWithPadding,
@@ -29,10 +30,10 @@ logger = logging.getLogger(__name__)
 @dataclass
 class DenseRetrieverTrainingConfig:
     input_path: str = "src/ingestion/data/llm_scored_candidates.jsonl"
-    reward_model_path: str = "src/checkpoints2/reward_model_checkpoint"
+    reward_model_path: str = "/content/multi_modal_learning_assistant/reward_model_checkpoint"
     output_dir: str = "src/checkpoints2/dense_retriever_checkpoint"
-    query_model_name:  str = "google/flan-t5-base"
-    doc_model_name: str = "google/flan-t5-base"
+    query_model_name:  str = "bert-base-uncased"
+    doc_model_name: str = "bert-base-uncased"
     max_length: int = 128
     per_device_train_batch_size: int = 16
     per_device_eval_batch_size: int = 16
@@ -42,6 +43,9 @@ class DenseRetrieverTrainingConfig:
     weight_decay: float = 0.01
     eval_ratio: float = 0.1
     seed: int = 42
+    temperature: float = 1.0
+    kd_cont_loss_weight: float = 0.2
+    kd_loss_weight: float = 1.0
 
 
 class DenseRetrieverDataset(Dataset):
@@ -121,14 +125,14 @@ class DenseRetrieverModel(torch.nn.Module):
     """
     def __init__(self, query_model_name: str, doc_model_name: str):
         super().__init__()
-        self.query_encoder = T5EncoderModel.from_pretrained(query_model_name)
-        self.doc_encoder = T5EncoderModel.from_pretrained(doc_model_name)
+        self.query_encoder = AutoModel.from_pretrained(query_model_name)
+        self.doc_encoder = AutoModel.from_pretrained(doc_model_name)
 
     def forward(self, query_input_ids, query_attention_mask, doc_input_ids, doc_attention_mask):
         B, M, L = doc_input_ids.shape
 
         doc_input_ids = doc_input_ids.view(B*M, L)
-        doc_attention_mask = doc_attention_mask(B*M, L)
+        doc_attention_mask = doc_attention_mask.view(B*M, L)
 
         query_outputs = self.query_encoder(query_input_ids, attention_mask=query_attention_mask)
         doc_outputs = self.doc_encoder(doc_input_ids, attention_mask=doc_attention_mask)
@@ -172,11 +176,11 @@ def collate_fn(batch, device):
     scores = torch.stack(scores_list, dim=0)
 
     return {
-        "query_input_ids": query_input_ids.to(device),
-        "query_attention_mask": query_attention_mask.to(device),
-        "doc_input_ids": doc_input_ids.to(device),
-        "doc_attention_mask": doc_attention_mask.to(device),
-        "scores": scores.to(device)
+        "query_input_ids": query_input_ids,
+        "query_attention_mask": query_attention_mask,
+        "doc_input_ids": doc_input_ids,
+        "doc_attention_mask": doc_attention_mask,
+        "scores": scores
     }
 
 
@@ -188,10 +192,10 @@ class DenseRetrieverTrainerCallback(TrainerCallback):
 def main():
     parser = argparse.ArgumentParser(description="Train a dense retriever via knowledge distillation from reward model")
     parser.add_argument('--input-path', default='src/ingestion/data/llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
-    parser.add_argument('--reward-model-path', default='src/checkpoints2/reward_model_checkpoint', help='Path to reward model')
-    parser.add_argument('--output-dir', default='src/checkpoints2/dense_retriever_checkpoint', help='Output directory')
-    parser.add_argument('--query-model-name', default='intfloat/e5-base', help='Query encoder model name')
-    parser.add_argument('--doc-model-name', default='intfloat/e5-base', help='Document encoder model name')
+    parser.add_argument('--reward-model-path', default='/content/multi_modal_learning_assistant/reward_model_checkpoint', help='Path to reward model')
+    parser.add_argument('--output-dir', default='src/checkpoints/dense_retriever_checkpoint', help='Output directory')
+    parser.add_argument('--query-model-name', default='bert-base-uncased', help='Query encoder model name')
+    parser.add_argument('--doc-model-name', default='bert-base-uncased', help='Document encoder model name')
     parser.add_argument('--max-length', type=int, default=128)
     parser.add_argument('--learning-rate', type=float, default=3e-5)
     parser.add_argument('--num-train-epochs', type=int, default=3)
@@ -293,6 +297,9 @@ def main():
     trainer.train()
     trainer.save_model(args.output_dir)
     logger.info(f"Dense retriever trained and saved at {args.output_dir}")
+    query_tokenizer.save_pretrained(args.output_dir)
+    doc_tokenizer.save_pretrained(args.output_dir)
+
 
 
 if __name__ == "__main__":
