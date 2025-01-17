@@ -1,1 +1,1 @@
-a black square with a white border on it
+a black rectangular object with a black background

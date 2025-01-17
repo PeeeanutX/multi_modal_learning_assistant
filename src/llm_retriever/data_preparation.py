@@ -25,21 +25,18 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
 def prepare_data(
-    pdf_dir: str,
-    text_output_dir: str,
-    processed_texts_dir: str,
-    index_file: str,
-    chunks_file: str,
-    embeddings_provider: str = 'nvidia',
-    embeddings_model: str = 'NV-Embed-QA',
-    # The following may be optional or you can remove them for semantic chunking
-    breakpoint_threshold_type: str = 'percentile',
-    breakpoint_threshold_amount: float = 0.7,
-    number_of_chunks: int = None,
-    # If your text is extremely short or you prefer bigger merges, adjust buffer/min_chunk_size
-    buffer_size: int = 1,
-    min_chunk_size: int = None,
+        pdf_dir: str,
+        text_output_dir: str,
+        processed_texts_dir: str,
+        index_file: str,
+        chunks_file: str,
+        embeddings_provider: str = 'nvidia',
+        embeddings_model: str = 'NV-Embed-QA',
+        chunk_size: int = 512,
+        chunk_overlap: int = 50,
+        processed_image_texts_dir: str = "",  # optional
 ):
     """
     Prepare data for the LLM-R pipeline using SemanticChunker for chunking:
@@ -76,7 +73,31 @@ def prepare_data(
         else:
             logger.warning(f"No usable text after cleaning {txt_file}")
 
-    # Step 3: Initialize embeddings & SemanticChunker
+    if processed_image_texts_dir and os.path.isdir(processed_image_texts_dir):
+        for fname in os.listdir(processed_image_texts_dir):
+            if fname.lower().endswith('.txt'):
+                with open(os.path.join(processed_image_texts_dir, fname), 'r', encoding='utf-8') as f:
+                    img_caption = f.read().strip()
+                if img_caption:
+                    raw_texts.append(img_caption)
+
+    logger.info("Chunking text with a RecursiveCharacterTextSplitter approach...")
+    chunker_config = ChunkerConfig(
+        method='recursive',
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+        separators=["\n\n", "\n", " ", ""]
+    )
+    chunker = TextChunker(chunker_config)
+
+    all_chunk_strs = []
+    for text in raw_texts:
+        chunks = chunker.chunk_text(text)
+        all_chunk_strs.extend(chunks)
+
+    docs = [Document(page_content=c) for c in all_chunk_strs]
+
     logger.info(f"Initializing embeddings with provider={embeddings_provider}, model={embeddings_model}")
     embeddings_config = EmbeddingsConfig(
         provider=embeddings_provider,
@@ -84,41 +105,12 @@ def prepare_data(
     )
     embed_model = EmbeddingsFactory.get_embeddings_model(embeddings_config)
 
-    logger.info("Creating SemanticChunker with the given embeddings ...")
-    semantic_chunker = SemanticChunker(
-        embeddings=embed_model,
-        buffer_size=buffer_size,
-        add_start_index=False,
-        breakpoint_threshold_type=breakpoint_threshold_type,  # e.g. 'percentile'
-        breakpoint_threshold_amount=breakpoint_threshold_amount,
-        number_of_chunks=number_of_chunks,  # e.g. max chunk count
-        sentence_split_regex=r'(?<=[.?!])\s+',  # default
-        min_chunk_size=min_chunk_size       # you can tweak
-    )
-
-    # Step 4: Apply semantic chunking
-    logger.info("Splitting text semantically ...")
-    all_chunk_strs = []
-    for text in raw_texts:
-        # Option A: use split_text -> returns a list[str]
-        chunk_strs = semantic_chunker.split_text(text)
-        # Option B: if you want metadata, you can do:
-        # doc = Document(page_content=text, metadata={...})
-        # chunk_docs = semantic_chunker.split_documents([doc])
-        # chunk_strs = [cd.page_content for cd in chunk_docs]
-
-        all_chunk_strs.extend(chunk_strs)
-
-    # Convert them into Documents
-    docs = [Document(page_content=c) for c in all_chunk_strs]
-
-    # Step 5: Build or load FAISS index
-    logger.info(f"Creating/loading FAISS index at {index_file}")
     vector_store_config = VectorStoreConfig(
         store_type='faiss',
         embedding_model=embed_model,
         faiss_index_path=index_file
     )
+    logger.info(f"Creating or loading FAISS index at {index_file} ...")
     vectorstore = VectorStoreFactory.create_vector_store(vector_store_config, docs=docs)
     logger.info("FAISS index ready.")
 
@@ -134,6 +126,7 @@ if __name__ == "__main__":
     processed_texts_dir = text_output_dir
     index_file = 'src/ingestion/data/index.pkl'
     chunks_file = 'src/ingestion/data/chunks.pkl'
+    processed_image_texts_dir = 'src/ingestion/data/processed/image_texts'
 
     prepare_data(
         pdf_dir=pdf_dir,
@@ -143,9 +136,7 @@ if __name__ == "__main__":
         chunks_file=chunks_file,
         embeddings_provider='nvidia',
         embeddings_model='NV-Embed-QA',
-        breakpoint_threshold_type='percentile',
-        breakpoint_threshold_amount=0.75,  # play with this
-        number_of_chunks=None,
-        buffer_size=1,
-        min_chunk_size=None
+        chunk_size=512,
+        chunk_overlap=50,
+        processed_image_texts_dir=processed_image_texts_dir
     )
