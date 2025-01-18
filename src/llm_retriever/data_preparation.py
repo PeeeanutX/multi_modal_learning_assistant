@@ -1,23 +1,19 @@
-#!/usr/bin/env python3
 import os
 import sys
 import logging
 import pickle
 
-# Ensure project root is on PYTHONPATH
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 from langchain.schema import Document
-from langchain_experimental.text_splitter import SemanticChunker
 
 from src.ingestion.extract_pdf_content import extract_pdf_content
 from src.ingestion.text_cleaner import clean_text
 from src.processing.chunker import TextChunker, ChunkerConfig
 from src.processing.embedder import EmbeddingsFactory, EmbeddingsConfig
 from src.processing.vector_store import VectorStoreFactory, VectorStoreConfig
-from dotenv import load_dotenv
 
 logging.basicConfig(
     level=logging.INFO,
@@ -114,7 +110,6 @@ def prepare_data(
     vectorstore = VectorStoreFactory.create_vector_store(vector_store_config, docs=docs)
     logger.info("FAISS index ready.")
 
-    # Step 6: Save chunk strings to pickle
     with open(chunks_file, 'wb') as f:
         pickle.dump(all_chunk_strs, f)
     logger.info(f"Saved {len(all_chunk_strs)} semantic chunks to {chunks_file}")
@@ -137,6 +132,6 @@ if __name__ == "__main__":
         embeddings_provider='nvidia',
         embeddings_model='NV-Embed-QA',
         chunk_size=512,
-        chunk_overlap=50,
+        chunk_overlap=60,
         processed_image_texts_dir=processed_image_texts_dir
     )

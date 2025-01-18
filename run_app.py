@@ -23,8 +23,8 @@ def run_app():
         max_tokens=512
     )
     retriever_cfg = RetrieverConfig(
-        dense_retriever_path="src/checkpoints2/dense_retriever_checkpoint",
-        faiss_index_path="src/ingestion/data/new_index.pkl",
+        dense_retriever_path="src/checkpoints/dense_retriever_checkpoint",
+        faiss_index_path="src/ingestion/data/index.pkl",
         top_k=10,
         use_gpu=True
     )

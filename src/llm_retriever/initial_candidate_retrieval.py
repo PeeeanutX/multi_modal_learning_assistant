@@ -4,6 +4,8 @@ import json
 import logging
 import argparse
 import gzip
+import time
+import random
 from typing import List, Dict, Tuple
 from dataclasses import dataclass, field
 
@@ -27,6 +29,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+MAX_CALLS_PER_SECOND = 1
+time_per_call = 1.0 / MAX_CALLS_PER_SECOND
+
+last_call_time = 0
+
 
 @dataclass
 class CandidateRetrievalConfig:
@@ -36,7 +43,7 @@ class CandidateRetrievalConfig:
     chunks_file: str
     embeddings_provider: str = 'nvidia'
     embeddings_model: str = 'NV-Embed-QA'
-    top_k: int = 20
+    top_k: int = 10
     doccache_file: str = ''
 
 
@@ -105,7 +112,7 @@ def retrieve_candidates(cfg: CandidateRetrievalConfig):
     results = []
     for q in queries:
         query_text = q['query']
-        query_emb = embed_model.embed_query(query_text)
+        query_emb = rate_limited_embed_query(embed_model, query_text)
         docs = vectorstore.similarity_search_by_vector(query_emb, k=cfg.top_k)
 
         candidates = []
@@ -148,6 +155,45 @@ def save_results(results: List[Dict], output_path: str):
     logger.info(f"Saved {len(results)} retrieval results to {output_path}")
 
 
+def embed_with_retry(embedding_model, text, max_retries=5, initial_wait=2):
+    """
+    Tries embedding the given text and handles 429 errors by sleeping and retrying.
+    """
+    for attempt in range(1, max_retries+1):
+        try:
+            return embedding_model.embed_query(text)
+        except Exception as e:
+            # Convert exception to string to check if it contains "429"
+            if "429" in str(e):
+                if attempt == max_retries:
+                    logger.error(f"Max retries ({max_retries}) exceeded for text: {text[:50]}")
+                    raise
+                sleep_time = initial_wait * (2 ** (attempt - 1)) + random.random()
+                logger.warning(
+                    f"Got 429 (Too Many Requests). "
+                    f"Retry attempt {attempt}/{max_retries}. Sleeping {sleep_time:.2f} seconds."
+                )
+                time.sleep(sleep_time)
+            else:
+                raise  # For other exceptions, re-raise immediately.
+
+    # Should never get here logically
+    return None
+
+
+def rate_limited_embed_query(model, text):
+    global last_call_time
+    now = time.time()
+    # If not enough time has passed since last call, wait
+    wait_time = time_per_call - (now - last_call_time)
+    if wait_time > 0:
+        time.sleep(wait_time)
+    last_call_time = time.time()
+
+    logger.info(f"Calling embed_query for text length {len(text)}")
+    return model.embed_query(text)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Initial Candidate Retrieval for LLM-R pipeline")
     parser.add_argument('--queries-path', default='src/ingestion/data/queries.jsonl', help='Path to input queries file (JSONL)')
@@ -156,7 +202,7 @@ def main():
     parser.add_argument('--chunks-file', default='src/ingestion/data/chunks.pkl', help='Path to chunks.pkl file')
     parser.add_argument('--embeddings-provider', default='nvidia', help='Embeddings provider: nvidia, openai, huggingface')
     parser.add_argument('--embeddings-model', default='NV-Embed-QA', help='Embeddings model name')
-    parser.add_argument('--top-k', type=int, default=20, help='Number of candidates to retrieve')
+    parser.add_argument('--top-k', type=int, default=10, help='Number of candidates to retrieve')
     args = parser.parse_args()
 
     cfg = CandidateRetrievalConfig(

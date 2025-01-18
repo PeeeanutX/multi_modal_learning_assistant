@@ -30,8 +30,8 @@ logger = logging.getLogger(__name__)
 @dataclass
 class DenseRetrieverTrainingConfig:
     input_path: str = "src/ingestion/data/llm_scored_candidates.jsonl"
-    reward_model_path: str = "/content/multi_modal_learning_assistant/reward_model_checkpoint"
-    output_dir: str = "src/checkpoints2/dense_retriever_checkpoint"
+    reward_model_path: str = "src/checkpoints/reward_model_checkpoint"
+    output_dir: str = "src/checkpoints/dense_retriever_checkpoint"
     query_model_name:  str = "bert-base-uncased"
     doc_model_name: str = "bert-base-uncased"
     max_length: int = 128
