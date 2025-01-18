@@ -10,12 +10,10 @@ import logging
 import argparse
 import gzip
 from typing import List, Dict, Any
-from dotenv import load_dotenv
 
 from src.models.llm_interface import LLMInterface, LLMConfig
 from langchain.schema import Document
 
-load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -90,9 +88,17 @@ def main():
                         help='Path to save scored candidates file')
     parser.add_argument('--llm-provider', default='huggingface', help='LLM provider (e.g., nvidia, openai, huggingface)')
     parser.add_argument('--llm-model-name', default='tiiuae/falcon-7b', help='LLM model name')
-    parser.add_argument('--llm-temperature', type=float, default=0.7, help='LLM generation temperature')
+    parser.add_argument('--llm-temperature', type=float, default=0.3, help='LLM generation temperature')
     parser.add_argument('--llm-max-tokens', type=int, default=512, help='Max tokens for LLM responses')
-    parser.add_argument('--batch-size', type=int, default=8, help='Batch size for scoring')
+    parser.add_argument('--batch-size', type=int, default=1, help='Batch size for scoring')
+    parser.add_argument('--load-in-4bit', action='store_true',
+                        help='Load model in 4-bit quantized mode (bitsandbytes required).')
+    parser.add_argument('--load-in-8bit', action='store_true',
+                        help='Load model in 8-bit quantized mode (bitsandbytes required).')
+    parser.add_argument('--device-map', default='auto',
+                        help='Device map for model sharding. e.g. "auto", "balanced", "sequential" or a dict.')
+    parser.add_argument('--max-memory-per-gpu', default=None,
+                        help='Maximum memory per GPU, e.g. "20GiB". Used for model sharding.')
     args = parser.parse_args()
 
     data = load_candidates(args.input_path)
