@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 class RewardTrainingConfig:
     input_path: str = "llm_scored_candidates.jsonl"
     output_dir: str = "./reward_model_checkpoint"
-    model_name: str = "bert-base-uncased"
+    model_name: str = "microsoft/deberta-v3-large"
     max_length: int = 256
     per_device_train_batch_size: int = 16
     per_device_eval_batch_size: int = 16
