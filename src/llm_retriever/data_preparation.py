@@ -7,7 +7,6 @@ from typing import List, Tuple
 from transformers import AutoTokenizer
 from langchain.schema import Document
 
-# Ensure project root is on PYTHONPATH
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
@@ -118,8 +117,8 @@ def prepare_data(
         processed_texts_dir: str,
         index_file: str,
         chunks_file: str,
-        embeddings_provider: str = 'huggingface',
-        embeddings_model: str = 'src/checkpoints/dense_retriever_checkpoint',
+        embeddings_provider: str = 'nvidia',
+        embeddings_model: str = 'NV-Embed-QA',
         chunk_size: int = 512,
         chunk_overlap: int = 0,
         processed_image_texts_dir: str = "",  #
@@ -226,8 +225,8 @@ if __name__ == "__main__":
         processed_texts_dir=processed_texts_dir,
         index_file=index_file,
         chunks_file=chunks_file,
-        embeddings_provider='huggingface',
-        embeddings_model='src/checkpoints/dense_retriever_checkpoint',
+        embeddings_provider='nvidia',
+        embeddings_model='NV-Embed-QA',
         chunk_size=512,
         chunk_overlap=0,
         processed_image_texts_dir=processed_image_texts_dir
