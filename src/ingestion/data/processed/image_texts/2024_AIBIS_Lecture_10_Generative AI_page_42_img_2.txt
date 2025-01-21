@@ -1,0 +1,1 @@
+a chart of the different types of data that are used to create a chart

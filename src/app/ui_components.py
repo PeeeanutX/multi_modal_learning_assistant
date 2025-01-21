@@ -146,7 +146,7 @@ def show_short_term_goal_ui():
         ["Choose a preset", "Custom goal"]
     )
 
-    if goal_mode =="Choose a preset":
+    if goal_mode == "Choose a preset":
         selected = st.selectbox("Preset Options", predefined_goals)
         st.session_state["short_term_goal"] = selected
     else:

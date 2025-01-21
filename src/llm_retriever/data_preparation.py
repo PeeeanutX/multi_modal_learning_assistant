@@ -2,6 +2,10 @@ import os
 import sys
 import logging
 import pickle
+import re
+from typing import List, Tuple
+from transformers import AutoTokenizer
+from langchain.schema import Document
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 if project_root not in sys.path:
@@ -21,6 +25,91 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+PAGE_MARKER_REGEX = re.compile(r"\[PAGE\s*(\d+)\]")
+
+
+def find_page_boundaries(text: str) -> List[Tuple[int, str]]:
+    boundaries = []
+    for match in PAGE_MARKER_REGEX.finditer(text):
+        offset = match.start()
+        pagenum = match.group(1)
+        boundaries.append((offset, pagenum))
+    return sorted(boundaries, key=lambda x: x[0])
+
+
+def map_offset_to_page(char_offset: int, boundaries: List[Tuple[int, str]]) -> str:
+    """
+    Given a character offset in the entire text, find which page that offset belongs to.
+    We'll pick the last boundary whose offset <= char_offset. If none found, '???'.
+    """
+    page_label = "???"
+    for (b_offset, b_page) in boundaries:
+        if b_offset <= char_offset:
+            page_label = b_page
+        else:
+            break
+    return page_label
+
+
+def token_chunk_text_with_pages(
+        text: str,
+        tokenizer,
+        chunk_size: int = 512,
+        chunk_overlap: int = 0,
+        base_metadata: dict = None
+) -> list:
+    """
+    Token-based chunking of 'text' using a Hugging Face tokenizer.
+    Also detects [PAGE X] markers and stores 'page' metadata for each chunk.
+    """
+    if base_metadata is None:
+        base_metadata = {}
+
+    page_boundaries = find_page_boundaries(text)
+
+    enc = tokenizer(
+        text,
+        add_special_tokens=False,
+        return_offsets_mapping=True
+    )
+    input_ids = enc["input_ids"]
+    offsets = enc["offsets_mapping"] if "offsets_mapping" in enc else enc["offset_mapping"]
+    total_tokens = len(input_ids)
+
+    docs = []
+    current_start = 0
+
+    while current_start < total_tokens:
+        current_end = current_start + chunk_size
+        token_slice = input_ids[current_start:current_end]
+        offset_slice = offsets[current_start:current_end]
+
+        chunk_text = tokenizer.decode(token_slice, skip_special_tokens=True).strip()
+
+        if offset_slice:
+            chunk_char_start = offset_slice[0][0]
+        else:
+            chunk_char_start = 0
+
+        page_label = map_offset_to_page(chunk_char_start, page_boundaries)
+
+        chunk_meta = dict(base_metadata)
+        chunk_meta["page"] = page_label
+        chunk_meta["token_start"] = current_start
+        chunk_meta["token_end"] = min(current_end, total_tokens)
+        chunk_meta["char_start"] = chunk_char_start
+
+        doc = Document(page_content=chunk_text, metadata=chunk_meta)
+        docs.append(doc)
+
+        move_step = chunk_size - chunk_overlap
+        if move_step <= 0:
+            logger.warning("chunk_overlap is too large; overlap can't exceed chunk_size.Stopping.")
+            break
+        current_start += move_step
+
+    return docs
+
 
 def prepare_data(
         pdf_dir: str,
@@ -31,8 +120,8 @@ def prepare_data(
         embeddings_provider: str = 'nvidia',
         embeddings_model: str = 'NV-Embed-QA',
         chunk_size: int = 512,
-        chunk_overlap: int = 50,
-        processed_image_texts_dir: str = "",  # optional
+        chunk_overlap: int = 0,
+        processed_image_texts_dir: str = "",  #
 ):
     """
     Prepare data for the LLM-R pipeline using SemanticChunker for chunking:
@@ -65,7 +154,7 @@ def prepare_data(
             text_data = f.read()
         cleaned = clean_text(text_data)
         if cleaned.strip():
-            raw_texts.append(cleaned)
+            raw_texts.append((txt_file, cleaned))
         else:
             logger.warning(f"No usable text after cleaning {txt_file}")
 
@@ -75,25 +164,31 @@ def prepare_data(
                 with open(os.path.join(processed_image_texts_dir, fname), 'r', encoding='utf-8') as f:
                     img_caption = f.read().strip()
                 if img_caption:
-                    raw_texts.append(img_caption)
+                    raw_texts.append((fname, img_caption))
 
-    logger.info("Chunking text with a RecursiveCharacterTextSplitter approach...")
-    chunker_config = ChunkerConfig(
-        method='recursive',
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-        length_function=len,
-        separators=["\n\n", "\n", " ", ""]
-    )
-    chunker = TextChunker(chunker_config)
+    logger.info(f"Loading tokenizer from {embeddings_model} for token-based chunking...")
+    tokenizer = AutoTokenizer.from_pretrained(embeddings_model, use_fast=True)
 
     all_chunk_strs = []
-    for text in raw_texts:
-        chunks = chunker.chunk_text(text)
-        all_chunk_strs.extend(chunks)
+    docs = []
+    logger.info(f"Token chunking each text with chunk_size={chunk_size}, overlap={chunk_overlap}...")
 
-    docs = [Document(page_content=c) for c in all_chunk_strs]
+    for (fname, text_data) in raw_texts:
+        base_meta = {"source": fname}
+        chunked_docs = token_chunk_text_with_pages(
+            text_data,
+            tokenizer=tokenizer,
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
+            base_metadata=base_meta
+        )
+        docs.extend(chunked_docs)
+        for d in chunked_docs:
+            all_chunk_strs.append(d.page_content)
 
+    logger.info(f"Total docs after token-based chunking: {len(docs)}")
+
+    # Step 3: Build embeddings & index
     logger.info(f"Initializing embeddings with provider={embeddings_provider}, model={embeddings_model}")
     embeddings_config = EmbeddingsConfig(
         provider=embeddings_provider,
@@ -110,6 +205,7 @@ def prepare_data(
     vectorstore = VectorStoreFactory.create_vector_store(vector_store_config, docs=docs)
     logger.info("FAISS index ready.")
 
+    # Step 6: Save chunk strings to pickle
     with open(chunks_file, 'wb') as f:
         pickle.dump(all_chunk_strs, f)
     logger.info(f"Saved {len(all_chunk_strs)} semantic chunks to {chunks_file}")
@@ -132,6 +228,6 @@ if __name__ == "__main__":
         embeddings_provider='nvidia',
         embeddings_model='NV-Embed-QA',
         chunk_size=512,
-        chunk_overlap=60,
+        chunk_overlap=0,
         processed_image_texts_dir=processed_image_texts_dir
     )

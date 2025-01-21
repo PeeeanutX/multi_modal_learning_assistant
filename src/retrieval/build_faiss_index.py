@@ -13,7 +13,7 @@ from langchain_experimental.text_splitter import SemanticChunker
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-DENSE_RETRIEVER_PATH = "src/checkpoints2/dense_retriever_checkpoint"
+DENSE_RETRIEVER_PATH = "src/checkpoints2/hallo"
 FAISS_INDEX_OUTPUT_PATH = "src/ingestion/data/new_index.pkl"
 
 TEXTS_DIR = "src/ingestion/data/processed/texts"
