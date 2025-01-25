@@ -1,0 +1,1426 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+Conversational AI
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two people sitting at a table with laptops and a robot
+
+[IMAGE CAPTION] a close up of a robot with a lot of numbers on it
+
+[IMAGE CAPTION] arafed man and woman looking at a computer screen with a map on it
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Responsible AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 3]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+3
+Schedule (planned)
+Calendar Week
+Lecture
+Group Exercise
+42
+Welcome + (1) Introduction to AI in Business & IS
+43
+(2) Design & Management of AI-Based IS
+Team Introductions + Exercise 1: Intro
+44
+(3) AI-Enabled Automation 
+Exercise 1: Work Session + Q&A
+45
+(4) AI-Enabled Engagement 
+Exercise 1: Presentations
+46
+(5) Conversational AI
+Exercise 2: Intro
+47
+(6) Human-Centered Design (Self-Study)
+Exercise 2: Work Session + Q&A
+48
+(7) AI-Enabled Insights & Decisions
+Exercise 2: Presentations
+49
+(8) Explainable AI
+Exercise 3: Intro
+50
+(9) AI-Enabled Innovation
+Exercise 3: Work Session + Q&A 
+51
+- No Lecture (Conference Visit) -
+Exercise 3: Work Session + Q&A #2
+52 – 1
+- Winter Break -
+- Winter Break -
+2
+(10) Generative AI
+Exercise 3: Presentations
+3
+(11) AI Ethics & Responsible AI
+Exercise 4: Intro
+4
+Industry Talk ZF - Dr. Alexander Keller
+Exercise 4: Work Session + Q&A
+5
+Summary + Q&A
+Exercise 4: Presentations
+6
+(Individual exam preparation)
+(Individual exam preparation)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 4]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• What are dimensions of the user 
+engagement?
+• Please name examples of social 
+cues from (AI) technology.
+• Please name examples of social 
+responses to (AI) technology.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[IMAGE CAPTION] someone holding a smart phone with a message on the screen
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Learning Goals
+•
+Describe the history of 
+conversational AI
+•
+Explain how conversational AI 
+technology has evolved over time
+•
+Distinguish between different 
+classes of conversational agents
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a computer screen with a number of items
+
+[IMAGE CAPTION] a screenshot of a text message from a woman about the benefits of a self - care
+
+[IMAGE CAPTION] someone holding a smart phone with a message on the screen
+
+[PAGE 6]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Conversational AI as a Major Application Area of AI
+Eliza (1966)
+Siri (2011)
+ChatGPT (2022)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a computer screen with a number of items
+
+[IMAGE CAPTION] a screenshot of a text message from a woman about the benefits of a self - care
+
+[IMAGE CAPTION] someone holding a smart phone with a message on the screen
+
+[PAGE 7]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Why? →Benefits
+•
+Interaction via natural language is 
+more intuitive compared to 
+graphical user interfaces (GUIs)
+•
+Reduction of cognitive load 
+•
+Multi-tasking is possible:
+– Hands-free situations (e.g., cooking)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message from a person who is shopping
+
+[PAGE 8]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Drawbacks
+•
+Ambiguity and complexity of human 
+language (e.g., context, sarcasm, …) 
+makes natural language understanding 
+quite difficult
+•
+Natural language interaction can be more 
+effortful (e.g., typing messages vs. clicking 
+buttons)
+•
+Not everything can be communicated 
+effectively through words alone (e.g., data 
+analysis results)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message from a person who is shopping
+
+[PAGE 9]
+Logo of the University of Passau
+History & Technology of 
+Conversational AI
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a green robot with a smiling face on it ' s face
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+History of Conversational AI
+1950
+Alan Turing 
+proposes the 
+Turing Test
+1966
+Development 
+of ELIZA
+Development 
+of Parry
+1990s
+Interactive Voice 
+Response (IVR) 
+systems 
+1991
+First Loebner 
+Prize Contest
+1995
+IBM 
+Watson
+2006
+Development 
+of A.L.I.C.E
+2010
+Apple 
+Siri
+Google 
+Now
+2012
+2015
+Amazon Alexa;
+Microsoft Cortana
+Facebook opens its 
+platform for chatbots, 
+Microsoft Bot 
+Framework
+2016
+2022
+ChatGPT
+1972
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a green robot with a smiling face on it ' s face
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Conversational AI: Definition
+Conversational AI refers to the general capability of computers to 
+understand and respond with natural human language as it is 
+written or spoken.
+Benbya et al. 2021
+Human
+Computer
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a green robot with a smiling face on it ' s face
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[PAGE 12]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+What does “Conversational” mean?
+This is AT&T. Please say collect, 
+calling card, third number, person-
+to-person, or operator
+Sorry, please repeat
+I want to talk to an operator
+Operator
+AT&T’s voice recognition call 
+processing system (1990)
+Not really a natural conversation 
+Perdue 1997
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a white sheet with a purple line
+
+[IMAGE CAPTION] a diagram of a flow of words with a picture of a person
+
+[PAGE 13]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Conversational AI Technology 
+Rule-
+based
+Natural language 
+processing 
+(NLP)-based
+Large language 
+model (LLM)-
+based
+Time
+Natural 
+language 
+capabilities
+1960s
+2000s
+2020s
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a white sheet with a purple line
+
+[IMAGE CAPTION] a diagram of a flow of words with a picture of a person
+
+[PAGE 14]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Rule-Based Conversational AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a white sheet with a purple line
+
+[IMAGE CAPTION] a diagram of a flow of words with a picture of a person
+
+[PAGE 15]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Rule-Based Conversational AI: Example
+Eliza
+Weizenbaum 1966
+User: I had a strange dream
+Eliza: What does that dream suggest to you?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a computer screen with a number of items
+
+[IMAGE CAPTION] a screenshot of a computer screen with a text description
+
+[PAGE 16]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+NLP-Based Conversational AI
+Speech 
+Recognition
+Natural 
+Language 
+Understanding
+Dialog 
+Management
+Text-to-
+Speech 
+Synthesis
+Natural 
+Language 
+Generation
+Main components:
+–
+Speech recognition: converts the speech 
+input into a string of words 
+–
+Natural language understanding: interpret 
+the user’s input and to extract a representation 
+of its meaning (→“intent”)
+–
+Dialog management: tracks the state and flow 
+of the conversation and controls how the 
+system responds to the user’s input
+–
+Natural language generation: Formulate a 
+response in natural language
+–
+Text-to-speech synthesis: converts the 
+response string into speech output
+McTear et al. 2016
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a microphone with a wifi icon on it
+
+[IMAGE CAPTION] a green spot with black lines on it
+
+[PAGE 17]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+NLP-Based Conversational AI: Example
+Speech 
+Recognition
+Natural 
+Language 
+Understanding
+Dialog 
+Management
+Text-to-
+Speech 
+Synthesis
+Natural 
+Language 
+Generation
+Hey Alexa, play 
+my weekend 
+playlist. 
+user input: ‘hey alexa, play my 
+weekend playlist’
+user intent: ‘play_music’
+entities: [‘weekend playlist’]
+Open Spotify and start 
+playlist titled “weekend” 
+response: ‘sure, now playing 
+your weekend playlist on spotify’
+Sure! Now playing 
+your weekend 
+playlist on Spotify.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a microphone with a wifi icon on it
+
+[IMAGE CAPTION] a green spot with black lines on it
+
+[PAGE 18]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+LLM-Based Conversational AI
+Large language models (LLMs) are trained on extensive textual data, learning to 
+predict the next word in a sentence and generate coherent text.
+Vector of probabilities
+→Generative AI 
+Lecture
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a computer system with a number of different components
+
+[PAGE 19]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+LLM-Based Conversational AI: Example
+Vector of 
+probabilities from 
+own tokens
+1 token out
+n tokens in
+?
+The best thing about AI is its ability to
+learn
+https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/
+Predictions
+→Generative AI 
+Lecture
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a table with a number of different numbers of people
+
+[IMAGE CAPTION] amazon echo smart speaker with alexa voice
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a screenshot of a chatbot with a message that reads chatbot anna
+
+[PAGE 20]
+Logo of the University of Passau
+Conversational Agents
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] amazon echo smart speaker with alexa voice
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a screenshot of a chatbot with a message that reads chatbot anna
+
+[PAGE 21]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Conversational Agents (1)
+•
+They can rely on different conversational AI technologies 
+•
+Many different terms used:
+–
+Dialogue systems
+–
+(Embodied) conversational agents
+–
+Chatbots/chatterbots
+–
+Digital/virtual assistants
+–
+…
+Conversational agents are software-based systems designed to 
+interact with humans using natural language.
+Dale 2016; Feine et al. 2019
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] amazon echo smart speaker with alexa voice
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a screenshot of a chatbot with a message that reads chatbot anna
+
+[PAGE 22]
+Logo of the University of Passau
+•
+Comprise two main parts:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+Conversational Agents (2)
+Conversational (Interface)
+(AI) Agent
+Conversational interfaces are 
+interfaces that enable humans to 
+interact with technology using 
+written or spoken language in a 
+natural way.
+Agents are autonomous, active 
+computer processes that possess 
+some ability to communicate with 
+people and/or other agents and to 
+adapt their behavior.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a browser browser with a message on it
+
+[PAGE 23]
+Logo of the University of Passau
+23
+Classes of Conversational Agents
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+•
+Conversational agents differ largely based on their mode of communication, context, level of 
+embodiment, etc.
+•
+One classification of conversational agents based on two dimensions 
+–
+1) Mode of communication: text vs. voice
+–
+2) Context: open-domain vs. task-oriented
+Context
+Open-Domain
+Task-Oriented
+Primary Mode of 
+Communication
+Text-
+based
+ChatGPT, Bard, Claude,
+Replika, ELIZA, Cleverbot
+Customer service chatbots, Mental 
+health chatbots
+Voice-
+based
+Apple’s Siri, Amazon’s Alexa, 
+Google Assistant
+Service robots, in-car assistants 
+(e.g., “Hey Mercedes”)
+Gnewuch et al. 2017
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a browser browser with a message on it
+
+[IMAGE CAPTION] a close up of a cell phone with a text message on it
+
+[PAGE 24]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Open-Domain, Text-Based Conversational Agents 
+•
+Interaction via text messages (“chatting”)
+•
+Can basically converse about any topic 
+(“open-domain”)
+•
+Historically, often developed to win the 
+Loebner prize / to pass the Turing test
+http://www.cleverbot.com
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a cell phone with a text message on it
+
+[PAGE 25]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+Task-Oriented, Text-Based Conversational Agents 
+•
+Interaction via text messages (“chatting”)
+•
+Designed to converse about specific 
+topics and help with specific tasks in a 
+specific domain
+•
+Examples: Customer service, healthcare, 
+banking, …
+•
+Can be found on websites and on 
+messenger platforms such as MS Teams, 
+Slack, …
+IKEA‘s Anna
+O2‘s Aura
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person in a yellow shirt with a blue shirt
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a cell phone with a text message on it
+
+[PAGE 26]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Open-Domain, Voice-Based Conversational Agents 
+•
+Interaction via spoken voice
+•
+Can basically answer any question and 
+support users in finding information or 
+accomplishing basic tasks (“open-domain”)
+•
+Found on many mobile devices (e.g., smart 
+phones)
+•
+Often called personal or digital assistants
+Apple‘s Siri
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] someone holding a smart phone with a message on the screen
+
+[PAGE 27]
+Logo of the University of Passau
+•
+Interaction via spoken 
+voice
+•
+Designed and trained to 
+assist in a specific 
+situation or domain
+•
+Examples can be found 
+in modern cars (“hands-
+free situations”)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Task-Oriented, Voice-Based Conversational Agents 
+In-Car Assistants, such as Mercedes Me / “Hey Mercedes”
+https://www.youtube.com/watch?v=G2A-R5lfSt8
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[IMAGE CAPTION] a cartoon woman in glasses and a black dress standing with her hands on her hips
+
+[PAGE 28]
+Logo of the University of Passau
+In which category would you put the 
+following conversational agents?
+• Replika (a chatbot AI companion)
+• Microsoft’s Bing Chat
+• A Pepper robot
+• Linda (chatbot of Sparkasse)
+→Discuss these questions with a partner for 
+~5 minutes and be ready to share your 
+opinions
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[IMAGE CAPTION] a cartoon woman in glasses and a black dress standing with her hands on her hips
+
+[PAGE 29]
+Logo of the University of Passau
+•
+ECAs are life‐like animated characters 
+(e.g., 3D avatars) which can engage in a 
+face‐to‐face conversation with humans
+•
+The interaction is often multimodal:
+– Facial expressions
+– Body postures
+– Gestures
+– Tone of voice
+– etc.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Embodied Conversational Agents (ECAs)
+http://articulab.hcii.cs.cmu.edu/projects/sara
+Cassell 2001
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a cartoon woman in glasses and a black dress standing with her hands on her hips
+
+[PAGE 30]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Physically Embodied Conversational Agents
+Furhat Robot
+Pepper Robot
+•
+ECAs with a physical 
+embodiment (= robots)
+•
+The interaction is not only 
+multimodal but also includes 
+physical aspects (e.g., touch)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] the logo for the nmm for market decisions
+
+[IMAGE CAPTION] arafed robot holding a tablet with the word pepper on it
+
+[IMAGE CAPTION] arafed man using a tablet computer to order food
+
+[PAGE 31]
+Logo of the University of Passau
+Research Example:
+Consumer Interactions with Robot 
+Shopping Assistants
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] the logo for the nmm for market decisions
+
+[IMAGE CAPTION] there is a vending machine with a bunch of items in it
+
+[IMAGE CAPTION] arafed man using a tablet computer to order food
+
+[IMAGE CAPTION] people sitting at a table in a meeting room with a laptop
+
+[PAGE 32]
+Logo of the University of Passau
+•
+Automated self-checkout 
+cashiers and self-order kiosks 
+have become omnipresent in our 
+everyday lives
+– Very convenient, especially for 
+low involvement products (e.g., 
+groceries)
+•
+However, in case of high 
+involvement products (e.g., smart 
+phones), consumers typically 
+prefer to speak with and get 
+advice from a human employee
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Motivation
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] woman using a smart phone to pay at a cash machine
+
+[IMAGE CAPTION] there is a vending machine with a bunch of items in it
+
+[IMAGE CAPTION] arafed man using a tablet computer to order food
+
+[IMAGE CAPTION] people sitting at a table in a meeting room with a laptop
+
+[IMAGE CAPTION] woman and man looking at cell phone in store with many pictures
+
+[IMAGE CAPTION] people sitting at a table in a room with a large window
+
+[IMAGE CAPTION] arafed robot holding a tablet with the word pepper on it
+
+[PAGE 33]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Motivation 
+Human 
+Machine
+Self-service 
+Machine
+Human
+Employee
+convenience
+rational 
+thinking
+…
+scalability
+empathy
+no fear of being 
+judged
+efficiency 
+trust
+emotional
+capabilities
+human 
+warmth
+personal 
+attention 
+…
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] woman using a cell phone to pay at a cash machine
+
+[IMAGE CAPTION] arafed person using a tablet computer in a store
+
+[IMAGE CAPTION] there are two people looking at a display of cell phones
+
+[IMAGE CAPTION] people sitting at a table in a meeting room with a laptop
+
+[IMAGE CAPTION] woman and man looking at cell phone in store with many pictures
+
+[IMAGE CAPTION] people sitting at a table in a room with a large window
+
+[IMAGE CAPTION] arafed robot holding a tablet with the word pepper on it
+
+[PAGE 34]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Motivation 
+Human 
+Machine
+Self-service 
+Machine
+Human
+Employee
+Social Robots 
+Can social robots 
+combine the best of 
+both worlds?
+convenience
+rational 
+thinking
+…
+scalability
+empathy
+no fear of being 
+judged
+efficiency 
+trust
+emotional
+capabilities
+human 
+warmth
+personal 
+attention 
+…
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person with a head and a speaker
+
+[IMAGE CAPTION] a close up of a robot with a stuffed animal on a white background
+
+[IMAGE CAPTION] arafed woman using a phone at a cash machine
+
+[IMAGE CAPTION] arafed person using a touch screen in a store
+
+[IMAGE CAPTION] woman and man looking at cell phone in store with many pictures
+
+[IMAGE CAPTION] people sitting at a table in a room with a large window
+
+[IMAGE CAPTION] arafed robot holding a tablet with the word pepper on it
+
+[PAGE 35]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+Research Questions
+1.
+How do consumers interact with robot shopping assistants 
+designed to assist them in the process of purchasing 
+products?
+2.
+How does the design of a robot shopping assistant (emotional 
+vs. rational) affect consumers’ trust and purchase likelihood?
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a white robot head with a blue eyes and a white headband
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] a close up of a white knot on a green square
+
+[IMAGE CAPTION] jbl charge 3 portable bluetooth speaker
+
+[IMAGE CAPTION] a black speaker with a cross on it
+
+[IMAGE CAPTION] bose bluetooth speaker with built - in mic and fm
+
+[PAGE 36]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+Research Design 
+https://furhatrobotics.com/
+Hey, I’m looking for a 
+new Bluetooth speaker. 
+Which one can you 
+recommend?
+…
+…
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a white robot head with a blue eyes and a white headband
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] a close up of a white knot on a green square
+
+[IMAGE CAPTION] jbl charge 3 portable bluetooth speaker
+
+[IMAGE CAPTION] a black speaker with a cross on it
+
+[IMAGE CAPTION] bose bluetooth speaker with built - in mic and fm
+
+[PAGE 37]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+Robot Shopping Assistant
+Interaction Manager
+Voice & Facial 
+Expression
+User
+Speech-to-Text API
+Knowledge Base
+Preprocessing
+Request
+Long-term Memory 
+Response Database
+Current Status
+Instruction & 
+Response
+Hanschmann et al. 2023; Gnewuch et al. 2024
+GPT-4
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a white robot head with a blue eyes and a white headband
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] a close up of a white knot on a green square
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Robot Shopping Assistant: Demo
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a woman sitting at a desk with a lamp on
+
+[IMAGE CAPTION] a black speaker with a cross on it
+
+[IMAGE CAPTION] bose bluetooth speaker with built - in mic and fm
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a person holding a smiley face in their hand
+
+[IMAGE CAPTION] fact file icon with a black background
+
+[PAGE 39]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+GPT-4 Prompt Design
+Setting
+Product Data
+Example Dialogs
+Setting 
+Zero-Shot
+Zero-Shot
+Few-Shot
+Zero-Shot
+• Combination of Zero Shot 
+and Few Shot Prompting
+• To prevent breaking out, the 
+setting explicitly addresses 
+the desired behavior of the 
+robot in the beginning and 
+the end
+Prompt Structure
+Hanschmann et al. 2023; Gnewuch et al. 2024
++ Emotional/Rational Instruction 
++ Emotional/Rational Instruction
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message on a computer screen
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a person holding a smiley face in their hand
+
+[IMAGE CAPTION] fact file icon with a black background
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+GPT-4 Prompt Design
+Setting
+“Emotional” Instruction
+“Rational” Instruction
++
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message on a computer screen
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text message on a white background
+
+[IMAGE CAPTION] a person holding a smiley face in their hand
+
+[IMAGE CAPTION] fact file icon with a black background
+
+[PAGE 41]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+42
+GPT-4 Prompt Design: Example Output
+What colors are 
+available?
+There is a wide range 
+of colors to choose 
+from …
+In the dazzling array of 
+colors, you will find 
+your favorite that 
+resonates with your 
+feelings …
+Emotional
+Rational
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] a white robot head with a blue eyes and a white headband
+
+[PAGE 42]
+Logo of the University of Passau
+• Lab experiment with a two-condition, 
+between-subjects design:
+–
+(1) rational robot design
+–
+(2) emotional robot design
+• Participants and recruitment:
+– ~100 participants
+– Recruitment via university panel (mostly 
+students)
+– 3 robots
+• Duration of the experiment:
+– Approximately 25-30 minutes per 
+participant
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+43
+Lab Experiment
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a pencil and a check mark on a piece of paper
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a table with a number of items on it
+
+[PAGE 43]
+Logo of the University of Passau
+What do you think? Which version 
+of the robot was more successful in 
+selling products? And why?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a pencil and a check mark on a piece of paper
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a table with a number of items on it
+
+[PAGE 44]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+Main Findings
+Robot 
+Design
+Purchase 
+Likelihood
+Recommendation 
+Adherence 
+Emotional
+3.95
+46.5%
+Rational
+4.26
+61.8%
+An emotional robot design significantly 
+reduces purchase likelihood 
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] the hsag logo with a blue circle and green circles
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a table with a number of items on it
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a table with a number of items on it
+
+[IMAGE CAPTION] a screenshot of a text message from a person on a phone
+
+[IMAGE CAPTION] the university of grieswald logo
+
+[IMAGE CAPTION] sdw logo with yellow and gray letters
+
+[IMAGE CAPTION] the logo of the company is blue and white
+
+[PAGE 45]
+Logo of the University of Passau
+•
+Large language models such as GPT-4 can be used to operate a Furhat robot and hold highly 
+human-like sales conversations with consumers about Bluetooth speakers
+–
+Some challenges remain (e.g., delays, speech recognition failures) but overall, very stable
+•
+The LLM-based Furhat robot was able to create perceptions of an “emotional” or “rational” robot 
+design through differences in natural language interaction
+•
+The results of our experiment with ~100 student participants show that an emotional robot design 
+has negative impacts on consumers:
+–
+Reduces purchase likelihood (consumers are less likely to purchase the Bluetooth speaker 
+recommended by Furhat)
+–
+Reduces recommendation adherence (consumers are less likely to follow the recommendation 
+suggested by Furhat)
+•
+Future research: What drives the negative impact of emotional robot design?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+Summary & Implications
+Hanschmann et al. 2023; Gnewuch et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] the hsag logo with a blue circle and green circles
+
+[IMAGE CAPTION] a woman in a blue shirt is standing in front of a sign
+
+[IMAGE CAPTION] a phone screen with a cartoon penguin on it and a message that says hi alice
+
+[IMAGE CAPTION] a close up of a cell phone with a screen showing a list of activities
+
+[IMAGE CAPTION] there is a man sitting at a table with a lamp on
+
+[IMAGE CAPTION] a screenshot of a text message from a person on a phone
+
+[IMAGE CAPTION] the university of grieswald logo
+
+[IMAGE CAPTION] sdw logo with yellow and gray letters
+
+[IMAGE CAPTION] the logo of the company is blue and white
+
+[PAGE 46]
+Logo of the University of Passau
+47
+Our Research on Chatbots & Conversational AI 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+https://chatbotresearch.org
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] the hsag logo with a blue circle and green circles
+
+[IMAGE CAPTION] a woman in a blue shirt is standing in front of a sign
+
+[IMAGE CAPTION] a phone screen with a cartoon penguin on it and a message that says hi alice
+
+[IMAGE CAPTION] a close up of a cell phone with a screen showing a list of activities
+
+[IMAGE CAPTION] there is a man sitting at a table with a lamp on
+
+[IMAGE CAPTION] a screenshot of a text message from a person on a phone
+
+[IMAGE CAPTION] the university of grieswald logo
+
+[IMAGE CAPTION] sdw logo with yellow and gray letters
+
+[IMAGE CAPTION] the logo of the company is blue and white
+
+[PAGE 47]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+48
+Key Takeaways From This Lecture
+•
+Conversational AI is a major application area of AI-enabled 
+engagement 
+•
+The first chatbot (Eliza) was already developed in 1966
+•
+Since then, the technology has evolved significantly: from 
+rule-based to NLP-based to LLM-based conversational AI
+•
+Many different types of conversational (AI) agents exist
+•
+They can be classified based on the mode of 
+communication (text vs. voice) and the context (open-
+domain vs. task-oriented)
+•
+Conversational agents can be equipped with virtual 
+embodiments (avatars) or physical embodiments (robots)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 48]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+49
+Thank you for 
+your attention!
+Any questions?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 49]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+50
+References
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for 
+Information Systems Research. Journal of the Association for Information Systems, 22, 281–303. 
+Cassell, J. (2001). Embodied conversational agents: representation and intelligence in user interfaces. AI magazine, 22(4), 67-67.
+Dale, R. (2016). The return of the chatbots. Natural Language Engineering, 22(5), 811–817. 
+Feine, J., Gnewuch, U., Morana, S., & Maedche, A. (2019). A Taxonomy of Social Cues for Conversational Agents. International Journal of 
+Human-Computer Studies, 132, 138–161. 
+Gnewuch, U., Morana, S., & Maedche, A. (2017). Towards Designing Cooperative and Social Conversational Agents for Customer 
+Service. Proceedings of the 38th International Conference on Information Systems (ICIS2017).
+Gnewuch, U., Hanschmann, L., Kaiser, C., Schallner, R., Maedche, A. (2024). “Robot Shopping Assistants: How Emotional versus 
+Rational Robot Designs Affect Consumer Trust and Purchase Decisions,” in Proceedings of the 32nd European Conference on 
+Information Systems (ECIS 2024).
+Hanschmann, L., Gnewuch, U., & Maedche, A. (2023). Saleshat: A LLM-Based Social Robot for Human-Like Sales Conversations. In 
+International Workshop on Chatbot Research and Design (pp. 61-76). Cham: Springer Nature Switzerland.
+McTear, M. F., Callejas, Z., & Griol, D. (2016). The Conversational Interface: Talking to Smart Devices. Springer International Publishing.
+Perdue, R. J. (1997). The way we were: Speech technology, platforms and applications in th 'Old' AT&T. Speech communication, 23(1-2), 
+31-39.
+Weizenbaum, J. (1966). ELIZA—a computer program for the study of natural language communication between man and machine. 
+Communications of the ACM, 9(1), 36-45.
+
+[IMAGE CAPTION] the university of passau logo

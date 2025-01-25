@@ -20,8 +20,8 @@ class ImageToTextConverter:
         image = Image.open(image_path).convert('RGB')
         inputs = self.processor(images=image, return_tensors="pt").to(self.device)
         with torch.no_grad():
-            captions = self.model.generate(**inputs, max_length=50)
-        caption = self.processor.tokenizer.decode(captions[0], skip_special_tokens=True)
+            generated_ids = self.model.generate(**inputs, max_length=50)
+        caption = self.processor.tokenizer.decode(generated_ids[0], skip_special_tokens=True)
         return caption
 
 def main():

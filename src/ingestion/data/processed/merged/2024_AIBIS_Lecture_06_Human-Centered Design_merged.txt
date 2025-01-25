@@ -1,0 +1,1155 @@
+[PAGE 1]
+AI-Based Business Information Systems
+Human-Centered Design
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two people sitting at a table with laptops and a robot
+
+[IMAGE CAPTION] a close up of a robot with a lot of numbers on it
+
+[IMAGE CAPTION] arafed man and woman looking at a computer screen with a map on it
+
+[PAGE 2]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Learning Goals
+• Explain the importance and the 
+principles of human-centered 
+design
+• Describe the human-centered 
+design approach and its key 
+activities and deliverables
+• Describe important methods, 
+tools, and techniques for each 
+activity
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two urinals in the bathroom with a black door
+
+[IMAGE CAPTION] there is a black sign with arrows pointing to the left
+
+[IMAGE CAPTION] a screenshot of a computer screen with a number of different items
+
+[PAGE 3]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+3
+Why Human-Centered Design?
+… in the physical world
+… in the digital world
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two urinals in the bathroom with a black door
+
+[IMAGE CAPTION] there is a black sign with arrows pointing to the left
+
+[IMAGE CAPTION] a screenshot of a computer screen with a number of different items
+
+[IMAGE CAPTION] a screenshot of a newspaper article with a picture of a man
+
+[PAGE 4]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+Why Human-Centered Design?
+https://www.reuters.com/article/idUSKCN1MK0AG/
+https://www.globalwitness.org/en/campaigns/digital-threats/new-evidence-of-facebooks-sexist-algorithm/
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a screenshot of a news article about a woman with a job title
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a screenshot of a newspaper article with a picture of a man
+
+[IMAGE CAPTION] a close up of a text that reads human centered at the power of putting people first
+
+[IMAGE CAPTION] a close up of a red circle with a white dtu logo
+
+[IMAGE CAPTION] a close up of a red poster with information about the science and technology
+
+[PAGE 5]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Human-Centered AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] stanford university human - centered artificial intelligence
+
+[IMAGE CAPTION] a black square with a black border and a white border
+
+[IMAGE CAPTION] a close up of a person holding a cell phone with a text over it
+
+[IMAGE CAPTION] the logo for the philman center of all things
+
+[IMAGE CAPTION] a close up of a text that reads human centered at the power of putting people first
+
+[IMAGE CAPTION] a close up of a red circle with a white dtu logo
+
+[IMAGE CAPTION] a close up of a red poster with information about the science and technology
+
+[PAGE 6]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Basic Idea of Human-Centered AI
+Shneiderman 2020; 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of the process of a hydrogen reaction
+
+[PAGE 7]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+How can we put humans 
+at the center of (AI) design?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] the logo of the international society of the world is shown
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[PAGE 8]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Human-Centered Design – ISO Standard
+https://www.iso.org/standard/77520.html
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] the logo of the international society of the world is shown
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[PAGE 9]
+•
+A human-centered design approach should 
+follow these principles:
+1. the design is based upon an explicit 
+understanding of users, tasks and environments
+2. Users are involved throughout design and 
+development
+3. the design is driven and refined by user-centered 
+evaluation
+4. the process is iterative
+5. the design addresses the whole user experience
+6. the design team includes multidisciplinary skills 
+and perspectives
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+Principles of Human-Centered Design
+ISO 9241-210
+https://www.iso.org/standard/77520.html
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] the logo of the international society of the world is shown
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[PAGE 10]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Human-Centered Design Approach
+https://www.iso.org/standard/77520.html
+ISO 9241-210
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of designing a business model
+
+[IMAGE CAPTION] the logo of the international society of the world is shown
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[IMAGE CAPTION] a circular icon with arrows pointing in different directions
+
+[PAGE 11]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+https://www.iso.org/standard/77520.html
+ISO 9241-210
+Plan
+Analyze
+Specify
+Design
+Evaluate 
+Done
+Human-Centered Design Approach: 4 Key Activities
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of designing a business model
+
+[IMAGE CAPTION] the logo of the international society of the world is shown
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[IMAGE CAPTION] a circular icon with arrows pointing in different directions
+
+[PAGE 12]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+Human-Centered Design Approach: Deliverables
+ISO 9241-210
+Analyze
+Specify
+Design
+Evaluate 
+Context of Use 
+Description, Personas, …
+User Needs, 
+Requirements, 
+…
+Wireframes, 
+Prototypes, …
+Evaluation Reports, 
+User Feedback, …
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of designing a business model
+
+[PAGE 13]
+Analyze:
+Understanding and documenting 
+the context of use
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Human-Centered Design Approach: Analyze
+ISO 9241-210
+Plan
+Analyze
+Specify
+Design
+Evaluate 
+Done
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a circular with a circle of different types of information
+
+[PAGE 14]
+•
+The context of use has the following 
+components: 
+– Users (people who interact with the system)
+– Goals (what users want to achieve) 
+– Tasks (what users do to achieve their goals) 
+– Context (in which the interaction takes place)
+– Resources (the means required to perform the 
+task)
+•
+A context-of-use description can be a description 
+of the current context of use, or a description of 
+the context intended for design
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Context of Use
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a circular with a circle of different types of information
+
+[PAGE 15]
+Teenagers waiting for a bus use their smartphones 
+to send funny videos to their friends, hoping to 
+make them laugh.
+–
+Users: Teenagers
+–
+Goal: Make friends laugh
+–
+Task: Send videos
+–
+Context:
+•
+Social context: Friends
+•
+Physical setting: Bus station
+–
+Resource: Smartphone
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Context of Use: Example
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] four girls sitting on a bench looking at their cell phones
+
+[PAGE 16]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+Analysis Methods & Techniques
+How can we understand the 
+current (or future) context of use?
+Observation
+Interviews
+Focus 
+Groups
+Analysis of Existing 
+or Similar Design 
+Solutions
+…
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a screenshot of a user journey map with a line graph
+
+[IMAGE CAPTION] illustration of a man holding a tablet with numbers around him
+
+[IMAGE CAPTION] a woman with a red sweater and a yellow circle around her
+
+[PAGE 17]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+Key Deliverables
+Personas
+As-Is Scenarios
+Who are the users? What 
+are their goals?
+User Journey Maps
+How do users interact with 
+the (new) system and the 
+organization providing it?
+How do users currently do 
+tasks? In which contexts? What 
+resources are available?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a screenshot of a user journey map with a line graph
+
+[IMAGE CAPTION] illustration of a man holding a tablet with numbers around him
+
+[IMAGE CAPTION] a woman with a red sweater and a yellow circle around her
+
+[PAGE 18]
+•
+Personas are not real people; they are realistic representations of users, constructed for 
+example from observations or interviews
+•
+Personas are usually captured in a document or presentation, providing an easily digestible 
+visualization of the target user(s)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+Personas
+A description of a fictitious but realistic user and what they intend 
+to do when using a system.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a close up of a person wearing glasses and a gray shirt
+
+[PAGE 19]
+•
+Typically, a persona includes:
+•
+The persona’s name
+•
+An image (e.g., a photo)
+•
+Demographic information such 
+as age, gender, family/living 
+situation, employment status, …
+•
+Their needs and goals in relation 
+to the current or future system
+•
+A summary of their challenges, 
+frustrations and pain points in 
+relation to the current or future 
+system
+•
+Quotes from real users whom 
+the persona should represent
+•
+…
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Components of Personas & Example
+https://www.uxdesigninstitute.com/blog/what-are-ux-personas/
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a black square with a white border
+
+[IMAGE CAPTION] a close up of a person wearing glasses and a gray shirt
+
+[PAGE 20]
+Example:
+“John Doe is an IT consultant who frequently shops for groceries 
+online due to his busy schedule. He prefers to use the same grocery 
+delivery service because it allows him to quickly reorder items from 
+his past purchases. However, every so often, he forgets to check the 
+delivery time slots. This often results in frustration when he realizes 
+his preferred delivery window is already fully booked, causing him to 
+wait much longer for groceries to arrive than expected.”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+As-Is Scenario
+An as-is scenario is a narrative text description of the procedure 
+a specific user currently follows to complete one or more tasks.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] there is a man and woman holding a basket of fruit
+
+[PAGE 21]
+Specify:
+Deriving and defining user
+requirements that must be met 
+by the system
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Human-Centered Design Approach: Specify
+ISO 9241-210
+Plan
+Analyze
+Specify
+Design
+Evaluate 
+Done
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 22]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+How to Derive User Requirements?
+Context of Use
+User Needs
+User Requirements
+Personas, as-is scenarios, 
+user journey maps, etc. from 
+the context-of-use analysis
+User needs are identified 
+based on the results of the 
+analysis phase
+User requirements are derived 
+from the identified user needs
+…
+…
+Analysis
+Specification
+ISO 9241-210
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 23]
+•
+The purpose of user needs is to serve as a helpful intermediate step in the transformation of the 
+context of use information into user requirements
+•
+Each component of the context of use (users, goals, tasks, resources, etc.) can be a source for 
+user needs
+•
+User needs are independent of any proposed solution for each need 
+–
+→A user need must not refer to, for example, “the system” or “the website”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+23
+User Need
+A prerequisite identified as necessary for a user, or a user group, to 
+achieve a goal, implied or stated within a specific context of use.
+UXQB 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 24]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Example: Identifying User Needs in Context of Use Information 
+Context of Use
+Identified User Needs
+Patients often have to wait for treatment 
+beyond the agreed time of their appointment. 
+Being forced to wait is very annoying for 
+patients, especially when they have to sit in the 
+waiting room for up to 90 minutes without any 
+clear indication of how long it will be until it is 
+their turn.
+The patient needs to know when their 
+scheduled appointment will in fact begin 
+before arriving at the doctor’s office in order to
+make good use of the time remaining.
+Patients often make appointments well in 
+advance, because good doctors are not 
+available at short notice.
+The patient needs to have an appointment to 
+ensure they receive treatment at the agreed 
+time.
+UXQB 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 25]
+•
+User requirements are precise criteria from the users’ point of view that must be met by the 
+system before its release
+•
+User requirements are derived from user needs
+–
+For simple systems, user requirements can be derived directly from the context of use description 
+without first identifying and documenting user needs
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+User Requirement
+A requirement for use that provides the basis for design and 
+evaluation of a system to meet user needs.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 26]
+•
+Qualitative user requirements address the way in which the system is 
+used to arrive at a user goal
+•
+Quantitative user requirements set measurable quality objectives
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Qualitative vs. Quantitative User Requirements
+Quantitative: A required level of usability to meet identified user needs expressed in 
+terms of measures of effectiveness, efficiency, satisfaction, accessibility, user 
+experience and avoidance of harm from use in a specified context of use.
+Qualitative: A statement of what users must be able to locate, recognize, understand, 
+select or input as part of conducting a task with the system to meet identified user needs 
+in a specified context of use.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 27]
+Qualitative User Requirements
+Syntax rule:
+With the system, the user must be able to 
+recognize / select / input / … <information or 
+resource> under <optional condition>.
+Example “Shopping Website”:
+With the system, the user must be able to 
+recognize which products are in his/her 
+shopping basket (information), before starting 
+the payment process (condition).
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Formulating User Requirements
+Quantitative User Requirements
+Quantitative user requirements can be formulated by 
+taking the following components into consideration: 
+•
+The user group(s) who must fulfil the requirement 
+during use 
+•
+The number or percentage of users who must 
+fulfil the requirement during use 
+•
+The units of measurement (e.g., task time, error 
+rate, precision)
+Example “Shopping Website”:
+After completing their shopping process, 80% of users 
+must answer ‘Agree’ or ‘Strongly agree’ to the 
+statement ‘The shopping website is easy to use’. 
+(satisfaction)
+UXQB 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 28]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Example: Deriving User Requirements from User Needs
+Identified User Needs 
+Derived User Requirements
+The patient needs to know when their 
+scheduled appointment will in fact begin 
+before arriving at the doctor’s office in order 
+to make good use of the time remaining.
+•
+With the system, the user must be able to 
+recognize that a scheduled appointment will 
+be delayed.
+•
+With the system, the user must be able to 
+recognize for how long the scheduled 
+appointment will be delayed.
+The patient needs to have an 
+appointment to ensure they receive 
+treatment at the agreed time.
+•
+With the system, the user must be able to 
+recognize which dates and times are available 
+for appointments.
+•
+With the system, the user must be able to select 
+a date and time for the appointment.
+UXQB 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of planning and design
+
+[PAGE 29]
+Design:
+Producing design solutions to 
+meet user requirements
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Human-Centered Design Approach: Design
+ISO 9241-210
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of planning and design
+
+[PAGE 30]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Design Iterations & Outputs
+User Needs & 
+Requirements
+Design Ideas 
+Prototypes
+Convert user needs and 
+requirements into:
+•
+Use scenarios
+•
+Storyboards
+•
+User journey maps
+Create:
+•
+Low-fidelity prototypes
+•
+Wireframes
+•
+High-fidelity prototypes
+…
+…
+Specification
+Design
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arrows pointing in opposite directions in a circle
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 31]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+Use Scenario
+UXQB 2022
+Example:
+“Before starting his busy workday, John Doe logs into the grocery 
+delivery website. After selecting his usual items from his previous 
+orders with a single click, he is prompted to reserve a delivery slot. 
+He sees that his preferred delivery slot is still available and books it 
+right away. John can now focus on his work, knowing that his 
+groceries will arrive when it’s most convenient for him.”
+A narrative text description of how a user will carry out one or 
+more tasks with the planned system.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man and woman holding a basket of fruit
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 32]
+•
+A low-fidelity prototype is often created using paper, pens, 
+sticky notes, etc.
+•
+Digital prototypes are often created with a prototyping tool
+•
+Low fidelity prototypes should be quick and cost-effective 
+to create and update
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Low-Fidelity Prototype
+UXQB 2022
+A low-cost illustration of a design or concept used to gather 
+feedback from users and other stakeholders during the early 
+stages of design.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a drawing of a cell phone with a question box on the screen
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 33]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Low-Fidelity Prototype: Example
+https://www.youtube.com/watch?v=yafaGNFu8Eg
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[IMAGE CAPTION] there is a man riding a surfboard on the beach
+
+[PAGE 34]
+•
+The purpose of wireframes is to define a skeletal layout that is easy to understand, and 
+encourages iteration and feedback
+•
+Wireframes typically do not address visual design (e.g., colors) and precise layout
+•
+Wireframes can be created using pen and paper or with tools such as Balsamiq
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Wireframe
+UXQB 2022
+A screen or page in a low-fidelity prototype for a user interface 
+comprised of lines, rectangular boxes and text that represent the 
+intended interaction design.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a close up of a diagram of a phone with a clock
+
+[IMAGE CAPTION] balsamic logo on a red background
+
+[PAGE 35]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Wireframe: Examples
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a pencil on a piece of paper with a drawing of a grid
+
+[IMAGE CAPTION] a close up of a diagram of a phone with a clock
+
+[IMAGE CAPTION] balsamic logo on a red background
+
+[PAGE 36]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+High-Fidelity Prototype
+•
+High-fidelity prototypes are computer-based, and usually allow realistic (mouse/keyboard) user 
+interactions
+–
+Created using tools like Figma
+•
+High-fidelity prototypes take you as close as possible to a true representation of the user interface
+•
+After a successful evaluation, the high-fidelity prototype informs the development of the system
+UXQB 2022
+A prototype that mirrors the user interface of a system as closely 
+as possible, often displaying pixel-perfect user interface 
+elements and visual design.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 37]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+High-Fidelity Prototype: Example
+Example: App for 
+Finding Table Tennis 
+Players  
+https://www.youtube.com/shorts/yyk5FF7t_2U
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a screenshot of a phone with a game on the screen
+
+[PAGE 38]
+Evaluate:
+Evaluating design solutions 
+against user requirements
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+Human-Centered Design Approach: Evaluate
+ISO 9241-210
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a process of planning and design
+
+[IMAGE CAPTION] a light bulb with a shadow on it
+
+[IMAGE CAPTION] a close up of a check mark on a white background
+
+[IMAGE CAPTION] a gray and white image of a scale with letters on it
+
+[PAGE 39]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Evaluation Goals
+Collect new information 
+about user needs
+Provide feedback on 
+strengths and 
+weaknesses of the 
+design solution from 
+the user’s perspective 
+Assess whether 
+user requirements 
+have been met 
+Establish baselines or 
+make comparisons 
+between designs
+ISO 9241-210
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person with a speech bubble and a thumbs up icon
+
+[IMAGE CAPTION] a light bulb with a shadow on it
+
+[IMAGE CAPTION] a close up of a check mark on a white background
+
+[IMAGE CAPTION] a gray and white image of a scale with letters on it
+
+[IMAGE CAPTION] a black square with a white border on a black background
+
+[IMAGE CAPTION] three people looking at a computer screen while a man points at it
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] two women sitting at a table with a laptop computer
+
+[PAGE 40]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+Evaluators & Methods
+Users
+Experts
+Usability 
+Test
+User 
+Survey
+Usability 
+Inspection
+…
+…
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a black border and a white border
+
+[IMAGE CAPTION] arafed man in a suit sitting at a desk with a computer
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] araffe woman sitting on a couch using a cell phone
+
+[IMAGE CAPTION] a black square with a white border on a black background
+
+[IMAGE CAPTION] three people looking at a computer screen while a man points at it
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] two women sitting at a table with a laptop computer
+
+[PAGE 41]
+Basic steps:
+1.
+Create a usability test guide
+2.
+Recruit test participants (e.g., potential users)
+3.
+Conduct several test sessions (e.g., think aloud sessions, post-session interviews)
+4.
+Analyze feedback and create usability test report
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+Usability Test
+A usability evaluation that involves representative users 
+performing specific tasks with the system to enable identification 
+and analysis of usability problems, or the measurement of 
+effectiveness, efficiency, and user satisfaction.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 42]
+•
+The guide should include:
+–
+Goal(s) of the usability test
+–
+Number of planned usability test participants and their characteristics
+–
+Usability test tasks
+–
+Approximate length of each usability test session
+–
+Procedure of the session
+–
+Pre- and post-test questions
+–
+Name of the moderator
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+42
+Usability Test Guide
+A guide used by a moderator in a usability test to prepare for and conduct a 
+usability test session.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 43]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+43
+Template for Usability Test Guide
+Procedure & 
+Techniques Used
+Prototype Under 
+Evaluation 
+Moderator: 
+Date/Location: 
+Test Task(s)
+Participants 
+Pre- and Post-Test 
+Questions
+Evaluation Goals 
+…
+…
+…
+What are the 
+test tasks?
+What questions 
+will be asked to 
+participants before 
+and after the 
+session?
+How many partici-
+pants will be 
+recruited? What 
+are their key 
+characteristics?
+What’s being tested?
+Why are we 
+doing this test?
+What are the main steps in the 
+test procedure? Which techniques 
+will be used in each step?
+Who?
+When? Where?
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 44]
+•
+A usability test report typically contains:
+–
+an executive summary
+–
+all usability findings (including positive usability findings), meaningfully grouped
+–
+screenshots or pictures that supplement the description of important usability findings
+–
+characteristics of the test users, including selection criteria for recruiting
+–
+the usability test guide
+•
+A usability test report is always required! If you have limited resources, produce a basic usability 
+test report: 
+–
+This may consist of 3-5 pages or slides, which include an executive summary, the key findings and the 
+list of usability test tasks
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Usability Test Report
+A document that describes the results of a usability test.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a black square with a black border and a white border
+
+[IMAGE CAPTION] a picture of a diagram of a system with a number of lines
+
+[PAGE 45]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+User Survey
+A usability evaluation where users are asked to complete a 
+questionnaire about their experience of using a system.
+UXQB 2022; Brooke 1996
+•
+Questionnaire: a set of questions that is used to 
+collect data from users
+–
+Open questions: Where did you encounter problems?
+–
+Closed questions: On a scale from 1 to 5, please rate 
+how satisfied you are with the system
+•
+A significant number of responses (100+) is required 
+for them to be statistically reliable
+Example “System Usability Scale” (SUS)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a black square with a black border and a white border
+
+[IMAGE CAPTION] a picture of a diagram of a system with a number of lines
+
+[PAGE 46]
+•
+Usability inspection is often performed by UX professionals or subject matter experts, who 
+base their judgement on prior experience of usability problems encountered by users and their 
+own knowledge of design guidelines and principles
+•
+Unlike usability tests and user surveys, usability inspections do not involve users
+•
+Why? Evaluation by users is not always possible or cost-effective at every stage of the project
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+Usability Inspection
+A usability evaluation based on the judgment of one or more 
+evaluators who examine or use a system to identify potential 
+usability problems and deviations from user requirements.
+UXQB 2022
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 47]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+47
+Key Takeaways
+•
+It is important to involve humans in the design of AI-
+based information systems
+•
+A human-centered design approach consists four key 
+activities that are performed iteratively:
+–
+Analyze
+–
+Specify
+–
+Design
+–
+Evaluate
+•
+For each activity, there are different methods, tools, and 
+techniques, which result in key deliverables for the next 
+activity
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a check mark on a check mark on a white background
+
+[PAGE 48]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+48
+Thank you for 
+your attention!
+Any questions?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 49]
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+49
+References
+Brooke, J. (1996). SUS: A quick and dirty usability scale. Usability Evaluation in Industry. 
+https://digital.ahrq.gov/sites/default/files/docs/survey/systemusabilityscale%2528sus%2529_comp%255B1%255D.pdf
+ISO. (2019). ISO 9241-210:2019: Ergonomics of human-system interaction – Part 210: Human-centred design for 
+interactive systems. International Organization for Standardization. https://www.iso.org/standard/77520.html
+Shneiderman, B. (2020). Human-centered artificial intelligence: Three fresh ideas. AIS Transactions on Human-Computer 
+Interaction, 12(3), 109-124.
+Shneiderman, B. (2022). Human-centered AI. Oxford University Press.
+UXQB e.V. (2022). CPUX-F Curriculum. Certified Professional for Usability and User Experience Foundation Level. 
+Version 4.01 EN, 7 November 2022. https://uxqb.org/public/documents/CPUX-F_EN_Curriculum.pdf
+UXQB e.V. (2023). CPUX-UR Curriculum. Certified Professional for Usability and User Experience – User Requirements 
+Engineering. Version 3.2.2 EN: 14 March 2023. https://uxqb.org/public/documents/CPUX-F_EN_Curriculum.pdf
+
+[IMAGE CAPTION] the university of passau logo
