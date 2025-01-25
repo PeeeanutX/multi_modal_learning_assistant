@@ -46,7 +46,7 @@ st.set_page_config(
 @st.cache_resource
 def get_dense_retriever():
     dense_retriever_path = "src/checkpoints/dense_retriever_checkpoint"
-    faiss_index_path = "src/ingestion/data/index.pkl"
+    faiss_index_path = "src/ingestion/data/index"
     dr_config = RetrieverConfig(
         dense_retriever_path=dense_retriever_path,
         faiss_index_path=faiss_index_path,
