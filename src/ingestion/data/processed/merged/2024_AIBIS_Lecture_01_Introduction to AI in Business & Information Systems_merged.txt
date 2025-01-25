@@ -1,0 +1,899 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+Introduction to AI in Business & Information Systems
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two people sitting at a table with laptops and a robot
+
+[IMAGE CAPTION] a close up of a robot with a lot of numbers on it
+
+[IMAGE CAPTION] arafed man and woman looking at a computer screen with a map on it
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Responsible AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 3]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+3
+Learning Goals
+•
+Define artificial intelligence (AI) based on the two 
+dimensions of capability (thinking vs. acting) and 
+performance (human vs. rational)
+•
+Describe the key elements of an AI-based 
+business information system and explain how 
+they are related to each other
+•
+Explain how AI-based business information 
+systems are different from more traditional 
+business information systems
+•
+Explain why it is useful to look at AI through the 
+lens of business capabilities rather than 
+technologies
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a sign with a clock on it
+
+[IMAGE CAPTION] a black rectangular object with a black background
+
+[IMAGE CAPTION] a close up of a business sign with a clock on it
+
+[IMAGE CAPTION] a black and white photo of a black and white clock
+
+[IMAGE CAPTION] a close up of a white and black text on a white background
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a purple background with a white text that reads, all as game changer the fight against hunger and poverty
+
+[PAGE 4]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+AI Offers New (Business) Opportunities …
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a sign with a clock on it
+
+[IMAGE CAPTION] a black rectangular object with a black background
+
+[IMAGE CAPTION] a close up of a business sign with a clock on it
+
+[IMAGE CAPTION] a black and white photo of a black and white clock
+
+[IMAGE CAPTION] a close up of a white and black text on a white background
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a purple background with a white text that reads, all as game changer the fight against hunger and poverty
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+… But Also Creates New (Business) Challenges
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a black square with a black background
+
+[IMAGE CAPTION] a close up of a sign with a picture of a person on a motorcycle
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text that reads, is the apocalypse actually coming what the cold - looking if robots
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a cold, soon need as much electricity as an entire country
+
+[IMAGE CAPTION] a black rectangular frame with a black background
+
+[IMAGE CAPTION] a close up of a white sign with a black and white image
+
+[PAGE 6]
+Logo of the University of Passau
+What is AI? What is an AI-based 
+business information system?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a processor with a blue light on top of it
+
+[PAGE 7]
+Logo of the University of Passau
+•
+No singular, agreed-upon definition for AI
+•
+AI is not a technology or set of 
+technologies, but a continually evolving 
+frontier of emerging computing 
+capabilities
+•
+“AI is whatever we are doing next in 
+computing”:
+– 1980s: Expert systems
+– 2000s: Machine learning / deep learning
+– 2020s: Generative AI
+– 2040s: ?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+What is AI? 
+Berente et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a processor with a blue light on top of it
+
+[PAGE 8]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Milestones in the History of AI
+1950
+1956
+1966
+1970
+1980
+1997
+2005
+2011
+2016
+2022
+“Turing Test”
+proposed by Alan 
+Turing
+Dartmouth Summer 
+Conference on AI: Term 
+“Artificial Intelligence” 
+is coined
+ELIZA:
+The first chatbot
+“In 3-8 years, we’ll 
+have a machine 
+with the general 
+intelligence of a 
+human being” 
+(Marvin Minsky)
+Edward 
+Feigenbaum 
+introduces expert 
+systems
+Deep Blue defeats 
+Gary Kasparov in 
+chess
+DARPA Grand 
+Challenge for 
+Autonomous Driving
+IBM Watson wins 
+Jeopardy quiz show; 
+Apple releases Siri
+ALPHAZERO
+wins against the top 
+Go player Lee Sedol
+OpenAI releases 
+ChatGPT
+OECD 2019
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 9]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+A Conceptual Approach to Defining AI
+Human
+Rational (“ideal”)
+Thought 
+Processes
+Thinking Humanly
+Thinking Rationally
+Behavior
+Acting Humanly
+Acting Rationally
+Russel & Norvig, 2016
+Natural language understanding
+Computer vision 
+Performance
+Capability
+Natural language generation
+Industrial robots
+Autonomous cars (→can reduce 
+accidents, traffic congestion, and fuel 
+consumption)
+Machine learning / Deep 
+learning (→can process vast 
+quantities of data)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Technical Perspective on AI Systems
+An AI system is a machine-based system that […] infers, from 
+the input it receives, how to generate outputs such as 
+predictions, content, recommendations, or decisions that can 
+influence physical or virtual environments. (based on OECD 2019)
+AI System
+AI Model
+(“Thinking”)
+Data / 
+Input
+Outcome / 
+Output
+Environment 
+“Perceiving”
+“Acting”
+OECD 2019
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Socio-Technical Perspective
+Reciprocal interactions between social subsystem and technological subsystem
+Sarker et al. 2019
+Technical 
+(Sub)system
+• Software
+• Hardware
+• Technical Infrastructure
+• …
+Social 
+(Sub)system
+• Individuals
+• Groups
+• Organization
+• Business Networks
+• Culture
+• …
+e.g., AI system
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a diagram of a circular structure with three different types of information
+
+[PAGE 12]
+Logo of the University of Passau
+•
+Broad and generic definition applicable to any context 
+(e.g., business, private life)
+•
+Tasks can be embedded in more complex structures 
+(e.g., organizational structures)
+•
+Information technology (IT) can be any hard- or 
+software (e.g., an AI system)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+Definition: Information System (IS)
+Information systems are socio-technical systems composed of 
+the interrelated elements of human, task, and technology.
+Task
+Human 
+Technology
+Heinzl et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a diagram of a circular structure with three different types of information
+
+[PAGE 13]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Definition: AI-Based (Business) Information System
+AI-based information systems are socio-technical systems in 
+which humans perform tasks by using an AI system in a specific 
+context to achieve specific goals and outcomes. 
+CONTEXT (E.G., BUSINESS)
+HUMAN
+AI
+SYSTEM
+TASK
+GOAL
+OUTCOME
+Based on: Heinzl et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 14]
+Logo of the University of Passau
+•
+The terms “human” and “user” are often used interchangeably
+•
+This role not only includes people who directly interact with the AI technology (“users”) but 
+also those affected by it in some way
+•
+It also includes those involved in the planning, design and development, implementation and 
+introduction, and maintenance of the AI system
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+(1) Human
+People who interact with or are affected by an AI system when 
+performing a task. 
+Based on: Heinzl et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 15]
+Logo of the University of Passau
+•
+Can refer to single tasks or larger groups of tasks (e.g., business processes)
+•
+Includes many different types of tasks:
+–
+Work tasks (e.g., production, procurement, administration, logistics)
+–
+Design and development tasks (e.g., modelling of business processes, creation of software 
+prototypes)
+–
+Private life tasks (e.g., online shopping, entertainment)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+(2) Task
+A set of activities undertaken in order to achieve a specific goal.
+Heinzl et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 16]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+(3) AI System
+An AI system is a machine-based system that […] infers, from the input 
+it receives, how to generate outputs such as predictions, content, 
+recommendations, or decisions that can influence physical or virtual 
+environments.
+OECD 2019
+AI System
+AI Model
+(“Thinking”)
+Data / 
+Input
+Outcome / 
+Output
+Environment 
+“Perceiving”
+“Acting”
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] woman sitting at a desk typing on a keyboard and a computer
+
+[IMAGE CAPTION] a man in a suit and tie using a cell phone on a subway
+
+[IMAGE CAPTION] three men wearing virtual glasses sitting at a table with laptops
+
+[PAGE 17]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+(4) Context
+The physical, social, and technical conditions in which a human interacts 
+with or is affected by the AI system.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] woman sitting at a desk typing on a keyboard and a computer
+
+[IMAGE CAPTION] a man in a suit and tie using a cell phone on a subway
+
+[IMAGE CAPTION] three men wearing virtual glasses sitting at a table with laptops
+
+[PAGE 18]
+Logo of the University of Passau
+•
+A goal is typically expressed in the form of a condition or state
+•
+In contrast, a task is typically expressed in the form of an activity
+•
+Example: 
+–
+Goal: Visit a friend in a small city, 100 km away
+–
+Task: Rent a car using a car rental website
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+(5) Goal
+Goals are the targets or accomplishments that a human wants to 
+achieve in the near or long term.
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 19]
+Logo of the University of Passau
+•
+Large variety of possible outcomes:
+–
+Instrumental outcomes (e.g., task performance, efficiency, productivity)
+–
+Psychological outcomes (e.g., satisfaction, happiness, well-being)
+–
+System outcomes (e.g., performance, errors)
+–
+…
+•
+Can be immediate or downstream and intended or unintended
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+(6) Outcome
+Outcomes are the consequences or results of the interplay between the 
+three elements of human, task, and AI system.
+Sarker et al. 2019
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[PAGE 20]
+Logo of the University of Passau
+Your Examples of AI-Based Business 
+Information Systems
+Please look at the conceptualization of AI-
+based business information systems and 
+reflect on real-world examples of AI 
+systems you are familiar with. What are the 
+different elements (user, task, etc.) in your 
+examples?
+→Discuss this question with a partner for 
+~5 minutes and be ready to share one 
+example
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[PAGE 21]
+Logo of the University of Passau
+How are AI-based business information 
+systems different from more traditional 
+business information systems?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 22]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+How are AI-based business information systems different?
+Berente et al. 2021; Baird & Maruping 2021
+Autonomy
+“Acting without 
+human intervention” 
+Learning
+“Improving through 
+data and experience” 
+Inscrutability
+“Being unintelligible to 
+specific audiences”
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 23]
+Logo of the University of Passau
+•
+AI-based business information systems have an increasing 
+capacity to act on their own, without human intervention (and 
+sometimes even without human knowledge!)
+•
+Examples:
+–
+AI-driven credit underwriting software that automatically makes 
+credit and loan decisions
+–
+Robotic process automation (RPA) bots that log into ERP 
+systems and automatically execute business processes
+–
+Robo-advisor platforms that automatically rebalance investments
+–
+… 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+23
+Autonomy
+Berente et al. 2021; Baird & Maruping 2021
+Autonomy
+“Acting without 
+human intervention”
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 24]
+Logo of the University of Passau
+•
+Previous generations of business information systems had 
+limited ability to automatically improve through data and 
+experience
+•
+AI advances have enabled the learning capacity of AI-based 
+business information systems to evolve from basic approaches 
+for inductive learning to large-scale approaches (e.g., deep 
+learning)
+•
+Examples:
+–
+Product recommendation systems that learn from customers’ 
+shopping behavior in real time
+–
+Predictive maintenance software in manufacturing plants that 
+learns from previous errors and breakdowns
+–
+AI-driven recruitment systems that learn from previous successful 
+hires
+–
+… 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+Learning
+Berente et al. 2021 
+Learning
+“Improving through 
+data and experience”
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 25]
+Logo of the University of Passau
+•
+AI-based business information systems and their outputs often are 
+intelligible only to a select audience (e.g., developers, data 
+scientists)
+•
+For others, such as managers or business users, they can be a 
+“black box”
+•
+Examples:
+–
+AI-based credit and loan decisions that are difficult to understand for 
+financial advisors in a bank
+–
+AI-based sales forecasts that are difficult to understand for sales 
+managers 
+–
+AI-based therapy recommendations that are difficult to understand 
+for medical professionals
+–
+…
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+Inscrutability
+Berente et al. 2021
+Inscrutability
+“Being unintelligible to 
+specific audiences”
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 26]
+Logo of the University of Passau
+•
+Autonomy, learning, and inscrutability are 
+interdependent facets that feed into each 
+other:
+–
+Learning contributes to, and results from, 
+autonomy
+–
+Both autonomy and learning result in 
+inscrutability
+•
+The levels of autonomy, learning, and 
+inscrutability continue to increase!
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Autonomy + Learning + Inscrutability
+Autonomy
+Inscrutability
+Learning
+Berente et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 27]
+Logo of the University of Passau
+How can AI create 
+business value?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] cartoon of a man and woman talking to each other about a problem
+
+[PAGE 28]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+How (Some) Organizations View AI …
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed graph of language recognition and recognition capabilities of several improved rapidly
+
+[PAGE 29]
+Logo of the University of Passau
+•
+AI capabilities have 
+developed rapidly, and AI 
+technology continues to 
+advance at a rapid pace (see 
+LLMs)
+•
+Technology is constantly 
+evolving
+•
+Rather than looking at AI 
+through a technological lens, 
+it is useful to look at it 
+through the lens of business 
+capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Rapid Pace of AI Development
+Giattino et al. 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed graph of language recognition and recognition capabilities of several improved rapidly
+
+[PAGE 30]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Business Capabilities
+•
+Ask: What business needs and objectives can AI support? How and where 
+can AI be used to enhance core business activities or enable new ones?
+•
+Instead of: Which data could we use for machine learning? How can we 
+leverage large language models?
+Business capabilities refer to the core activities and competencies 
+that enable an organization to achieve its business objectives and 
+deliver value to its stakeholders. (based on Margherita 2014)
+Davenport & Ronaki 2018; Benbya et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a yellow robot arm with a red handle and a black handle
+
+[IMAGE CAPTION] a close up of a sailboat with a rainbow flag on it
+
+[IMAGE CAPTION] a logo for a company that sells teas and tea bags
+
+[IMAGE CAPTION] a close up of a logo with a red background and a black background
+
+[IMAGE CAPTION] a white sign with the words local, interpretable, model - diagnostic, explanations
+
+[IMAGE CAPTION] a close up of a slice of lime on a white background
+
+[IMAGE CAPTION] open all logo
+
+[IMAGE CAPTION] a white robot holding a tablet with pepper on it
+
+[IMAGE CAPTION] a close up of a person with a head on a table
+
+[IMAGE CAPTION] amazon echo dot smart speaker with alexa voice
+
+[PAGE 31]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+AI-Enabled Business Capabilities
+Benbya et al. 2021
+Automation
+Engagement
+Insights & 
+Decisions
+Innovation
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a yellow robot arm with a red handle and a black handle
+
+[IMAGE CAPTION] a close up of a sailboat with a rainbow flag on it
+
+[IMAGE CAPTION] a logo for a company that sells teas and tea bags
+
+[IMAGE CAPTION] a close up of a logo with a red background and a black background
+
+[IMAGE CAPTION] a white sign with the words local, interpretable, model - diagnostic, explanations
+
+[IMAGE CAPTION] a close up of a slice of lime on a white background
+
+[IMAGE CAPTION] open all logo
+
+[IMAGE CAPTION] a white robot holding a tablet computer with pepper on it
+
+[IMAGE CAPTION] a close up of a person with a head on a table
+
+[IMAGE CAPTION] amazon echo dot smart speaker with alexa voice
+
+[PAGE 32]
+Logo of the University of Passau
+Innovation
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Multiple Business Capabilities Are Possible!
+Automation
+Engagement 
+Customer 
+service chatbots 
+Automated loan 
+decision-making
+Recommendation 
+systems (e.g., Netflix)
+Automation
+Insights & 
+Decisions
+Automation
+Insights & 
+Decisions
+Benbya et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a check mark on a check mark on a white background
+
+[PAGE 33]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Key Takeaways From This Lecture
+•
+There is no single, agreed-upon definition of AI, but one way to 
+define AI is to consider the two dimensions of capability 
+(thinking vs. acting) and performance (human vs. rational)
+•
+AI-based (business) information systems are socio-technical 
+systems: It is not only about the AI system but also about 
+humans, tasks, goals, and outcomes
+•
+AI-based business information systems are different from more 
+traditional business information systems in three facets: 
+autonomy, learning, and inscrutability
+•
+AI-based information systems enable different (and sometimes 
+multiple) business capabilities: 
+–
+Automation, engagement, insights & decisions, innovation
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 34]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Thank you for 
+your attention!
+Any questions?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 35]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+References
+Baird, A., & Maruping, L. M. (2021). The Next Generation of Research on IS Use: A Theoretical Framework of 
+Delegation to and from Agentic IS Artifacts. MIS Quarterly, 45(1), 315–341. 
+https://doi.org/10.25300/MISQ/2021/15882
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : 
+Implications for Information Systems Research. Journal of the Association for Information Systems, 22, 281–303.
+Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS quarterly, 45(3). 
+https://misq.umn.edu/misq/downloads/download/editorial/738/
+Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard business review, 96(1), 108-116.
+Giattino Charlie, Edouard Mathieu, Veronika Samborska and Max Roser (2023) - “Artificial Intelligence” Published online 
+at OurWorldInData.org. Retrieved from: https://ourworldindata.org/artificial-intelligence
+Heinzl, A., Mädche, A., & Riedl, R. (2024). Wirtschaftsinformatik: Einführung und Grundlegung. Springer Berlin 
+Heidelberg. https://link.springer.com/book/10.1007/978-3-642-15426-3
+OECD (2019), Artificial Intelligence in Society, OECD Publishing, Paris, https://doi.org/10.1787/eedfee77-en
+Russell, S. J., & Norvig, P. (2012). Artificial Intelligence: A Modern Approach. London.
+Sarker, S., Chatterjee, S., Xiao, X., & Elbanna, A. (2019). The Sociotechnical Axis of Cohesion for the IS Discipline: Its 
+Historical Legacy and its Continued Relevance. MIS Quarterly, 43(3), 695–719. 
+https://dl.acm.org/doi/abs/10.25300/MISQ/2019/13747
+
+[IMAGE CAPTION] the university of passau logo

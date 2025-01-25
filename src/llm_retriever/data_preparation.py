@@ -121,7 +121,6 @@ def prepare_data(
         embeddings_model: str = 'NV-Embed-QA',
         chunk_size: int = 512,
         chunk_overlap: int = 0,
-        processed_image_texts_dir: str = "",  #
 ):
     """
     Prepare data for the LLM-R pipeline using SemanticChunker for chunking:

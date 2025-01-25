@@ -1,0 +1,1031 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+Generative AI
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two people sitting at a table with laptops and a robot
+
+[IMAGE CAPTION] a close up of a robot with a lot of numbers on it
+
+[IMAGE CAPTION] arafed man and woman looking at a computer screen with a map on it
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Ethical AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 3]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• Which innovation type best 
+describes the replacement of human 
+workers with assembly robots in a 
+car factory?
+• Which statements about 'creativity' 
+are true?
+• What are key challenges associated 
+with the use of AI in innovation?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 4]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+Learning Goals
+•
+Explain what generative AI is and 
+how it differs from “traditional” AI
+•
+Describe how foundation models can 
+be adapted to specific tasks and 
+domains
+•
+Explain key prompting strategies and 
+apply them effectively
+•
+Discuss the challenges and risks of 
+generative AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+Generative AI Hype
+Gartner 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a graph showing the value of the innovation cycle
+
+[IMAGE CAPTION] a red pin with we are here written on it
+
+[PAGE 6]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Potential Impact of Generative AI
+https://s27.q4cdn.com/928340662/files/doc_financials/2023/q1/COUR_Presentation_Q1-2023.pdf
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a line graph with a line of data and a line of data
+
+[PAGE 7]
+Logo of the University of Passau
+•
+Generative AI relies on statistical 
+models created from existing 
+content
+•
+When given a prompt, generative 
+AI uses this statistical model to 
+generate new content
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Definition: Generative AI
+Generative AI is a type of AI that generates seemingly new, 
+meaningful content, such as text, images, audio, or video, from 
+training data.
+Feuerriegel et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a group of four different images of a woman and a dragon
+
+[IMAGE CAPTION] a white square with a black and white logo and a white square with a black and white logo
+
+[PAGE 8]
+Logo of the University of Passau
+Generative vs. “Traditional” AI
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 9]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+9
+Generative vs. Traditional AI
+•
+Generates new data that is 
+similar to the data it was 
+trained on
+•
+Understands the distribution 
+of data and how likely a given 
+example is
+Goal: Generate new data 
+instances
+•
+Typically trained on a dataset 
+of unlabeled data                   
+(→unsupervised ML)
+•
+Learns the boundary between 
+different classes or categories 
+in a dataset
+Goal: Discriminate between 
+different kinds of data instances
+AI
+Generative AI
+Predictive AI
+Discriminative AI
+•
+Typically trained on a dataset 
+of labeled data                      
+(→supervised ML)
+•
+Learns the relationship 
+between the features of the 
+data instances and the labels
+Goal: Make predictions about 
+future events
+Feuerriegel et al. 2024
+Traditional AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Generative vs. Traditional AI: Example
+Google 2023
+Generative AI
+Traditional AI
+(Discriminative)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a diagram of different types of dogs
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Traditional AI Process
+(Un)labeled 
+Data
+Training 
+Code
+Model 
+Building 
+Predict
+Discriminate
+Based on: Google 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 12]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+Generative AI Process
+Prompting
+Text 
+Generation 
+Image 
+Generation 
+…
+Generate new 
+content
+Generate new 
+content
+Generate new 
+content
+Vast Amounts of 
+(Un)labeled Data
+Training 
+Code
+Foundation 
+Model
+Based on: Google 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 13]
+Logo of the University of Passau
+•
+These models are sometimes referred to as 
+‘general-purpose AI (GPAI) models’ or ‘large 
+X models’ (LxM)
+•
+Example: GPT-4 is the fourth generation of 
+OpenAI’s foundation model
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Foundation Models
+A foundation model is an AI model trained with a large amount of 
+data using self-supervision at scale, displays significant generality, 
+and is capable of performing a wide range of distinct tasks.
+EU AI Act (Article 3, 63)
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a diagram of the openai platform with the text openai
+
+[PAGE 14]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+Foundation Models: Examples
+Trained on extensive textual 
+data, learning to predict the next 
+word in a sentence and 
+generate coherent text
+Examples: BERT, GPT-3, Llama
+Trained on multiple modalities 
+simultaneously (e.g., image-text 
+pairs)
+Examples: PaLM-E, GPT-4
+Foundation 
+Models
+Foundation 
+Language Models 
+Foundation 
+Image Models 
+Multimodal
+Foundation Models 
+Trained on large datasets of visual 
+data, learning to generate and 
+modify images
+Examples: DALL-E, Stable Diffusion
+Bommasani et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 15]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+15
+Generative AI: How does it work?
+Prompting
+Text 
+Generation 
+Image 
+Generation 
+…
+Generate new 
+content
+Generate new 
+content
+Generate new 
+content
+Vast Amounts of 
+(Un)labeled Data
+Training 
+Code
+Foundation 
+Model
+Based on: Google 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 16]
+Logo of the University of Passau
+•
+From a very large training dataset, a model learns the statistical distributions of tokens
+•
+Tokens can be “chunks” of words, punctuation marks, pixels, etc.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+16
+A Simplified View of Generative AI (1)
+Vector of probabilities
+Faklaris 2023, Stollnitz 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a computer system with a number of different components
+
+[PAGE 17]
+Logo of the University of Passau
+•
+When given a prompt, the model 
+converts the prompt into tokens 
+and then analyzes what is likely 
+to come next, based on the 
+tokens in its own dataset
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+17
+A Simplified View of Generative AI (2)
+“Here’s a fragment of text.
+Tell me how this fragment might <continue on in
+this language, or suggest a particular image>.
+According to your model of the statistics of
+<human language, or human-handled images>,
+what <words, or pixels> are likely to come next?”
+Faklaris 2023, Stollnitz 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 18]
+Logo of the University of Passau
+•
+When given a prompt, the model 
+converts the prompt into tokens 
+and then analyzes what is likely 
+to come next, based on the 
+tokens in its own dataset
+•
+It then generates a tokenized 
+output
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+18
+A Simplified View of Generative AI (3)
+Vector of 
+probabilities from 
+own tokens
+1 token out
+n tokens in
+to
+The best thing about AI is its ability
+Faklaris 2023, Stollnitz 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 19]
+Logo of the University of Passau
+•
+With each output, the model 
+keeps reanalyzing the 
+probabilities to decide the 
+next token
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+A Simplified View of Generative AI (4)
+Vector of 
+probabilities from 
+own tokens
+1 token out
+n tokens in
+learn
+The best thing about AI is its ability to
+Faklaris 2023, Stollnitz 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 20]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+A Simplified View of Generative AI (5)
+Vector of 
+probabilities from 
+own tokens
+1 token out
+n tokens in
+learn
+Faklaris 2023, Stollnitz 2023
+•
+Transformers (the “T in “GPT”) 
+know how to direct attention to 
+specific parts of the input to 
+guide their selection of the next 
+token
+•
+The transformer architecture was a major 
+breakthrough in the field of natural language 
+processing (see paper “Attention is all you 
+need”; Vaswani et al. 2017)
+The best thing about AI is its ability
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black and white image of a cartoon face with big eyes
+
+[PAGE 21]
+Logo of the University of Passau
+•
+The model can provide different 
+tokens to the same inputs:
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+A Simplified View of Generative AI (6)
+Vector of 
+probabilities from 
+own tokens
+1 token out
+n tokens in
+The best thing about AI is its ability to
+predict
+Faklaris 2023, Stollnitz 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a table with a number of different numbers of people
+
+[PAGE 22]
+Logo of the University of Passau
+•
+LLMs can use different 
+strategies to choose the 
+next token
+•
+This process is known as 
+“sampling“
+•
+Example based on Meta’s 
+LLaMA model
+–
+Source: 
+https://github.com/Artefact
+2/llm-sampling
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+Interactive LLM Output Demo
+https://chatbotresearch.org/llm-sampling/index.xhtml
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a screen shot of a keyboard with a number of options
+
+[PAGE 23]
+Logo of the University of Passau
+LLM Demo & Token Sampling
+Open the interactive LLM demo, explore how tokens are 
+sampled under different parameter settings, and answer 
+the following questions:
+1.
+What happens when the temperature is zero? What 
+happens when it is set to its maximum value?
+2.
+Why do you think the temperature is typically set to a value 
+between 0 and 1 by OpenAI, Anthropic, and other LLM 
+providers?
+→Discuss these questions with a partner for ~5 minutes 
+and be ready to share your answers
+https://shorturl.at/Midca
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with different expressions and speech bubbles on a black background
+
+[PAGE 24]
+Logo of the University of Passau
+Adapting Foundation Models to 
+Specific Tasks and Domains
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 25]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Building Applications on Top of Foundation Models
+Bommasani et al. 2021
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of a computer and a bunch of other items
+
+[PAGE 26]
+Logo of the University of Passau
+•
+Fine-tuning is a powerful technique but requires sufficiently large annotated training data which is often costly and hard to obtain
+•
+In practice, combinations of different techniques are often used
+•
+New techniques are constantly being developed (e.g., parameter-efficient fine-tuning; PEFT)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Adapting Foundation Models to Specific Tasks and Domains 
+Taking a foundation model 
+and further training it on a 
+smaller, specific dataset to 
+refine its capabilities and 
+improve performance in a 
+specific task or domain
+Asking a pre-trained (foundation) 
+model to perform a specific task 
+by giving it a task description and 
+relevant input data (=prompt)
+Augmenting a pre-trained 
+(foundation) model with an 
+external knowledge base, 
+giving it the ability to access 
+domain-specific information
+Bommasani et al. 2021
+Adaptation
+Fine-tuning
+Prompt engineering
+Retrieval augmented 
+generation (RAG)
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 27]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Fine-Tuning: Example 
+https://www.bloomberg.com/company/press/bloombergg
+pt-50-billion-parameter-llm-tuned-finance/
+https://www.linkedin.com/posts/emollick_this-remains-one-of-
+the-most-consequential-activity-7176398465004896256-Qjx-/
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a text description of a business plan
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a screenshot of a twitter post with a picture of a man on a phone
+
+[IMAGE CAPTION] a red circle with a dollar sign in the middle
+
+[PAGE 28]
+Logo of the University of Passau
+•
+Targeted prompting can optimize the 
+performance and relevance of model outputs 
+to produce high-quality results
+•
+The quality of the prompt determines the 
+quality of the output!
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+Prompting
+Prompting is the process of using carefully crafted phrases or 
+templates to help a pre-trained (foundation) model accomplish a 
+specific, downstream task.
+Brown et al. 2020
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a garbage can with papers and papers flying out of it
+
+[PAGE 29]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Prompting Techniques & Examples
+https://huggingface.co/docs/transformers/main/tasks/prompting#advanced-prompting-techniques
+Prompting 
+Technique
+Description
+Example
+Zero-shot 
+promoting
+Relying solely on a model’s pre-
+trained information to answer a 
+given prompt
+•
+Write a summary of the following text: […]
+•
+Generate ideas for a birthday present.
+Few-shot 
+prompting
+Providing examples in the 
+prompt, giving the model more 
+context to improve its 
+performance
+Country: Germany
+Capital city: Berlin
+Country: Argentina
+Capital city:
+Chain-of-
+thought 
+prompting
+Nudging a model to produce 
+intermediate reasoning steps, 
+thus improving the results on 
+complex reasoning tasks
+Two ways:
+•
+Use few-shot prompting by illustrating examples with 
+detailed answers to questions
+•
+Add instructions such as “Let’s think step by step”
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 30]
+Logo of the University of Passau
+•
+Prompting can seem easy, but 
+designing effective prompts is 
+challenging, especially for non-experts
+•
+Common challenges:
+– Expectations stemming from human-to-
+human communication (e.g., politeness)
+– Tendency to overgeneralize
+– Biases towards giving instruction over 
+depicting examples
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+Challenges in Prompt Engineering 
+Zamfirescu-Pereira et al. 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a white paper with a black and white image of a man and a woman
+
+[PAGE 31]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Prompt Engineering Guidelines
+Company
+Guideline
+Link
+OpenAI
+OpenAI’s Prompt 
+engineering strategies
+https://platform.openai.com/docs/guides/prompt-
+engineering
+Hugging Face
+Best practices of LLM 
+prompting
+https://huggingface.co/docs/transformers/main/tasks/
+prompting#best-practices-of-llm-prompting
+Google
+Tips to enhance your 
+prompt-engineering abilities
+https://cloud.google.com/blog/products/application-
+development/five-best-practices-for-prompt-
+engineering
+Midjourney 
+Prompting Notes
+https://docs.midjourney.com/docs/prompts
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 32]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Prompt Engineering Guidelines: Example
+https://huggingface.co/docs/transformers/main/tasks/prompting#best-practices-of-llm-prompting
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] there are two different types of business letters that are in this document
+
+[IMAGE CAPTION] a close up of a yellow cat with a big smile on its face
+
+[PAGE 33]
+Logo of the University of Passau
+“Create three ideas for 
+social media content”
+•
+Not enough context (e.g., 
+which social media 
+platform)
+•
+Not enough details about 
+the content (e.g., topics, 
+audience)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Bad vs. Good Prompts: Examples
+“Compose a thought-provoking LinkedIn post 
+about the future of remote work. Please write 
+in the first person, highlight the advantages of 
+remote collaboration, mention industry trends, 
+and write for young managers working in the 
+tech sector.”
+https://www.plannthat.com/good-vs-bad-ai-prompts/
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 34]
+Logo of the University of Passau
+Prompt Engineering
+Here is another example of a bad prompt: 
+“Create a social media post about the 
+lecture I attended at university today”
+Please give an example of a better prompt.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a pencil and a check mark on a piece of paper
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 35]
+Logo of the University of Passau
+Challenges and Risks 
+of Generative AI
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 36]
+Logo of the University of Passau
+•
+LLMs hallucinate because they operate mainly on a 
+probabilistic level by putting one probable word in front of 
+another without any deeper capacity for comprehension →
+“Stochastic Parrots”
+•
+Like a parrot, LLMs excel at regurgitating learned content 
+without knowing the meaning of their responses
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+Incorrect Outputs (“Hallucinations”)
+Hannigan et al. 2024, Bender et al. 2021
+A hallucination is when a language model generates seemingly 
+realistic responses that are untrue, nonsensical, or unfaithful to 
+the provided source input.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a brightly colored parrot with a speech bubble saying who ' s a pretty polly
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 37]
+Logo of the University of Passau
+•
+Humans might use untrue material created by generative 
+AI in an uncritical and thoughtless way
+•
+This “botshit” makes it harder for people to know what is 
+true and false in the world
+•
+Problems arise when the outputs have important 
+consequences and cannot easily be verified
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+38
+From Hallucinations to “Botshit”
+Hannigan et al. 2024; McCarthy et al. 2024
+Botshit is AI-generated content that is not grounded in truth (e.g., 
+hallucinations) and is then uncritically used by a human for 
+communication and decision-making tasks.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are many people in a meeting room with a robot on the wall
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Botshit: Examples
+https://www.reuters.com/legal/new-york-lawyers-sanctioned-using-
+fake-chatgpt-cases-legal-brief-2023-06-22/
+https://futurism.com/sports-illustrated-ai-generated-writers
+McCarthy et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a screenshot of a newspaper article with a caption of a news report
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about sports illustrated published articles by fake, all - generated writers
+
+[PAGE 39]
+Logo of the University of Passau
+•
+The data used to train AI 
+generative AI models often 
+reflect human biases:
+– Cultural biases
+– Gender biases
+– Racial biases
+– Socioeconomic biases
+– …
+•
+Like any AI, these models 
+inherit those biases
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+Bias
+https://www.unesco.org/en/articles/generative-ai-unesco-study-reveals-
+alarming-evidence-regressive-gender-stereotypes
+Feuerriegel et al. 2024
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about the dangers of women ' s reproductives
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+Copyright Violations
+Appel et al. 2023
+https://www.nytimes.com/2023/12/27/business/media/ne
+w-york-times-open-ai-microsoft-lawsuit.html
+https://www.reuters.com/legal/getty-images-lawsuit-says-
+stability-ai-misused-photos-train-ai-2023-02-06/
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about the death of a man who was killed in a train accident
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about the times of the new york times opera and microsoft
+
+[PAGE 41]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+42
+Environmental Impact
+https://www.youtube.com/watch?v=LDfbGk9dpWw
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] someone is typing on a laptop computer on a table
+
+[PAGE 42]
+Logo of the University of Passau
+“If you have a hammer, 
+everything looks like a nail”
+Law of the Instrument or Maslow’s Hammer (1966)
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+43
+When Not to Use Generative AI
+https://www.gartner.com/en/articles/when-not-to-use-generative-ai
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a chart of the different types of data that are used to create a chart
+
+[PAGE 43]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+44
+Key Takeaways From This Lecture
+•
+The primary way in which generative AI differs from 
+traditional AI is that it can generate new data 
+instances (new text, images, videos, etc.)
+•
+Foundation models are at the core of generative AI
+•
+Foundation models can be adapted to a wide range 
+of specific tasks, for example, via fine-tuning or 
+prompting
+•
+There are different prompting techniques (zero-shot, 
+few-shot, chain-of-thought prompting) and a growing 
+number of guidelines for effective prompt design
+•
+Generative AI offers many benefits but also creates 
+several challenges such as hallucinations, biases, 
+and copyright issues
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a check mark on a check mark on a white background
+
+[PAGE 44]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+45
+Thank you for 
+your attention!
+Any questions?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 45]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+46
+References
+Appel, G., Neelbauer, J., & Schweidel, D. A. (2023). Generative AI has an intellectual property problem. Harvard Business Review. https://hbr.org/2023/04/generative-ai-has-an-
+intellectual-property-problem
+Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021, March). On the dangers of stochastic parrots: Can language models be too big?
+. In Proceedings of the 
+2021 ACM conference on fairness, accountability, and transparency (pp. 610-623).
+Bommasani, R., Hudson, D. A., Adeli, E., Altman, R., Arora, S., von Arx, S., ... & Liang, P. (2021). On the opportunities and risks of foundation models. arXiv preprint 
+arXiv:2108.07258.
+Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. Advances in neural information 
+processing systems, 33, 1877-1901.
+EU AI Act. (2024). http://data.europa.eu/eli/reg/2024/1689/oj
+Faklaris, Cori. (2023). An Introduction to Generative AI. https://corifaklaris.com/files/genAIintro.pdf
+Feuerriegel, S., Hartmann, J., Janiesch, C., & Zschech, P. (2024). Generative AI.  Business & Information Systems Engineering. 66, 111–126 (2024). 
+https://doi.org/10.1007/s12599-023-00834-7
+Gartner 2024. https://www.gartner.com/en/newsroom/press-releases/2024-08-21-gartner-2024-hype-cycle-for-emerging-technologies-highlights-developer-productivity-total-
+experience-ai-and-security
+Google. (2023). Introduction to Generative AI. https://www.youtube.com/watch?v=G2fqAlgmoPo
+Hannigan, T., McCarthy, I. P., & Spicer, A. (2023). Beware of botshit: How to manage the epistemic risks of generative chatbots. Business Horizons, 67(5), 471-486.
+Maslow, A. H. (1966). The Psychology of Science. Harper & Row.
+McCarthy, I. P., Hannigan, T., & Spicer, A. (2023). The Risks of Botshit. Harvard Business Review. https://hbr.org/2024/07/the-risks-of-botshit
+Stollnitz, Bea. (2023). https://bea.stollnitz.com/blog/how-gpt-works/
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing 
+systems, 30.
+Zamfirescu-Pereira, J. D., Wong, R. Y., Hartmann, B., & Yang, Q. (2023, April). Why Johnny can’t prompt: how non-AI experts try (and fail) to design LLM prompts. In 
+Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (pp. 1-21).
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a bird with a black background

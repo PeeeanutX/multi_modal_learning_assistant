@@ -1,0 +1,965 @@
+[PAGE 1]
+Logo of the University of Passau
+AI-Based Business Information Systems
+AI-Enabled Engagement
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there are two people sitting at a table with laptops and a robot
+
+[IMAGE CAPTION] a close up of a robot with a lot of numbers on it
+
+[IMAGE CAPTION] arafed man and woman looking at a computer screen with a map on it
+
+[PAGE 2]
+Logo of the University of Passau
+Lecture
+AI-Enabled Business Capabilities
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+2
+Course Organization
+Exercise
+Exercise 1: 
+Robotic Process 
+Automation Case Study
+Exercise 2: 
+Human-Centered 
+Chatbot Design
+Exercise 3: 
+Explainable AI 
+Techniques
+Foundations 
+Introduction to AI in Business 
+& Information Systems
+Design & Management of AI-
+Based Information Systems
+AI-Enabled Engagement
+AI-Enabled Insights & Decisions
+AI-Enabled Innovation
+Industry Talk 
+ZF Group
+Exercise 4: 
+Generative AI & 
+Innovation
+AI-Enabled Automation 
+AI Technologies & Trends
+Conversational AI
+Explainable AI
+Generative AI
+AI Ethics & Responsible AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 3]
+Logo of the University of Passau
+RECAP FROM LAST LECTURE:
+• What are examples of software
+robots?
+• Please organize the task types in the 
+Theory of AI Job Replacement 
+based on the order in which AI is 
+expected to perform them.
+• What are key challenges and risks of 
+AI-enabled automation?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a person sitting at a table reading a book
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[PAGE 4]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+4
+Learning Goals
+•
+Explain the concept of user 
+engagement and its three dimensions 
+•
+Describe how AI can enable user 
+engagement through human-like 
+interactions
+•
+Explain the relationship between social 
+cues and social responses
+•
+Discuss the benefits and risks of AI-
+enabled engagement and human-like AI
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text description of a person ' s conversation
+
+[IMAGE CAPTION] a group of people holding up colorful blocks with the word fgmn magnet
+
+[PAGE 5]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+5
+What does “Engagement” mean?
+https://www.dictionary.com/browse/engage
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a text description of a person ' s conversation
+
+[IMAGE CAPTION] a group of people holding up colorful blocks with the word fgmn magnet
+
+[PAGE 6]
+Logo of the University of Passau
+•
+Engagement with …
+– a company and           
+its products
+– an employer
+– a technology
+– … 
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+6
+Types of Engagement
+Customer
+Engagement
+Employee
+Engagement
+User
+Engagement
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] cartoon of a woman is talking to a man about his phone
+
+[PAGE 7]
+Logo of the University of Passau
+•
+Higher levels of customer engagement increase customer 
+loyalty and purchase frequency, resulting in better overall 
+business performance
+•
+Engaged customers are more likely to share positive 
+experiences and recommend products or services to 
+others
+•
+Fostering customer engagement is in the best interest of a 
+company and should be actively encouraged
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+7
+Customer Engagement 
+Customer engagement is the intensity of an individual’s participation 
+in and connection with a company’s offerings and/or activities.
+Vivek et al. 2012
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] cartoon of a woman is talking to a man about his phone
+
+[PAGE 8]
+Logo of the University of Passau
+•
+The outcomes of high employee engagement are 
+improved productivity, loyalty, job satisfaction, and 
+organizational performance
+•
+A positive workplace culture, recognition, and opportunities 
+for autonomy and growth foster employee engagement
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+8
+Employee Engagement
+Employee engagement refers to employees’ willingness to fully 
+invest themselves physically, cognitively, and emotionally into 
+their work roles.
+Kahn 1990
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] people sitting at a table with laptops and laptops in front of them
+
+[PAGE 9]
+Logo of the University of Passau
+9
+User Engagement
+User engagement is defined as a user’s technology-related state 
+of mind characterized by specific cognitive, emotional, and 
+behavioral manifestations during interactions with technology.
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+•
+User engagement is positively related to user satisfaction, loyalty, and usage frequency
+•
+Engaged users are more likely to contribute to user-generated content and to demonstrate a 
+strong emotional connection to the technology
+•
+User engagement has three subdimensions: cognitive, emotional, and behavioral engagement
+•
+Our focus is on user engagement
+Lehrer et al. 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[PAGE 10]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+10
+Dimensions of User Engagement
+Cognitive
+Engagement
+Emotional
+Engagement
+Behavioral
+Engagement
+Users’ positively or negatively 
+valenced thoughts, concentration, 
+and reflections during an 
+interaction with a technology 
+feature, such as:
+•
+Attention
+•
+Absorption
+•
+…
+Users’ affective reactions during 
+an interaction with a technology 
+feature, includes positive and 
+negative feelings such as:
+•
+Enjoyment
+•
+Love
+•
+Frustration
+•
+Anxiety
+•
+…
+Users’ behavioral interactions 
+with a technology feature, 
+such as:
+-
+Content creation
+-
+Content consumption
+-
+Responses 
+-
+Interactions (e.g., clicks)
+-
+…
+Lehrer et al. 2023
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a group of people holding smart phones with social icons around them
+
+[IMAGE CAPTION] a screenshot of a dashboard with a number of graphs
+
+[PAGE 11]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+11
+Behavioral Engagement: Example
+Social Media
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a group of people holding smart phones with social icons around them
+
+[IMAGE CAPTION] a screenshot of a dashboard with a number of graphs
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about a woman with a large breast
+
+[PAGE 12]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+12
+Cognitive Engagement: Example
+https://www.theguardian.com/global/2021/aug/22/how-digital-media-turned-us-
+all-into-dopamine-addicts-and-what-we-can-do-to-break-the-cycle
+https://www.fastcompany.com/40491939/netflix-ceo-reed-
+hastings-sleep-is-our-competition
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a close up of a person on a stage with a microphone
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about a woman with a large breast
+
+[PAGE 13]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+13
+Emotional Engagement: Example
+https://replika.com/
+https://www.youtube.com/watch?v=DTq0MaOwTjE
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a purple and orange square with a white r on it
+
+[IMAGE CAPTION] woman with glasses and a bandana looking at her cell phone
+
+[PAGE 14]
+Logo of the University of Passau
+How can AI enable user 
+engagement?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+14
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a robot head with a face on top of a table
+
+[IMAGE CAPTION] the logo for the center for the arts and design
+
+[IMAGE CAPTION] a close up of a text message from a person on a phone
+
+[IMAGE CAPTION] arafed image of a young man with a blue sweater and a gray sweater
+
+[IMAGE CAPTION] a smart device, an echo dot and a smart phone
+
+[PAGE 15]
+Logo of the University of Passau
+15
+AI-Enabled Engagement
+AI-enabled engagement refers to the use of AI to create 
+interactions that resemble those with a human.
+Benbya et al. 2021; Lankton et al. 2015
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+•
+Users consider technologies with 
+a human-like interface to be more 
+engaging than other interfaces 
+that perform the same functions
+•
+AI can be used to provide highly 
+human-like experiences
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a dictionary with a red word definition
+
+[IMAGE CAPTION] a robot head with a face on top of a table
+
+[IMAGE CAPTION] the logo for the center for the arts and design
+
+[IMAGE CAPTION] a close up of a text message from a person on a phone
+
+[IMAGE CAPTION] arafed image of a young man with a blue sweater and a gray sweater
+
+[IMAGE CAPTION] a smart device, an echo dot and a smart phone
+
+[PAGE 16]
+Logo of the University of Passau
+What characterizes interactions 
+between humans? What makes 
+an experience “human-like”?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a pencil and a check mark on a piece of paper
+
+[IMAGE CAPTION] the mentimeer logo with a blue and pink geometric design
+
+[IMAGE CAPTION] a close up of a black and white photo of a baseball bat
+
+[PAGE 17]
+Logo of the University of Passau
+•
+In human-human interaction, a person 
+perceives, interprets, and responds to a 
+wide array of social cues:
+–
+Facial expressions (e.g., smiling)
+–
+Gestures (e.g., head nodding)
+–
+German forms of address (e.g., Du vs. Sie)
+–
+…
+•
+Social cues help to clarify people’s 
+meanings and intentions
+•
+Social cues influence various social 
+processes (e.g., communication)
+Chair of Explainable AI-based Business Information Systems
+17
+Social Cues in Human-Human Interaction
+Gesture
+Body posture
+Body posture
+Interpersonal distance
+Gaze
+Vocal behavior
+Head position
+Burgoon et al. 2010
+Prof. Dr. Ulrich Gnewuch
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black and white photo of a black and white picture of a black and white picture of a black and
+
+[IMAGE CAPTION] a close up of a sign with a person holding a cell phone
+
+[IMAGE CAPTION] arafed image of a man and woman facing each other with arrows pointing to them
+
+[IMAGE CAPTION] a close up of a black and white photo of a person holding a kite
+
+[IMAGE CAPTION] a close up of a black and white photo of a baseball bat
+
+[IMAGE CAPTION] a close up of a black and white sign with a black and white background
+
+[IMAGE CAPTION] a black and white photo of a black square with a black background
+
+[IMAGE CAPTION] a close up of a sign with a clock on it
+
+[IMAGE CAPTION] a black and white photo of a black square with a black border
+
+[IMAGE CAPTION] does chattp give the same answer to everyone?
+
+[PAGE 18]
+Logo of the University of Passau
+•
+Users perceive social cues from technology in a similar way:
+18
+Social Cues in Human-AI Interaction
+Chair of Explainable AI-based Business Information Systems
+Prof. Dr. Ulrich Gnewuch
+Cues
+Examples
+Physical
+Face, eyes, body, movement
+Language
+Interactive language use, spoken 
+language, language recognition
+Psychological
+Preferences, humor, personality, 
+feelings, empathy, “I’m sorry”
+Social 
+Dynamics
+Turn taking, cooperation, praise for 
+good work, answering questions, 
+reciprocity
+Social Roles
+Doctor, teammate, opponent, teacher, 
+pet, guide
+Fogg 2002
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black and white photo of a black and white picture of a black and white picture of a black and
+
+[IMAGE CAPTION] a close up of a sign with a person holding a cell phone
+
+[IMAGE CAPTION] a black square frame with a black background and a white border
+
+[IMAGE CAPTION] a close up of a sign with a picture of a person on it
+
+[IMAGE CAPTION] a black and white photo of a black background with a black rectangle
+
+[IMAGE CAPTION] a close up of a black and white sign with a black and white background
+
+[IMAGE CAPTION] a black and white photo of a black square with a black background
+
+[IMAGE CAPTION] a close up of a sign with a clock on it
+
+[IMAGE CAPTION] a black and white photo of a black square with a black border
+
+[IMAGE CAPTION] does chattp give the same answer to everyone?
+
+[PAGE 19]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+19
+Example: Physical Cues
+Realistic 3D avatars with human faces and body movements
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person with different facial expressions
+
+[IMAGE CAPTION] there are two people standing in a field with a house in the background
+
+[IMAGE CAPTION] a close up of a text message from a person on a phone
+
+[IMAGE CAPTION] a smart device, an echo dot and a smart phone
+
+[PAGE 20]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+20
+Example: Language Cues
+→Conversational 
+AI Lecture 
+Chatbots and voice assistants that 
+converse with us via natural language
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on a black background
+
+[IMAGE CAPTION] a close up of a browser browser with a keyboard and a mouse
+
+[IMAGE CAPTION] a close up of a text message from a person on a phone
+
+[IMAGE CAPTION] a smart device, an echo dot and a smart phone
+
+[PAGE 21]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+21
+Example: Social Role Cues
+https://www.theverge.com/2024/6/5/24170480/as
+ana-ai-teammate-workflow-assistant-chatbot
+https://www.zdnet.com/article/can-ai-curb-loneliness-in-older-
+adults-this-robot-companion-is-proving-its-possible/
+AI designed to take on specific roles such 
+as teammate, companion, doctor, etc.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] there is a text that reads asians now teammate can tell people what to do
+
+[IMAGE CAPTION] a black square with a white border on it
+
+[IMAGE CAPTION] a newspaper article about a woman who is using a robot
+
+[PAGE 22]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+22
+Digital Humans – The Future of AI-Enabled Engagement?
+https://www.youtube.com/watch?v=S3F1vZYpH8c
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] there is a man that is standing in the dark with a cell phone
+
+[PAGE 23]
+Logo of the University of Passau
+Social Responses:
+How do social cues lead to 
+human-like interactions with AI?
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+24
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed man in a suit and tie smiling at the camera
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a document with a black and white image
+
+[IMAGE CAPTION] a close up of a woman with a black shirt and a black shirt
+
+[PAGE 24]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+25
+Social Response Theory (Computers are Social Actors Paradigm)
+Clifford Nass
+Nass et al. 1994; Nass & Moon 2000
+Youngme Moon
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed man in a suit and tie smiling at the camera
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a document with a black and white image
+
+[IMAGE CAPTION] a close up of a woman with a black shirt and a black shirt
+
+[PAGE 25]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+26
+Social Response Theory
+A technology possesses 
+characteristics normally 
+associated with humans
+Application of various scripts, 
+labels, and expectations in 
+accordance with prior experiences
+Emotional, cognitive, or behavioral 
+reactions similar to reactions shown 
+during interactions with humans
+result in
+trigger
+Social Cues
+Mindless Behavior
+Social Responses
+Nass et al. 1994, Nass & Moon 2000
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person ' s head with gears in the brain
+
+[IMAGE CAPTION] a cartoon robot with arms up and hands out
+
+[PAGE 26]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+27
+Example #1
+Social Cues
+Mindless Behavior
+Social Responses
+Name tag of 
+a chatbot 
+(“Emma” vs. 
+“ChatBotX”)
+People have names 
+→Chatbot “Emma” 
+appears more like a 
+real person 
+Chatbot “Emma” is more 
+likeable, sociable, and 
+friendly than “ChatBotX”
+Araujo 2018
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person ' s head with gears in the brain
+
+[IMAGE CAPTION] a cartoon robot with arms up and hands out
+
+[PAGE 27]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+28
+Example #2
+Social Cues
+Mindless Behavior
+Social Responses
+Male vs. female 
+voice output of a 
+computer
+Gender stereotypes:
+• Male-voiced computer = more 
+informative about computers 
+• Female-voiced computer = 
+more informative about love 
+and relationships
+Gender attribution 
+to computer
+Nass et al. 1997
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a person ' s head with gears in the brain
+
+[IMAGE CAPTION] a cartoon robot with arms up and hands out
+
+[PAGE 28]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+29
+1997?
+Nass, C., Moon, Y., & Green, N. (1997). Are machines gender neutral? Gender-stereotypic responses to 
+computers with voices. Journal of Applied Social Psychology, 27(10), 864–876.
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a sign with a woman in a black dress
+
+[PAGE 29]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+30
+Gender Stereotypes Today
+UNESCO (https://unesdoc.unesco.org/ark:/48223/pf0000367416.locale=en), 
+https://www.technologyreview.com/2019/05/22/65758/female-voice-assistants-fuel-damaging-gender-stereotypes-says-un-study
+“Most AI voice assistants are gendered as young women, and are mostly 
+used to answer questions or carry out tasks like checking the weather, 
+playing music, or setting reminders. This sends a signal that women are 
+docile, eager-to-please helpers without any agency, always on hand to help 
+their masters, helping to reinforce harmful stereotypes.”
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a black square with a white border and a black background
+
+[IMAGE CAPTION] a close up of a sign with a woman in a black dress
+
+[PAGE 30]
+Logo of the University of Passau
+Challenges of AI-Enabled 
+Engagement and Human-Like AI
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+31
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed female robot with a blue jacket and a black top
+
+[PAGE 31]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+32
+Uncanny Valley 
+“I have noticed that, in climbing 
+toward the goal of making robots 
+appear human, our affinity for them 
+increases until we come to a valley, 
+which I call the uncanny valley.”
+Mori 1970
+Example: A robot that looks almost human 
+but certain features are not quite right
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] arafed female robot with a blue jacket and a black top
+
+[PAGE 32]
+Logo of the University of Passau
+•
+Mori (1970) proposed a nonlinear 
+relation between a character’s 
+degree of human-likeness and the 
+human perceiver’s emotional 
+response
+•
+The dip in emotional response 
+just before total human-likeness 
+is referred to as the uncanny valley
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+33
+Uncanny Valley Theory
+Mori 1970; Mone 2016
+Comfort level / emotional response
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] diagram of human and animal life cycle
+
+[PAGE 33]
+Logo of the University of Passau
+•
+Small deviations from humanness can 
+make a big difference
+•
+This not only includes visual cues or 
+physical appearance but also language 
+(e.g., computer-generated voices)
+•
+Businesses should stay out of the uncanny 
+valley
+•
+Researchers can explore and push the 
+boundaries of human-likeness
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+34
+Uncanny Valley: Scoping for the Right Goal
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a diagram of the human and the consumer
+
+[PAGE 34]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+35
+Ethical Questions
+How human should a 
+robot or avatar be?
+Should AI use social 
+cues to look and act 
+like a human?
+What happens when 
+we finally cross the 
+uncanny valley?
+Should people know 
+that they are 
+interacting with AI 
+instead of a human?
+Will artificial human-
+likeness endanger our 
+“real” humanness long 
+term?
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 35]
+Logo of the University of Passau
+“In 1950, Alan Turing proposed an “imitation game” as the ultimate test of 
+whether a machine was intelligent: could a machine imitate a human so well 
+that its answers to questions are indistinguishable from those of a human. 
+Ever since, creating intelligence that matches human intelligence has 
+implicitly or explicitly been the goal of thousands of researchers, engineers 
+and entrepreneurs. The benefits of human-like artificial intelligence 
+include soaring productivity, increased leisure, and perhaps most 
+profoundly, a better understanding of our own minds.”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+36
+Benefits of Human-Like AI
+https://digitaleconomy.stanford.edu/news/the-turing-trap-the-promise-peril-of-human-like-artificial-intelligence/
+
+[IMAGE CAPTION] the university of passau logo
+
+[PAGE 36]
+Logo of the University of Passau
+“Fundamentally, whatever human-likeness we create 
+on machines is not genuine humanness because it 
+lacks the physical characteristics of our body and the 
+self-awareness that only occur in our biology.”
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+37
+Risks of Human-Like AI
+Porra et al. 2020
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[PAGE 37]
+Logo of the University of Passau
+Your View on Human-Like AI
+Should AI be designed to resemble and 
+behave like humans? Why or why not? Should 
+there be any limitations or ethical boundaries, 
+and if so, what are the reasons for them? What 
+do you think are the long-term consequences 
+for humanity?
+→Discuss these questions with a partner for 
+~5 minutes and be ready to share your 
+opinions
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] three people with speech bubbles on their heads
+
+[PAGE 38]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+39
+Key Takeaways From This Lecture
+•
+Engagement describes the depth of interaction and 
+connection users have with a technology
+•
+Technologies with a human-like interface are more 
+engaging than other interfaces that perform the same 
+functions
+•
+AI can be used to provide highly human-like experiences 
+through social cues: physical appearance, natural 
+language, social roles, …
+•
+Social cues automatically trigger social responses from 
+humans and thereby influence human behavior
+•
+“Almost-human” AI can easily fall into the uncanny valley
+•
+There is an ongoing debate about whether or not AI 
+should be designed to resemble and behave like humans
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a close up of a check mark on a check mark on a white background
+
+[PAGE 39]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+40
+Thank you for 
+your attention!
+Any questions?
+
+[IMAGE CAPTION] the university of passau logo
+
+[IMAGE CAPTION] a cartoon robot with a yellow tail waving
+
+[PAGE 40]
+Logo of the University of Passau
+Prof. Dr. Ulrich Gnewuch
+Chair of Explainable AI-based Business Information Systems
+41
+References
+Araujo, T. (2018). Living up to the chatbot hype: The influence of anthropomorphic design cues and communicative agency framing on conversational agent and 
+company perceptions. Computers in Human Behavior, 85, 183–189.
+Benbya, H., Pachidi, S., & Jarvenpaa, S. L. (2021). Special Issue Editorial : Artificial Intelligence in Organizations : Implications for Information Systems Research. 
+Journal of the Association for Information Systems, 22, 281–303. 
+Burgoon JK, Guerrero L, Floyd K (2010) Nonverbal communication. Routledge, New York, NY, USA
+Fogg, B. J. (2002). Computers as Persuasive Social Actors. In Persuasive Technology: Using Computers to Change What We Think and Do (pp. 89–120). 
+Morgan Kaufmann Publishers.
+Kahn, W. A. (1990). Psychological conditions of personal engagement and disengagement at work. Academy of management journal, 33(4), 692-724.
+Lankton, N. K., McKnight, D. H., & Tripp, J. (2015). Technology, humanness, and trust: Rethinking trust in technology. Journal of the Association for Information 
+Systems, 16(10), 1.
+Lehrer, C., Constantiou, I., Matt, C., & Hess, T. (2023). How Ephemerality Features Affect User Engagement with Social Media Platforms. MIS Quarterly, 47(4).
+Mone, G. (2016). The edge of the uncanny. Communications of the ACM, 59(9), 17–19. 
+Mori, M. (1970). The uncanny valley. Energy, 7(4), 33–35.
+Nass, C., Steuer, J., & Tauber, E. R. (1994). Computers are social actors. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 
+72-78).
+Nass, C., Moon, Y., & Green, N. (1997). Are machines gender neutral? Gender-stereotypic responses to computers with voices. Journal of Applied Social 
+Psychology, 27(10), 864–876.
+Nass, C., & Moon, Y. (2000). Machines and mindlessness: Social responses to computers. Journal of Social Issues, 56(1), 81–103. 
+Porra, J., Lacity, M., & Parks, M. S. (2020). “Can Computer Based Human-Likeness Endanger Humanness?” – A Philosophical and Ethical Perspective on Digital 
+Assistants Expressing Feelings They Can’t Have”. Information Systems Frontiers, 22(3), 533–547. 
+Vivek, S. D., Beatty, S. E., & Morgan, R. M. (2012). Customer engagement: Exploring customer relationships beyond purchase. Journal of marketing theory and 
+practice, 20(2), 122-146.
+
+[IMAGE CAPTION] the university of passau logo

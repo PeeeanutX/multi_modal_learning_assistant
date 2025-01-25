@@ -51,11 +51,10 @@ def run_app():
         Page(
             page=scenario_page_with_llm,
             title="Real Case Practice",
-            icon="📝"
         ),
         Page(
             page=analytics_page,
-            title="Analytics", icon="📊",
+            title="Analytics",
         )
     ]
 

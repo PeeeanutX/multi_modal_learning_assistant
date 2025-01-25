@@ -31,6 +31,7 @@ def extract_pdf_content(pdf_path: str, texts_output_dir: str, images_output_dir:
 
     if page_texts:
         entire_pdf_text = "\n\n".join(page_texts)
+        os.makedirs(texts_output_dir, exist_ok=True)
         text_file_path = os.path.join(texts_output_dir, f"{base_pdf_name}.txt")
         with open(text_file_path, "w", encoding='utf-8') as f:
             f.write(entire_pdf_text)
