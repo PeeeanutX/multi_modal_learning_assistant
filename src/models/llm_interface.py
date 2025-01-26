@@ -6,6 +6,13 @@ from dataclasses import dataclass
 import torch.cuda
 from torch.nn import CrossEntropyLoss
 
+try:
+    import bitsandbytes as bnb
+    from transformers import BitsAndBytesConfig
+except ImportError:
+    bnb = None
+    BitsAndBytesConfig = None
+
 from langchain_openai import ChatOpenAI
 from langchain_huggingface.llms import HuggingFaceEndpoint
 from langchain_core.language_models import BaseLanguageModel
@@ -37,6 +44,11 @@ class LLMConfig:
     api_key: Optional[str] = None
     temperature: float = 0.7
     max_tokens: int = 512
+
+    load_in_4bit: bool = True
+    load_in_8bit: bool = False
+    device_map: Optional[str] = 'auto'
+    max_memory_per_gpu: Optional[str] = None
 
 
 class LLMInterface:
@@ -104,17 +116,49 @@ class LLMInterface:
 
     def _initialize_hf_model(self):
         """
-        Initialize a Hugging Face model and tokenizer for batch scoring.
-        This is only needed if provider='huggingface'.
+        Initialize a Hugging Face model and tokenizer for local inference & batch scoring.
+        This is only needed if provider='huggingface' and you want to do
+        local inference/logprob calculations.
         """
-        device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        model_name = self.config.model_name or 'tiiuae/falcon-7b'
+        if (self.config.load_in_4bit or self.config.load_in_8bit) and (bnb is None or BitsAndBytesConfig is None):
+            logger.warning(
+                "bitsandbytes is required for 4-bit or 8-bit loading, but it's not installed. "
+                "Falling back to standard FP16 or CPU-based loading."
+            )
+
+        model_name = self.config.model_name or 'meta-llama/Llama-2-70b-hf'
         logger.info(f"Loading Hugging Face model and tokenizer for scoring: {model_name}")
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(model_name)
-        self.model.to(device)
-        self.model.eval()
-        self.device = device
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
+
+        quant_config = None
+        if (self.config.load_in_4bit or self.config.load_in_8bit) and BitsAndBytesConfig is not None:
+            quant_config = BitsAndBytesConfig(
+                load_in_4bit=self.config.load_in_4bit,
+                load_in_8bit=self.config.load_in_8bit,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.float16
+            )
+
+        model_kwargs = {
+            "device_map": self.config.device_map if torch.cuda.is_available() else None,
+            "low_cpu_mem_usage": True,
+        }
+        if quant_config is not None:
+            model_kwargs["quantization_config"] = quant_config
+
+        if self.config.max_memory_per_gpu and torch.cuda.is_available():
+            num_gpus = torch.cuda.device_count()
+            max_mem = {}
+            for gpu_idx in range(num_gpus):
+                max_mem[str(gpu_idx)] = self.config.max_memory_per_gpu
+            model_kwargs["max_memory"] = max_mem
+
+        logger.info(
+            f"Loading Hugging Face model for scoring with the following parameters: {model_kwargs}"
+        )
+
+        self.model = AutoModelForCausalLM.from_pretrained(model_name, **model_kwargs)
 
         if self.tokenizer.pad_token is None:
             if self.tokenizer.eos_token is None:
@@ -122,6 +166,10 @@ class LLMInterface:
                 self.model.resize_token_embeddings(len(self.tokenizer))
             else:
                 self.tokenizer.pad_token = self.tokenizer.eos_token
+
+        self.model.eval()
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        logger.info(f"Local Hugging Face model loaded successfully on {self.device}.")
 
     def _initialize_chain(self):
         """
