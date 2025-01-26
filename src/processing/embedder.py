@@ -1,7 +1,7 @@
 import os
 import logging
-from typing import Optional
-from dataclasses import dataclass
+from typing import Optional, Dict
+from dataclasses import dataclass, field
 from langchain_openai import OpenAIEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_nvidia_ai_endpoints import NVIDIAEmbeddings
@@ -23,6 +23,7 @@ class EmbeddingsConfig:
     model_name: Optional[str] = "NV-Embed-QA"  # e.g., 'NV-Embed-QA' for NVIDIA
     api_key: Optional[str] = None
     device: Optional[str] = 'cpu'  # Device for HuggingFace embeddings
+    model_kwargs: Dict = field(default_factory=dict)
 
 
 class EmbeddingsFactory:

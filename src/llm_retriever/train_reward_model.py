@@ -28,9 +28,9 @@ class RewardTrainingConfig:
     input_path: str = "llm_scored_candidates.jsonl"
     output_dir: str = "./reward_model_checkpoint"
     model_name: str = "microsoft/deberta-v3-large"
-    max_length: int = 256
-    per_device_train_batch_size: int = 16
-    per_device_eval_batch_size: int = 16
+    max_length: int = 512
+    per_device_train_batch_size: int = 8
+    per_device_eval_batch_size: int = 8
     learning_rate: float = 3e-5
     num_train_epochs: int = 3
     warmup_ratio: float = 0.1
@@ -129,12 +129,12 @@ def main():
     parser = argparse.ArgumentParser(description="Train a reward model from LLM scored candidates")
     parser.add_argument('--input-path', default='src/ingestion/data/llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
     parser.add_argument('--output-dir', default='./reward_model_checkpoint', help='Where to save the trained model')
-    parser.add_argument('--model-name', default='bert-base-uncased', help='Base model name for reward model')
-    parser.add_argument('--max-length', type=int, default=256, help='Max sequence length')
+    parser.add_argument('--model-name', default='microsoft/deberta-v3-large', help='Base model name for reward model')
+    parser.add_argument('--max-length', type=int, default=512, help='Max sequence length')
     parser.add_argument('--learning-rate', type=float, default=3e-5, help='Learning rate')
     parser.add_argument('--num-train-epochs', type=int, default=3, help='Number of training epochs')
-    parser.add_argument('--per-device-train-batch-size', type=int, default=16, help='Train batch size')
-    parser.add_argument('--per-device-eval-batch-size', type=int, default=16, help='Eval batch size')
+    parser.add_argument('--per-device-train-batch-size', type=int, default=8, help='Train batch size')
+    parser.add_argument('--per-device-eval-batch-size', type=int, default=8, help='Eval batch size')
     parser.add_argument('--warmup-ratio', type=float, default=0.1, help='Warmup ratio')
     parser.add_argument('--weight-decay', type=float, default=0.01, help='Weight decay')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')

@@ -10,7 +10,6 @@ from typing import List, Dict, Tuple
 from dataclasses import dataclass, field
 
 import toml
-from dotenv import load_dotenv
 
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 if project_root not in sys.path:
@@ -20,8 +19,8 @@ from src.processing.vector_store import VectorStoreFactory,VectorStoreConfig
 from src.processing.embedder import EmbeddingsFactory, EmbeddingsConfig
 from src.retrieval.retriever import RetrieverConfig
 from langchain.schema import Document
+from langchain_huggingface import HuggingFaceEmbeddings
 
-load_dotenv()
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,9 +39,8 @@ class CandidateRetrievalConfig:
     queries_path: str
     output_path: str
     index_file: str
-    chunks_file: str
-    embeddings_provider: str = 'nvidia'
-    embeddings_model: str = 'NV-Embed-QA'
+    embeddings_provider: str = 'huggingface'
+    embeddings_model: str = 'jinaai/jina-embeddings-v3'
     top_k: int = 10
     doccache_file: str = ''
 
@@ -96,15 +94,14 @@ def retrieve_candidates(cfg: CandidateRetrievalConfig):
         sys.exit(1)
 
     logger.info(f"Loading FAISS index from {cfg.index_file} ...")
-    embeddings_config = EmbeddingsConfig(
-        provider=cfg.embeddings_provider,
-        model_name=cfg.embeddings_model
+    embeddings = HuggingFaceEmbeddings(
+        model_name="jinaai/jina-embeddings-v3",
+        model_kwargs={"trust_remote_code": True}
     )
-    embed_model = EmbeddingsFactory.get_embeddings_model(embeddings_config)
 
     vector_store_config = VectorStoreConfig(
         store_type='faiss',
-        embedding_model=embed_model,
+        embedding_model=embeddings,
         faiss_index_path=cfg.index_file
     )
     vectorstore = VectorStoreFactory.create_vector_store(vector_store_config, docs=[])
@@ -112,7 +109,7 @@ def retrieve_candidates(cfg: CandidateRetrievalConfig):
     results = []
     for q in queries:
         query_text = q['query']
-        query_emb = rate_limited_embed_query(embed_model, query_text)
+        query_emb = embeddings.embed_query(query_text)
         docs = vectorstore.similarity_search_by_vector(query_emb, k=cfg.top_k)
 
         candidates = []
@@ -199,9 +196,8 @@ def main():
     parser.add_argument('--queries-path', default='src/ingestion/data/queries.jsonl', help='Path to input queries file (JSONL)')
     parser.add_argument('--output-path', default='src/ingestion/data/initial_candidates.jsonl', help='Path to output file (JSONL or JSONL.GZ)')
     parser.add_argument('--index-file', default='src/ingestion/data/index.pkl', help='Path to FAISS index file')
-    parser.add_argument('--chunks-file', default='src/ingestion/data/chunks.pkl', help='Path to chunks.pkl file')
-    parser.add_argument('--embeddings-provider', default='nvidia', help='Embeddings provider: nvidia, openai, huggingface')
-    parser.add_argument('--embeddings-model', default='NV-Embed-QA', help='Embeddings model name')
+    parser.add_argument('--embeddings-provider', default='huggingface', help='Embeddings provider: nvidia, openai, huggingface')
+    parser.add_argument('--embeddings-model', default='jinaai/jina-embeddings-v3', help='Embeddings model name')
     parser.add_argument('--top-k', type=int, default=10, help='Number of candidates to retrieve')
     args = parser.parse_args()
 
@@ -209,7 +205,6 @@ def main():
         queries_path=args.queries_path,
         output_path=args.output_path,
         index_file=args.index_file,
-        chunks_file=args.chunks_file,
         embeddings_provider=args.embeddings_provider,
         embeddings_model=args.embeddings_model,
         top_k=args.top_k

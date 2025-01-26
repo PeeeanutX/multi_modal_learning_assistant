@@ -61,7 +61,7 @@ def build_vector_store(
 
     embeddings = HuggingFaceEmbeddings(
         model_name="jinaai/jina-embeddings-v3",
-        model_kwargs={"device":"cuda"}
+        model_kwargs={"device": "cuda"}
     )
 
     logger.info("Creating FAISS vectorstore from page docs...")
