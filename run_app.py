@@ -13,7 +13,7 @@ from src.pages.peer_qa_page import peer_qa_page
 from src.pages.scenario_practice_page import scenario_practice_page
 from src.pages.analytics_page import analytics_page
 from src.models.llm_interface import LLMInterface, LLMConfig
-from src.retrieval.retriever import DenseRetriever, RetrieverConfig
+from src.retrieval.retriever import VectorStoreRetriever, RetrieverConfig
 
 def run_app():
     llm_config = LLMConfig(
@@ -23,12 +23,10 @@ def run_app():
         max_tokens=512
     )
     retriever_cfg = RetrieverConfig(
-        dense_retriever_path="src/checkpoints/dense_retriever_checkpoint",
         faiss_index_path="src/ingestion/data/index.pkl",
         top_k=10,
-        use_gpu=True
     )
-    retriever = DenseRetriever(retriever_cfg)
+    retriever = VectorStoreRetriever(retriever_cfg)
     llm_interface = LLMInterface(config=llm_config, retriever=None)
 
     scenario_page_with_llm = partial(scenario_practice_page, llm_interface=llm_interface)
