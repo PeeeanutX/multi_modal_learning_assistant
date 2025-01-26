@@ -4,6 +4,8 @@ import json
 import logging
 import argparse
 import gzip
+import time
+import random
 from typing import List, Dict, Tuple
 from dataclasses import dataclass, field
 
@@ -25,6 +27,11 @@ logging.basicConfig(
     format='[%(asctime)s] [%(levelname)s] %(name)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+MAX_CALLS_PER_SECOND = 1
+time_per_call = 1.0 / MAX_CALLS_PER_SECOND
+
+last_call_time = 0
 
 
 @dataclass
@@ -143,6 +150,45 @@ def save_results(results: List[Dict], output_path: str):
         for r in results:
             f.write(json.dumps(r, ensure_ascii=False) + '\n')
     logger.info(f"Saved {len(results)} retrieval results to {output_path}")
+
+
+def embed_with_retry(embedding_model, text, max_retries=5, initial_wait=2):
+    """
+    Tries embedding the given text and handles 429 errors by sleeping and retrying.
+    """
+    for attempt in range(1, max_retries+1):
+        try:
+            return embedding_model.embed_query(text)
+        except Exception as e:
+            # Convert exception to string to check if it contains "429"
+            if "429" in str(e):
+                if attempt == max_retries:
+                    logger.error(f"Max retries ({max_retries}) exceeded for text: {text[:50]}")
+                    raise
+                sleep_time = initial_wait * (2 ** (attempt - 1)) + random.random()
+                logger.warning(
+                    f"Got 429 (Too Many Requests). "
+                    f"Retry attempt {attempt}/{max_retries}. Sleeping {sleep_time:.2f} seconds."
+                )
+                time.sleep(sleep_time)
+            else:
+                raise  # For other exceptions, re-raise immediately.
+
+    # Should never get here logically
+    return None
+
+
+def rate_limited_embed_query(model, text):
+    global last_call_time
+    now = time.time()
+    # If not enough time has passed since last call, wait
+    wait_time = time_per_call - (now - last_call_time)
+    if wait_time > 0:
+        time.sleep(wait_time)
+    last_call_time = time.time()
+
+    logger.info(f"Calling embed_query for text length {len(text)}")
+    return model.embed_query(text)
 
 
 def main():

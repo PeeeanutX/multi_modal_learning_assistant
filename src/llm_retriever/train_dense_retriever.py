@@ -30,13 +30,13 @@ logger = logging.getLogger(__name__)
 @dataclass
 class DenseRetrieverTrainingConfig:
     input_path: str = "src/ingestion/data/llm_scored_candidates.jsonl"
-    reward_model_path: str = "/content/multi_modal_learning_assistant/reward_model_checkpoint"
-    output_dir: str = "src/checkpoints2/dense_retriever_checkpoint"
-    query_model_name:  str = "bert-base-uncased"
-    doc_model_name: str = "bert-base-uncased"
+    reward_model_path: str = "src/checkpoints/reward_model_checkpoint"
+    output_dir: str = "src/checkpoints/dense_retriever_checkpoint"
+    query_model_name:  str = "microsoft/deberta-v3-large"
+    doc_model_name: str = "microsoft/deberta-v3-large"
     max_length: int = 128
-    per_device_train_batch_size: int = 16
-    per_device_eval_batch_size: int = 16
+    per_device_train_batch_size: int = 4
+    per_device_eval_batch_size: int = 4
     learning_rate: float = 3e-5
     num_train_epochs: int = 3
     warmup_ratio: float = 0.1
@@ -128,7 +128,7 @@ class DenseRetrieverModel(torch.nn.Module):
         self.query_encoder = AutoModel.from_pretrained(query_model_name)
         self.doc_encoder = AutoModel.from_pretrained(doc_model_name)
 
-    def forward(self, query_input_ids, query_attention_mask, doc_input_ids, doc_attention_mask):
+    def forward(self, query_input_ids, query_attention_mask, doc_input_ids, doc_attention_mask, **kwargs):
         B, M, L = doc_input_ids.shape
 
         doc_input_ids = doc_input_ids.view(B*M, L)
@@ -194,13 +194,13 @@ def main():
     parser.add_argument('--input-path', default='src/ingestion/data/llm_scored_candidates.jsonl', help='Path to LLM scored candidates')
     parser.add_argument('--reward-model-path', default='/content/multi_modal_learning_assistant/reward_model_checkpoint', help='Path to reward model')
     parser.add_argument('--output-dir', default='src/checkpoints/dense_retriever_checkpoint', help='Output directory')
-    parser.add_argument('--query-model-name', default='bert-base-uncased', help='Query encoder model name')
-    parser.add_argument('--doc-model-name', default='bert-base-uncased', help='Document encoder model name')
+    parser.add_argument('--query-model-name', default='microsoft/deberta-v3-large', help='Query encoder model name')
+    parser.add_argument('--doc-model-name', default='microsoft/deberta-v3-large', help='Document encoder model name')
     parser.add_argument('--max-length', type=int, default=128)
     parser.add_argument('--learning-rate', type=float, default=3e-5)
     parser.add_argument('--num-train-epochs', type=int, default=3)
-    parser.add_argument('--per-device-train-batch-size', type=int, default=16)
-    parser.add_argument('--per-device-eval-batch-size', type=int, default=16)
+    parser.add_argument('--per-device-train-batch-size', type=int, default=4)
+    parser.add_argument('--per-device-eval-batch-size', type=int, default=4)
     parser.add_argument('--warmup-ratio', type=float, default=0.1)
     parser.add_argument('--weight-decay', type=float, default=0.01)
     parser.add_argument('--seed', type=int, default=42)
@@ -278,6 +278,7 @@ def main():
         logging_dir=f"{args.output_dir}/logs",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
+        label_names=["scores"],
         greater_is_better=False,
         seed=args.seed,
         report_to="none",
