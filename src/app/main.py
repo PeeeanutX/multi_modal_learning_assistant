@@ -26,7 +26,7 @@ from src.app.quiz_manager import (
     show_micro_assessment_dialog
 )
 from src.app.recommendation_manager import show_adaptive_recommendation
-from src.retrieval.retriever import DenseRetriever, RetrieverConfig
+from src.retrieval.retriever import VectorStoreRetriever, RetrieverConfig
 from src.models.llm_interface import LLMInterface, LLMConfig
 from langchain.schema import HumanMessage, AIMessage
 
@@ -44,16 +44,14 @@ st.set_page_config(
 
 
 @st.cache_resource
-def get_dense_retriever():
-    dense_retriever_path = "src/checkpoints/dense_retriever_checkpoint"
+def get_retriever():
     faiss_index_path = "src/ingestion/data/index"
-    dr_config = RetrieverConfig(
-        dense_retriever_path=dense_retriever_path,
+    r_config = RetrieverConfig(
         faiss_index_path=faiss_index_path,
-        top_k=10,
-        use_gpu=True
+        top_k=10
     )
-    return DenseRetriever(dr_config)
+    retriever = VectorStoreRetriever(r_config)
+    return retriever
 
 
 @st.cache_resource
@@ -75,7 +73,7 @@ def assistant_page():
     build_header_section()
     handle_access_key()
 
-    retriever = get_dense_retriever()
+    retriever = get_retriever()
     llm_interface = get_llm_interface()
 
     with st.form("settings_form", clear_on_submit=False):
