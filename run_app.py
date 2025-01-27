@@ -8,12 +8,13 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
-from src.app.main import assistant_page
+from src.app.main import config_step
 from src.pages.peer_qa_page import peer_qa_page
 from src.pages.scenario_practice_page import scenario_practice_page
 from src.pages.analytics_page import analytics_page
 from src.models.llm_interface import LLMInterface, LLMConfig
 from src.retrieval.retriever import VectorStoreRetriever, RetrieverConfig
+
 
 def run_app():
     llm_config = LLMConfig(
@@ -34,7 +35,7 @@ def run_app():
 
     pages = [
         Page(
-            page=assistant_page,
+            page=config_step,
             title="Learning Assistant",
             icon=":material/android:",
             url_path="assistant",

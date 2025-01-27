@@ -2,7 +2,7 @@ import json
 import random
 import streamlit as st
 from typing import Dict, Any, Optional
-
+from ui_components import show_conversation
 
 from langchain.schema import HumanMessage
 from src.models.llm_interface import LLMInterface
@@ -87,6 +87,7 @@ def generate_quiz_with_llm(
             "correct_idx": 1
         }
 
+
 @st.dialog("Quick Knowledge Check!", width="large")
 def show_micro_assessment_dialog(llm_interface, skill_level: str):
     """
@@ -128,6 +129,8 @@ def show_micro_assessment_dialog(llm_interface, skill_level: str):
             st.error("That's not correct. Keep learning, you'll get it next time.")
             st.session_state.quiz_history.append({"question": question, "correct": False})
 
+        st.session_state['quiz_data'] = None
         st.session_state['queries_since_quiz'] = 0
         st.write("Thank you for participating!")
-        st.stop()
+
+        st.rerun()
