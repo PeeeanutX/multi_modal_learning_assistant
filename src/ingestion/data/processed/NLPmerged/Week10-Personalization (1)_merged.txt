@@ -1,0 +1,606 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+16 January 2025
+Information Retrieval &
+Natural Language Processing
+Week 10: Personalized search
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the cluster of excellence, the politics of inequality
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[PAGE 2]
+Universität Konstanz
+Today
+Part 1:
+Assessing relevance
+Part 2: 
+Personalized search, or: types of features used beyond core ranking
+2
+
+[PAGE 3]
+Universität Konstanz
+Assessing relevance
+Given information needs and documents, you need to collect relevance 
+assessments by humans. 
+Standard approach: Pooling, i.e., relevance is assessed over a subset of 
+the collection that is formed from the top k documents returned by a 
+number of different IR systems. 
+Humans and their relevance judgements are quite idiosyncratic and 
+variable →need to measure how much agreement between judges there 
+is. 
+3
+
+[PAGE 4]
+Universität Konstanz
+Kappa statistic
+Kappa = 𝑃𝐴−𝑃(𝐸)
+1 −𝑃(𝐸)
+P(A) is the observed agreement. 
+P(E) is the expected agreement. 
+Kappa = 1 if two judges always agree. 
+Kappa = 0 if two judges agree at the rate given by chance. 
+Kappa < 0 if two judges agree worse than at random. 
+In a two-class decision, P(E) = 0.5. But normally, class distribution is 
+skewed, therefore we use marginal statistics to calculate P(E). 
+4
+
+[PAGE 5]
+Universität Konstanz
+Kappa statistic
+Go through the example in the IRR book, p. 151.  
+Calculate P(A), P(relevant), P(non-relevant), P(E) and kappa. 
+5
+
+[IMAGE CAPTION] a table with a number of different numbers and a table with a number of different numbers
+
+[PAGE 6]
+Universität Konstanz
+User behavior
+See Fan Guo and Chao Liu’s 2009/2010 CIKM tutorial “Statistical models 
+for web search: Click log analysis”. 
+6
+Search 
+results for 
+CIKM (in 
+2009)
+# of clicks received
+
+[IMAGE CAPTION] a screenshot of a google search with a number of articles
+
+[IMAGE CAPTION] a close up of a bar chart with a number of people
+
+[PAGE 7]
+Universität Konstanz
+User behavior
+Adapt ranking to user clicks? But there is a strong position bias, so 
+absolute click rates are unreliable.  
+7
+# of clicks received
+
+[IMAGE CAPTION] a screenshot of a google search with a number of articles
+
+[IMAGE CAPTION] a close up of a bar chart with a number of people
+
+[PAGE 8]
+Universität Konstanz
+Click Position bias
+8
+Higher positions receive more 
+user attention (eye fixation) and 
+clicks than lower positions.
+This is true even in the extreme 
+setting where the order of 
+positions is reversed.
+“Clicks are informative but 
+biased”. (Joachims 2007)
+Normal Position
+Percentage
+Reversed Impression
+Percentage
+
+[IMAGE CAPTION] a bar chart showing the number of individuals in a population
+
+[IMAGE CAPTION] a bar chart showing the number of individuals in each of the following groups
+
+[PAGE 9]
+Universität Konstanz
+Eye-tracking user study
+See Fan Guo and Chao Liu’s 2009/2010 CIKM tutorial “Statistical models 
+for web search: Click log analysis”. 
+9
+
+[IMAGE CAPTION] a close up of a search page with a number of information
+
+[IMAGE CAPTION] a heat map of the state of texas with a red dot
+
+[IMAGE CAPTION] a close up of a pair of glasses with a black frame
+
+[PAGE 10]
+Universität Konstanz
+Relative versus absolute ratings
+10
+Hard to conclude: Result1 > Result3
+Probably can conclude Result3 > Result2
+User’s click
+sequence
+
+[IMAGE CAPTION] a screenshot of a google search with a number of articles
+
+[PAGE 11]
+Universität Konstanz
+A/B test 
+Common practice to test modern search engine systems.
+Two-sample hypothesis testing:
+•
+Two versions (A and B) of a system are compared, which are 
+identical except for one variation that might affect a user's behavior, 
+e.g., BM25 with different parameter settings
+•
+Randomized experiment
+•
+Separate the population into equal size groups – 10% random 
+users for system A and 10% random users for system B
+•
+Null hypothesis: no difference between system A and B
+11
+
+[PAGE 12]
+Universität Konstanz
+A/B test 
+Behavior-based metrics:
+•
+Abandonment Rate: fraction of queries for which no results are 
+clicked on
+•
+Reformulation Rate: fraction of queries that are followed by another 
+query during the same session
+•
+Queries per Session: mean number of queries issued by a user 
+during a session
+•
+Clicks per Query: mean number of results that are clicked for each 
+query
+•
+Time to First/Last Click: mean time from query being issued until last 
+click on any result
+12
+
+[PAGE 13]
+Universität Konstanz
+A/B test 
+13
+How do the metrics change as the ranking gets worse?
+•
+Abandonment Rate
+•
+Reformulation Rate
+•
+Queries per Session
+•
+Clicks per Query
+•
+Time to First/Last Click
+
+[PAGE 14]
+Universität Konstanz
+Search in context
+Queries are difficult to interpret in isolation. 
+Easier if we model: who is asking, what have they done in the past, where
+are they, what time is it, etc. 
+14
+CL
+CL
+
+[IMAGE CAPTION] google search console with a red button and a white button
+
+[IMAGE CAPTION] a close up of a man in a white shirt on a field
+
+[IMAGE CAPTION] the uefa champions league logo on a blue background
+
+[IMAGE CAPTION] association for computational linguistics logo
+
+[IMAGE CAPTION] a black and white photo of a woman with glasses and a black shirt
+
+[PAGE 15]
+Universität Konstanz
+Search in context
+Queries are difficult to interpret in insolation. 
+Easier if we model: who is asking, what have they done in the past, where
+are they, when is it, etc. 
+Searcher: 
+(CL | world’s best soccer player 2022) versus (CL | computational linguist)
+15
+
+[IMAGE CAPTION] google search console with a red button and a white button
+
+[PAGE 16]
+Universität Konstanz
+Search in context
+Queries are difficult to interpret in insolation. 
+Easier if we model: who is asking, what have they done in the past, where
+are they, when is it, etc. 
+Previous actions: 
+(CL | Champions League) versus (CL | computational linguists)
+16
+
+[IMAGE CAPTION] google search console with a red button and a white button
+
+[PAGE 17]
+Universität Konstanz
+Search in context
+Queries are difficult to interpret in insolation. 
+Easier if we model: who is asking, what have they done in the past, where
+are they, when is it, etc. 
+Location: 
+(CL | at Champions League final) versus. (CL | at ACL conference)
+17
+
+[IMAGE CAPTION] google search console with a red button and a white button
+
+[PAGE 18]
+Universität Konstanz
+Search in context
+Queries are difficult to interpret in insolation. 
+Easier if we model: who is asking, what have they done in the past, where
+are they, when is it, etc. 
+Time:
+(CL | December submission) versus. (CL | August conference)
+18
+
+[IMAGE CAPTION] google search console with a red button and a white button
+
+[PAGE 19]
+Universität Konstanz
+Personalization
+Using a single ranking for everyone, in every context, at every point in time, 
+limits how well a search engine can do. 
+→Enhance the performance of the search engine by using
+•
+core ranking
+•
+personalization
+19
+
+[PAGE 20]
+Universität Konstanz
+Potential for personalization
+Teevan, Dumais, Horvitz 2010:
+Aim: Quantify the variation in relevance for the same query across different 
+individuals. 
+Explicit judgements from different people:
+•
+ask raters to explicitly rate a set of queries
+•
+but rather than asking them to guess what a user’s information need 
+might be …
+•
+... ask which results they would personally consider relevant
+•
+use self-generated and pre-generated queries
+20
+
+[PAGE 21]
+Universität Konstanz
+Recap: Discounted cumulative gain
+Popular measure for evaluating web search and related tasks. 
+Two assumptions:
+1.
+Highly relevant documents are more useful than marginally relevant 
+documents. 
+2.
+The lower the ranked position of a relevant document, the less 
+useful it is for the user, since it’s less likely to be examined. 
+Focus on retrieving highly relevant documents. 
+21
+
+[PAGE 22]
+Universität Konstanz
+Recap: Discounted cumulative gain
+22
+Designed for non-binary notions of relevance. 
+Uses graded relevance as a measure of usefulness, or gain, from 
+examining a document. 
+Gain is accumulated starting at the top of the ranking and may be reduced, 
+or discounted, at lower ranks.
+
+[PAGE 23]
+Universität Konstanz
+Recap: Discounted cumulative gain
+23
+Summarize a ranking:
+•
+Imagine the relevance judgements are on a scale of [0, r], with r > 2. 
+•
+Cumulative gain (CG) at rank n
+•
+The ratings of the n documents are r1, r2, r3, …, rn
+•
+CG = r1 + r2  + r3 + … + rn
+•
+Discounted Cumulative Gain (DCG) at rank n
+•
+DCG = r1 + r2 /log22 + r3/log23 + … + rn/log2i
+or
+
+[IMAGE CAPTION] a black and white photo of a sign that says dog
+
+[PAGE 24]
+Universität Konstanz
+Recap: Discounted cumulative gain
+24
+Example:
+There are 10 ranked documents judged on a 0-3 relevance scale:
+3, 2, 3, 0, 0, 1, 2, 2, 3, 0
+Compute the discounted gain and the DCG for all ranks (logarithm with 
+base 2).
+
+[PAGE 25]
+Universität Konstanz
+Normalized discounted cumulative gain
+25
+Normalize with DCGideal, the ideal ranking of the results. 
+•
+sort the results in decreasing order of relevance
+•
+calculate DCG for that ranking
+•
+NDCG = DCGn / DCGideal
+Original ranking: 3, 2, 3, 0, 0, 1, 2, 2, 3, 0
+Ideal ranking: 3, 3, 3, 2, 2, 2, 1, 0, 0, 0
+→DCGideal = 
+, NDCG =
+
+[PAGE 26]
+Universität Konstanz
+Potential for personalization
+26
+Teevan, Dumais, Horvitz 2010
+
+[IMAGE CAPTION] a line graph shows the number of people in groups
+
+[PAGE 27]
+Universität Konstanz
+Some literature on personalization
+Liu et al. 2019. Personalization in text information retrieval: A survey. 
+Journal of the Association for Information Science and Technology. 
+“Personalization is aimed at tailoring search toward individual users and 
+user groups by taking into account additional information about users 
+besides their queries.” 
+Started about 10-15 years ago, rich effort in industry and academia. 
+27
+
+[PAGE 28]
+Universität Konstanz
+User models
+Part A: Constructing user models
+•
+sources of evidence: 
+•
+content: queries, web pages, explicit profile, etc.
+•
+behavior: explicit feedback, implicit feedback, visited web pages etc.
+•
+context: location, date, time (of day/week/month), device etc.
+•
+time frame: short-term, long-term
+•
+who: individual, group
+Part B: Using user models
+•
+reside where: client, server
+•
+how used: reranking, query expansion/suggestion
+•
+when used: always, sometimes, context learned
+28
+
+[PAGE 29]
+Universität Konstanz
+User models
+Part A: Constructing user models
+•
+sources of evidence: 
+•
+content: queries, web pages, explicit profile, etc.
+•
+behavior: explicit feedback, implicit feedback, visited web pages etc.
+•
+context: location, date, time (of day/week/month), device etc.
+•
+time frame: short-term, long-term
+•
+who: individual, group
+Part B: Using user models
+•
+reside where: client, server
+•
+how used: reranking, query expansion/suggestion
+•
+when used: always, sometimes, context learned
+29
+
+[PAGE 30]
+Universität Konstanz
+Personalizing search
+Pitkow et al. 2002: Two general ways of personalizing search
+Query expansion:
+•
+modify or augment user query
+•
+e.g., query term “IR” can be augmented with either “information 
+retrieval” or “Ingersoll-Rand” depending on user interest
+•
+ensures that there are enough personalized results
+Reranking:
+•
+issue the same query and fetch the same results …
+•
+… but rerank the results based on a user profile
+•
+allows both personalized and globally relevant results
+30
+
+[PAGE 31]
+Universität Konstanz
+Personalizing search
+Teevan, Dumais and Horvitz 2005:
+31
+Query (expansion)
+Search
+Engine
+Personalized 
+reranking
+Results
+User model
+(source of relevant
+documents)
+Personalized
+Results
+
+[IMAGE CAPTION] a silhouette of a man sitting at a desk with a computer
+
+[IMAGE CAPTION] a close up of a fire hydrant with a black background
+
+[IMAGE CAPTION] a close up of a silver metal object on a black background
+
+[IMAGE CAPTION] a close up of a black and white photo of a roll of toilet paper
+
+[IMAGE CAPTION] a gray cloud with a black background
+
+[IMAGE CAPTION] a black and white photo of a computer screen with the words ' s end zone
+
+[IMAGE CAPTION] a gray square with a black border on a black background
+
+[IMAGE CAPTION] a black and white photo of a black and white text reading, ' bedtimes and gaming '
+
+[IMAGE CAPTION] a close up of a metal bolt on a black background
+
+[IMAGE CAPTION] a black and white photo of a square frame with a black background
+
+[IMAGE CAPTION] a close up of a fire hydrant with a black background
+
+[PAGE 32]
+Universität Konstanz
+Personalization via location
+User location is one of the most important features for personalization. 
+•
+country:
+•
+queries like ‘football’ and ‘biscuit’ in the UK versus the US
+•
+state/metro/city:
+•
+queries like ‘zoo’, ‘craigslist’, ‘Ebay Kleinanzeigen’
+•
+fine-grained location:
+•
+queries like ‘pizza’, ‘restaurant’, ‘coffee shop’ 
+32
+
+[PAGE 33]
+Universität Konstanz
+Personalization via location
+Not all queries are location sensitive:
+•
+‘facebook’ is not asking for the closest Facebook office
+•
+‘national park’ is not necessarily asking for the closest national park
+Different parts of a site may be more or less location sensitive
+•
+NYTimes home page vs NYTimes local section
+Addresses on a page don’t always tell us how location sensitive the page is
+•
+University of Passau home page has address, but is not location 
+sensitive.
+33
+
+[PAGE 34]
+Universität Konstanz
+Key idea in Bennett et al. 2011. 
+Usage statistics, rather than locations mentioned in a document, best 
+represent where it is relevant.
+→if users in a location tend to click on that document, then it is relevant in 
+that location
+User location data is acquired from anonymized logs (with user consent, 
+e.g., from a widely distributed browser extension). 
+→user IP addresses are resolved into geographic location information
+Personalization via location
+34
+
+[PAGE 35]
+Universität Konstanz
+Location interest model
+Use the logs data to estimate the probability of the location of the user 
+given they viewed this URL: P(location = x | URL) 
+→model of the locations in which a website is likely of interest. 
+35
+
+[IMAGE CAPTION] a map of the united states with a red dot indicating the location of los angeless times reviews and recommendationss
+
+[PAGE 36]
+Universität Konstanz
+Location interest model
+Use the logs data to estimate the probability of the location of the user 
+given they viewed this URL: P(location = x | URL) 
+→model of the locations in which a website is likely of interest. 
+36
+
+[IMAGE CAPTION] a map of the united states with a red map of the states
+
+[PAGE 37]
+Universität Konstanz
+Location interest model
+Topics in URLs with high P(location | URL) URLs. 
+37
+
+[IMAGE CAPTION] arafed graph of the percentage of news and newspapers that are currently on the internet
+
+[PAGE 38]
+Universität Konstanz
+Issues with personalization
+Resistance to over-personalization. Creepy!
+https://constructor.io/blog/when-personalization-goes-wrong-and-how-to-fix-it/
+Concerns about personal data tracking.
+•
+intensive tracking of browser habits
+•
+tracking of personal information
+•
+storing that information 
+38
+
+[IMAGE CAPTION] a close up of a person ' s twitter post with a picture of a man
+
+[PAGE 39]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the center of excellence for the politics of inequality

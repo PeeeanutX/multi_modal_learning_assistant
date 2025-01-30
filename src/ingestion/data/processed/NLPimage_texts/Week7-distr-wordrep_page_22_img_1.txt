@@ -1,0 +1,1 @@
+a graph that shows the number of people in a data system

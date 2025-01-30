@@ -79,8 +79,8 @@ def load_pages_as_documents(file_path: str) -> List[Document]:
 
 
 def build_vector_store(
-        merged_dir="src/ingestion/data/processed/merged",
-        faiss_index_path="src/ingestion/data/index"
+        merged_dir="src/ingestion/data/processed/NLPmerged",
+        faiss_index_path="src/ingestion/data/NLPindex"
 ):
     """
     1) For each merged .txt in merged_dir, parse it into page_level Documents.

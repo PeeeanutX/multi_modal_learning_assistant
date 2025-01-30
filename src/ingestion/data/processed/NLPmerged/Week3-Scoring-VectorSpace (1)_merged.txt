@@ -1,0 +1,735 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+14 November 2024
+Information Retrieval &
+Natural Language Processing
+Week 3: Scoring & vector space models
+
+[IMAGE CAPTION] a close up of a circle with many different colored dots
+
+[IMAGE CAPTION] the logo for the cluster of excellence, the politics of inequality
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the science transfer center
+
+[PAGE 2]
+Universität Konstanz
+Information Retrieval (IR): Today
+2
+(IIR): Manning, Raghavan and Schütze, Introduction to IR, 2008
+Chapter 6: Scoring, term weighting and the vector space model
+
+[PAGE 3]
+Universität Konstanz
+The classic search model
+3
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Today
+
+[IMAGE CAPTION] a black and white photo of a checkered pattern with a gray background
+
+[PAGE 4]
+Universität Konstanz
+From Boolean to ranked retrieval
+4
+So far: Boolean queries →Documents either match or don’t. 
+Good for
+•
+expert users (precise understanding of the need and collection)
+•
+applications (easy consumption of 1000s of results)
+Not good for
+•
+most users (unwilling/incapable to write Boolean queries)
+•
+web search
+Search engine: rank-order the documents matching a query.
+
+[PAGE 5]
+Universität Konstanz
+Ranked retrieval
+5
+The system returns an ordering of the top documents in the collection. 
+Typically, free text queries: more than one word in natural language (no 
+operators etc.)
+→If search algorithm works, large sets are not a problem anymore (or at 
+least, should not be): 
+•
+rank result according to usefulness to the user
+•
+only top k results are shown
+
+[PAGE 6]
+Universität Konstanz
+Ranked retrieval
+So far: Document = sequence of terms
+But: Most documents have additional structure. 
+One option: Parametric and zone indexes – they make use of this 
+additional structure.
+6
+
+[PAGE 7]
+Universität Konstanz
+The parametric index
+7
+A parametric index is an index that allows retrieval of documents based on 
+the values of parameters. It serves as an extension of the collection’s word 
+index.
+
+[IMAGE CAPTION] a screenshot of a person holding a cell phone in front of a computer screen
+
+[PAGE 8]
+Universität Konstanz
+The parametric index
+Make use of metadata associated with each document. 
+Fields, e.g. date of creation, with a (finite) set of possible values, e.g. the 
+set of all dates of authorship. 
+Each field has one parametric index. 
+Date of publication index:  
+1601 
+→1   →2
+1602 
+→3   →4
+1932 
+→5   →6
+Allows us to to select only the documents matching a data specified in the 
+query. 
+8
+
+[PAGE 9]
+Universität Konstanz
+Zone indexes
+Zones are similar to fields, except the contents of a zone can be arbitrary 
+free text. They are encoded as extensions of dictionary entries. 
+9
+
+[IMAGE CAPTION] a diagram of a number of different types of lines
+
+[PAGE 10]
+Universität Konstanz
+Ranked retrieval without zones
+10
+The system returns an ordering over the top documents in the collection for 
+a query. 
+Queries without any operators, formulated in natural language. 
+Scoring is the basis of ranked retrieval:
+•
+assign a score to a query/document pair, based on the weight of the 
+query in the document. 
+•
+aka: the higher the score, the more relevant the document is to the 
+query.
+
+[PAGE 11]
+Universität Konstanz
+A first take at ranking…
+11
+Using the Jaccard coefficient
+Measuring the similarity of two sets A (the query) and B (the document) with 
+a number between 0 and 1. 
+J(A, B) = | A ⋂B | / | A ⋃B| 
+J(A, A) = 1
+J(A, B) = 0 if A ⋂B = 0
+A and B do not have to have the same size.
+
+[PAGE 12]
+Universität Konstanz
+A first take at ranking…
+12
+Using the Jaccard coefficient
+What is the query-document Jaccard score for each of the two documents 
+below?
+Query = ‘ides of march’
+doc1 = ‘caesar died in march’
+doc2 = ‘the long march’
+What are the issues?
+
+[PAGE 13]
+Universität Konstanz
+Recall: Term-document incidence matrix
+13
+Possibility 1: Each document is represented as a binary vector [0, 1] →
+binary matrix.
+The Hitch-
+hiker’s 
+Guide to 
+the Galaxy
+The 
+Restau-
+rant at 
+the End 
+of the 
+Universe
+Life, the 
+Universe 
+and 
+Every-
+thing
+So Long, 
+and 
+Thanks 
+for all the 
+Fish
+Mostly 
+Harmless
+And 
+Another 
+Thing...
+Arthur
+1
+1
+0
+0
+0
+1
+Ford
+1
+1
+0
+1
+0
+0
+Zaphod
+1
+1
+0
+1
+1
+1
+Trillian
+0
+1
+0
+0
+0
+0
+Cleopatra
+1
+0
+0
+0
+0
+0
+Marvin
+1
+0
+1
+1
+1
+1
+Random
+1
+0
+1
+1
+1
+0
+
+[PAGE 14]
+Universität Konstanz
+Recall: Term-document incidence matrix
+14
+Possibility 2: Number of term occurrences in a document (count vectors are 
+columns in the table) →count matrix.
+The Hitch-
+hiker’s 
+Guide to 
+the Galaxy
+The 
+Restau-
+rant at 
+the End 
+of the 
+Universe
+Life, the 
+Universe 
+and 
+Every-
+thing
+So Long, 
+and 
+Thanks 
+for all the 
+Fish
+Mostly 
+Harmless
+And 
+Another 
+Thing...
+Arthur
+157
+73
+0
+0
+0
+5
+Ford
+4
+157
+0
+1
+0
+0
+Zaphod
+232
+227
+0
+2
+1
+1
+Trillian
+0
+10
+0
+0
+0
+0
+Cleopatra
+57
+0
+0
+0
+0
+0
+Marvin
+2
+0
+3
+5
+5
+1
+Random
+2
+0
+1
+1
+1
+0
+
+[PAGE 15]
+Universität Konstanz
+Term frequency
+Term frequency tft,d of term t in document d is the number of times that t 
+occurs in d. 
+But: absolute frequencies are not what we want. 
+•
+Not all terms are equally important. 
+•
+A document with 10 occurrences is more relevant than a document 
+with one occurrence. 
+•
+But not 10 times more relevant. 
+Relevance does not increase proportionally with term frequency. 
+→Reduce the effect of term frequency in determining relevant docs. 
+15
+
+[PAGE 16]
+Universität Konstanz
+Term frequency
+Choose log-frequency weighting of term t in document d.
+1 + log10 tft,d
+if tft,d > 0
+wt,d =
+0
+otherwise
+(tf = 0 →w = 0; tf = 1 →w = 1; tf = 2 →w = 1,3; tf = 1000 →w = 4)
+16
+
+[PAGE 17]
+Universität Konstanz
+Term frequency
+Score for a document-query pair: sum over terms t in both query and 
+document. 
+score(q,d)
+Example:  
+q = ‘ides of march’, d1 = ‘caesar died in march’, d2 = ‘the long march’
+What is score(q,d1) and score(q,d2)?
+17
+
+
+
++
+=
+d
+q
+t
+d
+t )
+ tf
+log
+ 
+ 
+(1
+,
+
+[PAGE 18]
+Universität Konstanz
+Term frequency
+18
+Occurrence of each term (`term frequency’) is central.
+E.g., John is quicker than Mary has the same vector as Mary is quicker 
+than John. 
+But the assumption is: two documents with similar bag of words 
+representations are similar in content.
+
+[PAGE 19]
+Universität Konstanz
+Collection frequency versus document frequency
+We need to scale down the weight of tf in determining relevant documents. 
+In other words, we need a weight for each term in the document which 
+reflects how much this term helps in distinguishing a document from all 
+other documents in the collection.
+Two possibilities: 
+•
+Collection frequency (cf): the total number of occurrences of term t in the 
+collection. 
+•
+Document frequency (df): the number of documents in the collection that 
+contain a term t. 
+19
+
+[PAGE 20]
+Universität Konstanz
+Collection frequency versus document frequency
+Example:
+Should we prefer collection frequency (cf) or document frequency (df)? 
+Why?
+20
+word
+cf
+df
+try
+10422
+8760
+insurance
+10440
+3997
+
+[PAGE 21]
+Universität Konstanz
+Inverse document frequency (idf)
+21
+Document frequency dft is an inverse measure of the informativeness of t 
+→the higher the document frequency (df), the lower the informativeness of 
+term t. 
+idft = log10 (N
+dft)
+N is the number of documents in the collection.
+Log (N
+dft) reduces the effect of the idf weight on the overall term weight.
+
+[PAGE 22]
+Universität Konstanz
+Inverse document frequency (idf)
+22
+Example: N = 1 Million, idft = log10 (N
+dft)
+term
+dft
+idft
+Calpurnia
+1
+6
+animal
+100
+4
+Sunday
+1.000
+3
+fly
+10.000
+2
+under
+100.000
+1
+the
+1.000.000
+0
+
+[PAGE 23]
+Universität Konstanz
+tf-idf
+23
+TF-IDF (term frequency - inverse document frequency) 
+tf-idft,d = tft,d x idft
+Best-know weighting scheme in information retrieval
+•
+the “-” in tf-idf is a hyphen, not a minus sign!
+•
+alternative names: tf.idf, tf x idf
+•
+increases with the number of occurrences within a document
+•
+increases with the rarity of the term in the collection
+
+[PAGE 24]
+Universität Konstanz
+tf-idf
+24
+In other words…
+•
+term frequency: how many times a term occurs in a document. 
+(Assumption: a document containing many times a given word, is likely 
+to be about that word) 
+•
+inverse document frequency: how many documents in the collection 
+contain a term. (Assumption: if a term occurs in many documents, it is 
+not very discriminative.) 
+A survey conducted by Breitinger et al. in 2015 shows that 83% of text-
+based recommender systems in digital libraries use tf–idf.
+
+[PAGE 25]
+Universität Konstanz
+Score for a document given a query
+25
+score(q,d) = σ𝑡∈𝑞tf−idft,d
+The sum of tf-idf weights for all terms in the query q that are matching in  
+document d. 
+Different weighting schemes for tf and idf available. We use here: 
+wt,d = (1 + log10 tft,d) x log10 (N
+dft)
+
+[PAGE 26]
+Universität Konstanz
+Term-document weight matrix
+26
+Possibility 3: Each document is represented by a real-valued vector of tf-idf
+weights →weight matrix
+The Hitch-
+hiker’s 
+Guide to 
+the Galaxy
+The 
+Restau-
+rant at 
+the End 
+of the 
+Universe
+Life, the 
+Universe 
+and 
+Every-
+thing
+So Long, 
+and 
+Thanks 
+for all the 
+Fish
+Mostly 
+Harmless
+And 
+Another 
+Thing...
+Arthur
+5.25
+3.18
+0
+0
+0
+0.35
+Ford
+1.21
+6.1
+0
+1
+0
+0
+Zaphod
+8.59
+2.54
+0
+1.51
+0.25
+0.35
+Trillian
+0
+1.54
+0
+0
+0
+0
+Cleopatra
+2.85
+0
+0
+0
+0
+0
+Marvin
+1.51
+0
+1.9
+0.12
+5.25
+0.88
+Random
+1.37
+0
+0.11
+4.15
+0.25
+0
+
+[PAGE 27]
+Universität Konstanz
+This is a vector (𝑉(z)) defined over the coordinate axes x and y. 
+In IR, vectors are used to represent terms and documents. 
+Each document is a vector defined over co-ordinate axes; the co-ordinate 
+axes are the terms contained in the document. 
+High-dimensional: tens of millions of dimensions when you apply this to a 
+web search engine (but: very sparse vectors - most entries are zero).
+Terms and documents as vectors
+27
+
+[IMAGE CAPTION] a diagram of a straight line with a slope and a point at the end
+
+[PAGE 28]
+Universität Konstanz
+𝑉(d1) = (t1, t2, t3, t4)
+𝑉(d2) = (t1, t2, t3, t4)
+•
+the vector value is derived from the term weights, e.g., the tf-idf weights
+•
+the same term may receive different weights in different documents 
+→Comparing documents and the query by comparing their vectors. 
+Standard mathematics: vector cosine similarity
+Documents as vectors
+28
+
+[PAGE 29]
+Universität Konstanz
+Documents as vectors
+29
+tf-idf weights are used to characterize the documents. 
+The denominator normalizes vectors of different lengths →allows us to 
+compare documents of different lengths.
+
+[IMAGE CAPTION] a black and white image of a number of different types of numbers
+
+[PAGE 30]
+Universität Konstanz
+Vector space proximity
+30
+Why normalizing for length?
+Euclidean distance is large for vectors of different length.
+
+[IMAGE CAPTION] a diagram of a straight line with a slope and a line with a slope
+
+[PAGE 31]
+Universität Konstanz
+Length normalization
+31
+A vector is normalized by dividing each of its components by its length. 
+(𝑉(x)) = [ 3 1 2] 
+|x| = 9 + 1 + 4 = 3,724
+→Long and short documents now have comparable weights
+
+=
+i ix
+x
+2
+2
+
+
+[IMAGE CAPTION] a graphing line with a slope of 3, 2 and a point on the line
+
+[PAGE 32]
+Universität Konstanz
+Length normalization
+32
+For length-normalized vectors, the cosine similarity is simply the dot 
+product. 
+Find more like this feature in 
+search engines.
+
+[IMAGE CAPTION] a diagram of a square with a point and a line that is perpendicular to the point
+
+[PAGE 33]
+Universität Konstanz
+Instead of comparing 𝑉(d1) to 𝑉(d2), we can compare 𝑉(d) to 𝑉(q), where 
+𝑉(d) is every document in our index, and 𝑉(q) is a query. 
+Given a query q, all the documents in the collection can be ranked 
+according to their similarity score sim(q,d). The higher the similarity, the 
+more relevant the document to the query. 
+Queries as vectors
+33
+
+[IMAGE CAPTION] a black and white image of a formula for a variable variable
+
+[PAGE 34]
+Universität Konstanz
+Example
+34
+Compute the cosine similarities between the three documents. 
+For simplification: Only use tft,d with log-frequency weighting. 
+term
+d1
+d2
+d3
+Arthur
+115
+58
+20
+Ford
+10
+7
+11
+Zaphod
+2
+0
+6
+Trillian
+0
+0
+38
+
+[PAGE 35]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.
+
+[IMAGE CAPTION] a close up of a circle with many different colored dots
+
+[IMAGE CAPTION] the logo for the science transfer center
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the center of excellence for the politics of inequality

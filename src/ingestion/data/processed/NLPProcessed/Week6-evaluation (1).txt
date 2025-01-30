@@ -1,0 +1,610 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+5 December 2024
+Information Retrieval &
+Natural Language Processing
+Week 6: Evaluation in IR
+
+[PAGE 2]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+2
+When?
+What?
+Week 1
+17 October 2024
+Introduction
+Week 2
+24 October 2024
+Indexing, Boolean IR
+Week 3
+31 October 2024
+--
+Week 4
+7 November 2024
+--
+Week 5
+14 November 2024
+Scoring, term weighting, the vector space 
+model
+Week 6
+21 November 2024
+Relevance and probabilistic IR
+Week 7
+28 November 2024
+Tolerant retrieval and index compression
+Week 8
+5 December 2024
+Evaluation in IR
+Week 9
+12 December 2024
+Distributed word representations for IR
+
+[PAGE 3]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+3
+When?
+What?
+Week 10
+19 December 2024
+Natural Language Processing
+Week 11
+9 January 2025
+NLP with Python
+Week 12
+16 January 2025
+Personalization in IR systems
+Week 13
+23 January 2025
+AI & ethics
+Week 14
+30 January 2025
+Recap
+Week 15
+6 February 2025
+No class (conference trip)
+(also on stud.IP)
+Registration to exam now possible!
+
+[PAGE 4]
+Universität Konstanz
+Information Retrieval (IR): Today
+4
+(IIR): Manning, Raghavan and Schütze, Introduction to IR, 2008
+Chapter 8: Evaluation in information retrieval
+
+[PAGE 5]
+Universität Konstanz
+The classic search model
+5
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Week 5
+
+[PAGE 6]
+Universität Konstanz
+How can you tell if users are happy?
+6
+Search returns products relevant to users. But how do you assess this at 
+scale?
+Search results get clicked a lot
+•
+Misleading titles/summaries can cause users to click.
+•
+Vaguely relevant documents, user browses. 
+Users buy after using the search engine (or spend a lot of money after 
+using the search engine)
+Repeat visitors/buyers
+•
+Do they leave soon after searching?
+•
+Do they come back within a week/month/…?
+
+[PAGE 7]
+Universität Konstanz
+Happiness: elusive to measure
+7
+Most common proxy: relevance of search results. 
+Pioneer: Cyril Cleverdon in the Cranfield experiments.
+How exactly do we measure relevance?
+
+[PAGE 8]
+Universität Konstanz
+Measuring relevance
+8
+Three elements: 
+•
+A benchmark document collection. 
+•
+A benchmark suite of queries.
+•
+An assessment of either ‘relevant’ or ‘non-relevant’ for each query 
+and each document.
+
+[PAGE 9]
+Universität Konstanz
+Measuring relevance
+9
+In the case of an online retailer:
+•
+Benchmark documents: the retailer’s products
+•
+Benchmark query suite: more on this
+•
+Judgements of document relevance for each query
+5 million retailer products
+50k
+sample 
+queries
+
+[PAGE 10]
+Universität Konstanz
+Relevance judgements
+10
+Binary (relevant versus non-relevant) in the simplest case. More nuanced 
+relevance levels are also used. 
+What are some issues already?
+The online retailer: 5 million product x 50k queries takes us into a range of 
+a quarter trillion judgements. 
+•
+If each judgment took a human 2.5 seconds, we’d still need 1011
+seconds, or nearly $300 million if you pay people $10 per hour to 
+assess
+•
+10K new products per day
+
+[PAGE 11]
+Universität Konstanz
+Relevance judgements
+11
+Crowdsource them?
+Present query-document pairs to low-cost labor on online crowdsourcing 
+platforms (Amazon Mechanical Turk, Prolific). 
+Let’s hope that it is cheaper!
+A lot of literature on using crowdsourcing for such tasks. 
+In general: fairly good signal, but the variance in the judgements is quite 
+high.
+
+[PAGE 12]
+Universität Konstanz
+What else?
+Still need test queries
+•
+must be connected in a significant way to the available documents
+•
+must be representative of actual user needs
+•
+random query terms from the documents are not a good idea
+•
+sample from query logs if available
+Classically (no-web IR systems):
+•
+low query rates – not enough query logs
+•
+experts manually craft information needs and queries
+12
+
+[PAGE 13]
+Universität Konstanz
+Standard benchmark datasets
+The Cranfield collection (pioneer): 1.398 journal articles, 225 queries 
+(relevance judgements of all query-document pairs). 
+TREC (Text Retrieval Conference): 1,89 million documents, relevance 
+judgement for 450 information needs (“topics”) on the top k documents of 
+some TREC evaluation. 
+GOV2:25-million web page collection
+CLEF (Cross Language Evaluation Forum): cross-language information 
+retrieval (query is in different language than the document)
+13
+
+[PAGE 14]
+Universität Konstanz
+Standard benchmark datasets
+The user need is translated into a query. 
+The relevance is assessed relative to the user need, NOT the query. 
+Example:
+•
+Information need: My swimming pool bottom is becoming black and 
+needs to be cleaned. 
+•
+Query: pool cleaner
+•
+Assess whether the docs address the underlying need, not whether 
+they contain the query terms. 
+14
+
+[PAGE 15]
+Universität Konstanz
+Binary assessment: relevant or non-relevant. 
+Precision: fraction of retrieved documents that are relevant
+Recall: fraction of relevant documents that are retrieved
+Unranked retrieval evaluation
+15
+
+[PAGE 16]
+Universität Konstanz
+Unranked retrieval evaluation
+Precision P =
+Recall R =
+F-measure: weighted harmonic mean F = 
+16
+Relevant
+Non-relevant
+Retrieved
+tp
+fp
+Not Retrieved
+fn
+tn
+
+[PAGE 17]
+Universität Konstanz
+Unranked retrieval evaluation
+Calculate P, R and F-measure.
+17
+Relevant
+Nonrelevant
+Retrieved
+5
+10
+Not Retrieved
+3
+7
+
+[PAGE 18]
+Universität Konstanz
+Unranked retrieval evaluation
+How is accuracy, i.e., the fraction of classifications that are correct, 
+calculated? What is accuracy in the example before?
+Is accuracy an appropriate measure for an IR system?
+18
+Relevant
+Nonrelevant
+Retrieved
+tp
+fn
+Not Retrieved
+fp
+tn
+
+[PAGE 19]
+Universität Konstanz
+Rank-based measures
+Precision, recall and F-measure are computed using unordered sets of 
+documents. 
+→We need to extend those measures if we evaluate ranked retrieval 
+results. 
+19
+
+[PAGE 20]
+Universität Konstanz
+Precision@k
+Set a rank threshold at k.
+Compute ratio of relevant docs in the top k (ignore documents ranked lower 
+than k) with precision. 
+Example: 
+What is P@1 - P@10 here?
+In a similar fashion we calculate R@3, R@4, R@5.
+20
+
+[PAGE 21]
+Universität Konstanz
+Precision/recall and F1 versus the rank
+21
+As a function of rank: precision will go down, recall will go up. 
+The tendency is not particularly interesting. Let’s plot one against the other. 
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0
+2
+4
+6
+8
+10
+12
+Query 1
+precision
+recall
+
+[PAGE 22]
+Universität Konstanz
+Precision-recall curve
+22
+Sawtooth shape of the precision-recall curve.
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 1
+
+[PAGE 23]
+Universität Konstanz
+Precision-recall curve
+23
+One curve per query/result set.
+0.00
+0.10
+0.20
+0.30
+0.40
+0.50
+0.60
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 2
+
+[PAGE 24]
+Universität Konstanz
+Precision-recall curve
+24
+Detailed picture, but erratic behavior →need to “average” the curves 
+across different queries. 
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 1 and 2
+
+[PAGE 25]
+Universität Konstanz
+Precision-recall curve
+25
+Issue: What is precision at recall 0.5? We need to interpolate, aka. infer 
+some value based on other precision values for query 1 and 2. 
+Standard averaging at fixed recall levels: 0, 0.1, 0.2, 0.3, …
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 1 and 2
+
+[PAGE 26]
+Universität Konstanz
+Precision-recall curve: interpolation
+26
+On average, precision drops as recall increases. Define interpolation to 
+preserve this monotonicity.
+Interpolated precision: find the highest precision for any recall level r’ ≥ r. 
+Optimistic interpolation: upper bound of the original precision-recall curve.
+Standard way to interpolate in these IR settings.
+
+[PAGE 27]
+Universität Konstanz
+Precision-recall curve: interpolation
+Take the average of both curves
+27
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 1 and 2
+
+[PAGE 28]
+Universität Konstanz
+Precision-recall curve: interpolation
+Take the average of both curves over 11 points: 0, 0.1, 0.2, 0.3, …, 1,0
+28
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+precision
+recall
+precision-recall plot, Query 1 and 2
+
+[PAGE 29]
+Universität Konstanz
+Averaged eleven-point precision-recall graph
+29
+Average across 50 queries for representative TREC system. 
+System B
+System A
+System C
+System A is always better than C. 
+System A worse than System B if 
+recall is important (fraction of the 
+relevant documents that are 
+retrieved).
+
+[PAGE 30]
+Universität Konstanz
+Mean average precision (MAP)
+Another way to measure binary relevance. 
+Consider the rank position of each relevant document.
+Compute P@K for each K. 
+Average precision = average P@K
+What’s the average precision of Query 1 and Query 2?
+MAP is average precision across multiple queries/rankings.
+MAP across Query 1 and Query 2 =  
+30
+
+[PAGE 31]
+Universität Konstanz
+Mean average precision (MAP)
+Now perhaps the most commonly used measure in research papers.
+•
+If a relevant document never gets retrieved, we assume the precision 
+corresponding to that relevant doc to be zero. 
+•
+MAP is macro-averaging: each query counts equally. 
+Good for web search?
+•
+MAP assumes the user is interested in finding many relevant 
+documents for each query. 
+•
+MAP requires many relevance judgements in text collections.  
+31
+
+[PAGE 32]
+Universität Konstanz
+Beyond binary relevance
+32
+
+[PAGE 33]
+Universität Konstanz
+Discounted cumulative gain
+Popular measure for evaluating web search and related tasks. 
+Two assumptions:
+1.
+Highly relevant documents are more useful than marginally relevant 
+documents. 
+2.
+The lower the ranked position of a relevant document, the less 
+useful it is for the user, since it’s less likely to be examined. 
+Used by some web search companies. 
+Focus on retrieving highly relevant documents. 
+33
+
+[PAGE 34]
+Universität Konstanz
+Discounted cumulative gain
+34
+Uses graded relevance as a measure of usefulness, or gain, from 
+examining a document. 
+Gain is accumulated starting at the top of the ranking and may be reduced, 
+or discounted, at lower ranks. 
+Like P@K, it is evaluated over some number of top K results. 
+Typical discount is 1/log(rank) →with base 2, the discount at rank 4 is 1/2 
+and at rank 8 it is 1/3.
+
+[PAGE 35]
+Universität Konstanz
+Discounted cumulative gain
+35
+Summarize a ranking:
+•
+Imagine the relevance judgements are on a scale of [0, r], with r > 2. 
+•
+Cumulative gain (CG) at rank rp = r1 + r2  + r3 + … + rp
+•
+Discounted Cumulative Gain (DCG) at rank rp
+•
+DCG = r1 + r2 /log22 + r3/log23 + … + rn/log2p
+→DCGp is the total gain accumulated at a particular rank (written 
+differently):
+
+[PAGE 36]
+Universität Konstanz
+Normalized discounted cumulative gain
+36
+NDCGn = Normalized DCG at rank n by the DCG value at rank n of the 
+ideal, ground truth ranking. 
+The ideal ranking first returns the documents with the highest relevance 
+level, then the next highest relevance level, etc.
+
+[PAGE 37]
+Universität Konstanz
+Normalized discounted cumulative gain
+37
+
+[PAGE 38]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.

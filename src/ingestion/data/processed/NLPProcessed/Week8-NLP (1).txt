@@ -1,0 +1,768 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+19 December 2024
+Information Retrieval &
+Natural Language Processing
+Week 8: Natural Language Processing
+
+[PAGE 2]
+Universität Konstanz
+What is Natural Language Processing?
+NLP is a field at the intersection of 
+•
+computer science
+•
+artificial intelligence
+•
+and linguistics. 
+Goal: for computers to process or “understand” natural language in order to 
+perform tasks that are useful, e.g., 
+•
+making appointments, buying things
+•
+question answering (Siri, Google Assistant, Facebook, …)
+Fully understanding and representing the meaning of language (or even 
+defining it) is a difficult goal. 
+2
+
+[PAGE 3]
+Universität Konstanz
+The field of Natural Language Processing
+One of the core areas of Artificial Intelligence, because language is a key 
+factor for communicating between humans and machines. 
+Field has seen an exponential growth in the last 10 years, main 
+conferences are ACL, NAACL, COLING, EMNLP etc. 
+For papers, see the ACL anthology.
+3
+
+[PAGE 4]
+Universität Konstanz
+(A tiny sample of) NLP applications
+Applications range from simple to complex:
+•
+Spell checking, keyword search, finding synonyms
+•
+Extract information from websites such as product price, dates, 
+location etc. 
+•
+Classification: reading level of school texts, positive/negative 
+sentiment of longer documents
+•
+Machine translation
+•
+Spoken dialogue systems
+•
+Complex question answering
+4
+
+[PAGE 5]
+Universität Konstanz
+NLP in industry… is taking off
+•
+Search (written and spoken)
+•
+Online advertisement matching
+•
+Automated/assisted translation
+•
+Speech recognition
+•
+Chatbots/dialogue agents
+•
+Automating customer support
+•
+Controlling devices
+•
+Ordering goods
+5
+
+[PAGE 6]
+Universität Konstanz
+What’s special about human language?
+A human language is a system specifically constructed to convey the 
+speaker/writer’s meaning. 
+•
+not just an environmental signal, it’s a deliberate communication
+•
+using an encoding which little kids can quickly learn (amazingly!)
+A human language is a discrete/symbolic/categorical signaling system
+•
+airplane =       ; avocado = 
+•
+with very minor exceptions for expressive signaling (“I loooooove it.” 
+or “Whooompppaaaa”)
+•
+presumably because of greater signal reliability.
+•
+symbols are not just an invention of logic or classical AI. 
+6
+
+[PAGE 7]
+Universität Konstanz
+What’s special about human language?
+The categorical symbols of a language can be encoded as a signal for 
+communication in several ways:
+•
+sound
+•
+gesture
+•
+images (writing)
+The symbol is invariant across different encodings!
+7
+
+[PAGE 8]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+8
+
+[PAGE 9]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Phonetics is the study of human sound:
+•
+production (articulatory)
+•
+transmission (acoustic)
+•
+perception (auditive)
+Sounds can be divided into
+•
+consonants
+•
+place
+•
+manner of articulation
+•
+voice
+•
+vowels
+9
+
+[PAGE 10]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Phonology is the study of the sound 
+system within a language and across
+languages. 
+Example: the ‘s’ in ‘brakes’ versus ‘waves’ 
+→Understand how speech sounds transform depending on situations or 
+their position in syllables, words, and sentences.
+10
+
+[PAGE 11]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Morphology is the study of words. 
+Morphemes are the minimal units of 
+words, they have a meaning and cannot be 
+subdivided further. 
+Morphological parsing is the process of determining the morphemes from 
+which a given word is constructed, for instance with Finite State 
+Transducers. 
+Example: foxes:fox+Noun+Pl
+11
+
+[PAGE 12]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Syntax is the grammatical structure of 
+words and phrases to create coherent 
+sentences.
+Syntactic parsing has attracted huge attention in the last 20 years of NLP 
+research. 
+More on this later. 
+12
+
+[PAGE 13]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Semantics is the study of the meaning
+of individual words and phrases in a 
+language or in a particular context. 
+Semantic representation: expressing the meaning of language. 
+Semantic interpretation: deriving meaning from a word stream, e.g., 
+mapping syntactic structure to semantic structure. 
+Latest developments in NLP: use distributed word representations to 
+approximate word meaning (see last lectures). 
+13
+
+[PAGE 14]
+Universität Konstanz
+Different linguistic levels in Natural Language 
+Processing
+Pragmatics deals with the meanings
+and effects which come from the use of
+language in particular situations.
+One of the hard areas of NLP: looking beyond the sentence, determine the 
+meaning and the function of a sentence within a context. 
+E.g., argument mining. More on this later.
+14
+
+[PAGE 15]
+Universität Konstanz
+What makes NLP hard? Ambiguity! 
+Phonetic: “wreck a nice beach”
+Word sense: “I went to the bank”
+Part of speech: “I made her duck.” 
+Attachment: “I saw a man with a telescope.” 
+Coordination: “If you love money problems show up.” 
+Speech act: “Have you emptied the dishwasher?”
+15
+
+[PAGE 16]
+Universität Konstanz
+What makes NLP hard? Ambiguity! 
+Crash blossoms – headlines with double meaning.
+“Teacher Strikes Idle Kids”
+“Hospitals Are Sued by 7 Foot Doctors”
+“Local High School Dropouts Cut in Half”
+16
+7 May 2021
+
+[PAGE 17]
+Universität Konstanz
+What makes NLP hard? Text-only.
+17
+Depending on the focus in the sentence, different meanings result:
+
+[PAGE 18]
+Universität Konstanz
+What makes NLP hard? Non-standard language
+18
+
+[PAGE 19]
+Universität Konstanz
+What makes NLP hard? Practical issues
+19
+
+[PAGE 20]
+Universität Konstanz
+Language technology
+20
+From 
+From Dan Jurafsky, Stanford University, about 10 years ago:
+
+[PAGE 21]
+Universität Konstanz
+Neural models & LLMs
+21
+From 
+From Dan Jurafsky, Stanford University:
+
+[PAGE 22]
+Universität Konstanz
+Types of NLP tasks
+22
+information retrieval
+Analysis and synthesis:
+•
+Analysis: The decoding of structured information from text
+•
+Synthesis: The encoding of (structured) information into text
+Also: Natural Language Understanding (NLU) versus Natural Language 
+Generation (NLG)
+
+[PAGE 23]
+Universität Konstanz
+Types of NLP tasks
+23
+information retrieval
+Analysis tasks, selected:
+•
+Token and sentence splitting
+•
+Stemming and lemmatization
+•
+Part-of-speech tagging
+•
+Syntactic parsing
+•
+Named-entity recognition
+Synthesis tasks, selected:
+•
+Lexicon generation
+•
+Spelling correction
+•
+Summarization
+•
+Text style transfer
+
+[PAGE 24]
+Universität Konstanz
+Task: Identify entities, their attributes and their relations in a given text.
+Example: Extract a company’s founding dates from a newspaper article.
+Possible approach?
+Example: Information extraction
+24
+
+[PAGE 25]
+Universität Konstanz
+Example: Language modeling
+25
+Task: Extend a text word by word until an appropriate ending is reached.
+Example: Answer a user’s question to a chatbot.
+Possible approach: 
+Train general language model on huge amounts of text examples 
+Fine-tune model on question-answer training pairs
+
+[PAGE 26]
+Universität Konstanz
+Terms in NLP
+26
+Task. A specific problem with a defined input and desired output (e.g., 
+constituency parsing, summarization, ...) 
+Technique. A general way of analyzing/synthesizing a text (e.g., language 
+model, ... )
+Algorithm. A specific implementation of a technique (e.g., GPT-3, ...)
+Model. The configuration of an algorithm resulting from training (e.g., CKY 
+parsing on Penn Treebank, GPT-3 fine-tuned on a set of Q&A pairs, ...)
+Method. May refer to an algorithm, model
+
+[PAGE 27]
+Universität Konstanz
+Applications
+27
+information retrieval
+Software that employs NLP to solve real-world problems. This includes 
+tools, web services etc.
+Why applications?
+Automate human tasks and/or improve human performance.
+Use cases:
+Examples?
+Today: Focus on computational methods rather than applications.
+Applications motivate why we deal with specific methods.
+
+[PAGE 28]
+Universität Konstanz
+One application: IBM’s Watson
+IBM’s Supercomputer, became famous in 2011. 
+28
+https://www.youtube.com/watch?v=P18EdAKuC1U
+
+[PAGE 29]
+Universität Konstanz
+One application: IBM’s Watson
+29
+
+[PAGE 30]
+Universität Konstanz
+Evolution of NLP applications
+30
+Selected milestones:
+February 2011: Watson wins Jeopardy.
+October 2011: October 2011. Siri starts on the iPhone 
+August 2014. Skype translates conversations in real time 
+May 2018. Google Duplex makes phone call appointments 
+February 2019. Project Debater competes in entire debates 
+November 2022. ChatGPT leads conversations on any topic
+
+[PAGE 31]
+Universität Konstanz
+Different ways to do NLP
+31
+NLP using rules.
+NLP using lexicons.
+NLP using context-free grammars.
+NLP using language models.
+
+[PAGE 32]
+Universität Konstanz
+Rule-based NLP
+32
+The quality of any rule-based NLP rises and falls with the knowledge of the 
+human expert.
+Encoding of knowledge: decision/rewrite rules, string matching, lexicons, 
+grammars, etc.
+
+[PAGE 33]
+Universität Konstanz
+Rule-based NLP
+33
+
+[PAGE 34]
+Universität Konstanz
+Alternative to hand-crafted rules? 
+•
+(Semi-) Automatic definition of implicit or explicit rules using statistics 
+derived from a given dataset 
+•
+Done with probabilistic techniques or machine learning 
+•
+Aka: Statistical inference or the data-driven approach 
+Rule-based vs. statistical methods
+•
+For most analysis and synthesis tasks, the best results are nowadays 
+achieved with statistical/neural techniques. 
+•
+Particularly in industry, rule-based techniques are still used, because 
+they are often well-controllable and explainable. 
+•
+All rule-based methods have a statistical counterpart in some way.
+Rule-based NLP
+34
+
+[PAGE 35]
+Universität Konstanz
+Different ways to do NLP
+35
+NLP using rules.
+NLP using lexicons.
+NLP using context-free grammars.
+NLP using language models.
+
+[PAGE 36]
+Universität Konstanz
+Lexicon: A repository of terms (in terms of words or phrases) that 
+represents a language, a vocabulary, or similar 
+Observations:
+•
+Lexicons often store additional information along with a term. 
+•
+Lexicons often have an explicit ordering, for example, alphabetically.
+Types of lexicons:
+•
+Terms only. Term lists, language lexicons, vocabularies
+•
+Terms with definitions. Dictionaries, glossaries, thesauri
+•
+Terms with information. Gazetteers, frequency lists, confidence lexicons
+Lexicon-based NLP
+36
+
+[PAGE 37]
+Universität Konstanz
+Lexicon-based NLP
+37
+
+[PAGE 38]
+Universität Konstanz
+Lexicon-based NLP
+38
+
+[PAGE 39]
+Universität Konstanz
+Benefits:
+Lexicon matching is particularly reliable for unambiguous terms.
+For entity types such as location names, huge gazetteer lists exist. 
+The idea of matching a lexicon is well-explainable. 
+Limitations:
+Information that is not in the employed lexicons can never be found.
+Ambiguous terms require other methods for disambiguation.
+Composition of related information is hard to model with lexicons.
+Lexicon-based NLP
+39
+
+[PAGE 40]
+Universität Konstanz
+Different ways to do NLP
+40
+NLP using rules.
+NLP using lexicons.
+NLP using context-free grammars.
+NLP using language models.
+
+[PAGE 41]
+Universität Konstanz
+Context-free grammars
+A grammar G consists of terminal nodes T, non-terminals N, a start symbol 
+S and rules R. 
+41
+
+[PAGE 42]
+Universität Konstanz
+Context-free grammars
+A grammar G consists of terminal nodes T, non-terminals N, a start symbol 
+S and rules R. 
+42
+Terminals 
+are the set 
+of words in a 
+sentence.
+
+[PAGE 43]
+Universität Konstanz
+Context-free grammars
+A grammar G consists of terminal nodes T, non-terminals N, a start symbol 
+S and rules R. 
+43
+Non-terminals 
+are the 
+constituents in 
+a sentence.
+
+[PAGE 44]
+Universität Konstanz
+Context-free grammars
+A grammar G consists of terminal nodes T, non-terminals N, a start symbol 
+S and rules R. 
+44
+The start 
+symbol is the 
+main 
+constituent in a 
+sentence.
+
+[PAGE 45]
+Universität Konstanz
+Context-free grammars
+A grammar G consists of terminal nodes T, non-terminals N, a start symbol 
+S and rules R. 
+45
+Equations of the 
+form A →a, 
+e.g., 
+S →NP  VP
+VP →VBP  NP  PP
+
+[PAGE 46]
+Universität Konstanz
+Context-free grammars
+A context-free grammar (CFG) is a formal grammar whose production rules 
+are of the form A →a, with A being a single nonterminal symbol and a a 
+string of terminals and nonterminals. 
+The grammar is context-free if the production rules can be applied 
+regardless of the context of a nonterminal.
+Parses result from wide range of grammatical formalisms, e.g. 
+•
+phrase structures: ordered, labelled trees that express hierarchical 
+relations among (groups of) words → constituency parsing 
+•
+dependency structures: binary grammatical relations between words 
+in a sentence → dependency parsing 
+46
+
+[PAGE 47]
+Universität Konstanz
+Parsing in NLP
+47
+Parsing is a central part in natural language processing systems 
+•
+The parsing accuracy impacts the success of an application as a 
+whole 
+•
+The set of parses for a given input sentence is typically very large 
+•
+→ syntactic disambiguation 
+•
+→ effective storage 
+•
+Parses might be weighted by numerical rule values and combinations 
+•
+Most commonly: Constituency parsing and dependency parsing
+
+[PAGE 48]
+Universität Konstanz
+Parsing in NLP
+48
+A phrase structure tree:
+
+[PAGE 49]
+Universität Konstanz
+Parsing in NLP
+49
+information retrieval
+A dependency structure:
+
+[PAGE 50]
+Universität Konstanz
+Parsing in NLP
+Find structural relationships between words in a sentence. 
+50
+
+[PAGE 51]
+Universität Konstanz
+Parsing in NLP
+One application: Grammar checking. 
+51
+
+[PAGE 52]
+Universität Konstanz
+Parsing in NLP
+Another application: Relation extraction.
+52
+(http://nlp.stanford.edu:8080/corenlp/)
+
+[PAGE 53]
+Universität Konstanz
+Context-free grammars
+53
+
+[PAGE 54]
+Universität Konstanz
+Probabilistic context-free grammars
+54
+
+[PAGE 55]
+Universität Konstanz
+Probabilistic context-free grammars
+55
+Generated from a treebank, i.e., a corpus in which each sentence has been 
+paired with a parse tree. 
+These are generally created by
+•
+parsing the collection with an automatic parser
+•
+correcting each parse by human annotators if required
+The Penn Treebank is the most widely used treebank in English. 
+Most well-known section is the Wall Street Journal Section with 1 M words 
+from 1987-1989.
+
+[PAGE 56]
+Universität Konstanz
+Statistical parsing
+56
+Considering the corresponding probabilities while parsing a sentence. 
+Selecting the parse tree which has the highest probability. 
+P(t): the probability of a tree t = Product of the probabilities of the rules 
+used to generate the tree.
+
+[PAGE 57]
+Universität Konstanz
+Statistical parsing
+57
+
+[PAGE 58]
+Universität Konstanz
+Ambiguity is pervasive.
+How does the constituency tree capture the ambiguity?
+The saw the man with the telescope.
+He saw the man with the telescope.
+58
+
+[PAGE 59]
+Universität Konstanz
+Different ways to do NLP
+59
+NLP using rules.
+NLP using lexicons.
+NLP using context-free grammars.
+NLP using language models.
+
+[PAGE 60]
+Universität Konstanz
+NLP using language models
+60
+
+[PAGE 61]
+Universität Konstanz
+NLP using language models
+61
+
+[PAGE 62]
+Universität Konstanz
+NLP using language models: Challenges
+62
+
+[PAGE 63]
+Universität Konstanz
+NLP using language models: Applications
+63
+
+[PAGE 64]
+Universität Konstanz
+IBM’s Project Debater
+Based on IBM’s Watson
+Since 2018: ”When asked to discuss any topic, Watson can autonomously 
+scan its knowledge database for relevant content, ‘understand’ the data, 
+and argue both for and against that topic.”
+More information here: https://www.research.ibm.com/artificial-
+intelligence/project-debater/
+See here for a brief overview. 
+64
+
+[PAGE 65]
+Universität Konstanz
+What is IBM’s Project Debater?
+65
+
+[PAGE 66]
+Universität Konstanz
+Some background details 
+66
+Important components in the system:
+• Some IBM Watson technology reused
+• An in-house wikification tool: 
+• Anchor lexical items to their Wikipedia page (plus any IBM wiki) 
+• Use the links between Wikipedia pages to create an enormous 
+knowledge graph (what information is related to which other bit 
+of information, how?)
+• Only possible with mega-billion company infrastructure 
+(technology and manpower)
+
+[PAGE 67]
+Universität Konstanz
+Some background details 
+67
+State-of-the-art machine learning techniques
+• Training neural networks with strong labelled data (human 
+annotations) and weakly labelled data (e.g., Debatepedia)
+• Possible with above-mentioned infrastructure
+
+[PAGE 68]
+Universität Konstanz
+Some background details 
+68
+Apart from that:
+• Lexicon-based stance classification
+• New text-to-speech system to facilitate a continuous and persuasive 
+speech for a few minutes
+• The usual NLP techniques
+• Named-entity recognition
+• WordNet
+• Sentiment Analysis/Opinion Mining
+
+[PAGE 69]
+Universität Konstanz
+Some background details 
+69
+How the system was presented to the public:
+• w/ two debating experts (Israelian champions in a debating competition)
+• know how to structure their speech 
+• know how to argue
+• know the system and the structures it performs good at
+• The debating experts contributed to developing the system
+• system was trained on their voices
+• multiple training runs to learn speaker characteristics
+• System was presented for one of a relatively small set of possible topics
+
+[PAGE 70]
+Universität Konstanz
+Read a scientific publication
+70
+The latest (and most high-profile) publication of IBM’s Project Debater is in 
+Nature. 
+Noam Slonim et al. 2021. An autonomous debating system. Nature, Vol. 
+591, pp. 379-385. (also in course materials)
+Read the paper, try to the understand it and prepare at least two questions 
+on it, i.e., where does the paper remain unclear in your opinion, what 
+additional information would you request, etc.? We will discuss (and answer 
+them) in class.
+
+[PAGE 71]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.

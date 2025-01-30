@@ -1,0 +1,841 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+21 November 2024
+Information Retrieval &
+Natural Language Processing
+Week 4: Relevance & Probabilistic IR
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the cluster of excellence, the politics of inequality
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[PAGE 2]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+2
+When?
+What?
+Week 1
+17 October 2024
+Introduction
+Week 2
+24 October 2024
+Indexing, Boolean IR
+Week 3
+31 October 2024
+--
+Week 4
+7 November 2024
+--
+Week 5
+14 November 2024
+Scoring, term weighting, the vector space 
+model
+Week 6
+21 November 2024
+Relevance and probabilistic IR
+Week 7
+28 November 2024
+Tolerant retrieval and index compression
+Week 8
+5 December 2024
+Evaluation in IR
+Week 9
+12 December 2024
+Distributed word representations for IR
+
+[PAGE 3]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+3
+When?
+What?
+Week 10
+19 December 2024
+Natural Language Processing
+Week 11
+9 January 2025
+NLP with Python
+Week 12
+16 January 2025
+Personalization in IR systems
+Week 13
+23 January 2025
+AI & ethics
+Week 14
+30 January 2025
+Recap
+Week 15
+6 February 2025
+No class (conference trip)
+(also on stud.IP)
+Removed: Classification and clustering in IR, Question-answering
+
+[PAGE 4]
+Universität Konstanz
+Information Retrieval (IR): Today
+4
+(IIR): Manning, Raghavan and Schütze, Introduction to IR, 2008
+Chapter 11: Probabilistic information retrieval
+Chapter 12: Language models for information retrieval
+
+[PAGE 5]
+Universität Konstanz
+The classic search model
+5
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Week 2
+
+[IMAGE CAPTION] a black and white photo of a checkered pattern with a gray background
+
+[PAGE 6]
+Universität Konstanz
+tf-idf
+6
+tf-idf (term frequency - inverse document frequency) 
+Best-know weighting scheme in information retrieval
+•
+the “-” in tf-idf is a hyphen, not a minus sign!
+•
+alternative names: tf.idf, tf x idf
+•
+increases with the number of occurrences within a document
+•
+increases with the rarity of the term in the collection
+)
+df
+/
+(
+log
+)
+tf
+1
+log(
+w
+10
+,
+,
+t
+d
+t
+N
+d
+t
+
++
+=
+
+[IMAGE CAPTION] a black and white photo of a sign that says 1 - log tf
+
+[PAGE 7]
+Universität Konstanz
+The classic search model
+7
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Week 3
+
+[IMAGE CAPTION] a black and white photo of a checkered pattern with a gray background
+
+[PAGE 8]
+Universität Konstanz
+Vector-spaced ranking
+8
+Summary:
+•
+Represent the query as a weighted tf-idf vector
+•
+Represent each document as a weighted tf-idf vector
+•
+Compute the cosine similarity score for the query vector and each 
+document vector
+•
+Rank documents with respect to the query by score
+•
+Return the top K (e.g., K = 10) to the user
+
+[PAGE 9]
+Universität Konstanz
+Today
+9
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Week 4
+
+[IMAGE CAPTION] a black and white photo of a checkered pattern with a gray background
+
+[PAGE 10]
+Universität Konstanz
+Past lectures
+10
+Problems with Boolean search: Feast or famine. 
+•
+Boolean queries often result in either too few (=0) or too many 
+(1000s) results
+Vector space models:
+•
+Rank documents according to term occurrence in a document or 
+the collection. 
+It takes a lot of skill to come up with a query that produces a 
+manageable number of hits
+Suggested solution: 
+Rank documents by goodness – a sort of clever “soft AND”
+
+[PAGE 11]
+Universität Konstanz
+Probabilistic IR
+11
+Probabilistic ranking models aim to model uncertainty about
+•
+information need of the query
+•
+relevance of the document’s content to the query
+Probability theory: principled foundation for reasoning under 
+uncertainty. 
+Relevance as a probability, two assumptions:
+1.
+relevance of a term to a document: the probability of the user 
+satisfaction if that term would be used as a query
+2.
+relevance as a dichotomous variable: the user is either satisfied 
+or not satisfied with the retrieved document
+
+[PAGE 12]
+Universität Konstanz
+Probabilistic IR
+12
+Today:
+1.
+Brief recap of probability theory
+2.
+Probability ranking principle
+3.
+The binary independence model
+4.
+The Okapi BM25 weighting scheme
+
+[PAGE 13]
+Universität Konstanz
+Probability theory
+13
+Starting point: the probability of x can be seen as the relative frequency of x
+in the long run. 
+Quick exercise: 
+What are the frequencies, relative frequencies and probabilities?
+
+[IMAGE CAPTION] a black and white photo of a text that reads i ' m refrepeny ex = px
+
+[IMAGE CAPTION] a close up of a group of different colored balloons
+
+[PAGE 14]
+Universität Konstanz
+Briefly: Probability theory
+14
+Joint probability of two events A and B occurring independently: 
+P(A, B) = P(A ⋂B) = P(A) x P(B)
+Conditional probability: P(A|B) is the probability of event A occurring, 
+given that event B occurs. 
+P(A|B) = P(A ⋂B) / P(B)
+
+[PAGE 15]
+Universität Konstanz
+Probability theory
+15
+Some more examples.
+1.
+What’s the joint probability of rolling a ‘5’ twice in a fair 6-sided dice?
+2.
+What’s the joint probability of getting head followed by tail in a coin 
+toss?
+3.
+In a group of 100 sports car buyers, 40 bought alarm systems, 30 
+purchased bucket seats, and 20 purchased an alarm system and 
+bucket seats. If a car buyer chosen at random bought an alarm system, 
+what is the probability they also bought bucket seats?
+
+[PAGE 16]
+Universität Konstanz
+Probability theory
+16
+Some examples.
+4.
+What is the probability that a randomly selected person is a BSc 
+student, given that they own an iPad?
+Have iPads
+Do not have 
+iPads
+Total
+BSc students
+0.41
+0.08
+0.49
+MSc students
+0.45
+0.06
+0.51
+Total
+0.86
+0.14
+1
+
+[PAGE 17]
+Universität Konstanz
+Probability theory
+17
+The fundamental relationship between joint and conditional probabilities is 
+given by the chain rule (remember, A and B are independent): 
+P(A, B) = P(A ⋂B) = P(A|B) x P(B) = P(B|A) x P(A)
+From that we derive Bayes’ Theorem: P(A|B) = P(B|A) x P(A)
+P(B)
+
+[PAGE 18]
+Universität Konstanz
+Probability theory
+18
+Bayes’ Theorem: P(A|B) = P(B|A) x P(A)
+P(B)
+P(A) is the prior probability: it represents what is originally believed before 
+new evidence is introduced
+P(A|B) is the posterior probability: it takes this new information into account.
+→This equation can be thought of as a way of updating probabilities: start 
+off with an initial estimate (the prior) and derive the posterior after having 
+seen the evidence B.
+
+[PAGE 19]
+Universität Konstanz
+Probability of relevance
+19
+Recall: relevance as a dichotomous variable, i.e., the user is either satisfied 
+(R=1) or not satisfied (R=0) with the retrieved document. 
+Model this dichotomy: 
+•
+compute probability of relevance P(R=1)
+•
+compute probability of non-relevance P(R=0)
+We compute probabilities by counting relative frequencies →we need to 
+count terms in relevant and non-relevant documents. 
+We need to know in advance which documents are relevant and which 
+not. How?
+
+[PAGE 20]
+Universität Konstanz
+Probability of relevance
+20
+We can estimate P(xt = 1|R = 1), the probability of a term t appearing in a 
+document, depending on whether it is relevant or not. 
+N = total number of docs, dft is the number of docs that contain term t, VR 
+is the set of known relevant documents, VRt is the subset of this set 
+containing t.
+P(xt = 1|R = 1) = |VRt|/|VR|
+P(xt = 0|R = 0) = (dft - |VRt|) / (N - |VR|) 
+Those estimates are a quite reasonable start.
+
+[PAGE 21]
+Universität Konstanz
+Principles of probabilistic retrieval
+21
+The documents that are most likely to satisfy the information need should 
+be presented first →Probability Ranking Principle (PRP). 
+PRP in brief: 
+If the retrieved documents (w.r.t. a query) are ranked decreasingly on their 
+probability of relevance, then the effectiveness of the system will be the 
+best that is obtainable (Robertson 1977).
+
+[PAGE 22]
+Universität Konstanz
+Principles of probabilistic retrieval
+22
+The documents that are most likely to satisfy the information need should 
+be presented first →Probability Ranking Principle (PRP). 
+PRP in full: 
+If [the IR] system’s response to each [query] is a ranking of the documents 
+[...] in order of decreasing probability of relevance to the [query], where the 
+probabilities are estimated as accurately as possible on the basis of 
+whatever data have been made available to the system for this 
+purpose, the overall effectiveness of the system to its user will be the best 
+that is obtainable on the basis of those data.
+
+[PAGE 23]
+Universität Konstanz
+Probability Ranking Principle (PRP)
+Let D represent a document in the collection. 
+Need to find P(R=1|D) (the probability that a document D is relevant)
+P(R=1|D) = P(D|R=1) ⋅P(R=1)
+P(D)
+and P(R=0|D) = P(D|R=0) ⋅P(R=0)
+P(D)
+P(R=1), P(R=0), respectively, are the prior probabilities of retrieving a 
+(non-)relevant document at random. 
+P(D|R=1), P(D|R=0) are the probabilities that if a (non-)relevant document 
+is retrieved, it is document D. 
+23
+
+[PAGE 24]
+Universität Konstanz
+Probability Ranking Principle (PRP)
+Measuring success:
+In the simplest case of the PRP: no retrieval costs and other utility 
+concerns.
+→loss of a point for either returning a nonrelevant document or failing to 
+return a relevant one (1/0 loss)
+→The goal is to return the best possible results as the top k documents, 
+for any value of k the user chooses to examine. 
+→The PRP then says to simply rank all documents in decreasing order o f 
+P(R=1|d,q)
+24
+
+[PAGE 25]
+Universität Konstanz
+Probability Ranking Principle (PRP)
+If a set instead of an ordering is to be returned →Bayes optimal decision 
+rule: the decision that minimizes the risk of loss – simply return documents 
+that are more likely relevant than nonrelevant:
+d is relevant iff P(R=1|d,q) > P(R = 0, d,q). 
+The PRP is optimal, in the sense that it minimizes the expected loss under 
+1/0 loss. 
+Requirement: all probabilities are known correctly (never the case in 
+practice).
+25
+
+[PAGE 26]
+Universität Konstanz
+The binary independence model
+The binary independence model (BIM) is the model that has traditionally 
+been used with the PRP. 
+Three assumptions to make the function P(R=1|D) practical:
+1.
+Binary in the sense of Boolean: Documents and queries are 
+represented as binary term incidence vectors. 
+2.
+Terms are modeled as occurring in documents independently (the 
+‘naïve’  in the Naïve Bayes model)
+3.
+The relevance of each document is independent of the relevance of 
+other documents. 
+26
+
+[PAGE 27]
+Universität Konstanz
+The binary independence model
+To make a probabilistic retrieval strategy precise, we need to estimate how 
+terms in documents contribute to relevance. 
+Include information
+•
+term frequency
+•
+document frequency
+•
+document length
+•
+etc...
+27
+
+[PAGE 28]
+Universität Konstanz
+The binary independence model
+P(R=1| Ԧ𝑥,Ԧ𝑞) = P( Ԧ𝑥|R=1,𝑞) ⋅P(R=1|𝑞)
+P( Ԧ𝑥|𝑞)
+and 
+P(R=0| Ԧ𝑥,Ԧ𝑞) = P( Ԧ𝑥|R=0,𝑞) ⋅P(R=0|𝑞)
+P( Ԧ𝑥|𝑞)
+P(R=1| Ԧ𝑞), P(R=0| Ԧ𝑞), respectively, are the prior probabilities of retrieving a 
+(non-)relevant document at random for a query Ԧ𝑞.
+P(Ԧ𝑥|R=1,Ԧ𝑞), P( Ԧ𝑥|R=0,Ԧ𝑞) are the probabilities that if a (non-)relevant 
+document is retrieved, then that document’s representation is Ԧ𝑥.
+P(R=1| Ԧ𝑥,Ԧ𝑞) + P(R=0| Ԧ𝑥,Ԧ𝑞) = 1 
+28
+
+[PAGE 29]
+Universität Konstanz
+Deriving the ranking function
+Chapter 11.3
+Given the query Ԧ𝑞, we wish to order returned documents by descending 
+P(R=1| Ԧ𝑥,Ԧ𝑞). Under BIM, this is modeled as P(R=1| Ԧ𝑥,Ԧ𝑞).
+See the derivations in Chapter 11.3 in IIR for the retrieval status value 
+(RSV). 
+ut is the probability of a term appearing in a non-relevant document
+pt is the probability of a term appearing in a relevant document
+29
+
+[IMAGE CAPTION] a black and white image of a number of numbers on a white background
+
+[IMAGE CAPTION] a black and white photo of a number of numbers on a white background
+
+[PAGE 30]
+Universität Konstanz
+Deriving the ranking function
+The ct quantities function as term weights in the model, and the document 
+score for a query is 
+30
+
+[IMAGE CAPTION] a black and white photo of a sign that says rsv = z = z = z = z =
+
+[PAGE 31]
+Universität Konstanz
+Probabilistic retrieval model
+31
+1.
+We run the system to retrieve documents w.r.t. a query (first pass)
+2.
+We present the results to a user who judges which are relevant and 
+which are not (relevance feedback)
+3.
+We combine human judgement + term frequency statistics to compute 
+P(R=1) (probability of relevance) and P(R=0) (probability of non-
+relevance) for the documents. 
+4.
+We run the system again to retrieve documents, using the above 
+probabilities (second pass)
+5.
+The system displays a revised set of retrieval results.
+
+[PAGE 32]
+Universität Konstanz
+Probabilistic assumptions
+In probabilistic IR, assumptions replace human judgement about relevance. 
+These assumptions are empirical →IR is empirical. 
+•
+Assumption 1: relevant documents are a very small percentage of the 
+collection →approximate statistics for non-relevant documents by 
+statistics from the whole collection. 
+•
+Assumption 2: the probability of a query term appearing in a relevant 
+document is the same for all terms in a given query. 
+32
+
+[PAGE 33]
+Universität Konstanz
+Okapi BM25
+Probabilistic model sensitive to term frequency and document length 
+(without too many additional parameters) (Spärck Jones et al. 2000). 
+We won’t go through the full theory behind it. 
+The simplest score for a document’s retrieval status value (RVS):
+33
+
+[IMAGE CAPTION] a black and white photo of a sign that says rsv = z = z = z = z =
+
+[PAGE 34]
+Universität Konstanz
+Okapi BM25
+Version 2: factoring in term frequency and document length.
+Ld = document length
+Lavg = average document length in the collection
+k1 = positive tuning parameter that calibrates the document term frequency 
+scaling (if 0, binary model, large values correspond to raw frequencies)
+b = 1 corresponds to fully scaling the term weight by document length, b = 
+0 corresponds to no length normalization
+34
+
+[IMAGE CAPTION] a black and white image of a mathematical representation of a square root
+
+[PAGE 35]
+Universität Konstanz
+Okapi BM25
+Version 3: weighting query terms for long queries (unnecessary for short 
+queries).
+k3 = another positive tuning parameter, calibrates term frequency scaling of 
+the query 
+How does k3 impact the RSV?
+35
+
+[IMAGE CAPTION] a black and white image of a number of numbers on a line
+
+[PAGE 36]
+Universität Konstanz
+Okapi BM25
+Version 4: include relevance judgements, if unavailable, use regular idf. 
+Replace idf
+36
+
+[IMAGE CAPTION] a black and white image of a number of numbers on a white background
+
+[PAGE 37]
+Universität Konstanz
+Appraisal of probabilistic models
+Probabilistic IR has neat ideas, but the methods perform weakly.
+•
+Approximating the needed probabilities is possible, but it requires some 
+major assumptions. 
+•
+Perhaps the severity of the modeling assumptions makes achieving 
+good performance difficult. 
+•
+General problem: either partial relevance information or inferior models. 
+•
+Best Match 25 (BM25) a.k.a. Okapi: very good performance (Robertson 
+et al. 1994) 
+37
+
+[PAGE 38]
+Universität Konstanz
+Ranking with language models (LMs)
+38
+LMs can be seen as an extension of mainstream probabilistic models for 
+IR: 
+•
+Mainstream probabilistic models: given a query Q, estimate the 
+probability of the relevance of document D with respect to that query. 
+P(R|D,Q)
+•
+Language models: given a document D, build a language model from 
+each document and then estimate the probability of a query having 
+been generated from that document
+P(Q|D)
+
+[PAGE 39]
+Universität Konstanz
+What are language models?
+39
+What does it mean that a document model generates a query?
+A generative model of language can recognize or generate strings in that 
+language. 
+Simple language models: finite state automata.
+
+[PAGE 40]
+Universität Konstanz
+What are language models?
+40
+FSA are a quintuple (∑, S, s0, 𝛿, F)
+•
+∑: input alphabet
+•
+S: set of states
+•
+s0: initial state
+•
+𝛿: transition function: 𝛿(1,y) = 2, 𝛿(2,z) = 3, 𝛿(3,w) = 2
+•
+F: Final states
+
+[IMAGE CAPTION] a diagram of a three - way circuit with two different voltages
+
+[PAGE 41]
+Universität Konstanz
+What are language models?
+Instead of letters on the transitions, use words for the language models.
+Add a probability distribution over generating different terms. 
+Voilà: a language model. 
+41
+
+[IMAGE CAPTION] a close up of a text description of a computer program
+
+[PAGE 42]
+Universität Konstanz
+What are language models?
+After generating each word, we decide whether to stop or loop around and 
+produce another word. 
+→The model also requires a probability of stopping in the finishing state. 
+→Such a model places a probability distribution over any sequence of 
+words. 
+→By construction, it also provides a model for generating text according to 
+its distribution. 
+42
+
+[PAGE 43]
+Universität Konstanz
+What are language models?
+What’s the probability of the sequence ‘frog said that toad likes frog’ using 
+the below finite state automaton. (Also take into account the decision 
+whether to stop or continue at each step). 
+43
+
+[IMAGE CAPTION] a close up of a text description of a computer program
+
+[PAGE 44]
+Universität Konstanz
+What are language models?
+Suppose now we have two language models M1 and M2. The LM that gives 
+the higher probability to the sequence ‘frog said that toad likes frog’ is more 
+likely to have generated the term sequence. (This time we omit stop 
+probabilities.)
+44
+
+[IMAGE CAPTION] a black and white image of a computer screen with a number of numbers
+
+[PAGE 45]
+Universität Konstanz
+Ranking with language models (LMs)
+45
+Let t denote a term in a query Q (t ∊ Q)
+Let P(t|D) denote the probability of term t in document D. 
+Then, the probability of query Q having been generated from document D 
+is:
+
+[IMAGE CAPTION] a black and white photo of a sign that says pdd = i - pdd
+
+[PAGE 46]
+Universität Konstanz
+P(t|D) can be estimated from the term frequencies:
+tft,D is the term frequency in the document
+LD is the document length (number of terms in the document)
+Maximum Likelihood Estimation (MLE) = how often a term occurs in a document
+total number of terms in a document
+How to estimate the individual term probabilities?
+46
+
+[IMAGE CAPTION] a black and white photo of a formula for a liquid
+
+[IMAGE CAPTION] a black and white photo of a sign that says pdd = i - pdd
+
+[PAGE 47]
+Universität Konstanz
+How to estimate the individual term probabilities?
+In practice, a query term may be missing from a document. 
+→its probability will be zero
+→the final probability for that document will be zero
+Smoothing 
+•
+we assign some probability to missing terms
+•
+Various smoothing techniques: 
+•
+Jelinek-Mercer
+•
+Dirichlet
+•
+Good-Turning
+•
+Laplace (a.k.a add-one)
+•
+…
+47
+
+[PAGE 48]
+Universität Konstanz
+Jelinek-Mercer (JM) smoothing
+Using JM smoothing, the probability of a term t in document D is: 
+•
+LD: number of terms in D (document length)
+•
+tft,C: number of times term t occurs in the collection
+•
+LC: number of terms in the collection (collection length)
+•
+𝜆: Smoothing parameter that can be set manually (experimentally or 
+automatically), 0 ≤ 𝜆≤ 1 (recommended value from Zhai and Lafferty 
+2002: 𝜆≈ 0.6 - 0.7  
+48
+
+[IMAGE CAPTION] a black and white photo of a number of letters on a white background
+
+[PAGE 49]
+Universität Konstanz
+LM with JM smoothing
+49
+Using JM smoothing, the probability of a query being generated from a 
+document is: 
+can be seen as the document model (MD)
+can be seen as a collection model (Mc)
+
+[IMAGE CAPTION] a black and white photo of a row of numbers with the letters pop - t - pop
+
+[IMAGE CAPTION] a black and white photo of a sign that says it is a d
+
+[IMAGE CAPTION] a black and white photo of a letter t h c
+
+[PAGE 50]
+Universität Konstanz
+LM with JM smoothing
+Example
+We have a collection that contains two documents: 
+D1 = Xyzzy reports a profit but revenue is down
+D2 = Quorus narrows quarter loss but revenue decreases 
+further
+Our query Q is: revenue down
+Task: Rank the documents with respect to the query using a LM with JM 
+smoothing (𝜆= 0.5). 
+50
+
+[PAGE 51]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the center of excellence for the politics of inequality

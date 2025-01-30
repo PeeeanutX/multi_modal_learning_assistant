@@ -1,0 +1,708 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+23 January 2025
+Week 11:
+AI, Ethics 
+& Superintelligence
+
+[PAGE 2]
+Universität Konstanz
+A couple of notes on the exam
+•
+Learn the concepts/terminology/definitions and how to apply them (What 
+is a morpheme/constituent?, What is inter-annotator agreement?, etc.)
+•
+Learn to compute scores/similarities/probabilities etc. for retrieval 
+examples
+Bring a calculator!!
+2
+
+[PAGE 3]
+Universität Konstanz
+Today
+Part 1: Artificial Intelligence
+•
+A brief history
+•
+Strong versus weak AI
+Part 2: AI, ethics and regulation
+Part 2: Superintelligence
+3
+
+[PAGE 4]
+Universität Konstanz
+AI and the rate of growth
+4
+
+[PAGE 5]
+Universität Konstanz
+AI and the rate of growth
+A mere few million years ago:
+•
+“We” were still swinging from the branches in the African canopy. 
+•
+The rise of Homo sapiens from our last common ancestor with the great 
+apes happened swiftly. 
+•
+Upright posture, opposable thumbs and some relatively minor changes 
+in brain size
+•
+Leap in cognitive ability. 
+•
+Humans can think abstractly, communicate complex thoughts, 
+culturally accumulate information over the generations far better than 
+any other species on the planet. 
+5
+
+[PAGE 6]
+Universität Konstanz
+AI and the rate of growth
+12.000 years ago: Adoption of agriculture. 
+•
+Population densities rose along with the total size of the human 
+population. 
+•
+More people →more ideas. 
+•
+Higher densities →ideas spread more easily. 
+•
+Some individuals develop specialized skills. 
+•
+Increases economic productivity and technological capacity. 
+6
+
+[PAGE 7]
+Universität Konstanz
+Early “AI”
+7
+https://www.ancient-origins.net/myths-legends/talos-crete-00157
+Talos of Crete
+
+[PAGE 8]
+Universität Konstanz
+Early “AI”
+8
+King Ajatasatru (reigned 492 to 460 B.C.) was famous for commissioning 
+new military inventions.
+Blue prints for Robots supposedly stolen from Rome. 
+http://theconversation.com/robots-guarded-buddhas-relics-in-a-legend-of-ancient-india-110078
+
+[PAGE 9]
+Universität Konstanz
+Early “AI”
+9
+Fact: Ptolemy II‘s procession in 279 B.C. contained an automated statue 
+of a god. 
+https://ancientcelebration.blogspot.com/2011/03/grand-procession-of-ptolemy_24.html
+
+[PAGE 10]
+Universität Konstanz
+250 years ago
+The Industrial Revolution
+•
+population began to exhibit unprecedented sustained growth
+•
+significant rise in the overall standard of living
+•
+significant rise in education 
+•
+surge in technological capacity
+10
+
+[PAGE 11]
+Universität Konstanz
+1950s
+John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon, A Proposal for the Dartmouth 
+Summer Research Project on Artificial Intelligence (31 August 1955), p 1. 
+11
+
+[PAGE 12]
+Universität Konstanz
+Defining AI
+12
+•
+John McCarthy went on to become one of the founders of the AI lab at 
+Stanford University. 
+• His definition of AI was: 
+• 1983 definition of AI by Elaine Rich:
+the science and engineering of making intelligent machines.
+AI is the study of how to make 
+computers do things at which, at the 
+moment, people are better.
+
+[PAGE 13]
+Universität Konstanz
+AI today
+An (impressive) display of AI technology in a number of applications.
+1997: Deep Blue – watch coverage here. 
+https://www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/
+2011: Jeopardy – watch footage here. 
+2015: AlphaGo – watch footage here. 
+2018: Project Debater – watch footage here. 
+13
+
+[PAGE 14]
+Universität Konstanz
+What does intelligent in AI mean?
+14
+The Turing test, 1950.
+
+[PAGE 15]
+Universität Konstanz
+But: John Searle’s Chinese Room Experiment (1980)
+15
+https://www.youtube.com/watch?v=TryOC83PH1g
+
+[PAGE 16]
+Universität Konstanz
+But: John Searle’s Chinese Room Experiment
+16
+• Shows that even if a machine is performing intelligent tasks, it does not 
+necessarily actually “understand” that task in a meaningful way. 
+• Searle distinguished between “strong AI“ and “weak AI” 
+• The machines we are surrounded with so far are all examples of weak 
+AI. 
+http://www.mind.ilstu.edu/curriculum/searle_chinese_room/searle_chinese_room.php
+Strong AI: machine 
+understands the task
+Weak AI: machine follows 
+a set of instructions 
+according to which a task 
+is performed.
+
+[PAGE 17]
+Universität Konstanz
+Strong versus weak AI
+Strong versus weak AI, distinguishable by their goals:
+“Strong” AI seeks to create artificial persons: machines that have all the 
+mental powers we have, including phenomenal consciousness. 
+“Weak” AI, on the other hand, seeks to build information-processing 
+machines that appear to have the full mental repertoire of human persons.
+Searle’s Chinese Room experiment is designed to overthrow Strong AI. 
+17
+
+[PAGE 18]
+Universität Konstanz
+The philosophy of AI
+18
+Explores artificial intelligence and its implications for knowledge and 
+understanding of intelligence, ethics, consciousness, epistemology, 
+and free will.
+Prominent questions:
+1.
+Can a machine act intelligently? Can it solve any problem that a person 
+would solve by thinking?
+2.
+Are human intelligence and machine intelligence the same? Is 
+the human brain essentially a computer?
+3.
+Can a machine have a mind, mental states, and consciousness in the 
+same sense that a human being can? Can it feel how things are?
+
+[PAGE 19]
+Universität Konstanz
+AI and consciousness
+19
+Taken from Hildt (2019).
+Difficulty with artificial consciousness: What is consciousness at all? And 
+how can subjectivity emerge from matter? (the “hard problem of 
+consciousness” (Chalmers, 1996))
+Human consciousness: available to us in the first-person perspective. 
+Artificial consciousness: only accessible for us in the third-person 
+perspective (how do we know whether a machine has consciousness?)
+
+[PAGE 20]
+Universität Konstanz
+AI and ethics
+20
+
+[PAGE 21]
+Universität Konstanz
+AI and ethics
+21
+What are the challenges ahead?
+•
+Evolution of the workforce
+•
+Our physical and mental well-being
+•
+The future of society
+What are current efforts?
+•
+Data protection and privacy regulation
+•
+Law on using AI
+•
+Call for a stop of further developing LLMs
+
+[PAGE 22]
+Universität Konstanz
+AI and the workforce
+22
+•
+BBC article on situation in the UK -- 7 million jobs could be replaced by 
+AI, but 7.2 million could be created.
+•
+AI takes over repetitive or dangerous tasks, let humans do tasks 
+requiring creativity and empathy. 
+•
+Enhance monitoring and diagnosing capabilities in medicine, cheaper 
+healthcare (McKinsey report from 2013) 
+•
+Uncover criminal activity and solve crimes.
+
+[PAGE 23]
+Universität Konstanz
+AI and our health 
+23
+Humankind has never been as connected as it is now. 
+McKinsey report from April 2023:
+•
+More than 50% of people across age cohorts cite self-expression and 
+social connectivity as positives of social media.
+•
+Complex relationship between mental health and social media: there is 
+correlation, but hard to identify causation.
+
+[PAGE 24]
+Universität Konstanz
+AI and our health 
+24
+Almost everyone is using social media, but in different ways.
+
+[PAGE 25]
+Universität Konstanz
+AI and our health 
+25
+While social media and tech have a consistent positive impact across all 
+age cohorts, the negative impact increases substantially for young ages.
+
+[PAGE 26]
+Universität Konstanz
+AI and our health 
+26
+Respondents’ assessment of the impact of social media ranges 
+substantially depending on the dimension.
+
+[PAGE 27]
+Universität Konstanz
+AI and our health 
+27
+Mental health
+Association of Facebook Use With Compromised Well-Being: A 
+Longitudinal Study, Holly B. Shakya, Nicholas A. Christakis , 2017, 
+American Journal of Epidemiology, Volume 185, Issue 3, 1 February 2017, 
+Pages 203–211. 
+5,208 subjects: overall, regular use of Facebook had a negative impact on 
+an individual’s wellbeing
+
+[PAGE 28]
+Universität Konstanz
+AI and healthcare 
+28
+What are the risks of using AI in in medicine 
+and healthcare?
+https://www.europarl.europa.eu/RegData/etud
+es/STUD/2022/729512/EPRS_STU(2022)729
+512_EN.pdf
+What are its benefits? Search online.
+
+[PAGE 29]
+Universität Konstanz
+AI and the future of society
+29
+Wide variety of viewpoints how the future of humankind and society will 
+develop when AI becomes a participant.
+Basic questions:
+•
+In which areas can humanity benefit?
+•
+What are the dangers?
+Funders pick up on it: VolkswagenStiftung’s AI and the future of society
+https://www.pewresearch.org/internet/2018/12/10/artificial-intelligence-and-the-future-of-humans/
+
+[PAGE 30]
+Universität Konstanz
+AI and the future of society
+30
+Major concerns (PEW paper):
+•
+Human agency: Humans experience a loss of control over their lives 
+(e.g., privacy, decision-making)
+•
+Data abuse: Data use and surveillance in complex systems is 
+designed for profit or for exercising power
+•
+Job loss: The AI takeover of jobs will widen economic divides, 
+leading to social upheaval
+•
+Dependence lock-in: Reduction of individuals’ cognitive, social and 
+survival skills
+•
+Mayhem: Autonomous weapons, cybercrime and weaponized 
+information.
+
+[PAGE 31]
+Universität Konstanz
+AI and the future of society
+31
+Suggested solutions:
+•
+Global good is #1: Improve human collaboration across borders and 
+stakeholder groups (“make people around the world come to a 
+common understanding and agreement”)
+•
+Values-based system: Develop policies to assure AI will be directed 
+at ‘humanness’ and common good
+•
+Prioritize people: Alter economic and political systems to better help 
+humans ‘race with the robots’
+
+[PAGE 32]
+Universität Konstanz
+The AI Index Report 2024
+32
+Human-Centered Artificial Intelligence, Stanford University
+Yearly report on how the field of AI has involved.
+•
+unbiased, rigorously vetted, broadly sourced data basis
+•
+allow the public and policy makers to develop a more thorough and 
+nuanced understanding of AI
+At the forefront this year: Generative AI
+taken from https://aiindex.stanford.edu/report/
+
+[PAGE 33]
+Universität Konstanz
+The AI Index Report - Top takeaways in 2024
+33
+taken from https://aiindex.stanford.edu/report/
+
+[PAGE 34]
+Universität Konstanz
+Generative AI
+34
+What are the risks and benefits of Generative AI? Search online.
+
+[PAGE 35]
+Universität Konstanz
+Regulating AI
+35
+‘The Great Hack’ (Netflix documentation – trailer)
+
+[PAGE 36]
+Universität Konstanz
+Regulating AI
+36
+‘Coded bias’ (Netflix documentation – trailer)
+
+[PAGE 37]
+Universität Konstanz
+Regulating AI
+37
+Regulators must act on the risks presented by new technology. 
+→We need laws that regulate AI applications so that we can all benefit, but 
+nobody gets “hurt”. 
+Europe is spear-heading these efforts.
+
+[PAGE 38]
+Universität Konstanz
+First step: Data protection
+38
+It all started in 1995 with the European Data Protection Directive. 
+•
+In 1994, the first banner add appeared online. 
+•
+In 2000, most financial institutions offered online banking. 
+•
+In 2006, Facebook opened to the public. 
+•
+In 2011, a Google user sued the company for scanning her emails.
+•
+Two months later: The EU needs “a comprehensive approach on 
+personal data protection” and work begins to update the 1995 directive.
+
+[PAGE 39]
+Universität Konstanz
+First step: Data protection
+39
+The General Data Protection Regulation (GDPR) is the toughest privacy 
+and security law in the world. 
+•
+Drafted and passed by the European Union.
+•
+Put into effect on May 25, 2018.
+•
+Imposes obligations onto organizations anywhere in the world if they 
+target or collect data related to people in the EU. 
+•
+European Convention on Human Rights (1950): ”Everyone has the right 
+to respect for his private and family life, his home and his 
+correspondence.”
+
+[PAGE 40]
+Universität Konstanz
+GDPR breaches: Facebook
+40
+https://www.enforcementtracker.com/
+
+[PAGE 41]
+Universität Konstanz
+GDPR breaches
+41
+•
+Unlawful transfer of personal data to the US
+•
+The Irish DPA against Meta Platforms Ireland Limited in the amount 
+of EUR 1.2 billion
+•
+The Dutch DPA agency against Uber in the amount of EUR 290 
+million
+•
+Insufficient technical measure to secure personal information
+•
+The Irish DPA against Meta in the amount of EUR 250 million
+...
+
+[PAGE 42]
+Universität Konstanz
+GDPR breaches: Google
+42
+
+[PAGE 43]
+Universität Konstanz
+Second step: Regulating actual AI systems
+43
+Legal and regulatory frameworks typically operate around a clear sense of 
+who is acting, what their mindset was at the time of action and where the 
+action takes place. 
+Problem when applied to AI!
+Examples: 
+•
+Who is liable for accidents if a car is driverless?
+•
+What recourse does an individual have if it is refused from insurance 
+based on an automatic analysis of their social media accounts?
+
+[PAGE 44]
+Universität Konstanz
+Second step: Regulating actual AI systems
+44
+The European Commission (EC): Shaping Europe’s digital future
+https://digital-strategy.ec.europa.eu/en/policies/european-approach-
+artificial-intelligence
+The EU’s approach to AI rests on excellence and trust. 
+Aim: Boost research and industrial capacity and ensure fundamental rights.
+“Europe as the global hub for trustworthy AI.“
+
+[PAGE 45]
+Universität Konstanz
+Second step: Regulating actual AI systems
+45
+The EU AI Act
+Put in place 1 August 2024
+Ethical guidelines and a regulatory framework for the development, 
+deployment, and use of Artificial Intelligence (AI) systems in the European 
+Union 
+•
+Different rules for different risk levels
+•
+Transparency requirement
+•
+Supporting innovation
+https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence
+
+[PAGE 46]
+Universität Konstanz
+Second step: Regulating actual AI systems
+46
+Ethics guidelines for trustworthy AI by the EU
+Put forth in 2019 by the High-Level Expert Group on AI.
+Trustworthy AI should be:
+•
+lawful - respecting all applicable laws and regulations
+•
+ethical - respecting ethical principles and values
+•
+robust - both from a technical perspective while taking into account its 
+social environment
+The piloting phase ended in December 2019.
+
+[PAGE 47]
+Universität Konstanz
+Second step: Regulating actual AI systems
+47
+Result: Translation of the ethics guidelines into an
+“accessible and dynamic (self-assessment) checklist. The checklist can be 
+used by developers and deployers of AI who want to implement the key 
+requirements in practice.” (https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)
+→What are the important (subtext) words here?
+
+[PAGE 48]
+Universität Konstanz
+Second step: Regulating actual AI systems
+48
+Reaction by Thomas Metzinger, Philosoph, member of the EU’s expert 
+panel for developing the ethics guidelines (here in German). 
+The guidelines are:
+•
+short-sighted
+•
+deliberately vague
+•
+do not take long-term risks into consideration
+Red lines were deleted or watered down in the final report (for example, 
+autonomous lethal weapons and social scoring systems).
+Big problem: No regulatory oversight to support implementation
+
+[PAGE 49]
+Universität Konstanz
+Second step: Regulating actual AI systems
+49
+What about Generative AI?
+Generative AI, like ChatGPT, will not be classified as high-risk, but will have 
+to comply with transparency requirements and EU copyright law:
+•
+Disclosing that the content was generated by AI
+•
+Designing the model to prevent it from generating illegal content
+•
+Publishing summaries of copyrighted data used for training
+https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence
+
+[PAGE 50]
+Universität Konstanz
+Google on regulation
+50
+Google’s recommendations for regulating AI. 
+CEO Sundar Pichai: 
+•
+“AI is too important not to regulate, the only question is how.”
+•
+“Industry cannot do it alone but needs governments to guide the 
+process.”
+
+[PAGE 51]
+Universität Konstanz
+Today
+Part 1: Artificial Intelligence
+•
+A brief history
+•
+Strong versus weak AI
+•
+AI, ethics and regulation
+Part 2: Superintelligence
+51
+
+[PAGE 52]
+Universität Konstanz
+Superintelligence
+52
+Superintelligence ~ Digital Superintelligence ~ Artificial General Intelligence 
+~ Singularity
+Research on superintelligence asks the questions: 
+1.
+What happens when machines surpass humans in general 
+intelligence?
+2.
+Will artificial agents save or destroy us?
+“Machine intelligence is the last invention that humanity will ever need to 
+make.”
+
+[PAGE 53]
+Universität Konstanz
+Superintelligence
+53
+Nick Bostrom, Director, Future of Humanity Institute, 
+University of Oxford, UK. 
+In 2009 and 2015, he was included in Foreign Policy's Top 100 Global 
+Thinkers list. 
+His book: Superintelligence – Paths, Dangers, Strategies, Oxford University 
+Press, 2014: Understand the challenge posed by the prospect of 
+superintelligence and how we respond best.
+Superintelligence as "any intellect that greatly exceeds the cognitive 
+performance of humans in virtually all domains of interest”.
+
+[PAGE 54]
+Universität Konstanz
+Superintelligence
+54
+If machine brains surpassed human brains in general intelligence, then this 
+new superintelligence could become very powerful – possibly beyond our 
+control. 
+Compare with the fate of the gorilla: their survival depends on the humans, 
+more than on themselves. 
+One advantage of humans: we make the first move! 
+Question: Will it be possible to construct an AI with initial conditions so that 
+we survive an intelligence explosion?
+Bostrom’s TED Talk "What happens when our computers get smarter than we are?“ here: 
+https://www.youtube.com/watch?v=MnT1xgZgkpk
+
+[PAGE 55]
+Universität Konstanz
+The timescale
+Will singularity ever happen? According to most AI experts, yes.
+When will the singularity happen? Before the end of the century
+55
+But the views are divided.
+See the survey of 21 AI 
+experts at the ‘Artificial 
+General Intelligence’ 
+Conference in 2009
+
+[PAGE 56]
+Universität Konstanz
+The timescale
+56
+Another survey, conducted in 2012/2013 by Nick Bostrom and Vincent C. 
+Muller, the president of the European Association for Cognitive Systems. 
+550 participants answered the question: “When is AGI likely to happen?” 
+The answers are distributed as: 
+•
+10% of participants think that AGI is likely to happen by 2022
+•
+For 2040, the share is 50%
+•
+90% of participants think that AGI is likely to happen by 2075.
+
+[PAGE 57]
+Universität Konstanz
+The timescale
+57
+In 2017, 352 AI experts who published at the 2015 NIPS (Neural 
+Information Processing Systems) and ICML (International Conference on 
+Machine Learning) conferences were surveyed. 
+Results: 
+•
+50% chance that AGI will occur until 2060. 
+•
+Significant difference of opinion based on geography:
+•
+Asian respondents expect AGI in 30 years
+•
+North Americans expect it in 74 years. 
+•
+Some significant job functions that are expected to be automated until 
+2030 are: Call center reps, truck driving, retail sales.
+
+[PAGE 58]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.

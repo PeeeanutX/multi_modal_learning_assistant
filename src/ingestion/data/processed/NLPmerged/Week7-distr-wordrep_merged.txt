@@ -1,0 +1,867 @@
+[PAGE 1]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+12 December 2024
+Information Retrieval &
+Natural Language Processing
+Week 7: Distributed word representations
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the cluster of excellence, the politics of inequality
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[PAGE 2]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+2
+When?
+What?
+Week 1
+17 October 2024
+Introduction
+Week 2
+24 October 2024
+Indexing, Boolean IR
+Week 3
+31 October 2024
+--
+Week 4
+7 November 2024
+--
+Week 5
+14 November 2024
+Scoring, term weighting, the vector space 
+model
+Week 6
+21 November 2024
+Relevance and probabilistic IR
+Week 7
+28 November 2024
+Tolerant retrieval and index compression
+Week 8
+5 December 2024
+Evaluation in IR
+Week 9
+12 December 2024
+Distributed word representations for IR
+
+[PAGE 3]
+Universität Konstanz
+IR & NLP: Course schedule winter 2024/25
+3
+When?
+What?
+Week 10
+19 December 2024
+Natural Language Processing
+Week 11
+9 January 2025
+NLP with Python
+Week 12
+16 January 2025
+Personalization in IR systems
+Week 13
+23 January 2025
+AI & ethics
+Week 14
+30 January 2025
+Recap
+Week 15
+6 February 2025
+No class (conference trip)
+(also on stud.IP)
+Exam dates now on stud.IP.
+
+[PAGE 4]
+Universität Konstanz
+The classic search model
+4
+User 
+task
+Info 
+need
+User 
+query
+Search 
+engine
+Results
+Collection
+Query refinement
+Prepare 
+obazda for 
+dinner
+Find a 
+recipe for 
+obazda
+how to 
+make 
+obazda
+Search
+Misconception? Misformulation?
+Week 7
+
+[IMAGE CAPTION] a black and white photo of a checkered pattern with a gray background
+
+[PAGE 5]
+Universität Konstanz
+How can we more robustly match a user’s search 
+intent?
+5
+One of the challenges in information retrieval (IR) is the vocabulary 
+mismatch problem, which happens when the terms between queries 
+and documents are lexically different but semantically similar.
+We want to understand a query, not just do string.equals().
+•
+User searches for “Dell notebook battery size”, we’d like to match 
+documents discussing “Dell laptop battery capacity”.
+•
+User searches for “Passau hotel”, we’d also like to match 
+documents containing “Passau motel”
+→A pure keyword-matching IR system does nothing to help.
+
+[PAGE 6]
+Universität Konstanz
+How can we more robustly match a user’s search 
+intent?
+6
+Simple things we have already discussed that can help:
+•
+spelling correction
+•
+case folding
+•
+stemming
+•
+lemmatization
+We’d still like to understand the query.
+
+[PAGE 7]
+Universität Konstanz
+How can we more robustly match a user’s search 
+intent?
+7
+Expanding the document and/or the query. 
+Include information on word similarity:
+•
+A manual thesaurus of synonyms for query expansion (Part 1 today)
+e.g., WordNet
+•
+A measure of word similarity
+Calculated from a big document collection (Part 2 today)
+Calculated by query log mining (common on the web)
+
+[PAGE 8]
+Universität Konstanz
+A manual thesaurus
+8
+There are several lexical semantic resources available in Natural Language 
+Processing which capture semantic properties of words and semantic 
+relations to other words. 
+One of the most prominent ones is WordNet: wordnet.princeton.edu
+Other ones: 
+•
+VerbNet
+•
+PropBank
+•
+FrameNet
+
+[PAGE 9]
+Universität Konstanz
+A manual thesaurus
+9
+VerbNet: encodes verbs, their meaning and the function of their arguments
+
+[IMAGE CAPTION] a close up of a computer screen with a bunch of text
+
+[PAGE 10]
+Universität Konstanz
+An automatically generated thesaurus
+10
+Speech and Language Processing. Daniel Jurafsky & James H. Martin, 
+2021, Vector Semantics and Embeddings, Chapter 6. 
+Sections 6.1: Lexical Semantics
+Section 6.2. : Vector Semantics
+Section 6.3: Words and vectors
+Section 6.4: Cosine for measuring similarity
+Section 6.7: Word2vec
+
+[PAGE 11]
+Universität Konstanz
+An automatically generated thesaurus
+11
+Fundamental notion is the distributional hypothesis:
+Definition 1: Two words are similar if they co-occur with similar words. 
+Definition 2: Two words are similar if they occur in a given grammatical 
+relation with the same words. 
+Famous quote by Firth 1957, p. 11: “You shall know a word by the company 
+it keeps.” – one of the most successful ideas of modern statistical NLP. 
+These words represent the concept of ‘banking’
+
+[IMAGE CAPTION] a close up of a pink and blue striped background with a poem
+
+[PAGE 12]
+Universität Konstanz
+An automatically generated thesaurus
+12
+Vector semantics instantiates this linguistic hypothesis by learning 
+representations of the meaning of words (“embeddings”) directly from their 
+distributions in text. 
+Orthogonal approach to manual thesaurus classification: use a self-
+supervised way to learn from input instead of creating representations by 
+hand.
+Today: static embeddings of word2vec.
+
+[PAGE 13]
+Universität Konstanz
+Vector semantics
+13
+Standard way to represent word meaning in NLP, helping us to model 
+synonymy or word relatedness. 
+For example: the word ‘ongchoi’ which you haven’t heard before. But you 
+see it in those contexts:
+‘Ongchoi’ occurs with the same words as ‘spinach’, ‘chard’ and ‘collard 
+greens’ →‘ongchoi’ must be a similar concept
+
+[IMAGE CAPTION] a close up of a text on a white background with a picture of a person
+
+[IMAGE CAPTION] a close up of a text on a white background with a picture of a horse
+
+[PAGE 14]
+Universität Konstanz
+Vector semantics
+14
+This methodology is what vector semantics does: it counts the words in the 
+context of ‘ongchoi’. 
+•
+Vector semantics: represent a word as a point in a multidimensional 
+semantic space. 
+•
+The semantic space is derived (in ways we’ll see) from the 
+distributions of word neighbors.  
+•
+Vectors for representing words are called embeddings.
+
+[PAGE 15]
+Universität Konstanz
+Vector semantics
+15
+Distinct regions for positive, negative and neutral words.
+
+[IMAGE CAPTION] a white sheet with a black and red text that says, ' i am not good, '
+
+[PAGE 16]
+Universität Konstanz
+Semantic properties of embeddings
+16
+
+[IMAGE CAPTION] a diagram of a plot with a line of data and a line of data
+
+[PAGE 17]
+Universität Konstanz
+Vector semantics
+17
+There are two models that are most commonly used: 
+•
+the tf-idf model (you’ve heard about this): simple function of the 
+counts of nearby words – an important baseline. 
+•
+Problem: very long, sparse vectors, i.e., mostly zeros because 
+most words simply never in the context of others. 
+•
+the word2vec model family: constructing short, dense vectors that 
+have useful semantic properties.
+Standard way to compute semantic similarity between embeddings: cosine 
+similarity.
+
+[PAGE 18]
+Universität Konstanz
+Recap: the term-document matrix
+18
+Each document is represented as a count vector.
+In the Shakespeare example, document vectors are of dimension 4. 
+In reality, the vectors representing each document have dimensionality |v|, 
+the vocabulary size.
+
+[IMAGE CAPTION] a close up of a table with a number of different items
+
+[PAGE 19]
+Universität Konstanz
+Recap: the term-document matrix
+19
+How can this way of encoding information be used in Information Retrieval?
+
+[IMAGE CAPTION] a line graph with a line of numbers on it and a line of numbers on the bottom
+
+[PAGE 20]
+Universität Konstanz
+Words as vectors: word dimensions
+20
+An alternative to the term-document matrix is to use the term-term matrix 
+(or the term-context matrix), in which the columns are labeled by the 
+context words rather than documents. 
+This matrix is of dimensionality |v| x |v|. 
+Rows are target words. 
+Columns are context words, the words that co-occur with the target word in 
+a window of n words (or even in the same document).
+
+[PAGE 21]
+Universität Konstanz
+Words as vectors: word dimensions
+21
+→word-word co-occurrence matrix
+target word
+context words (n=4)
+context words (n=4)
+
+[IMAGE CAPTION] a black and white image of a poem with a picture of a man
+
+[IMAGE CAPTION] a close up of a table with a number of data on it
+
+[PAGE 22]
+Universität Konstanz
+Words as vectors: word dimensions
+22
+
+[IMAGE CAPTION] a graph that shows the number of people in a data system
+
+[IMAGE CAPTION] a close up of a table with a number of data on it
+
+[PAGE 23]
+Universität Konstanz
+Cosine for measuring similarity
+23
+To measure the similarity between two target words v and w (with the same 
+dimensions!) we use the cosine of the angle between the vectors. 
+The cosine is based on the dot product:
+The dot product tends to be high when two vectors have large values in the 
+same dimensions.  
+When is the dot product 0?
+
+[IMAGE CAPTION] a close up of a black and white photo of a clock
+
+[PAGE 24]
+Universität Konstanz
+Cosine for measuring similarity
+24
+Problem of the raw dot product: favors longer vectors, with higher values in 
+each dimensions →favors more frequent target words. 
+But we want to know similarity regardless of of their frequency. 
+→Normalize for length:
+
+[IMAGE CAPTION] a black and white photo of a diagram of a wave
+
+[PAGE 25]
+Universität Konstanz
+Cosine for measuring similarity
+25
+Example:
+→Which of the words ‘cherry’ or ‘digital’ is closer to ‘information’? Compute 
+the normalized cosine.
+
+[IMAGE CAPTION] a table with numbers and a pie data computer
+
+[IMAGE CAPTION] a black and white photo of a diagram of a wave
+
+[PAGE 26]
+Universität Konstanz
+Cosine for measuring similarity
+26
+Example:
+
+[IMAGE CAPTION] a table with numbers and a pie data computer
+
+[IMAGE CAPTION] a graph that shows the number of computers that are being used
+
+[PAGE 27]
+Universität Konstanz
+“New” approach: Neural embeddings
+27
+So far: long vectors, usually sparse, dimensions corresponding to words in 
+the vocabulary. 
+Now: a more powerful word representation: embeddings. 
+•
+Short, dense vectors. 
+•
+Number of dimensions d ranging from 50-1000. 
+Dense vectors work better in every NLP task than sparse vectors. “We 
+don’t completely understand all the reasons for this” (p. 17, IIR, Chapter 6), 
+one reason: classifier has to learn fewer weights when using fewer 
+dimensions.
+
+[PAGE 28]
+Universität Konstanz
+Basic idea of learning neural network word 
+embeddings
+28
+We define a model that aims to predict a relation between a target word wt
+and context words in terms of word vectors, e.g., p(context | wt)
+which has a loss function, e.g., J = 1 – p(w-t|wt)
+We look at many positions t in a big language corpus
+We keep adjusting the vector representations of words to minimize this 
+loss.
+
+[PAGE 29]
+Universität Konstanz
+Word2vec
+29
+Word2vec is a shallow, two-layer neural network which is trained to 
+reconstruct linguistic contexts of words. 
+The intuition behind it: instead of counting how often each target word w 
+appears in the context of ‘banking’, we’ll train a classifier on a binary 
+prediction task:
+“Is word w likely to show up in the context of ‘banking’? 
+Revolutionary intuition: self-supervised! If target word w occurs in the 
+context of ‘banking’, it is a gold correct answer!
+→no need for hand-labelled data
+
+[PAGE 30]
+Universität Konstanz
+Context
+30
+Word2vec models build on context, i.e., the embedding is learned by 
+looking at nearby words. 
+Intuition: If a group of words is always found close to the same words, they 
+will end up having similar embeddings (countries, animals, etc.)
+Here: window size of ± 2 context words
+turning into banking crises
+(turning, into), (turning, banking)
+turning into banking crises
+(into, turning), (into, banking), (into, crises)
+turning into banking crises
+(banking, turning), (banking, into), (banking, crises)
+turning into banking crises
+(crises, into), (crises, banking)
+
+[PAGE 31]
+Universität Konstanz
+Context
+31
+We can’t feed the neural network inputs as actual characters →represent 
+words “mathematically”. 
+Start with a one-hot encoding: vocabulary as vector dimensions, ‘1’ which 
+represents the corresponding word in the vocabulary, all other dimensions 
+with ‘0’. 
+What is the one-hot encoding of the example ‘turning into banking crises’ 
+with a window size of ± 2 context words?
+
+[PAGE 32]
+Universität Konstanz
+Word2vec is a family of algorithms
+32
+Mikolov et al. 2013: a framework for learning word vectors.
+Static embeddings: 
+•
+one embedding for word w as the target word, one embedding if word 
+w is a context word
+•
+the embedding is static, i.e., not dependent on the context the word is 
+used in
+(Contextual embeddings like BERT representations: the vector of each 
+word is different in different contexts)
+
+[PAGE 33]
+Universität Konstanz
+Word2vec is a family of algorithms
+33
+Two algorithms to learn word2vec embeddings:
+1.
+Skip-gram (SG): Predict context words given target (position 
+independent)
+2.
+Continuous Bag of Word (CBOW): Predict target word from bag-of-
+words context
+
+[PAGE 34]
+Universität Konstanz
+Word2vec is a family of algorithms
+34
+
+[IMAGE CAPTION] a diagram of a flow diagram of a process
+
+[PAGE 35]
+Universität Konstanz
+The classifier in skip-gram
+35
+Train a classifier so that it returns the probability that c is a real context 
+word of w: P(+|w,c).
+•
+Treat the target word and a neighbouring context word as positive 
+examples. 
+•
+Randomly sample other words in the lexicon to get negative samples.
+…
+crises
+banking
+into
+turning
+problems
+…
+as
+center word
+outside context words
+in window of size 2
+outside context words
+in window of size 2
+P(c1|w)
+c1
+c2
+c3
+c4
+w
+P(c2|w)
+P(c3|w)
+P(c4|w)
+
+[PAGE 36]
+Universität Konstanz
+The classifier in skip-gram
+36
+Positive examples
+Negative examples (here: ratio = 2)
+…
+crises
+banking
+into
+turning
+problems
+…
+as
+center word
+outside context words
+in window of size 2
+outside context words
+in window of size 2
+P(c1|w)
+c1
+c2
+c3
+c4
+w
+P(c2|w)
+P(c3|w)
+P(c4|w)
+w
+cpos
+banking
+turning
+banking
+into
+banking
+crises
+banking
+as
+w
+cneg
+banking
+aardvark
+banking
+my
+banking
+where
+banking
+coaxial
+w
+cneg
+banking
+seven
+banking
+forever
+banking
+dear
+banking
+if
+
+[PAGE 37]
+Universität Konstanz
+The classifier in skip-gram
+37
+The probability that word c is not a context word is 
+P(-w|w,c) = 1- P(+|w,c).
+How does the classifier compute probability P? Embedding similarity, aka 
+the dot product between two embeddings. 
+The dot product between c and w is not a probability, therefore use the 
+sigmoid function (the fundamental core of logistic regression), which returns 
+a number between 0 and 1.
+
+[PAGE 38]
+Universität Konstanz
+The classifier in skip-gram
+38
+The probability that word c is not a context word is P(-w|w,c) = 1- P(+|w,c).
+How does the classifier compute probability P? Embedding similarity, aka 
+the dot product between two embeddings:
+The dot product between c and w is not a probability, therefore use the 
+sigmoid function (the fundamental core of logistic regression), which returns 
+a number between 0 and 1.
+
+[IMAGE CAPTION] a close up of a black and white photo of a logo
+
+[IMAGE CAPTION] a black and white image of a number of expos on a white background
+
+[PAGE 39]
+Universität Konstanz
+The classifier in skip-gram
+39
+Probability that c is indeed a context word of w:
+Probability that c is not a context word of w:
+
+[IMAGE CAPTION] a black and white photo of a number of numbers on a white background
+
+[IMAGE CAPTION] a black and white photo of a number of numbers on a white background
+
+[PAGE 40]
+Universität Konstanz
+The classifier in skip-gram
+40
+Skip-gram assumption: all context words are independent, therefore
+
+[IMAGE CAPTION] a black and white photo of a physics textbook with a black and white image of a physics textbook with a
+
+[IMAGE CAPTION] a diagram of a number of words in a column
+
+[PAGE 41]
+Universität Konstanz
+Learning skip-gram embeddings
+41
+Input:
+•
+a corpus of text
+•
+a chosen vocabulary size N
+•
+a random embedding vector for each of the N vocabulary words
+Use positive and negative examples of target/context word occurrences:
+w
+cpos
+banking
+turning
+banking
+into
+banking
+crises
+banking
+as
+w
+cneg
+banking
+aardvark
+banking
+my
+banking
+where
+banking
+coaxial
+w
+cneg
+banking
+seven
+banking
+forever
+banking
+dear
+banking
+if
+
+[PAGE 42]
+Universität Konstanz
+Learning skip-gram embeddings
+42
+Given the set of positive and negative training instances and an initial set of 
+embeddings, the goal of the learning algorithm is to adjust those 
+embeddings in order to
+•
+maximize the similarity of the target word, context word pairs (c,wpos) 
+drawn from the positive examples
+•
+minimize the similarity of the (c,wneg) pairs from the negative 
+examples.
+
+[PAGE 43]
+Universität Konstanz
+Learning skip-gram embeddings
+43
+This aim can be expressed as the following loss function:
+We minimize L using stochastic gradient descent (SGD).
+
+[IMAGE CAPTION] a black and white image of a set of numbers with a line of numbers
+
+[PAGE 44]
+Universität Konstanz
+Learning skip-gram embeddings
+44
+SGD: the basic idea dates back to the 1950s
+Iterative process for optimizing an objective function with suitable 
+smoothness properties.
+Especially useful in high-dimensional scenarios, as it reduces the very high 
+computational burden.
+
+[PAGE 45]
+Universität Konstanz
+Learning skip-gram embeddings
+45
+P of being a neighbour
+
+[IMAGE CAPTION] a diagram of a computer system with a number of bits
+
+[PAGE 46]
+Universität Konstanz
+Learning skip-gram embeddings
+46
+P of being a neighbour
+
+[IMAGE CAPTION] a diagram of a computer system with a number of bits
+
+[PAGE 47]
+Universität Konstanz
+Semantic properties of embeddings
+47
+Different types of similarity or association possible by varying the size of the 
+context window:
+•
+Shorter context windows: more syntactic representations, the most 
+similar words tend to be semantically similar words with the same 
+parts of speech
+•
+Longer context windows: words that are topically related. 
+For example, in Levy and Goldberg (2014a): Skip-gram, w = ‘Hogwarts’ 
+•
+window of +/- 2, most similar were names of other fictional schools: 
+‘Sunnydale’ (Buffy the Vampire Slayer) or ‘Evernight’ (from a vampire 
+series)
+•
+window of +/- 5, ‘Dumbledore’, ‘Malfoy’, ‘half-blood’
+
+[PAGE 48]
+Universität Konstanz
+Trained word embeddings available
+48
+word2vec: https://code.google.com/archive/p/word2vec/ 
+GloVe: https://nlp.stanford.edu/projects/glove/ 
+FastText: https://fasttext.cc/ 
+Differ in algorithms, training data, dimensions, cased/uncased...
+
+[PAGE 49]
+Universität Konstanz
+Sent2vec
+49
+Pagliardini et al. 2018
+Sentence embedding is the average of the source word embeddings of its 
+constituent words. 
+Augmented by
+•
+learning source embeddings for not only unigrams but also n-grams of 
+words present in each sentence
+•
+averaging the n-gram embeddings along with the words
+
+[PAGE 50]
+Universität Konstanz
+Sent2vec
+50
+•
+Used for keyphrase extraction 
+•
+Idiom token classification
+•
+Sentence summarization
+•
+Machine translation
+•
+Paraphrasing
+•
+...
+(see papers on https://www.aclanthology.org)
+
+[PAGE 51]
+Universität Konstanz
+Doc2vec
+51
+Also known as ‘paragraph embedding’. 
+Embeddings for entire documents or paragraphs. 
+Again, two algorithms: 
+•
+Distributed Memory of Paragraph Vector (use word embeddings and a 
+document id token to learn the paragraph embedding, preserves word 
+order in the paragraph)
+•
+Distributed Bag of Words of Paragraph Vector (uses the document id 
+token to predict randomly sampled words)
+
+[PAGE 52]
+Universität Konstanz
+Application of embeddings in IR
+52
+Nalisnick, Mitra, Craswell & Caruana. 2016. Improving Document Ranking 
+with Dual Word Embeddings. WWW 2016 Companion. 
+http://research.microsoft.com/pubs/260867/pp1291-Nalisnick.pdf
+Mitra, Nalisnick, Craswell & Caruana. 2016. A Dual Embedding Space 
+Model for Document Ranking. arXiv:1602.01137 [cs.IR]
+Builds on BM25 model idea of “aboutness”
+•
+Not just term repetition indicating aboutness
+•
+Relationship between query terms and all terms in the document 
+indicates aboutness (BM25 uses only query terms)
+
+[PAGE 53]
+Universität Konstanz
+Application of embeddings in IR
+53
+Many papers on using doc2vec to model
+•
+document aboutness
+•
+query-document similarity
+Lots of applications where knowing word context or similarity helps 
+prediction:
+•
+Synonym handling in search
+•
+Ad serving
+•
+…
+
+[PAGE 54]
+Universität Konstanz
+What else can neural nets do in IR?
+54
+•
+Use a neural network as a supervised reranker.
+•
+Use query and document embedding for ranking. 
+•
+Assume you have (q, d, rel) data, learn a neural network to predict 
+relevance of the (q, d) pair.
+
+[PAGE 55]
+Universität Konstanz
+Bereich für Partnerlogo
+Auf eine Ausgewogenheit zwischen den gleichberechtigten 
+Logos ist unbedingt zu achten. Gegebenenfalls muss die 
+Größe des Partnerlogos angepasst werden.
+Die Größe des Logos der Universität Konstanz darf nicht 
+verändert werden.
+Annette Hautli-Janisz, Prof. Dr. 
+cornlp-teaching@uni-passau.de
+Comments?
+Questions?
+Thank you.
+
+[IMAGE CAPTION] a close up of a circular diagram of a cell phone
+
+[IMAGE CAPTION] the logo for the st petersburg transport center
+
+[IMAGE CAPTION] the university of pasau logo
+
+[IMAGE CAPTION] the logo for the center of excellence for the politics of inequality
