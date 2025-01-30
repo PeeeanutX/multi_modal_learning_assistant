@@ -1,5 +1,6 @@
 import json
 import random
+import time
 import streamlit as st
 from typing import Dict, Any, Optional
 from ui_components import show_conversation
@@ -15,9 +16,9 @@ def should_offer_quiz() -> bool:
       - After that threshold, there's a random chance each time.
     """
     queries_since = st.session_state.get('queries_since_quiz', 0)
-    if queries_since < 2:
+    if queries_since < 3:
         return False
-    if queries_since == 2:
+    if queries_since == 3:
         return True
     else:
         return random.random() < 0.3
@@ -133,4 +134,5 @@ def show_micro_assessment_dialog(llm_interface, skill_level: str):
         st.session_state['queries_since_quiz'] = 0
         st.write("Thank you for participating!")
 
+        time.sleep(2)
         st.rerun()

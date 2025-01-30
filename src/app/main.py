@@ -58,8 +58,8 @@ def get_retriever():
 @st.cache_resource
 def get_llm_interface():
     llm_config = LLMConfig(
-        provider='nvidia',
-        model_name='nvidia/llama-3.1-nemotron-70b-instruct',
+        provider='openai',
+        model_name='gpt-4o-mini',
         temperature=0.3,
         max_tokens=512
     )
