@@ -92,7 +92,7 @@ class LLMInterface:
                 self.config.api_key = os.getenv('OPENAI_API_KEY')
                 if not self.config.api_key:
                     raise ValueError("OPENAI_API_KEY environment variable not set.")
-            model_name = self.config.model_name or 'text-davinci-003'
+            model_name = self.config.model_name or 'gpt-4o-mini'
             llm = ChatOpenAI(
                 model_name=model_name,
                 openai_api_key=self.config.api_key,

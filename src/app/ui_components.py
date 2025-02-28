@@ -7,28 +7,32 @@ from typing import Optional
 
 
 def build_header_section():
-    """UI for user to input or generate an Access Key (UAK)."""
-    st.header("User Profile & Preferences")
-    st.write("Enter an Access Key (UAK) or leave blank to generate a new one:")
+    """UI for user to either use an auto-generated UAK or enter an existing one."""
+    if not st.session_state.get("uak"):
+        new_uak = str(uuid.uuid4())[:8]
+        st.session_state.uak = new_uak
 
-    col_key, col_button = st.columns([3, 1])
+    st.header("User Profile & Preferences")
+    st.write("Below is your autoâ€generated Access Key. You can overwrite it with a known key to restore a session.")
+
+    col_key, col_button = st.columns([4, 1])
     with col_key:
-        entered_uak = st.text_input("User Access Key (Optional)", label_visibility="collapsed")
+        entered_uak = st.text_input(
+            "User Access Key (UAK)",
+            value=st.session_state.uak,
+            label_visibility="collapsed"
+        )
     with col_button:
-        if st.button("Generate or Load Key", type="primary"):
+        if st.button("Set Key", type="primary"):
             if entered_uak.strip():
                 st.session_state.uak = entered_uak.strip()
-                st.toast(f"Loaded/Created user profile for UAK: {st.session_state.uak}")
+                st.toast(f"Using UAK: {st.session_state.uak}")
             else:
-                new_uak = str(uuid.uuid4())[:8]
-                st.session_state.uak = new_uak
-                st.toast(f"Generated new UAK: {new_uak}")
+                st.warning("Please enter a valid key or keep the auto-assigned one.")
 
-    if st.session_state.uak:
-        st.info(f"Current UAK: {st.session_state.uak}")
-    else:
-        st.warning("No UAK set. Without an UAK, your conversation won't be persisted across sessions.")
+    st.info(f"Current UAK: {st.session_state.uak}")
 
+def reset_button():
     reset_col1, reset_col2 = st.columns([2, 1])
     with reset_col1:
         st.write(" ")
@@ -42,32 +46,20 @@ def build_header_section():
 
 def show_conversation():
     """
-    Example: Display conversation in a container.
+    Display the conversation with latest messages on top
     """
     st.subheader("Conversation History", help="All messages exchanged so far")
-    with st.container():
-        for msg in st.session_state['messages']:
-            role = "User" if isinstance(msg, HumanMessage) else "Assistant"
-            st.markdown(
-                f"<div class='chat-message'><strong>{role}:</strong> {msg.content}</div>",
-                unsafe_allow_html=True
-            )
 
-        st.write('<div id="chat-end"></div>', unsafe_allow_html=True)
+    messages = st.session_state['messages']
 
-    st.markdown(
-        """
-        <script>
-        window.onload = function() {
-            var chatEnd = document.getElementById("chat-end"):
-            if (chatEnd){
-                chatEnd.scrollIntoView({behavior: 'smooth'});
-            }
-        }
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
+    for msg in reversed(messages):
+        if isinstance(msg, HumanMessage):
+            role_name = "user"
+        else:
+            role_name = "assistant"
+
+        with st.chat_message(name=role_name):
+            st.write(msg.content)
 
 
 def refine_text(llm_interface, text: str, mode: str = "refine") -> str:
