@@ -16,7 +16,7 @@ def compute_adaptive_skill_level(
     reason_text is a short textual explanation ofm the logic or thresholds used.
     """
 
-    if len(performance_history) < 4:
+    if len(performance_history) < 1:
         return current_skill, (
             "We only adapt skill after 4 or more quizzes. Keep practicing!"
         )
@@ -98,10 +98,10 @@ def show_adaptive_recommendation():
     num_quizzes = len(quiz_history)
     st.markdown("### Skill Level Recommendation")
 
-    if num_quizzes < 4:
+    if num_quizzes < 1:
         st.write(
             f"You have completed **{num_quizzes}** quiz{'es' if num_quizzes!=1 else ''}. "
-            f"We recommend taking at least 4 quizzes before adjusting your skill level."
+            f"We recommend taking at least 1 quizzes before adjusting your skill level."
         )
         st.divider()
         return

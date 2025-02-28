@@ -13,7 +13,7 @@ def build_header_section():
         st.session_state.uak = new_uak
 
     st.header("User Profile & Preferences")
-    st.write("Below is your auto‐generated Access Key. You can overwrite it with a known key to restore a session.")
+    st.write("Below is your autoâ€generated Access Key. You can overwrite it with a known key to restore a session.")
 
     col_key, col_button = st.columns([4, 1])
     with col_key:
@@ -46,13 +46,13 @@ def reset_button():
 
 def show_conversation():
     """
-    Display the conversation using Streamlit's built-in 'chat_message' for
-    each user/assistant message. This approach gives a chat-like layout
-    with better scrolling.
+    Display the conversation with latest messages on top
     """
     st.subheader("Conversation History", help="All messages exchanged so far")
 
-    for msg in st.session_state['messages']:
+    messages = st.session_state['messages']
+
+    for msg in reversed(messages):
         if isinstance(msg, HumanMessage):
             role_name = "user"
         else:

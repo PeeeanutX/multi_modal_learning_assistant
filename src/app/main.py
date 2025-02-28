@@ -6,6 +6,8 @@ import logging
 import streamlit as st
 from dotenv import load_dotenv
 
+NVIDIA_API_KEY=""
+
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
@@ -59,9 +61,10 @@ def get_retriever():
 def get_llm_interface():
     llm_config = LLMConfig(
         provider='openai',
-        model_name='gpt-4o-mini',
+        model_name='gpt-4o',
         temperature=0.3,
-        max_tokens=512
+        max_tokens=512,
+	api_key=NVIDIA_API_KEY
     )
     return LLMInterface(config=llm_config, retriever=None)
 
@@ -118,7 +121,7 @@ def config_step():
     )
 
     # Persona
-    st.subheader("2) Choose the Assistant’s Persona")
+    st.subheader("2) Choose the Assistantâ€™s Persona")
     st.write(
         "A persona changes how the AI communicates with you. "
         "You can pick the default style or an expert mentor style."
@@ -142,7 +145,7 @@ def config_step():
         value=st.session_state.get("short_term_goal", "")
     )
 
-    # Save the user’s new skill_level and persona into session_state
+    # Save the userâ€™s new skill_level and persona into session_state
     if st.button("Save & Go to Chat", type="primary"):
         st.session_state['skill_level'] = selected_skill
         st.session_state['persona'] = selected_persona
@@ -179,7 +182,13 @@ def chat_step():
     with col_left:
         st.markdown("### Ask a Question")
         with st.form("query_form"):
-            query_input = st.text_input("Enter your query:", value="", key="query_input_left")
+            query_input = st.text_area(
+                "Enter your query:",
+                value="",
+                key="query_input_left",
+                height=100,  # Initial height for multi-line input
+                help="Press Shift+Enter for new lines"
+            )
             submitted = st.form_submit_button("Search")
 
         if submitted:
